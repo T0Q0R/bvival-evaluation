@@ -1,0 +1,23 @@
+{
+  "protocol": "v5-bvival-mucars-prespecified-descriptive-subgroups",
+  "objective": "absolute_price_error",
+  "primary_budget_fraction": 0.1,
+  "reference_policy": "score_uncertainty_only",
+  "candidate_policy": "score_mean_value",
+  "maker_groups": ["Renault", "Volkswagen", "Peugeot", "Dacia", "Mercedes-Benz"],
+  "maker_other_group": "Other makers",
+  "maker_group_source": "five_most_frequent_training_makes",
+  "model_year_groups": [
+    {"label": "2017 or newer", "minimum": 2017},
+    {"label": "2009 to 2016", "minimum": 2009},
+    {"label": "2008 or older", "minimum": null}
+  ],
+  "model_year_cutpoint_source": "training_partition_tertiles_rounded_to_year",
+  "price_cutpoints": [74000.0, 142000.0],
+  "price_currency": "MAD",
+  "price_cutpoint_source": "training_partition_tertiles",
+  "mileage_groups": ["numeric mileage available", "numeric mileage missing"],
+  "minimum_group_size_for_safety_gate": 100,
+  "material_relative_loss_deterioration_percent": 5.0,
+  "inference": "descriptive_safety_gate_only; no conditional coverage or subgroup superiority claim"
+}

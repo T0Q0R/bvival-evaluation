@@ -1,0 +1,62 @@
+{
+  "protocol": "autoscout24-bvival-v2-full-before-sealed-test",
+  "evidence_status": "third-source prospective-within-source-test-after-earlier-source-results",
+  "dataset": "AutoScout24 2025 Zenodo record 17643343",
+  "processed_manifest": "experiments/data/processed/autoscout24_bvival_v2/autoscout24_bvival_audit.json",
+  "action_fields": ["mileage_km", "transmission", "fuel_type", "service_history"],
+  "objective": "absolute_price_error",
+  "primary_budget_fraction": 0.1,
+  "independent_unit": "retained listing after plausible-VIN deduplication",
+  "primary_comparison": ["score_mean_value", "score_uncertainty_only"],
+  "relevance_gate": ["score_mean_value", "score_fixed_field_risk"],
+  "additional_descriptive_policies": ["score_random", "score_no_acquisition", "score_global_field_prior"],
+  "fixed_field_selection": "minimum validation post-MAE at global 10% budget after train-only base and risk fitting",
+  "base_model": {
+    "seeds": [13, 42, 2026],
+    "folds": 5,
+    "iterations": 400,
+    "depth": 8,
+    "learning_rate": 0.08,
+    "l2_leaf_reg": 10.0
+  },
+  "value_model": {
+    "seeds": [13, 42, 2026],
+    "iterations": 400,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 10.0,
+    "alpha": 0.1,
+    "minimum_action_group_size": 100
+  },
+  "risk_model": {
+    "seeds": [13, 42, 2026],
+    "iterations": 400,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 10.0
+  },
+  "uncertainty": {
+    "method": "listing-paired percentile bootstrap",
+    "repetitions": 10000,
+    "seed": 2026,
+    "interval_level": 0.95
+  },
+  "practical_reference_relative_mae_percent": 2.0,
+  "secondary_metric": "RMSLE",
+  "duplicate_sensitivity": {
+    "status": "descriptive_only",
+    "mask_audit": "experiments/outputs/autoscout24_bvival_v2_full_quasi_duplicate/quasi_duplicate_audit.json",
+    "quasi_key": ["make", "model", "registration_year", "mileage_km", "power_hp", "body_type", "country_code"],
+    "novel_key_test_n": 13052,
+    "interpretation": "exact specification overlap is not verified same vehicle"
+  },
+  "test_label_status": "sealed",
+  "nonclaims": [
+    "no zero-shot market transfer",
+    "no temporal validation",
+    "no image-based condition grade",
+    "no carbon prediction",
+    "no causal profit or observed review cost",
+    "no completed transaction price"
+  ]
+}
