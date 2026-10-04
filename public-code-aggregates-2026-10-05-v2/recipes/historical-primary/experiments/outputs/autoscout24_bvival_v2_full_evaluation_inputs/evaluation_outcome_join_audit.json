@@ -1,0 +1,15 @@
+{
+  "freeze_id": "autoscout24-bvival-v2-full-final-pretest-freeze-2026-09-25",
+  "inputs": {
+    "additional_frozen_policy_scores_sha256": null,
+    "frozen_policy_scores_sha256": "3a1f50bd9e83f9288fe67a14a0037f9e693520aae5a7c6efd9e9999889aed05f",
+    "prediction_pairs_sha256": "ebb8ba9dd9af760961d281befc79f18b93c3cb64ef652ba8e4857a63a3736851",
+    "sealed_labels_sha256": "e939162a1b0f960c2276fdb4b3b581d694ee8af135e9704d544aa4f6a64a1c9b"
+  },
+  "labels_opened": true,
+  "listing_action_count": 55892,
+  "listing_count": 14005,
+  "output_sha256": "87e5e54dcc084eea3ee77a9f7eefe99fe507488d99b75ac6b6256c67cd2958e4",
+  "policy_score_hash_verified_before_label_read": true,
+  "protocol": "v4-bvival-prospective"
+}
