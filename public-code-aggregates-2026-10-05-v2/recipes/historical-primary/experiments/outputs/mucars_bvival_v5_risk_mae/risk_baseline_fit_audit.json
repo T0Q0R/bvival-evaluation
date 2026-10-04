@@ -1,0 +1,61 @@
+{
+  "categorical_columns": [
+    "action_id",
+    "make",
+    "model",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "origin",
+    "first_owner",
+    "location",
+    "sector"
+  ],
+  "evaluation_outcomes_read": false,
+  "evaluation_risk_scores_sha256": "1b36c8ea3cc6e45f95244aaa82424719092d39bcd399014a98fb4765c41d27ba",
+  "feature_columns": [
+    "action_id",
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "fiscal_power",
+    "number_of_doors",
+    "origin",
+    "first_owner",
+    "location",
+    "sector",
+    "equipment_count"
+  ],
+  "inputs": {
+    "evaluation_features_sha256": "39c12ec1ec5ed8c197ad308e975b5e8843236c22fdbb4d2e9c8714aaa1ff4e06",
+    "train_actions_sha256": "f99efb36985ec9730da4238c250de7d4b3738e6ac0cd4a70be8fbce6b1fd31cf"
+  },
+  "interpretation": "Predicted pre-acquisition error is a risk-routing baseline and is not an estimate of action value.",
+  "models": [
+    {
+      "model_path": "experiments/outputs/mucars_bvival_v5_risk_mae/models/seed_13.cbm",
+      "seed": 13,
+      "sha256": "30d2262a6bbc0690c2a4760af56926ca9c4209c5339d54deb2039cb9c6cff4bd"
+    },
+    {
+      "model_path": "experiments/outputs/mucars_bvival_v5_risk_mae/models/seed_42.cbm",
+      "seed": 42,
+      "sha256": "db782efca7019d2ce977e907bd66b320ec6b9ba6d5022546e5007a268fb85807"
+    }
+  ],
+  "objective": "absolute_price_error",
+  "protocol": "v4-bvival-prospective",
+  "risk_score_column": "predicted_pre_action_absolute_price_error",
+  "seeds": [
+    13,
+    42
+  ],
+  "target_column": "risk_target_absolute_price_error_before"
+}
