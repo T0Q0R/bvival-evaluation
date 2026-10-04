@@ -1,0 +1,9 @@
+policy,error_budget_auc,auc_metric,mean_harmful_action_rate
+diagnostic_oracle_realized_gain,23586.09970974044,post_mae_price,0.0
+score_conservative_lower_value,24987.069177745954,post_mae_price,0.141955131632413
+score_disagreement_only,25491.955139427406,post_mae_price,0.5352959501557633
+score_global_field_prior,25520.297040125304,post_mae_price,0.5388473520249221
+score_mean_value,24661.189392102246,post_mae_price,0.20660436137071653
+score_no_acquisition,25623.6945466348,post_mae_price,
+score_random,25580.36722690714,post_mae_price,0.43355140186915886
+score_uncertainty_only,25055.20526599888,post_mae_price,0.3586915887850467
