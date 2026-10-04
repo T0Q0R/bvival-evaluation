@@ -1,0 +1,1796 @@
+{
+  "version": "public-code-aggregates-2026-10-05-v2",
+  "repository": "https://github.com/T0Q0R/bvival-evaluation",
+  "scope": "original software and aggregate evidence; manuscript and private data excluded",
+  "software_license": "MIT; see LICENSING_SCOPE.md",
+  "public_payload_download_verified": false,
+  "original_software_license_does_not_relicense_aggregate_evidence": true,
+  "raw_or_row_level_data_included": false,
+  "trained_models_included": false,
+  "full_empirical_pipeline_portable": false,
+  "new_independent_confirmation": false,
+  "files": [
+    {
+      "file": "AGGREGATE_INDEX.md",
+      "bytes": 8862,
+      "sha256": "fb0c521b54d9125a5edd65e8306fa0c4cf781099e825ca1210a796fbd90c16f8",
+      "provenance": "generated non-numerical navigation from the exact aggregate allowlist"
+    },
+    {
+      "file": "CHECK_RELEASE.py",
+      "bytes": 2949,
+      "sha256": "2ec01209ab77c47c4e39337279073d2979771497325bf354926e4ed4b7aea218",
+      "provenance": "release-bvival/public-release/CHECK_RELEASE.py"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 1077,
+      "sha256": "d974966c8bf836dda4fbb9908048cc3119cffa84c569cc181e68ecc324a78f30",
+      "provenance": "release-bvival/public-release/LICENSE"
+    },
+    {
+      "file": "LICENSING_SCOPE.md",
+      "bytes": 1310,
+      "sha256": "e0bbeae897dabf1b388bff146633441a7d8563c5900f7c601686c2bfaf1a84ad",
+      "provenance": "release-bvival/public-release/LICENSING_SCOPE.md"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5603,
+      "sha256": "538c6b032658a4e73dc3556f2120908a1e68a9a2b1ddca08022c1e96a4dcb0bf",
+      "provenance": "release-bvival/public-release/README.md"
+    },
+    {
+      "file": "SOURCE_UNITS.md",
+      "bytes": 2377,
+      "sha256": "d2ce73a2c9a64a14590651afd0b43f7834eadd98b428ca4014689c390c21e71a",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/SOURCE_UNITS.md"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1239,
+      "sha256": "d854e704a0674f580eadc86836892200846441c7c6ca4799ffa045052b5aaede",
+      "provenance": "release-bvival/public-release/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "file": "aggregates/at_first_appearance.json",
+      "bytes": 4321,
+      "sha256": "6efef6e1bdf607ea5471afe958924d360e2450ccb3da173e86d73a9c2fc8fc1d",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/at_first_appearance.json"
+    },
+    {
+      "file": "aggregates/at_matched_evaluation.json",
+      "bytes": 4058,
+      "sha256": "802c31933af6b8cecc0ebebdf2643e69ce81ff0894c5a5148fc37f09490559cf",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/at_matched_evaluation.json"
+    },
+    {
+      "file": "aggregates/at_score_collapse.json",
+      "bytes": 2829,
+      "sha256": "ea4fdacf96eee11e5dacf29ba7385c7a8a070efaf64ad951e1caed1ef88fd905",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/at_score_collapse.json"
+    },
+    {
+      "file": "aggregates/autoscout24_fixed_benefit.json",
+      "bytes": 2965,
+      "sha256": "f53b91759d3a8e375b8cdc2e0a05785d29d357d973d6839025b17d617c7faa85",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/autoscout24_fixed_benefit.json"
+    },
+    {
+      "file": "aggregates/autoscout_neighbor.json",
+      "bytes": 5836,
+      "sha256": "bc1592120e2e0bda5727be80e9c6e3b9ab6f594d529a8de89915ebb383b1cdae",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/autoscout_neighbor.json"
+    },
+    {
+      "file": "aggregates/gdfs_development.json",
+      "bytes": 81328,
+      "sha256": "ab98ff6f0821d897026c3f7cd31f8bfb7a4117024cf4eb53699e02d4c3287f2e",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/gdfs_development.json"
+    },
+    {
+      "file": "aggregates/harm_development_failed_pilot.json",
+      "bytes": 30082,
+      "sha256": "ec3f72e03d6e85490f3fc3049d9bc604d118f2324fe1480d411e14ba14910b2c",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/harm_development_failed_pilot.json"
+    },
+    {
+      "file": "aggregates/historical/autoscout_exploratory_decomposition.json",
+      "bytes": 2727,
+      "sha256": "cfc4fe20bb4e07e720df2c8f59d28718754cf38e9e0dbcaf665f480b5400bc84",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/autoscout_exploratory_decomposition.json"
+    },
+    {
+      "file": "aggregates/historical/autoscout_primary_bvival_action_mix.csv",
+      "bytes": 846,
+      "sha256": "3362479fd4d2fb739ff76bd6f2eb58893cdf745082f06f233f4e687eb15feee5",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/autoscout_primary_bvival_action_mix.csv"
+    },
+    {
+      "file": "aggregates/historical/autoscout_primary_bvival_error_budget_curve.csv",
+      "bytes": 1413,
+      "sha256": "cb4d8b55188b28bb16cbebf6cb5dba9d34006083e7dbe536f335ea3e951d5f81",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/autoscout_primary_bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "aggregates/historical/autoscout_primary_bvival_reference_comparisons.csv",
+      "bytes": 718,
+      "sha256": "7247a795d003a982b981673dba3369262e488917cc2f92e9a08f26338441e15b",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/autoscout_primary_bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "aggregates/historical/autoscout_two_head_bvival_action_mix.csv",
+      "bytes": 275,
+      "sha256": "a5a695baee728fcff0dda46cfc137d4f5b7549b0d70bd4c425c546c39bc41fa7",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/autoscout_two_head_bvival_action_mix.csv"
+    },
+    {
+      "file": "aggregates/historical/autoscout_two_head_bvival_error_budget_curve.csv",
+      "bytes": 564,
+      "sha256": "499dd4d7cf14fbc1956938176bb7e589b74d636e29cf89579384ca8cb8356459",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/autoscout_two_head_bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "aggregates/historical/autoscout_two_head_bvival_reference_comparisons.csv",
+      "bytes": 215,
+      "sha256": "432d5a6cfb5200fd9f0849671e3d2ca2fa9b2bbd25bfb1424e710adc7105947d",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/autoscout_two_head_bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "aggregates/historical/cohort_counts.csv",
+      "bytes": 382,
+      "sha256": "2b15da81197b0c130710231986ccfe948aff89127816ded3ac9757533e8b189f",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/cohort_counts.csv"
+    },
+    {
+      "file": "aggregates/historical/jucars_exploratory_decomposition.json",
+      "bytes": 2688,
+      "sha256": "10fdf612eeae113dba6df39cdbe42487131f4ffdf9ec987e7797ab32e0e9df3a",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/jucars_exploratory_decomposition.json"
+    },
+    {
+      "file": "aggregates/historical/jucars_primary_bvival_action_mix.csv",
+      "bytes": 3910,
+      "sha256": "10f176a637ffea75e07cfbda5500aac488e6afbc96f9af4e3ea282354fe403e1",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/jucars_primary_bvival_action_mix.csv"
+    },
+    {
+      "file": "aggregates/historical/jucars_primary_bvival_error_budget_curve.csv",
+      "bytes": 7176,
+      "sha256": "4572c09c0739b2dfae7546d7f9d476c841bcf07f7de2c6c97ba6e273f445b860",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/jucars_primary_bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "aggregates/historical/jucars_primary_bvival_reference_comparisons.csv",
+      "bytes": 4068,
+      "sha256": "42f8ccbb960731a7bb280fe1c3f7c1ce816ffd8a1f576b28e19b7b2572cf071c",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/jucars_primary_bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "aggregates/historical/jucars_two_head_bvival_action_mix.csv",
+      "bytes": 399,
+      "sha256": "8412d90b4f3dd601dfdb3499636b805e13ccc882252b4a2716b7869c6c2337d1",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/jucars_two_head_bvival_action_mix.csv"
+    },
+    {
+      "file": "aggregates/historical/jucars_two_head_bvival_error_budget_curve.csv",
+      "bytes": 572,
+      "sha256": "a30af74aa78dc3899c21519d5460b275302287f0cc5e616ded7856220368c670",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/jucars_two_head_bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "aggregates/historical/jucars_two_head_bvival_reference_comparisons.csv",
+      "bytes": 215,
+      "sha256": "a702bbe92d45867c6da15ca244e0961bb6167cb75c645488e08946b893ee8e09",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/jucars_two_head_bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "aggregates/historical/manifest.json",
+      "bytes": 8508,
+      "sha256": "402f6bc2929acf575952523f96fcc1b21a71545163fc64658548d623c48ee2a9",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/manifest.json"
+    },
+    {
+      "file": "aggregates/historical/mucars_exploratory_decomposition.json",
+      "bytes": 2736,
+      "sha256": "e89e6fd16aa1bbc092279c28da380a0a6e873239e74ae37efd22268885782861",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/mucars_exploratory_decomposition.json"
+    },
+    {
+      "file": "aggregates/historical/mucars_primary_bvival_action_mix.csv",
+      "bytes": 5201,
+      "sha256": "fe23e1bb4ab780f7e275772bf4fe365021633424f3f970098a2873bc1f66ef21",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/mucars_primary_bvival_action_mix.csv"
+    },
+    {
+      "file": "aggregates/historical/mucars_primary_bvival_error_budget_curve.csv",
+      "bytes": 7261,
+      "sha256": "d2e02b5f7a390ff5e22fb6f24813cb1cb7f06ef90ef7891d6549c5abd58a2939",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/mucars_primary_bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "aggregates/historical/mucars_primary_bvival_reference_comparisons.csv",
+      "bytes": 4093,
+      "sha256": "942c988787583b760be405ff1599591b48ecb03cf9e75a850208f66b6f4588d8",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/mucars_primary_bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "aggregates/historical/mucars_two_head_bvival_action_mix.csv",
+      "bytes": 535,
+      "sha256": "3d221117ae88c0bb39fbbb088ca9fa95b0b3ef49c207c45d10185d67eb262566",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/mucars_two_head_bvival_action_mix.csv"
+    },
+    {
+      "file": "aggregates/historical/mucars_two_head_bvival_error_budget_curve.csv",
+      "bytes": 571,
+      "sha256": "b30856c9e31faa71f88f816295fcdb6c7286b65cac62397ba42f715c32e5834b",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/mucars_two_head_bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "aggregates/historical/mucars_two_head_bvival_reference_comparisons.csv",
+      "bytes": 213,
+      "sha256": "1200a90f345ee631867973464f4471dd0f70b93e37a4ff56736a1d720002ef82",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/historical/mucars_two_head_bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "aggregates/jucars_fixed_benefit.json",
+      "bytes": 2826,
+      "sha256": "e8e622fd2752646f921d981ae268d246a9a1575c2f481a894e9d4ec4b19dcb54",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/jucars_fixed_benefit.json"
+    },
+    {
+      "file": "aggregates/jucars_neighbor.json",
+      "bytes": 5968,
+      "sha256": "316faedcd123402fb509e722ffcbe37b2e11d000ce8dfe77f32bf5666a574b5c",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/jucars_neighbor.json"
+    },
+    {
+      "file": "aggregates/matched_portfolio.json",
+      "bytes": 18238,
+      "sha256": "17050eb1c4bb9c865c3830bcf15187854fccf011d5bdc5edfa229370765e34d8",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/matched_portfolio.json"
+    },
+    {
+      "file": "aggregates/mucars_fixed_benefit.json",
+      "bytes": 2993,
+      "sha256": "41fee5d6762f57b31346214ea8c4e3b48af17c4c8f2d76cc735263b2a980f48d",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/mucars_fixed_benefit.json"
+    },
+    {
+      "file": "aggregates/mucars_neighbor.json",
+      "bytes": 5854,
+      "sha256": "8117b8eaa519f189689317429d559ae9d3f1c0d455a2fea5497db039a05fbd33",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/mucars_neighbor.json"
+    },
+    {
+      "file": "aggregates/turkey_cohort_audit.json",
+      "bytes": 3259,
+      "sha256": "e7a3668bae0507aaa0511f1cb27c4d25056e16bc793ba5f1f0897526f6bb448d",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/turkey_cohort_audit.json"
+    },
+    {
+      "file": "aggregates/turkey_descriptive_diagnostics.json",
+      "bytes": 179875,
+      "sha256": "005ae55194832f1bf22da70acf3e996f7db838c0c0facd2b4897418639c8aa2e",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/turkey_descriptive_diagnostics.json"
+    },
+    {
+      "file": "aggregates/turkey_fixed_evaluation.json",
+      "bytes": 56890,
+      "sha256": "0ac1a05cdb4ace95e86d18115825527689def300d435c0e97fc9b75338385e5e",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/turkey_fixed_evaluation.json"
+    },
+    {
+      "file": "aggregates/turkey_neighbor.json",
+      "bytes": 8924,
+      "sha256": "2cda1bcde14226fcd1919d065e590da8fce52c7c8b576904a1e150d2cee79db7",
+      "provenance": "release-bvival/output/four-source-and-at-review-prep-2026-10-05-v7-r2/aggregates/turkey_neighbor.json"
+    },
+    {
+      "file": "recipes/at/README.md",
+      "bytes": 6395,
+      "sha256": "9e2f51068b10e8e2e1682ec8e6173cc77ba4a3d1df9cc7acc0817ae2f2276d2f",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/README.md"
+    },
+    {
+      "file": "recipes/at/environment/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/environment/resolved-main-macos-arm64.lock"
+    },
+    {
+      "file": "recipes/at/experiments/archive_turkey_candidate.py",
+      "bytes": 8195,
+      "sha256": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/archive_turkey_candidate.py"
+    },
+    {
+      "file": "recipes/at/experiments/audit_european_at_features.py",
+      "bytes": 12699,
+      "sha256": "02d2122a72840a3377abdd79e4b60e299a4f0292073f3fdb1e988a625acb75ea",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/audit_european_at_features.py"
+    },
+    {
+      "file": "recipes/at/experiments/audit_european_at_schema.py",
+      "bytes": 7833,
+      "sha256": "a52188952511157b2142b96389915aa5f937464270fcb5777356b47ce4228e6c",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/audit_european_at_schema.py"
+    },
+    {
+      "file": "recipes/at/experiments/audit_turkey_feature_only.py",
+      "bytes": 16875,
+      "sha256": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/audit_turkey_feature_only.py"
+    },
+    {
+      "file": "recipes/at/experiments/build_european_at_cohort.py",
+      "bytes": 7006,
+      "sha256": "b160db4bdf9fbd6ec956a006099cf320a7618a8f69d5a496132503abc6ef6403",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/build_european_at_cohort.py"
+    },
+    {
+      "file": "recipes/at/experiments/bvival_neighbor_available.py",
+      "bytes": 3148,
+      "sha256": "389b90d5243cba355998a078992df5d64580c281f2ade4e1e2688240dff2b84b",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/bvival_neighbor_available.py"
+    },
+    {
+      "file": "recipes/at/experiments/bvival_neighbor_loss.py",
+      "bytes": 5589,
+      "sha256": "42d2131638b4b8bdaacf2ac3a0b6d6f5582fd7800e1455e913ddba4b03880959",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/bvival_neighbor_loss.py"
+    },
+    {
+      "file": "recipes/at/experiments/configs/european_at_matched_comparison_2026-10-04_v1.json",
+      "bytes": 4537,
+      "sha256": "b21d8bbd52d8fe0d6d287cc4585a0930241393819a1a8a74eb040921d923090f",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/configs/european_at_matched_comparison_2026-10-04_v1.json"
+    },
+    {
+      "file": "recipes/at/experiments/european_at_matched.py",
+      "bytes": 10570,
+      "sha256": "d1d1687ad09f5a2ddbce29fee0f9a09cea92e4af2e53abbb0a231a30a3dff690",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/european_at_matched.py"
+    },
+    {
+      "file": "recipes/at/experiments/run_european_at_matched.py",
+      "bytes": 17940,
+      "sha256": "acb76b1510f193033007a844745b47a0173398bcf1924ae70ae25909cd1a0617",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/run_european_at_matched.py"
+    },
+    {
+      "file": "recipes/at/experiments/tests/test_european_at_audit.py",
+      "bytes": 8585,
+      "sha256": "3929538bf2aa886360d10bf206a999004d20be1cf167b0b0e5544b0fa29917fc",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/tests/test_european_at_audit.py"
+    },
+    {
+      "file": "recipes/at/experiments/tests/test_european_at_matched.py",
+      "bytes": 6001,
+      "sha256": "192f50886a20102fd487376029e752535065d1e1a1a314f353afd946fcb60b32",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/experiments/tests/test_european_at_matched.py"
+    },
+    {
+      "file": "recipes/at/inspection-plans/at-original-freeze.json",
+      "bytes": 1826,
+      "sha256": "cbd066d39fe9b795c1c2456931f6ec9fcad4a79a4ade9509872781eaecb9f238",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/inspection-plans/at-original-freeze.json"
+    },
+    {
+      "file": "recipes/at/manifest.json",
+      "bytes": 7399,
+      "sha256": "e018f04a391044d43c852a5c7def6f85187d6e33800e82defff2a7b8b0b02665",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/manifest.json"
+    },
+    {
+      "file": "recipes/at/notes/design/bvival-european-at-matched-protocol-2026-10-04.md",
+      "bytes": 7572,
+      "sha256": "e811308ab39487c0aeec236bb246ad92541a294f11f9d5afd1880be9e3659062",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/notes/design/bvival-european-at-matched-protocol-2026-10-04.md"
+    },
+    {
+      "file": "recipes/at/release-bvival/check_source_bundle.py",
+      "bytes": 8535,
+      "sha256": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2",
+      "provenance": "release-bvival/output/at-source-reconstruction-2026-10-04-v1/release-bvival/check_source_bundle.py"
+    },
+    {
+      "file": "recipes/historical-comparators/README.md",
+      "bytes": 4658,
+      "sha256": "8e098bb3f56ebbd7a9d57dbaeb0d61860e838406d7fdd36927307e4ce080ab8e",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/README.md"
+    },
+    {
+      "file": "recipes/historical-comparators/environment/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/environment/resolved-main-macos-arm64.lock"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/bvi_val.py",
+      "bytes": 16505,
+      "sha256": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/bvi_val.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/bvival_neighbor_available.py",
+      "bytes": 3148,
+      "sha256": "389b90d5243cba355998a078992df5d64580c281f2ade4e1e2688240dff2b84b",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/bvival_neighbor_available.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/bvival_neighbor_loss.py",
+      "bytes": 5589,
+      "sha256": "42d2131638b4b8bdaacf2ac3a0b6d6f5582fd7800e1455e913ddba4b03880959",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/bvival_neighbor_loss.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/check_historical_fixed_benefit_reconstruction.py",
+      "bytes": 5487,
+      "sha256": "af4732f562eba2bdc673a347fd78da0c564a2e553b5949de78fba62683d3c15b",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/check_historical_fixed_benefit_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/configs/bvival_neighbor_historical_v1_2026-10-01.json",
+      "bytes": 1652,
+      "sha256": "043a507ebdf9e0276b2787a64aa7f5ca729cb9c8b857180c052894f3289faa14",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/configs/bvival_neighbor_historical_v1_2026-10-01.json"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/evaluate_bvival_policies.py",
+      "bytes": 18036,
+      "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/evaluate_bvival_policies.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/generate_bvival_prediction_pairs.py",
+      "bytes": 19853,
+      "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/generate_bvival_prediction_pairs.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/run_bvival_neighbor_historical.py",
+      "bytes": 18850,
+      "sha256": "289d056c4de20b61920f00b79e35a59f97803c7c1eaade41d49b0d195a113de9",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/run_bvival_neighbor_historical.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/run_historical_fixed_benefit_control.py",
+      "bytes": 12136,
+      "sha256": "d1a4cfbe41034bbb3b023a3be9d7dcca1cfe775820e3cbbda5ade4c95022c32d",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/run_historical_fixed_benefit_control.py"
+    },
+    {
+      "file": "recipes/historical-comparators/experiments/tests/test_bvival_neighbor_historical.py",
+      "bytes": 7348,
+      "sha256": "5fe0e2fde003a8bb2d8ae09d81ea0ad50f24b0f8780a5aa6c4e942fca6c518fe",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/experiments/tests/test_bvival_neighbor_historical.py"
+    },
+    {
+      "file": "recipes/historical-comparators/manifest.json",
+      "bytes": 10538,
+      "sha256": "e04a3eb9fc5e34eb427dfc22b8b9132d19814395b5ac023ae863132f3437de7a",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/manifest.json"
+    },
+    {
+      "file": "recipes/historical-comparators/recipes/fixed_benefit.template.json",
+      "bytes": 3018,
+      "sha256": "5a24c1868bd309d37c657f82a22252a713f8b4818756317d974cabc66cddc728",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/recipes/fixed_benefit.template.json"
+    },
+    {
+      "file": "recipes/historical-comparators/references/fixed/autoscout24.json",
+      "bytes": 2965,
+      "sha256": "f53b91759d3a8e375b8cdc2e0a05785d29d357d973d6839025b17d617c7faa85",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/references/fixed/autoscout24.json"
+    },
+    {
+      "file": "recipes/historical-comparators/references/fixed/jucars.json",
+      "bytes": 2826,
+      "sha256": "e8e622fd2752646f921d981ae268d246a9a1575c2f481a894e9d4ec4b19dcb54",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/references/fixed/jucars.json"
+    },
+    {
+      "file": "recipes/historical-comparators/references/fixed/mucars.json",
+      "bytes": 2993,
+      "sha256": "41fee5d6762f57b31346214ea8c4e3b48af17c4c8f2d76cc735263b2a980f48d",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/references/fixed/mucars.json"
+    },
+    {
+      "file": "recipes/historical-comparators/references/neighbor/AutoScout24.json",
+      "bytes": 5836,
+      "sha256": "bc1592120e2e0bda5727be80e9c6e3b9ab6f594d529a8de89915ebb383b1cdae",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/references/neighbor/AutoScout24.json"
+    },
+    {
+      "file": "recipes/historical-comparators/references/neighbor/JUCars.json",
+      "bytes": 5968,
+      "sha256": "316faedcd123402fb509e722ffcbe37b2e11d000ce8dfe77f32bf5666a574b5c",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/references/neighbor/JUCars.json"
+    },
+    {
+      "file": "recipes/historical-comparators/references/neighbor/MUCars.json",
+      "bytes": 5854,
+      "sha256": "8117b8eaa519f189689317429d559ae9d3f1c0d455a2fea5497db039a05fbd33",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/references/neighbor/MUCars.json"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/check_autoscout24_reconstruction.py",
+      "bytes": 15703,
+      "sha256": "65d86c6c7616347dcc773550b63887744d22053e394936b76230f11810e50ca3",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/check_autoscout24_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/check_historical_reconstruction_package.py",
+      "bytes": 3515,
+      "sha256": "935f3b159a7427b5f1df77c39974866e0b92feb715ffc7cab60a493f9d4ef713",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/check_historical_reconstruction_package.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/check_jucars_reconstruction.py",
+      "bytes": 19443,
+      "sha256": "fe68ce380d26e82cdd894e71fee557fa1c441dd67f9c0c2a1d9b4129485c144d",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/check_jucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/check_mucars_reconstruction.py",
+      "bytes": 15355,
+      "sha256": "053b6aac8d35fbdc77e11ecf2d95ca4abc63296c0c18eca0ee249efc9203b660",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/check_mucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/check_remaining_source_metadata.py",
+      "bytes": 11570,
+      "sha256": "a86f166d5930f3c8def4c66d673c61bfe4d213249d391cbefb0f8144086f9598",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/check_remaining_source_metadata.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/check_rerun_entrypoints.py",
+      "bytes": 10144,
+      "sha256": "13e8f7fcbb2edceda5479dfcb8d5f2510f6d03b0add06a5211151bc460f0bc13",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/check_rerun_entrypoints.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/check_source_bundle.py",
+      "bytes": 8535,
+      "sha256": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/check_source_bundle.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/historical_comparator_package.py",
+      "bytes": 10383,
+      "sha256": "6d31407e99d2873ade44f4408ad5b974d9e15f19449b061c608667cd458a0a16",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/historical_comparator_package.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/historical_reconstruction_contract.py",
+      "bytes": 5961,
+      "sha256": "db5d46733a4ac24988ff904e2429ace302f54dd1614b06ffe05236c9ff58577a",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/historical_reconstruction_contract.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/plan_mucars_replay.py",
+      "bytes": 18836,
+      "sha256": "046b40fd7a510cd6e9e19e2b228492e5b6ffb155b3420de6ca22eec74fffab9d",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/plan_mucars_replay.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/run_historical_comparator_reconstruction.py",
+      "bytes": 15925,
+      "sha256": "5a4da667c198cf41a81076c6f6d3edc7b71f7d40be04b4ddb1ab475730d39413",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/run_historical_comparator_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/run_historical_reconstruction_package.py",
+      "bytes": 10430,
+      "sha256": "83887a4b876de00aa972bdd288d3834eb2ed90ffee23de72d623f96d835f876c",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/run_historical_reconstruction_package.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/run_mucars_outcome_replay.py",
+      "bytes": 21145,
+      "sha256": "b6b53f00de7701cbce5a87d122c5d6840211837d71b7819993dacecc010a9d51",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/run_mucars_outcome_replay.py"
+    },
+    {
+      "file": "recipes/historical-comparators/release-bvival/run_mucars_scoring_replay.py",
+      "bytes": 17040,
+      "sha256": "e0971417f85422e26bfcab1e5e60699653ee2379ca9c528c821248c564d6069d",
+      "provenance": "release-bvival/output/historical-core-comparator-reconstruction-2026-10-04-v1/release-bvival/run_mucars_scoring_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/README.md",
+      "bytes": 6010,
+      "sha256": "90b542ebc42e3778e13d0784ad68b7ce6a3314812165ae46f6361c90f2b95679",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/README.md"
+    },
+    {
+      "file": "recipes/historical-primary/environment/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/environment/resolved-main-macos-arm64.lock"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/assemble_bvival_policy_scores.py",
+      "bytes": 8724,
+      "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/assemble_bvival_policy_scores.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/audit_autoscout24_candidate.py",
+      "bytes": 6226,
+      "sha256": "1b6f638893d96fd893823a9398764f882abcfa4dec75a38b70d74368bcd50647",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/audit_autoscout24_candidate.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/build_autoscout24_bvival_manifest.py",
+      "bytes": 9376,
+      "sha256": "114cee7910d7ac9ff26ef03557973c4c574c40b0905d7ec8a742c3e5d6c796ec",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/build_autoscout24_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/build_bvival_action_dataset.py",
+      "bytes": 10635,
+      "sha256": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/build_bvival_action_dataset.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/build_jucars_bvival_manifest.py",
+      "bytes": 9693,
+      "sha256": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/build_jucars_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/build_mucars_bvival_manifest.py",
+      "bytes": 8595,
+      "sha256": "e93c85dd57da857a0e97d37a8fda137627398afa81e197d5efe11351b6c5764d",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/build_mucars_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/bvi_val.py",
+      "bytes": 16505,
+      "sha256": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/bvi_val.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/bvi_val_baselines.py",
+      "bytes": 7071,
+      "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/bvi_val_baselines.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/configs/autoscout24_bvival_v2_full.json",
+      "bytes": 2326,
+      "sha256": "8e8db1ca122ddb4e80dc0785a3e99ff510dfa0cd96013681bd3121cc499bf70c",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/configs/autoscout24_bvival_v2_full.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/data/processed/autoscout24_bvival_v2/autoscout24_bvival_audit.json",
+      "bytes": 2274,
+      "sha256": "8cf8a66fb4530a3faecc501df6d008bcf37c62b00a1f2f52189ea40a842c5f91",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/data/processed/autoscout24_bvival_v2/autoscout24_bvival_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/data/processed/jucars_bvival_v1/jucars_bvival_audit.json",
+      "bytes": 2587,
+      "sha256": "5b4a02aa684ddfcf548e3bb67cff40451e099ac1b52c76256fb97e304d898948",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/data/processed/jucars_bvival_v1/jucars_bvival_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/data/processed/mucars_bvival_v1/mucars_bvival_audit.json",
+      "bytes": 2285,
+      "sha256": "f81c2349fd6864f1d1fcaa81bff945980119e74fb75b1057e0fe91cb9c1c4033",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/data/processed/mucars_bvival_v1/mucars_bvival_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/evaluate_bvival_policies.py",
+      "bytes": 18036,
+      "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/evaluate_bvival_policies.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/fit_bvival_risk_baseline.py",
+      "bytes": 10129,
+      "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/fit_bvival_risk_baseline.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/fit_bvival_value_policy.py",
+      "bytes": 10831,
+      "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/fit_bvival_value_policy.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/generate_bvival_field_selection_pairs.py",
+      "bytes": 5803,
+      "sha256": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/generate_bvival_field_selection_pairs.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/generate_bvival_prediction_pairs.py",
+      "bytes": 19853,
+      "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/generate_bvival_prediction_pairs.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/join_bvival_evaluation_outcomes.py",
+      "bytes": 6940,
+      "sha256": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/join_bvival_evaluation_outcomes.py"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_actions_cal/bvival_action_dataset_audit.json",
+      "bytes": 1725,
+      "sha256": "df0c31d86587485e94d408de512468d5b64e487b112871e4cace2c43fe725b45",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_actions_cal/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_actions_dev/bvival_action_dataset_audit.json",
+      "bytes": 1789,
+      "sha256": "9e08faa42e915ffd7532cc8eb2bcbc774bfeb5ff4a1a682814d68e563daa4cde",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_actions_dev/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_evaluation_inputs/evaluation_outcome_join_audit.json",
+      "bytes": 713,
+      "sha256": "26dacaa9396f8907f8c0edb23275c1166afdd6fd2394aa78f6433af4cf5ffd7a",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_evaluation_inputs/evaluation_outcome_join_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_fixed_field/selection.json",
+      "bytes": 1604,
+      "sha256": "8e7c514e1b8dc3b2e705f4347723caff2270d04d3d99c4aefb65263ee6fd65e9",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_fixed_field/selection.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_action_mix.csv",
+      "bytes": 856,
+      "sha256": "19c64c3eb23240a0e7d8d2ababf78004796489afba5f2f0ae0b81cde0fb072ae",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_action_mix.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_error_budget_curve.csv",
+      "bytes": 1455,
+      "sha256": "76253d56cd04a50e6bde1250244ffcff6f0cf6980e49b298c86b7ce93b6c5963",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_evaluation_audit.json",
+      "bytes": 1408,
+      "sha256": "50da0068f04fc0d388e6773e67ae19516f032c8ce86958b78bf6b1f6215d5e53",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_evaluation_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_policy_summary.csv",
+      "bytes": 445,
+      "sha256": "042202ace1008c296e3d127b66813d283f98044ae430da00106f0e9eae378826",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_policy_summary.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_reference_comparisons.csv",
+      "bytes": 719,
+      "sha256": "67eed81e833d1ce0e1cc48951306092047af1dc00fff9e3acce21aabc733e1a8",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_pairs/prediction_pair_generation_audit.json",
+      "bytes": 2987,
+      "sha256": "d635e1fa70a090603b3510da0c3cf14ab0cd3ea4e2eea6af03479562d97d0397",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_pairs/prediction_pair_generation_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_risk/risk_baseline_fit_audit.json",
+      "bytes": 1871,
+      "sha256": "0254513144694af06957120e08b7d5fae55bbd6f932df3dc80981a78c5b4f8b5",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_risk/risk_baseline_fit_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_scores/policy_score_assembly_audit_absolute_price_error.json",
+      "bytes": 2105,
+      "sha256": "b23ac6a1327172b2070151e907dd5b22ad09e5f2face5fab2c2802013f5cb897",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_scores/policy_score_assembly_audit_absolute_price_error.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_selection_pairs/field_selection_pair_audit.json",
+      "bytes": 2253,
+      "sha256": "bd3809ff4e546c884ae4db5799663c2ccd71ff28a50680c42e4b82cd7a20efc6",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_selection_pairs/field_selection_pair_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_selection_risk/risk_baseline_fit_audit.json",
+      "bytes": 1901,
+      "sha256": "74b079e7a7441fd3cb05c9fee101a0a3c2a1f50437cebea32fc730d539ad2228",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_selection_risk/risk_baseline_fit_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_selection_train_actions/bvival_action_dataset_audit.json",
+      "bytes": 1813,
+      "sha256": "991ea812682668b90948710cff25481abccbf142b20985cb36aa834ad687ca19",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_selection_train_actions/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_selection_validation_actions/bvival_action_dataset_audit.json",
+      "bytes": 1776,
+      "sha256": "7b54be51d76df92dd87796cbc2b23a18c3ad3fc9a40d3252ba48ba7ae2ee1098",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_selection_validation_actions/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/autoscout24_bvival_v2_full_value/value_policy_fit_audit.json",
+      "bytes": 4026,
+      "sha256": "9425488cd497a82090b6237f86029239d3d5ec423fae701a8321c6c5709f6700",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/autoscout24_bvival_v2_full_value/value_policy_fit_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_actions_calibration_v1/bvival_action_dataset_audit.json",
+      "bytes": 1884,
+      "sha256": "ae9f870c32b67cd7a77bc86528787fe71b49bcc64b4951c06b6595f99a799fbe",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_actions_calibration_v1/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_actions_development_v1/bvival_action_dataset_audit.json",
+      "bytes": 1944,
+      "sha256": "a7ee5318c7bcbfce833a51b41bffc5924de3e74f2b3b30ead5a2ebd8285d1be9",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_actions_development_v1/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_actions_development_v2/bvival_action_dataset_audit.json",
+      "bytes": 1944,
+      "sha256": "863ff25283b6f04fafe58829ff938031b04bd8247f08b6039e24dad7fabe08af",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_actions_development_v2/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_prediction_pairs_v1/prediction_pair_generation_audit.json",
+      "bytes": 3280,
+      "sha256": "3dbcead7bfbef58b3b4cdd316f1ae3781e79a1ad6f3aacf9df8ff9890a1b242f",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_prediction_pairs_v1/prediction_pair_generation_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_risk_mae_matched_v1/risk_baseline_fit_audit.json",
+      "bytes": 2244,
+      "sha256": "fa779d37540478dac37cf778240635fee7526e67e1cc601ef91c9a69ccf29e65",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_risk_mae_matched_v1/risk_baseline_fit_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_v5_evaluation_inputs/evaluation_outcome_join_audit.json",
+      "bytes": 749,
+      "sha256": "951b6e14480da4c519e0b702d5169f3ac9e17ec002189a82a6782b84d5b65ad0",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_v5_evaluation_inputs/evaluation_outcome_join_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_v5_frozen_mae_scores/policy_score_assembly_audit_absolute_price_error.json",
+      "bytes": 1658,
+      "sha256": "6e0a19245273f7e90d096708d2e88bc771512e46c0a88759019ac8986ab2b753",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_v5_frozen_mae_scores/policy_score_assembly_audit_absolute_price_error.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_action_mix.csv",
+      "bytes": 3942,
+      "sha256": "935c642671bd87a3e7535da91d21d12768116ab173b13205b3e9b428b0db1a82",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_action_mix.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_error_budget_curve.csv",
+      "bytes": 7373,
+      "sha256": "2dc0495c23060a0667e3f50a666560a7c392fcac0115677229a001c8d5df0023",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_evaluation_audit.json",
+      "bytes": 1490,
+      "sha256": "94bcbb3da6454e261d3f36ceea8de50fe96177eddb3e1f345010aab0e6f7085d",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_evaluation_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_policy_summary.csv",
+      "bytes": 634,
+      "sha256": "5ceae8cc3d2944b0ee7a91e756afdb71e34d4333cf0b655f92258b33961afe47",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_policy_summary.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_reference_comparisons.csv",
+      "bytes": 4180,
+      "sha256": "bb0e1165a343df99dbe21692f53276decb0568ea004f40a607735bb96617fae0",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_v5_stress_mae/bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/jucars_bvival_value_policy_v1/value_policy_fit_audit.json",
+      "bytes": 4410,
+      "sha256": "2b3ea8a93e60579fdd8dfcc85d20dd3a6856d18309229b1231764e598ad344f4",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/jucars_bvival_value_policy_v1/value_policy_fit_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_actions_calibration/bvival_action_dataset_audit.json",
+      "bytes": 1748,
+      "sha256": "5cc33b62dfce6319fd373edc6fb0038f8ef2fea426c4f48bbd9dc9af3df22fbd",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_actions_calibration/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_actions_development/bvival_action_dataset_audit.json",
+      "bytes": 1780,
+      "sha256": "ce57baf36bd677eb70ddbd8e0aae3bdcf243f3d2a3cb22437942c3db904e6062",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_actions_development/bvival_action_dataset_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_action_mix.csv",
+      "bytes": 5262,
+      "sha256": "7901119edfcd914ef61b9a4fbb41430a1e77a3151ef57fa2d5c5f1055a55afac",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_action_mix.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_error_budget_curve.csv",
+      "bytes": 7422,
+      "sha256": "384d899434a072d6c8401661dd2f528fa0202d7bdb79aac9630297d5604677c9",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_error_budget_curve.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_evaluation_audit.json",
+      "bytes": 1483,
+      "sha256": "38bf2ef91b73a513dc5c263cc8408cd4db11ac7ed455a4b282dc51e870d2a3b5",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_evaluation_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_policy_summary.csv",
+      "bytes": 633,
+      "sha256": "9f7eef94c0ef691e8e20270a4eaaed8a3ddbb62e3779552c6d5bd5973079f592",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_policy_summary.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_reference_comparisons.csv",
+      "bytes": 4110,
+      "sha256": "601983196cae38991a6367d88d31d61365db198d4a3fa9cc3f4e960a1f9c9ad2",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_reference_comparisons.csv"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_evaluation_inputs/evaluation_outcome_join_audit.json",
+      "bytes": 744,
+      "sha256": "3596aff3d6ea5e21d19b76e9330c1bd840ab00189a5198cd285cfbf9b4f01755",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_evaluation_inputs/evaluation_outcome_join_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_frozen_scores/policy_score_assembly_audit_absolute_price_error.json",
+      "bytes": 1628,
+      "sha256": "8efd5d567971f6d362f47b18286a655429a5f6c87a3f2edc7c6f2a31b3aa7dbd",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_frozen_scores/policy_score_assembly_audit_absolute_price_error.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_pairs/prediction_pair_generation_audit.json",
+      "bytes": 2731,
+      "sha256": "c6d72baaa36015f3bb663269723dbfe03ecc072423e550d8cea0ee954eb544ff",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_pairs/prediction_pair_generation_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_risk_mae/risk_baseline_fit_audit.json",
+      "bytes": 1727,
+      "sha256": "a9649d7958461eadcac95459a5a3628c21b38af9b6ffe9900660e71c812c6273",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_risk_mae/risk_baseline_fit_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/outputs/mucars_bvival_v5_value/value_policy_fit_audit.json",
+      "bytes": 3602,
+      "sha256": "3f011336b4518336f442f2ecbd1135508cc485b17bce3328d7640c10bf9e8ebb",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/outputs/mucars_bvival_v5_value/value_policy_fit_audit.json"
+    },
+    {
+      "file": "recipes/historical-primary/experiments/select_bvival_fixed_field_development.py",
+      "bytes": 5370,
+      "sha256": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/experiments/select_bvival_fixed_field_development.py"
+    },
+    {
+      "file": "recipes/historical-primary/manifest.json",
+      "bytes": 34668,
+      "sha256": "fa2cef5b9009a2984db59548265c8f62dcbd7e6bba65f6f64e4ad06eb438d551",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/manifest.json"
+    },
+    {
+      "file": "recipes/historical-primary/notes/analysis/autoscout24-rights-metadata-correction-2026-09-26.md",
+      "bytes": 2188,
+      "sha256": "f1a0074f4922bc2392ed65beba66eab2af78f81d296124bdcd6268616d8e6ff5",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/notes/analysis/autoscout24-rights-metadata-correction-2026-09-26.md"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/autoscout24-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 22573,
+      "sha256": "aaaa6753a119c1e081a70b71d7eee04b5ce17a0f60d9ea1a2907e635262dd683",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/autoscout24-reconstructed-primary-plan-2026-10-01.json"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/autoscout24-reconstruction-2026-10-01.json",
+      "bytes": 52848,
+      "sha256": "3956332b97d5be334e1f97f3e83e3f5b0f9b1bf7f8df106374e421557b7404fd",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/autoscout24-reconstruction-2026-10-01.json"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/check_autoscout24_reconstruction.py",
+      "bytes": 15703,
+      "sha256": "65d86c6c7616347dcc773550b63887744d22053e394936b76230f11810e50ca3",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/check_autoscout24_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/check_historical_reconstruction_package.py",
+      "bytes": 3515,
+      "sha256": "935f3b159a7427b5f1df77c39974866e0b92feb715ffc7cab60a493f9d4ef713",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/check_historical_reconstruction_package.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/check_jucars_reconstruction.py",
+      "bytes": 19443,
+      "sha256": "fe68ce380d26e82cdd894e71fee557fa1c441dd67f9c0c2a1d9b4129485c144d",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/check_jucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/check_mucars_reconstruction.py",
+      "bytes": 15355,
+      "sha256": "053b6aac8d35fbdc77e11ecf2d95ca4abc63296c0c18eca0ee249efc9203b660",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/check_mucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/check_remaining_source_metadata.py",
+      "bytes": 11570,
+      "sha256": "a86f166d5930f3c8def4c66d673c61bfe4d213249d391cbefb0f8144086f9598",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/check_remaining_source_metadata.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/check_rerun_entrypoints.py",
+      "bytes": 10144,
+      "sha256": "13e8f7fcbb2edceda5479dfcb8d5f2510f6d03b0add06a5211151bc460f0bc13",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/check_rerun_entrypoints.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/check_source_bundle.py",
+      "bytes": 8535,
+      "sha256": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/check_source_bundle.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/historical_reconstruction_contract.py",
+      "bytes": 5961,
+      "sha256": "db5d46733a4ac24988ff904e2429ace302f54dd1614b06ffe05236c9ff58577a",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/historical_reconstruction_contract.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/jucars-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 24492,
+      "sha256": "201c8fbd418034aa545c0ee5aa70dbd1f476cfd359dbf4c2c9db36eb8eaa81b3",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/jucars-reconstructed-primary-plan-2026-10-01.json"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/jucars-reconstruction-2026-10-01.json",
+      "bytes": 36112,
+      "sha256": "a066cc5ac617ccdfe14b239de00da1754e7ddb7fa453c5fdb948e9b995e9f236",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/jucars-reconstruction-2026-10-01.json"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/mucars-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 18644,
+      "sha256": "bfe5325edbc22b3b5d5cde44dab90d8436fea0e7a5ea6d8b168c0ed5bf01257f",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/mucars-reconstructed-primary-plan-2026-10-01.json"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/mucars-reconstruction-2026-10-01.json",
+      "bytes": 31133,
+      "sha256": "bf7c03e2abe88e34f87735a7439ec166da7f195f09a320993043d2b65874ca95",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/mucars-reconstruction-2026-10-01.json"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/plan_autoscout24_replay.py",
+      "bytes": 14799,
+      "sha256": "c38123bf22fe26e029b9b7e5d2def73e6b1eeff5ba1403a16b0a60dad4f92cb8",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/plan_autoscout24_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/plan_jucars_replay.py",
+      "bytes": 22217,
+      "sha256": "eeb9006d691579f0b3a494a3af05b2f2a1b5720ffff1c00392de84041f9c7477",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/plan_jucars_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/plan_mucars_replay.py",
+      "bytes": 18836,
+      "sha256": "046b40fd7a510cd6e9e19e2b228492e5b6ffb155b3420de6ca22eec74fffab9d",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/plan_mucars_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/project_jucars_legacy_targets.py",
+      "bytes": 6634,
+      "sha256": "7034fb6ed65358cf0a39e9b1c4e94ecc60bfbeb72540c3214d8d04435db7cbf6",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/project_jucars_legacy_targets.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/run_autoscout24_outcome_replay.py",
+      "bytes": 21128,
+      "sha256": "07499ef10f9e1e79f2c73b46829fb0815f2b07ff5464e1a7bf9cf7b284536f9c",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/run_autoscout24_outcome_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/run_autoscout24_scoring_replay.py",
+      "bytes": 21735,
+      "sha256": "0ed43fdfd02c83c2988ee02346aff8184575996c3b705813109f14192cbeebcc",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/run_autoscout24_scoring_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/run_historical_reconstruction_package.py",
+      "bytes": 10430,
+      "sha256": "83887a4b876de00aa972bdd288d3834eb2ed90ffee23de72d623f96d835f876c",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/run_historical_reconstruction_package.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/run_jucars_outcome_replay.py",
+      "bytes": 16999,
+      "sha256": "e8b07baec456bb25da99f4e72c84101ff3574020c2812e41a1f6de3be4e0145b",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/run_jucars_outcome_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/run_jucars_scoring_replay.py",
+      "bytes": 22715,
+      "sha256": "57e4f1e7b1e180f259ee51c7c69855a83b22ae0a597505624cdba744f68ed066",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/run_jucars_scoring_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/run_mucars_outcome_replay.py",
+      "bytes": 21145,
+      "sha256": "b6b53f00de7701cbce5a87d122c5d6840211837d71b7819993dacecc010a9d51",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/run_mucars_outcome_replay.py"
+    },
+    {
+      "file": "recipes/historical-primary/release-bvival/run_mucars_scoring_replay.py",
+      "bytes": 17040,
+      "sha256": "e0971417f85422e26bfcab1e5e60699653ee2379ca9c528c821248c564d6069d",
+      "provenance": "release-bvival/output/historical-primary-reconstruction-2026-10-04-v2/release-bvival/run_mucars_scoring_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/README.md",
+      "bytes": 7677,
+      "sha256": "9204a3e77c1a50e28c1845a5571d961ec94d10d379ad4a84c86d3d8cfb465e97",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/README.md"
+    },
+    {
+      "file": "recipes/source-inspection/environment/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/environment/resolved-main-macos-arm64.lock"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/analyze_bvival_listing_field_decomposition.py",
+      "bytes": 9458,
+      "sha256": "dc725fae19618e8c5f50bf7dde44889b980a5a6eccaeb0f378b998d14489ee73",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/analyze_bvival_listing_field_decomposition.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/archive_turkey_candidate.py",
+      "bytes": 8195,
+      "sha256": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/archive_turkey_candidate.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/assemble_bvival_policy_scores.py",
+      "bytes": 8724,
+      "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/assemble_bvival_policy_scores.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/audit_autoscout24_candidate.py",
+      "bytes": 6226,
+      "sha256": "1b6f638893d96fd893823a9398764f882abcfa4dec75a38b70d74368bcd50647",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/audit_autoscout24_candidate.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/audit_turkey_feature_only.py",
+      "bytes": 16875,
+      "sha256": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/audit_turkey_feature_only.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/build_autoscout24_bvival_manifest.py",
+      "bytes": 9376,
+      "sha256": "114cee7910d7ac9ff26ef03557973c4c574c40b0905d7ec8a742c3e5d6c796ec",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/build_autoscout24_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/build_autoscout24_quasi_duplicate_mask.py",
+      "bytes": 2885,
+      "sha256": "ee1a83c3c6ab64047ca972bee180d888ebfe230d53fe36ba45524d3bbee98c78",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/build_autoscout24_quasi_duplicate_mask.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/build_bvival_action_dataset.py",
+      "bytes": 10635,
+      "sha256": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/build_bvival_action_dataset.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/build_jucars_bvival_manifest.py",
+      "bytes": 9693,
+      "sha256": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/build_jucars_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/build_mucars_bvival_manifest.py",
+      "bytes": 8595,
+      "sha256": "e93c85dd57da857a0e97d37a8fda137627398afa81e197d5efe11351b6c5764d",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/build_mucars_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/build_turkey_price_free_manifest.py",
+      "bytes": 12597,
+      "sha256": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/build_turkey_price_free_manifest.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/bvi_val.py",
+      "bytes": 16505,
+      "sha256": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/bvi_val.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/bvi_val_baselines.py",
+      "bytes": 7071,
+      "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/bvi_val_baselines.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/configs/autoscout24_bvival_v2_full.json",
+      "bytes": 2326,
+      "sha256": "8e8db1ca122ddb4e80dc0785a3e99ff510dfa0cd96013681bd3121cc499bf70c",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/configs/autoscout24_bvival_v2_full.json"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/configs/jucars_bvival_subgroups.json",
+      "bytes": 892,
+      "sha256": "ccfffb390e5104a0066d8e4d71df5f86016f752f242daa76cf9e718a9e2ea996",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/configs/jucars_bvival_subgroups.json"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/configs/mucars_bvival_v5_subgroups.json",
+      "bytes": 1078,
+      "sha256": "98ea1744eacb106d783ceac72fe303d46d192469ecdb0ca718e261d4b08186ca",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/configs/mucars_bvival_v5_subgroups.json"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/evaluate_autoscout24_exploratory_groups.py",
+      "bytes": 5829,
+      "sha256": "bf63ce9d8adfa96fa7579bae7abca13928bc8c312d8e7c542aa5506c1eac1f5b",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/evaluate_autoscout24_exploratory_groups.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/evaluate_bvival_mask_sensitivity.py",
+      "bytes": 5982,
+      "sha256": "63ec970422192c45c3451ee3353874fcdf13cafe60d2e523c4bb5a927e58f40f",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/evaluate_bvival_mask_sensitivity.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/evaluate_bvival_policies.py",
+      "bytes": 18036,
+      "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/evaluate_bvival_policies.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/evaluate_bvival_subgroups.py",
+      "bytes": 8925,
+      "sha256": "0b753067cc34fe3b2cf8dac0ebffbc5a227b1b0761ea1dbb9da3b44f7c0b69da",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/evaluate_bvival_subgroups.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/evaluate_turkey_released_phase.py",
+      "bytes": 17509,
+      "sha256": "9dca9182508b57ba2d9799a21c1426cdeaa7cc015af3fb242ac8a71914f45d1c",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/evaluate_turkey_released_phase.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/fit_bvival_posterror_baseline.py",
+      "bytes": 13361,
+      "sha256": "034622ac2eb97ab009299ae7bfc95793040a6545cdbc595ddd2ff020407db900",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/fit_bvival_posterror_baseline.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/fit_bvival_risk_baseline.py",
+      "bytes": 10129,
+      "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/fit_bvival_risk_baseline.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/fit_bvival_value_policy.py",
+      "bytes": 10831,
+      "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/fit_bvival_value_policy.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/freeze_autoscout24_v2.py",
+      "bytes": 4483,
+      "sha256": "4ea35a0bd301f4b3c0168ca142aa6d97da5f88e88d6f6d471c9024c793c42ed7",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/freeze_autoscout24_v2.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/freeze_turkey_heldout_scores.py",
+      "bytes": 15845,
+      "sha256": "81447047dcba9d3f33d7645bd475dac15f12e976ddc82243005455d4a690ef10",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/freeze_turkey_heldout_scores.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/generate_bvival_field_selection_pairs.py",
+      "bytes": 5803,
+      "sha256": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/generate_bvival_field_selection_pairs.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/generate_bvival_prediction_pairs.py",
+      "bytes": 19853,
+      "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/generate_bvival_prediction_pairs.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/join_bvival_evaluation_outcomes.py",
+      "bytes": 6940,
+      "sha256": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/join_bvival_evaluation_outcomes.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/prepare_external_bvival_scores.py",
+      "bytes": 6011,
+      "sha256": "980aa8b7249fdb34309b7ec19272cfd9f516c778cd74d86391eae038493386d2",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/prepare_external_bvival_scores.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/run_turkey_development.py",
+      "bytes": 20403,
+      "sha256": "6d34c0599c505d8e7d25ab625e593f0612528e0c0d87e7a94e9242202c9a2862",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/run_turkey_development.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/select_bvival_fixed_field_development.py",
+      "bytes": 5370,
+      "sha256": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/select_bvival_fixed_field_development.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/select_bvival_penalty_development.py",
+      "bytes": 8949,
+      "sha256": "3d5964e49ca28666978509a1331776a825a71ea8e889366b5970d1b151518e0e",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/select_bvival_penalty_development.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_analyze_bvival_listing_field_decomposition.py",
+      "bytes": 3210,
+      "sha256": "83451ab8cde9cf4eedeea7697382dfa8af56091a72c5f397303f253f7235dd7b",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_analyze_bvival_listing_field_decomposition.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_assemble_bvival_policy_scores.py",
+      "bytes": 4464,
+      "sha256": "90bcfc07098ff73d0e339f8eeb780c05f96080431195ea76d6614f7d8b07cfc1",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_assemble_bvival_policy_scores.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_autoscout24_quasi_duplicate_mask.py",
+      "bytes": 894,
+      "sha256": "56eec6e932d7309e1cd1e012279d22487deb2f6d7c6b4a1f62075423eee709a0",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_autoscout24_quasi_duplicate_mask.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_build_autoscout24_bvival_manifest.py",
+      "bytes": 1610,
+      "sha256": "f27eb13d4f3610516a873ce534b8502e00d27b81f185f6a2737091fcccea6c5c",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_build_autoscout24_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_build_bvival_action_dataset.py",
+      "bytes": 3596,
+      "sha256": "7852142011ffd3d866dcf445a86fe1bcb429b3d2048dc047bc733735f5a3e7b2",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_build_bvival_action_dataset.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_build_jucars_bvival_manifest.py",
+      "bytes": 2100,
+      "sha256": "8a2f70cd8308fe2516f1d9338769cf26151928bf8ce6b63226d9e750efe8d03e",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_build_jucars_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_build_mucars_bvival_manifest.py",
+      "bytes": 1406,
+      "sha256": "6bc9a2ae3af5e401f8e646964097e055d884508a294202731f731ded79a4c772",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_build_mucars_bvival_manifest.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_bvi_val.py",
+      "bytes": 4218,
+      "sha256": "ec5420578d6797449e6ba4cd7967a6f76d72d1eee08936b10c9a965c1c2bc177",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_bvi_val.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_bvi_val_baselines.py",
+      "bytes": 3234,
+      "sha256": "de74cb9a842d4827fd42a8ec6db45983a0e088566ab4b9d88c39f34c311f1ff2",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_bvi_val_baselines.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_evaluate_bvival_mask_sensitivity.py",
+      "bytes": 1322,
+      "sha256": "276db649b9eee605e46e9bb2a926b4f6f861da8c3b70b4fdde0d6ca455ccd89e",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_evaluate_bvival_mask_sensitivity.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_evaluate_bvival_policies.py",
+      "bytes": 4028,
+      "sha256": "240d2bd04931a6a95840ec67461a1680eaeaf4d2be4adf1e0d6d78802d220ff5",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_evaluate_bvival_policies.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_evaluate_bvival_subgroups.py",
+      "bytes": 2870,
+      "sha256": "eda271ecda191756ce47f4d199c6009391ad74e30a4b3e8306781db3a0ec3d55",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_evaluate_bvival_subgroups.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_fit_bvival_posterror_baseline.py",
+      "bytes": 3121,
+      "sha256": "9a7d829c5ba6b111e6557fc4021d5336f9e24c2f4e6d4630a824ca01bee07d48",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_fit_bvival_posterror_baseline.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_fit_bvival_risk_baseline.py",
+      "bytes": 1861,
+      "sha256": "8722c491d042f9222af86bcee06e7e7ee119f3b44152690da1fe5b3e86325e3a",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_fit_bvival_risk_baseline.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_fit_bvival_risk_oof.py",
+      "bytes": 1473,
+      "sha256": "ba8e915a1162d9380d335291908b4bd7b22df73dae7cf409fc6f81d00886d357",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_fit_bvival_risk_oof.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_fit_bvival_value_policy.py",
+      "bytes": 2560,
+      "sha256": "80d2adb57f21e28ea7d33b7d1b29c7601142d6ab951e577cdd6cbd56fd3fe656",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_fit_bvival_value_policy.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_generate_bvival_prediction_pairs.py",
+      "bytes": 5195,
+      "sha256": "c7515c0f804cd5b7699210bed4f5e91980a4272aff5670e348f3679e9cfc1649",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_generate_bvival_prediction_pairs.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_join_bvival_evaluation_outcomes.py",
+      "bytes": 2330,
+      "sha256": "9174d777646f932088a216ed55479fa160534d214299a8569fcabc99d3683a92",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_join_bvival_evaluation_outcomes.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_prepare_external_bvival_scores.py",
+      "bytes": 3761,
+      "sha256": "6c1f0463b768e555be14e34eede1a309d960e37a8d6073abf551b7ec7b3abaa1",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_prepare_external_bvival_scores.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_select_bvival_fixed_field_development.py",
+      "bytes": 1428,
+      "sha256": "8c79581b53bf2af82a0e3b9a03b461d04eef097985d445056a7421de32379a9e",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_select_bvival_fixed_field_development.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/tests/test_select_bvival_penalty_development.py",
+      "bytes": 625,
+      "sha256": "c8672168d8ac8252c01c3d3fd408038f1a0bdd05f8c481cbde171dab3eefc730",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/tests/test_select_bvival_penalty_development.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/train_turkey_nested_valuation.py",
+      "bytes": 16076,
+      "sha256": "cd47900a9b7a025a2efefe86f75bb7ec707668477504f9c7c2b7159875381f71",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/train_turkey_nested_valuation.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_development_io.py",
+      "bytes": 11330,
+      "sha256": "09494f1bb9db30a011d46d48b016593b5fe3f939cb5e26421fd171766af58731",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_development_io.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_execution_contract.py",
+      "bytes": 18269,
+      "sha256": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_execution_contract.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_frozen_outcome_evaluation.py",
+      "bytes": 10617,
+      "sha256": "274845ecf28b4a13df035a27cdd54a9f0858c20beb54386976adf1a5d4359153",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_frozen_outcome_evaluation.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_information_boundary.py",
+      "bytes": 2311,
+      "sha256": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_information_boundary.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_policy_components.py",
+      "bytes": 14453,
+      "sha256": "fd66673bb2455f144e5fe08cb6820b48a6090091ba557f709253529e7fb9df47",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_policy_components.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_price_access_accounting_v2.py",
+      "bytes": 6583,
+      "sha256": "c0ff13976c49a1fb79cc46b0aa8dbb90ac20b12d142a9bae26cccda29a9fa6c4",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_price_access_accounting_v2.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_price_cells.py",
+      "bytes": 4801,
+      "sha256": "722440cef119fa53084047bc412db442eb7aaffdca995be7f2145818887aa740",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_price_cells.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_price_free_scoring.py",
+      "bytes": 10189,
+      "sha256": "30dfee0db38a8284e3940e1cc387c852d85b6ad4885afea1c0c7f0f022c7a56b",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_price_free_scoring.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_source_access_binding.py",
+      "bytes": 10644,
+      "sha256": "363ab1d942b4bbc99c65f77b5b0a4d2088cce672297d1a3b12e42058c69677e8",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_source_access_binding.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_source_price_release.py",
+      "bytes": 20157,
+      "sha256": "a8dcaff0e7bdcdcb44cc4c1134f67cd1ef26b8cac389baf3a864f097a18edd8d",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_source_price_release.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/turkey_valuation_components.py",
+      "bytes": 7328,
+      "sha256": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/turkey_valuation_components.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/verify_turkey_heldout_score_freeze.py",
+      "bytes": 4340,
+      "sha256": "bc6e707dea1ea8c9766f150d11b6b95d6b02221e9721cc7bf465abe273a834b9",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/verify_turkey_heldout_score_freeze.py"
+    },
+    {
+      "file": "recipes/source-inspection/experiments/verify_turkey_price_free_bundle.py",
+      "bytes": 6420,
+      "sha256": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/experiments/verify_turkey_price_free_bundle.py"
+    },
+    {
+      "file": "recipes/source-inspection/inspection-plans/autoscout24-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 22573,
+      "sha256": "aaaa6753a119c1e081a70b71d7eee04b5ce17a0f60d9ea1a2907e635262dd683",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/inspection-plans/autoscout24-reconstructed-primary-plan-2026-10-01.json"
+    },
+    {
+      "file": "recipes/source-inspection/inspection-plans/jucars-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 24492,
+      "sha256": "201c8fbd418034aa545c0ee5aa70dbd1f476cfd359dbf4c2c9db36eb8eaa81b3",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/inspection-plans/jucars-reconstructed-primary-plan-2026-10-01.json"
+    },
+    {
+      "file": "recipes/source-inspection/inspection-plans/mucars-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 18644,
+      "sha256": "bfe5325edbc22b3b5d5cde44dab90d8436fea0e7a5ea6d8b168c0ed5bf01257f",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/inspection-plans/mucars-reconstructed-primary-plan-2026-10-01.json"
+    },
+    {
+      "file": "recipes/source-inspection/manifest.json",
+      "bytes": 50826,
+      "sha256": "907f8fce0475b4edd535273b8409a6f4baad7dbe8631629b295a0f11338806f3",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/manifest.json"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/check_autoscout24_reconstruction.py",
+      "bytes": 15703,
+      "sha256": "65d86c6c7616347dcc773550b63887744d22053e394936b76230f11810e50ca3",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/check_autoscout24_reconstruction.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/check_jucars_reconstruction.py",
+      "bytes": 19443,
+      "sha256": "fe68ce380d26e82cdd894e71fee557fa1c441dd67f9c0c2a1d9b4129485c144d",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/check_jucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/check_mucars_reconstruction.py",
+      "bytes": 15355,
+      "sha256": "053b6aac8d35fbdc77e11ecf2d95ca4abc63296c0c18eca0ee249efc9203b660",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/check_mucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/check_remaining_source_metadata.py",
+      "bytes": 11570,
+      "sha256": "a86f166d5930f3c8def4c66d673c61bfe4d213249d391cbefb0f8144086f9598",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/check_remaining_source_metadata.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/check_rerun_entrypoints.py",
+      "bytes": 10144,
+      "sha256": "13e8f7fcbb2edceda5479dfcb8d5f2510f6d03b0add06a5211151bc460f0bc13",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/check_rerun_entrypoints.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/check_source_bundle.py",
+      "bytes": 7821,
+      "sha256": "b1faf513bbab576cf7d08995c5348d898a0af4a35ae3bfccbb656cb2d64d506b",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/check_source_bundle.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/plan_autoscout24_replay.py",
+      "bytes": 14799,
+      "sha256": "c38123bf22fe26e029b9b7e5d2def73e6b1eeff5ba1403a16b0a60dad4f92cb8",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/plan_autoscout24_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/plan_jucars_replay.py",
+      "bytes": 22217,
+      "sha256": "eeb9006d691579f0b3a494a3af05b2f2a1b5720ffff1c00392de84041f9c7477",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/plan_jucars_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/plan_mucars_replay.py",
+      "bytes": 18836,
+      "sha256": "046b40fd7a510cd6e9e19e2b228492e5b6ffb155b3420de6ca22eec74fffab9d",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/plan_mucars_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/project_jucars_legacy_targets.py",
+      "bytes": 6634,
+      "sha256": "7034fb6ed65358cf0a39e9b1c4e94ecc60bfbeb72540c3214d8d04435db7cbf6",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/project_jucars_legacy_targets.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/replay_autoscout24_cached_field_selection.py",
+      "bytes": 6606,
+      "sha256": "b1b76bf277ce4bb5d1c113c9e66fdeffca078c17386df5d49e1b36a95634ae4d",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/replay_autoscout24_cached_field_selection.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/run_autoscout24_outcome_replay.py",
+      "bytes": 19970,
+      "sha256": "476cf666c0a69590e5cbbb0f629fb03115b20f792d46f32ec5edad8f341bcbaf",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/run_autoscout24_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/run_autoscout24_scoring_replay.py",
+      "bytes": 21735,
+      "sha256": "0ed43fdfd02c83c2988ee02346aff8184575996c3b705813109f14192cbeebcc",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/run_autoscout24_scoring_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/run_jucars_outcome_replay.py",
+      "bytes": 16999,
+      "sha256": "e8b07baec456bb25da99f4e72c84101ff3574020c2812e41a1f6de3be4e0145b",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/run_jucars_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/run_jucars_scoring_replay.py",
+      "bytes": 22715,
+      "sha256": "57e4f1e7b1e180f259ee51c7c69855a83b22ae0a597505624cdba744f68ed066",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/run_jucars_scoring_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/run_mucars_outcome_replay.py",
+      "bytes": 21145,
+      "sha256": "b6b53f00de7701cbce5a87d122c5d6840211837d71b7819993dacecc010a9d51",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/run_mucars_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/run_mucars_scoring_replay.py",
+      "bytes": 17040,
+      "sha256": "e0971417f85422e26bfcab1e5e60699653ee2379ca9c528c821248c564d6069d",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/run_mucars_scoring_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/run_turkey_cached_outcome_replay.py",
+      "bytes": 13157,
+      "sha256": "576cb21dafdc8bb4cf23e47ab2fab40dc92e62db0e9a098d33f983ac902bca57",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/run_turkey_cached_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_check_autoscout24_reconstruction.py",
+      "bytes": 7336,
+      "sha256": "75adc3e42ac46ea2883099bb19581d05939ed47d5a3f6fff0d7f5b7a4767482d",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_check_autoscout24_reconstruction.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_check_jucars_reconstruction.py",
+      "bytes": 8787,
+      "sha256": "53e1f4d6dcf9f4e5fd2dd7c2d50c1105d6319ab3440a45e7180bc5e6c6d0095a",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_check_jucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_check_mucars_reconstruction.py",
+      "bytes": 9380,
+      "sha256": "ecf329f08bc0f2dc162c0f82fc55e66266f58b9de7c3c9b69a4a67cc6da812c6",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_check_mucars_reconstruction.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_check_rerun_entrypoints.py",
+      "bytes": 7926,
+      "sha256": "c9c5cd75951c3201dd38c1cd8c8b3bac893c401db441629d3190bc6c0bc4403f",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_check_rerun_entrypoints.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_plan_autoscout24_replay.py",
+      "bytes": 6000,
+      "sha256": "6c70df5852f27840312b527826c0c4cafad5c75e646e4ec3ae5b1c861c4c0c7f",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_plan_autoscout24_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_plan_jucars_replay.py",
+      "bytes": 11211,
+      "sha256": "06ded3c4d1eaad9774206ecf05676acd13af5ef0f1214baffc0485a1f06791ed",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_plan_jucars_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_plan_mucars_replay.py",
+      "bytes": 10736,
+      "sha256": "70739ffa8844b9a2028d4817df9cf0ce8f25ca57334792a8e13f117d20614ea2",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_plan_mucars_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_project_jucars_legacy_targets.py",
+      "bytes": 6585,
+      "sha256": "87b8783beb8668456343f69cbaf05b4ff51113af2ce0c6d67307645fa694db2f",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_project_jucars_legacy_targets.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_replay_autoscout24_cached_field_selection.py",
+      "bytes": 3003,
+      "sha256": "1d3f1d28019cbc092a45697add5c191669a3a2e21eb74750676f1c86dc548edb",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_replay_autoscout24_cached_field_selection.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_run_autoscout24_outcome_replay.py",
+      "bytes": 14648,
+      "sha256": "9c5fd0bc9f5ca1d1e5d8cec290c63bd34f8a766f04bd0cbde16ce8f81595b409",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_run_autoscout24_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_run_autoscout24_scoring_replay.py",
+      "bytes": 15481,
+      "sha256": "05c9061c215d87f8cda75b65eb923ac76ea20fa7962d35fad229e60e6494c883",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_run_autoscout24_scoring_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_run_jucars_outcome_replay.py",
+      "bytes": 18697,
+      "sha256": "0fc65ea5d95ec65d286311e326c0d34b6a09a8935d3bd8285037f52b7d58d0cc",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_run_jucars_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_run_jucars_scoring_replay.py",
+      "bytes": 15956,
+      "sha256": "7003737e0f6193fc0562277a63ab514fb403a7dcf14884c76c3cc733df0eb458",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_run_jucars_scoring_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_run_mucars_outcome_replay.py",
+      "bytes": 10633,
+      "sha256": "6b0a69a58a04c6e27913251e632b35cee21e1146cab59666e418a07805340a54",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_run_mucars_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_run_mucars_scoring_replay.py",
+      "bytes": 9950,
+      "sha256": "9390be7b3943dbd6a8632cdc425fe5ccd5ced75865bd1cca942a87de5606a546",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_run_mucars_scoring_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_run_turkey_cached_outcome_replay.py",
+      "bytes": 5624,
+      "sha256": "4f2d40add1d69aaa44745dea041ee5720d2c81bd5525535d6bcfe66be602ad67",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_run_turkey_cached_outcome_replay.py"
+    },
+    {
+      "file": "recipes/source-inspection/release-bvival/tests/test_source_bundle.py",
+      "bytes": 4760,
+      "sha256": "7247be7c02154946eb8cebd24c995ffb8caa94ffe1f61ae88e068ce372f5c634",
+      "provenance": "release-bvival/output/source-inspection-2026-10-02-v2/release-bvival/tests/test_source_bundle.py"
+    }
+  ]
+}
