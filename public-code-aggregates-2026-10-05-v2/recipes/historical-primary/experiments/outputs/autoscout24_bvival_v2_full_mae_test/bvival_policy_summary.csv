@@ -1,0 +1,8 @@
+policy,error_budget_auc,auc_metric,mean_harmful_action_rate
+score_conservative_lower_value,,post_mae_price,0.2945590994371482
+score_fixed_field_risk,,post_mae_price,0.40471092077087795
+score_global_field_prior,,post_mae_price,0.38900785153461814
+score_mean_value,,post_mae_price,0.32548179871520344
+score_no_acquisition,,post_mae_price,
+score_random,,post_mae_price,0.44254104211277656
+score_uncertainty_only,,post_mae_price,0.40471092077087795
