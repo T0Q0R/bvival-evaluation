@@ -1,0 +1,70 @@
+{
+  "action_eligibility_counts": {
+    "feat_body_condition": 8750,
+    "fuel_type": 8756,
+    "mileage_km": 6990,
+    "transmission": 8756
+  },
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition"
+  ],
+  "conservative_non_target_duplicate_rows_removed": 46,
+  "cross_split_listing_id_overlap": 0,
+  "data_dictionary_file": "experiments/data/external/jucars_2024_v2/data_dictionary.csv",
+  "data_dictionary_sha256": "c56d9c24d39707f3b85079dba10b25fcd5b087e7d559c81da936278b50566d52",
+  "dataset": "JUCars-2024",
+  "dataset_doi": "10.17632/ddcz486x5t.2",
+  "dataset_license": "CC BY 4.0",
+  "dataset_version": 2,
+  "evidence_status": "prospective_external_replication_manifest_before_model_evaluation",
+  "exclusion_flag_counts_before_joint_filter": {
+    "implausible_or_missing_year": 656,
+    "invalid_or_missing_positive_price": 1182,
+    "not_used_or_missing_condition": 1228
+  },
+  "known_limitation": "No source advert ID is available. Fingerprinting all non-target attributes may over-collapse distinct vehicles with identical observed attributes, but prevents exact observed-attribute duplicates from crossing splits.",
+  "outputs": {
+    "jucars_bvival_manifest.csv": "856460ede47e9609f02867b520eba154cc59d87145918d509a58d4f40f516505",
+    "sealed_labels/test_labels.csv": "a98011583b0c8c45387d9cf98088d97cc5c0762cbfd5e0a70b7b5be75185d7c3",
+    "splits/calibration.csv": "201d7368eaa50ba98904a2c6051537c44897ce1ca45674fda222691d9edfafda",
+    "splits/test_features.csv": "5b7a19738ee704dea01ef8f2a83d1341b4ef0489232c1115e0c7792acdebe450",
+    "splits/train.csv": "c1f56a13d04b953c448699269966236d2b7e78e039410110327ab1494b8fac2b",
+    "splits/validation.csv": "4d57d04ab0944af11713c67e5c3b1f35d135f4f2314a9a1f5f4b78906541548b"
+  },
+  "performance_metrics_computed": false,
+  "raw_row_count": 10921,
+  "retained_used_listing_count": 8758,
+  "source_file": "experiments/data/external/jucars_2024_v2/cars_jordan.csv",
+  "source_file_sha256": "d0099b330027bbf1c380307c75c72520ef3c4be8784880d0a9845c79e3d00d0a",
+  "split_buckets": {
+    "calibration": [
+      70,
+      84
+    ],
+    "test": [
+      85,
+      99
+    ],
+    "train": [
+      0,
+      54
+    ],
+    "validation": [
+      55,
+      69
+    ]
+  },
+  "split_counts": {
+    "calibration": 1343,
+    "test": 1267,
+    "train": 4774,
+    "validation": 1374
+  },
+  "split_rule": "sha256_non_target_listing_fingerprint_first8_mod100",
+  "target": "log1p advertised price in Jordanian dinar",
+  "test_label_permissions": "0o444",
+  "test_target_absent_from_test_features": true
+}
