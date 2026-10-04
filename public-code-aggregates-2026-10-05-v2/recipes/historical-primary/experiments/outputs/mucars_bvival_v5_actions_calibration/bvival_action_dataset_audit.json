@@ -1,0 +1,57 @@
+{
+  "action_counts": {
+    "feat_body_condition": 10381,
+    "fuel_type": 10696,
+    "mileage_km": 10696,
+    "transmission": 10696
+  },
+  "all_predictions_oof": true,
+  "evidence_status": "development_only",
+  "feature_allowlist": [
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "fiscal_power",
+    "number_of_doors",
+    "origin",
+    "first_owner",
+    "location",
+    "sector",
+    "equipment_count"
+  ],
+  "fold_counts": {
+    "-1": 42469
+  },
+  "forbidden_columns_excluded": [
+    "target_log",
+    "after_prediction_log"
+  ],
+  "freeze_id": null,
+  "inputs": {
+    "labels": {
+      "path": "experiments/outputs/mucars_bvival_v5_pairs/calibration_labels.csv",
+      "sha256": "90608c9edb5e7ca9c6cb896583056bad830419790da3351d24ed765e166405c6"
+    },
+    "pre_action_features": {
+      "path": "experiments/outputs/mucars_bvival_v5_pairs/calibration_pre_action_features.csv",
+      "sha256": "66c649531b02fadd7df6e29326c9975ebb31b195a320f53c380cf8457875ccd2"
+    },
+    "prediction_pairs": {
+      "path": "experiments/outputs/mucars_bvival_v5_pairs/calibration_prediction_pairs.csv",
+      "sha256": "28b5b3f58a05e1ac3d9caf16fe3e5389f5e0fb4dc766efa7bc1166056892ed08"
+    }
+  },
+  "listing_action_count": 42469,
+  "listing_count": 10696,
+  "nonclaim": "Dataset construction alone does not establish policy superiority or selection-conditional coverage.",
+  "output_sha256": "ede9487da07ea2f98d03ad25b18739c36e9ce6cf256f626dc4a69566acb4c232",
+  "positive_value_rate_absolute_price_error": 0.48204572747180296,
+  "positive_value_rate_squared_log_error": 0.48183380818950294
+}
