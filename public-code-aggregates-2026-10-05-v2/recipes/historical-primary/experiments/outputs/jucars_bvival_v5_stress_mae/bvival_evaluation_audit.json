@@ -1,0 +1,37 @@
+{
+  "auc_metric": "post_mae_price",
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 2026,
+  "budgets": [
+    0.01,
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "evaluation_outcomes_sha256": "277a75229e00c021d37700d96458d0a650b994ebfda6d15627af2f2478d96f5b",
+  "freeze_id": "jucars-bvival-v5-stress-2026-09-25",
+  "frozen_policy_scores_sha256": "c5c486098c9c099c2fe3aad404c6e674402d903d2d02cd026e7948ed8d693a73",
+  "nonclaim": "The evaluator reports predictive decision evidence and does not establish causal profit, welfare, or selection-conditional coverage.",
+  "objective": "absolute_price_error",
+  "oracle_diagnostic_included": true,
+  "oracle_diagnostic_name": "diagnostic_oracle_realized_gain",
+  "outputs": {
+    "bvival_action_mix.csv": "935c642671bd87a3e7535da91d21d12768116ab173b13205b3e9b428b0db1a82",
+    "bvival_error_budget_curve.csv": "2dc0495c23060a0667e3f50a666560a7c392fcac0115677229a001c8d5df0023",
+    "bvival_policy_summary.csv": "5ceae8cc3d2944b0ee7a91e756afdb71e34d4333cf0b655f92258b33961afe47",
+    "bvival_reference_comparisons.csv": "bb0e1165a343df99dbe21692f53276decb0568ea004f40a607735bb96617fae0"
+  },
+  "protocol": "v4-bvival-prospective",
+  "reference_policy": "score_uncertainty_only",
+  "score_columns": [
+    "score_no_acquisition",
+    "score_random",
+    "score_global_field_prior",
+    "score_uncertainty_only",
+    "score_disagreement_only",
+    "score_mean_value",
+    "score_conservative_lower_value",
+    "diagnostic_oracle_realized_gain"
+  ]
+}
