@@ -1,0 +1,62 @@
+{
+  "action_counts": {
+    "feat_body_condition": 1341,
+    "fuel_type": 1343,
+    "mileage_km": 1056,
+    "transmission": 1343
+  },
+  "all_predictions_oof": true,
+  "evidence_status": "development_only",
+  "feature_allowlist": [
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "body_type",
+    "condition",
+    "transmission",
+    "fuel_type",
+    "color",
+    "interior_color",
+    "seats",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_body_condition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "fold_counts": {
+    "-1": 5083
+  },
+  "forbidden_columns_excluded": [
+    "target_log",
+    "after_prediction_log"
+  ],
+  "freeze_id": null,
+  "inputs": {
+    "labels": {
+      "path": "experiments/outputs/jucars_bvival_prediction_pairs_v1/calibration_labels.csv",
+      "sha256": "9cdbbef85f1d7fb7a82ee87bc9af49963f92da8f29aa23ce4e879fb76dc11211"
+    },
+    "pre_action_features": {
+      "path": "experiments/outputs/jucars_bvival_prediction_pairs_v1/calibration_pre_action_features.csv",
+      "sha256": "3bb744528733d11c448e0e1f3643fcaca4499b4c9d2fe7392835387fee893f03"
+    },
+    "prediction_pairs": {
+      "path": "experiments/outputs/jucars_bvival_prediction_pairs_v1/calibration_prediction_pairs.csv",
+      "sha256": "ff57a9fa22c4195e36a186ebb33f98a11d160c688c2e94d78c7c31adf48838d5"
+    }
+  },
+  "listing_action_count": 5083,
+  "listing_count": 1343,
+  "nonclaim": "Dataset construction alone does not establish policy superiority or selection-conditional coverage.",
+  "output_sha256": "7027cd0ac99f83722a9462bb8bb045035c8e7e67213b017ed3c9e527ce66b8f6",
+  "positive_value_rate_absolute_price_error": 0.5272476883730081,
+  "positive_value_rate_squared_log_error": 0.5272476883730081
+}
