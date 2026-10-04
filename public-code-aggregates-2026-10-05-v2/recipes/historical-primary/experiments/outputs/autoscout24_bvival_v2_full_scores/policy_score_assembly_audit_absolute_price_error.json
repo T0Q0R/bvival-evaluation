@@ -1,0 +1,52 @@
+{
+  "development_action_prior": {
+    "fuel_type": 242.3191974509354,
+    "mileage_km": 942.2054869467128,
+    "service_history": 5.448922643415735,
+    "transmission": 41.27737335583289
+  },
+  "evaluation_outcomes_read": false,
+  "fixed_action_argument": "mileage_km",
+  "fixed_action_file": {
+    "budget_fraction": 0.1,
+    "path": "experiments/outputs/autoscout24_bvival_v2_full_fixed_field/selection.json",
+    "sha256": "8e7c514e1b8dc3b2e705f4347723caff2270d04d3d99c4aefb65263ee6fd65e9"
+  },
+  "fixed_action_selection_rule": "minimum development post-MAE at the fixed global budget; lexical tie-break",
+  "inputs": {
+    "development_actions": {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_actions_dev/bvival_action_dataset.csv",
+      "sha256": "e5fab69a6aa0ace469af2bb25a68c377d3bf7c93fd9098f032415dbd12ed3d9c"
+    },
+    "evaluation_features": {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/evaluation_pre_action_features.csv",
+      "sha256": "9f1442655ab77fe244cc14db7c46231bf5880558a721ae6c57b662aff499efbb"
+    },
+    "risk_scores": {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_risk/evaluation_risk_scores.csv",
+      "sha256": "2ad09ba0da7c5b825a61209aa28765bf4ad6e32ad9bbe5603e66a0fe88702a2b"
+    },
+    "value_scores": {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_value/evaluation_action_scores.csv",
+      "sha256": "9ca63eb5af4a76808595512aa9b85a1678769d37cfceffc308c4841e161725ab"
+    }
+  },
+  "objective": "absolute_price_error",
+  "output": {
+    "path": "experiments/outputs/autoscout24_bvival_v2_full_scores/frozen_policy_scores_absolute_price_error.csv",
+    "sha256": "3a1f50bd9e83f9288fe67a14a0037f9e693520aae5a7c6efd9e9999889aed05f"
+  },
+  "protocol": "v4-bvival-prospective",
+  "random_seed": 2026,
+  "resolved_fixed_action": "mileage_km",
+  "score_columns": [
+    "score_no_acquisition",
+    "score_random",
+    "score_global_field_prior",
+    "score_uncertainty_only",
+    "score_disagreement_only",
+    "score_fixed_field_risk",
+    "score_mean_value",
+    "score_conservative_lower_value"
+  ]
+}
