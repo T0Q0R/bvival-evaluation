@@ -1,0 +1,166 @@
+{
+  "version": "at-matched-source-reconstruction-2026-10-04-v1",
+  "scope": "AT_source_directed_reconstruction_not_new_confirmation",
+  "publicly_archived": false,
+  "project_license_selected": false,
+  "public_archive_or_reviewer_link": null,
+  "raw_or_row_level_data_included": false,
+  "full_empirical_pipeline_portable": false,
+  "new_independent_confirmation": false,
+  "evaluation_already_opened": true,
+  "external_preregistration_or_independent_label_custody": false,
+  "source_record_doi": "10.17632/kz6hh7832p.1",
+  "original_plan_receipt_sha256": "cbd066d39fe9b795c1c2456931f6ec9fcad4a79a4ade9509872781eaecb9f238",
+  "closure_roots": [
+    "experiments/archive_turkey_candidate.py",
+    "experiments/audit_european_at_features.py",
+    "experiments/audit_european_at_schema.py",
+    "experiments/audit_turkey_feature_only.py",
+    "experiments/build_european_at_cohort.py",
+    "experiments/bvival_neighbor_available.py",
+    "experiments/bvival_neighbor_loss.py",
+    "experiments/european_at_matched.py",
+    "experiments/run_european_at_matched.py",
+    "experiments/tests/test_european_at_audit.py",
+    "experiments/tests/test_european_at_matched.py",
+    "release-bvival/check_source_bundle.py"
+  ],
+  "static_import_closure": {
+    "local_source_sha256": {
+      "experiments/archive_turkey_candidate.py": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+      "experiments/audit_european_at_features.py": "02d2122a72840a3377abdd79e4b60e299a4f0292073f3fdb1e988a625acb75ea",
+      "experiments/audit_european_at_schema.py": "a52188952511157b2142b96389915aa5f937464270fcb5777356b47ce4228e6c",
+      "experiments/audit_turkey_feature_only.py": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+      "experiments/build_european_at_cohort.py": "b160db4bdf9fbd6ec956a006099cf320a7618a8f69d5a496132503abc6ef6403",
+      "experiments/bvival_neighbor_available.py": "389b90d5243cba355998a078992df5d64580c281f2ade4e1e2688240dff2b84b",
+      "experiments/bvival_neighbor_loss.py": "42d2131638b4b8bdaacf2ac3a0b6d6f5582fd7800e1455e913ddba4b03880959",
+      "experiments/european_at_matched.py": "d1d1687ad09f5a2ddbce29fee0f9a09cea92e4af2e53abbb0a231a30a3dff690",
+      "experiments/run_european_at_matched.py": "acb76b1510f193033007a844745b47a0173398bcf1924ae70ae25909cd1a0617",
+      "experiments/tests/test_european_at_audit.py": "3929538bf2aa886360d10bf206a999004d20be1cf167b0b0e5544b0fa29917fc",
+      "experiments/tests/test_european_at_matched.py": "192f50886a20102fd487376029e752535065d1e1a1a314f353afd946fcb60b32",
+      "release-bvival/check_source_bundle.py": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2"
+    },
+    "external_import_roots": [
+      "catboost",
+      "joblib",
+      "numpy",
+      "pandas",
+      "pytest",
+      "sklearn"
+    ],
+    "embedded_workers": [],
+    "unresolved_dynamic_imports": [],
+    "not_a_runtime_or_full_file_dependency_closure": true
+  },
+  "synthetic_test_files": [
+    "experiments/tests/test_european_at_audit.py",
+    "experiments/tests/test_european_at_matched.py"
+  ],
+  "source_directed_recipe_included": true,
+  "raw_source_must_be_obtained_separately": true,
+  "fresh_external_install_or_reconstruction_verified": false,
+  "files": [
+    {
+      "file": "README.md",
+      "source": "release-bvival/AT_MATCHED_REPRODUCTION.md",
+      "bytes": 6395,
+      "sha256": "9e2f51068b10e8e2e1682ec8e6173cc77ba4a3d1df9cc7acc0817ae2f2276d2f"
+    },
+    {
+      "file": "environment/resolved-main-macos-arm64.lock",
+      "source": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a"
+    },
+    {
+      "file": "experiments/archive_turkey_candidate.py",
+      "source": "experiments/archive_turkey_candidate.py",
+      "bytes": 8195,
+      "sha256": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23"
+    },
+    {
+      "file": "experiments/audit_european_at_features.py",
+      "source": "experiments/audit_european_at_features.py",
+      "bytes": 12699,
+      "sha256": "02d2122a72840a3377abdd79e4b60e299a4f0292073f3fdb1e988a625acb75ea"
+    },
+    {
+      "file": "experiments/audit_european_at_schema.py",
+      "source": "experiments/audit_european_at_schema.py",
+      "bytes": 7833,
+      "sha256": "a52188952511157b2142b96389915aa5f937464270fcb5777356b47ce4228e6c"
+    },
+    {
+      "file": "experiments/audit_turkey_feature_only.py",
+      "source": "experiments/audit_turkey_feature_only.py",
+      "bytes": 16875,
+      "sha256": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f"
+    },
+    {
+      "file": "experiments/build_european_at_cohort.py",
+      "source": "experiments/build_european_at_cohort.py",
+      "bytes": 7006,
+      "sha256": "b160db4bdf9fbd6ec956a006099cf320a7618a8f69d5a496132503abc6ef6403"
+    },
+    {
+      "file": "experiments/bvival_neighbor_available.py",
+      "source": "experiments/bvival_neighbor_available.py",
+      "bytes": 3148,
+      "sha256": "389b90d5243cba355998a078992df5d64580c281f2ade4e1e2688240dff2b84b"
+    },
+    {
+      "file": "experiments/bvival_neighbor_loss.py",
+      "source": "experiments/bvival_neighbor_loss.py",
+      "bytes": 5589,
+      "sha256": "42d2131638b4b8bdaacf2ac3a0b6d6f5582fd7800e1455e913ddba4b03880959"
+    },
+    {
+      "file": "experiments/configs/european_at_matched_comparison_2026-10-04_v1.json",
+      "source": "experiments/configs/european_at_matched_comparison_2026-10-04_v1.json",
+      "bytes": 4537,
+      "sha256": "b21d8bbd52d8fe0d6d287cc4585a0930241393819a1a8a74eb040921d923090f"
+    },
+    {
+      "file": "experiments/european_at_matched.py",
+      "source": "experiments/european_at_matched.py",
+      "bytes": 10570,
+      "sha256": "d1d1687ad09f5a2ddbce29fee0f9a09cea92e4af2e53abbb0a231a30a3dff690"
+    },
+    {
+      "file": "experiments/run_european_at_matched.py",
+      "source": "experiments/run_european_at_matched.py",
+      "bytes": 17940,
+      "sha256": "acb76b1510f193033007a844745b47a0173398bcf1924ae70ae25909cd1a0617"
+    },
+    {
+      "file": "experiments/tests/test_european_at_audit.py",
+      "source": "experiments/tests/test_european_at_audit.py",
+      "bytes": 8585,
+      "sha256": "3929538bf2aa886360d10bf206a999004d20be1cf167b0b0e5544b0fa29917fc"
+    },
+    {
+      "file": "experiments/tests/test_european_at_matched.py",
+      "source": "experiments/tests/test_european_at_matched.py",
+      "bytes": 6001,
+      "sha256": "192f50886a20102fd487376029e752535065d1e1a1a314f353afd946fcb60b32"
+    },
+    {
+      "file": "inspection-plans/at-original-freeze.json",
+      "source": "experiments/outputs/european_at_matched_freeze_2026-10-04_v1/freeze_receipt.json",
+      "bytes": 1826,
+      "sha256": "cbd066d39fe9b795c1c2456931f6ec9fcad4a79a4ade9509872781eaecb9f238"
+    },
+    {
+      "file": "notes/design/bvival-european-at-matched-protocol-2026-10-04.md",
+      "source": "notes/design/bvival-european-at-matched-protocol-2026-10-04.md",
+      "bytes": 7572,
+      "sha256": "e811308ab39487c0aeec236bb246ad92541a294f11f9d5afd1880be9e3659062"
+    },
+    {
+      "file": "release-bvival/check_source_bundle.py",
+      "source": "release-bvival/check_source_bundle.py",
+      "bytes": 8535,
+      "sha256": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2"
+    }
+  ]
+}
