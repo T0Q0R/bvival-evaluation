@@ -1,0 +1,57 @@
+{
+  "action_eligibility_counts": {
+    "feat_body_condition": 69184,
+    "fuel_type": 71311,
+    "mileage_km": 71310,
+    "transmission": 71311
+  },
+  "cross_split_listing_id_overlap": 0,
+  "dataset": "MUCars-2024",
+  "doi": "10.17632/vjrbcb2rrt.2",
+  "duplicate_nonprice_fingerprints_removed": 1693,
+  "known_limitations": [
+    "no_original_advertisement_id",
+    "no_images",
+    "no_transaction_prices",
+    "no_within_year_listing_timestamp",
+    "seller_reported_condition",
+    "possible_overcollapse_of_identical_nonprice_listings"
+  ],
+  "license": "CC BY 4.0",
+  "mileage_interpretation": "numeric midpoint of listed band; single-ended band uses stated lower limit",
+  "output_hashes": {
+    "mucars_bvival_manifest_features_only.csv": "6b78645fcf109c3e35bcffa0c037101ff1adc61f422b9769d68a20cd7ac6308a",
+    "sealed_labels/test_labels.csv": "e6b1621df2d00ce0fc19fa068636884ade267cc034db545a14d151888d24574c",
+    "splits/calibration.csv": "24a6b62ebf8586b275132bb235429c7b7b9e9dae2fb9befbd99a029ba72ed88e",
+    "splits/test_features.csv": "36ad00a345c3e7769ba414bae5920c675ce98ce5a4409c7b3aecec3349aa4b4d",
+    "splits/train.csv": "a8a2231abfdac008a9739c89a5ea3b1ab3518f647b856df501d525f7e46952fa",
+    "splits/validation.csv": "ce27add36fb375f8e86953c5fdc2310addd412274add3ec9c62ad265c3a486a7"
+  },
+  "performance_metrics_computed": false,
+  "pre_joint_filter_exclusion_flags": {
+    "missing_or_outside_model_year_range": 0,
+    "missing_or_outside_price_range": 26251,
+    "new_condition": 5280
+  },
+  "price_filter_MAD": [
+    5000.0,
+    2000000.0
+  ],
+  "price_filter_interpretation": "prespecified listing-quality filter; full-source sensitivity remains required",
+  "raw_row_count": 101896,
+  "retained_used_labeled_listing_count": 71311,
+  "source_path": "experiments/data/external/mucars_2024_v2/cars_dataframe.csv",
+  "source_sha256": "cb3574e38f34adfd70ee08d18c7748899fe86dc01338b50562bf91bcd145e749",
+  "split_counts": {
+    "calibration": 10696,
+    "test": 10699,
+    "train": 39244,
+    "validation": 10672
+  },
+  "split_rule": "sha256_nonprice_fingerprint_first8_mod100",
+  "target": "log1p advertised price in Moroccan dirham",
+  "test_features_exclude_target": true,
+  "test_label_permissions": "0o444",
+  "test_performance_opened": false,
+  "version": 2
+}
