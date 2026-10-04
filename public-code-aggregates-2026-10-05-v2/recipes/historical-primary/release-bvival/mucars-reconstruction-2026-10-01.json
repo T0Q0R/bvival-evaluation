@@ -1,0 +1,805 @@
+{
+  "date": "2026-10-01",
+  "stage": "HISTORICAL_MUCARS_METADATA_RECONSTRUCTION_NOT_EMPIRICAL_REPLAY",
+  "source_doi": "10.17632/vjrbcb2rrt.2",
+  "source_sha256_recorded_not_row_checked": "cb3574e38f34adfd70ee08d18c7748899fe86dc01338b50562bf91bcd145e749",
+  "audit_file_sha256": {
+    "experiments/data/processed/mucars_bvival_v1/mucars_bvival_audit.json": "f81c2349fd6864f1d1fcaa81bff945980119e74fb75b1057e0fe91cb9c1c4033",
+    "experiments/outputs/mucars_bvival_v5_pairs/prediction_pair_generation_audit.json": "c6d72baaa36015f3bb663269723dbfe03ecc072423e550d8cea0ee954eb544ff",
+    "experiments/outputs/mucars_bvival_v5_actions_development/bvival_action_dataset_audit.json": "ce57baf36bd677eb70ddbd8e0aae3bdcf243f3d2a3cb22437942c3db904e6062",
+    "experiments/outputs/mucars_bvival_v5_actions_calibration/bvival_action_dataset_audit.json": "5cc33b62dfce6319fd373edc6fb0038f8ef2fea426c4f48bbd9dc9af3df22fbd",
+    "experiments/outputs/mucars_bvival_v5_value/value_policy_fit_audit.json": "3f011336b4518336f442f2ecbd1135508cc485b17bce3328d7640c10bf9e8ebb",
+    "experiments/outputs/mucars_bvival_v5_risk_mae/risk_baseline_fit_audit.json": "a9649d7958461eadcac95459a5a3628c21b38af9b6ffe9900660e71c812c6273",
+    "experiments/outputs/mucars_bvival_v5_frozen_scores/policy_score_assembly_audit_absolute_price_error.json": "8efd5d567971f6d362f47b18286a655429a5f6c87a3f2edc7c6f2a31b3aa7dbd",
+    "experiments/outputs/mucars_bvival_v5_evaluation_inputs/evaluation_outcome_join_audit.json": "3596aff3d6ea5e21d19b76e9330c1bd840ab00189a5198cd285cfbf9b4f01755",
+    "experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_evaluation_audit.json": "38bf2ef91b73a513dc5c263cc8408cd4db11ac7ed455a4b282dc51e870d2a3b5"
+  },
+  "pretest_freeze_sha256": "4c8ae21167b7b3e0ff19fd987c20c248e42740c9e549bef0d018b822a9071025",
+  "recorded_dependency_checks": [
+    "cohort_train_to_pairs",
+    "cohort_validation_to_pairs",
+    "cohort_calibration_to_pairs",
+    "cohort_test_features_to_pairs",
+    "pairs_development_pairs_to_action",
+    "pairs_development_features_to_action",
+    "pairs_development_labels_to_action",
+    "development_pair_count",
+    "development_listing_count",
+    "pairs_calibration_pairs_to_action",
+    "pairs_calibration_features_to_action",
+    "pairs_calibration_labels_to_action",
+    "calibration_pair_count",
+    "calibration_listing_count",
+    "development_targets_to_value",
+    "calibration_targets_to_value",
+    "development_targets_to_risk",
+    "evaluation_features_to_value",
+    "value_feature_allowlist",
+    "value_seeds",
+    "evaluation_features_to_risk",
+    "risk_feature_allowlist",
+    "risk_seeds",
+    "action_allowlists_match",
+    "value_scores_to_assembly",
+    "risk_scores_to_assembly",
+    "development_targets_to_assembly",
+    "evaluation_features_to_assembly",
+    "assembly_scores_to_join",
+    "evaluation_pairs_to_join",
+    "cohort_test_labels_to_join",
+    "joined_outcomes_to_evaluation",
+    "assembly_scores_to_evaluation",
+    "risk_primary_objective",
+    "assembly_primary_objective",
+    "evaluation_primary_objective",
+    "evaluation_reference_policy",
+    "join_evaluation_freeze_id",
+    "cohort_development_count",
+    "cohort_calibration_count",
+    "cohort_evaluation_count",
+    "evaluation_join_listing_count",
+    "evaluation_join_pair_count",
+    "historical_test_opening_retained"
+  ],
+  "recorded_dependencies_match": true,
+  "row_artifact_bytes_verified": false,
+  "base_parameters_from_run_audit": {
+    "seeds": [
+      13,
+      42
+    ],
+    "folds": 3,
+    "depth": 6,
+    "iterations": 200,
+    "l2_leaf_reg": 10,
+    "learning_rate": 0.08
+  },
+  "base_feature_columns": [
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "fiscal_power",
+    "number_of_doors",
+    "origin",
+    "first_owner",
+    "location",
+    "sector",
+    "equipment_count"
+  ],
+  "base_categorical_columns": [
+    "make",
+    "model",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "origin",
+    "first_owner",
+    "location",
+    "sector"
+  ],
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition"
+  ],
+  "policy_feature_columns": [
+    "action_id",
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "fiscal_power",
+    "number_of_doors",
+    "origin",
+    "first_owner",
+    "location",
+    "sector",
+    "equipment_count"
+  ],
+  "policy_categorical_columns": [
+    "action_id",
+    "make",
+    "model",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "origin",
+    "first_owner",
+    "location",
+    "sector"
+  ],
+  "risk_objective": "absolute_price_error",
+  "calibration_parameters": {
+    "action_corrections": {
+      "feat_body_condition": 2205.619936127592,
+      "fuel_type": 2749.314688332617,
+      "mileage_km": 478.8543096785727,
+      "transmission": 6586.967913295533
+    },
+    "action_counts": {
+      "feat_body_condition": 10381,
+      "fuel_type": 10696,
+      "mileage_km": 10696,
+      "transmission": 10696
+    },
+    "alpha": 0.1,
+    "minimum_group_size": 100,
+    "nonnegative_correction": true,
+    "pooled_correction": 2536.2837934713584
+  },
+  "evaluation_parameters": {
+    "objective": "absolute_price_error",
+    "reference_policy": "score_uncertainty_only",
+    "budgets": [
+      0.01,
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 2026,
+    "oracle_diagnostic_included": true
+  },
+  "live_code_vs_pretest_freeze": [
+    {
+      "path": "experiments/build_mucars_bvival_manifest.py",
+      "frozen_sha256": "e93c85dd57da857a0e97d37a8fda137627398afa81e197d5efe11351b6c5764d",
+      "current_sha256": "e93c85dd57da857a0e97d37a8fda137627398afa81e197d5efe11351b6c5764d",
+      "matches": true
+    },
+    {
+      "path": "notes/analysis/bvival-v5-development-decision-2026-09-25.md",
+      "frozen_sha256": "9b75d46813cb1cdc7324cdc83534e15474de52d5ce2d857bdfbf213578b059c0",
+      "current_sha256": "9b75d46813cb1cdc7324cdc83534e15474de52d5ce2d857bdfbf213578b059c0",
+      "matches": true
+    },
+    {
+      "path": "experiments/generate_bvival_prediction_pairs.py",
+      "frozen_sha256": "3862abe6d294c43f266fb998d9d977e98f1134f0dcddc9e4f355ba2b12f24adf",
+      "current_sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "matches": false
+    },
+    {
+      "path": "experiments/build_bvival_action_dataset.py",
+      "frozen_sha256": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "current_sha256": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "matches": true
+    },
+    {
+      "path": "experiments/fit_bvival_value_policy.py",
+      "frozen_sha256": "4c219760458e61db308b72aba73a96095f5252f36d37a5be1b96d6eb8c9b831d",
+      "current_sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "matches": false
+    },
+    {
+      "path": "experiments/fit_bvival_risk_baseline.py",
+      "frozen_sha256": "38d47cb9cacf5dc30dd01a3cbb421fb571c6c51c8622d2907186b968c54cd5d9",
+      "current_sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "matches": false
+    },
+    {
+      "path": "experiments/assemble_bvival_policy_scores.py",
+      "frozen_sha256": "1602a6c668d78172ef25012953af2ca004e5db7f129309a708db4145eb561b36",
+      "current_sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "matches": false
+    },
+    {
+      "path": "experiments/bvi_val.py",
+      "frozen_sha256": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "current_sha256": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "matches": true
+    },
+    {
+      "path": "experiments/bvi_val_baselines.py",
+      "frozen_sha256": "ebd944fd474bf2f0d2a7f6dac10311a14520ede6f433bbca083f12f2ea11df2e",
+      "current_sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "matches": false
+    },
+    {
+      "path": "experiments/join_bvival_evaluation_outcomes.py",
+      "frozen_sha256": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+      "current_sha256": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+      "matches": true
+    },
+    {
+      "path": "experiments/evaluate_bvival_policies.py",
+      "frozen_sha256": "c87e5bf5829ff9d6d5864b7f5d281eb7522e029e0fda65cacf8e62c20eb1ecfb",
+      "current_sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "matches": false
+    },
+    {
+      "path": "experiments/evaluate_bvival_subgroups.py",
+      "frozen_sha256": "0b753067cc34fe3b2cf8dac0ebffbc5a227b1b0761ea1dbb9da3b44f7c0b69da",
+      "current_sha256": "0b753067cc34fe3b2cf8dac0ebffbc5a227b1b0761ea1dbb9da3b44f7c0b69da",
+      "matches": true
+    },
+    {
+      "path": "experiments/configs/mucars_bvival_v5_subgroups.json",
+      "frozen_sha256": "98ea1744eacb106d783ceac72fe303d46d192469ecdb0ca718e261d4b08186ca",
+      "current_sha256": "98ea1744eacb106d783ceac72fe303d46d192469ecdb0ca718e261d4b08186ca",
+      "matches": true
+    }
+  ],
+  "row_entries_deliberately_not_opened": [
+    {
+      "path": "experiments/data/processed/mucars_bvival_v1/splits/test_features.csv",
+      "recorded_sha256": "36ad00a345c3e7769ba414bae5920c675ce98ce5a4409c7b3aecec3349aa4b4d",
+      "row_bytes_checked": false
+    },
+    {
+      "path": "experiments/data/processed/mucars_bvival_v1/sealed_labels/test_labels.csv",
+      "recorded_sha256": "e6b1621df2d00ce0fc19fa068636884ade267cc034db545a14d151888d24574c",
+      "row_bytes_checked": false
+    },
+    {
+      "path": "experiments/outputs/mucars_bvival_v5_frozen_scores/frozen_policy_scores_absolute_price_error.csv",
+      "recorded_sha256": "e80af927b8de18f7e305e16d220f59e96603736871be2d8cec27c5aebc47170e",
+      "row_bytes_checked": false
+    },
+    {
+      "path": "experiments/outputs/mucars_bvival_v5_frozen_scores/frozen_policy_scores_squared_log_error.csv",
+      "recorded_sha256": "39904a5682b8a320d112b34d7a7dee30ce802b8420721217e312ca94d2520202",
+      "row_bytes_checked": false
+    }
+  ],
+  "historical_test_labels_already_opened": true,
+  "calibration_fold_semantics": "fold -1 denotes held-out calibration scored by final development ensemble; historical prediction_is_oof flag is broader than internal cross-fitting",
+  "saved_model_parameters_inspected": true,
+  "listing_rows_read": false,
+  "fitting_called": false,
+  "inference_called": false,
+  "study_modules_imported": false,
+  "full_empirical_retraining_verified": false,
+  "submission_ready": false,
+  "model_parameter_inspection": {
+    "records": [
+      {
+        "role": "base",
+        "seed": 13,
+        "path": "experiments/outputs/mucars_bvival_v5_pairs/base_models/mask_aware_catboost_seed_13.cbm",
+        "sha256": "100692973ba22d04fdb25ed516b7b486955f9c148e4400aa498924e46554ba04",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count",
+          "action_mask"
+        ]
+      },
+      {
+        "role": "base",
+        "seed": 42,
+        "path": "experiments/outputs/mucars_bvival_v5_pairs/base_models/mask_aware_catboost_seed_42.cbm",
+        "sha256": "73c06bada004edf03cde4c47a8bc338975650bc3003da9a42a41a26e62492aae",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count",
+          "action_mask"
+        ]
+      },
+      {
+        "role": "absolute_price_error",
+        "seed": 13,
+        "path": "experiments/outputs/mucars_bvival_v5_value/models/absolute_price_error/seed_13.cbm",
+        "sha256": "d52194284e67b49790fa6cdd037ed59a60d242f75d95be4453f00ceecb87ec4f",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count"
+        ]
+      },
+      {
+        "role": "absolute_price_error",
+        "seed": 42,
+        "path": "experiments/outputs/mucars_bvival_v5_value/models/absolute_price_error/seed_42.cbm",
+        "sha256": "5159bff46d8ec1f9af0e71cf26281a18fa5ecdb85b9c1eb6f51fb84601fc414b",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count"
+        ]
+      },
+      {
+        "role": "squared_log_error",
+        "seed": 13,
+        "path": "experiments/outputs/mucars_bvival_v5_value/models/squared_log_error/seed_13.cbm",
+        "sha256": "440ae14ef32949e261c9ff9fda0732eb8298bc05319bb4a89aac4583d4d59c1b",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count"
+        ]
+      },
+      {
+        "role": "squared_log_error",
+        "seed": 42,
+        "path": "experiments/outputs/mucars_bvival_v5_value/models/squared_log_error/seed_42.cbm",
+        "sha256": "772f2a34b9a0cb808f92df79fad097b08bf3d9f6c4540f877ba1ead542d2362d",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count"
+        ]
+      },
+      {
+        "role": "risk_mae",
+        "seed": 13,
+        "path": "experiments/outputs/mucars_bvival_v5_risk_mae/models/seed_13.cbm",
+        "sha256": "30d2262a6bbc0690c2a4760af56926ca9c4209c5339d54deb2039cb9c6cff4bd",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count"
+        ]
+      },
+      {
+        "role": "risk_mae",
+        "seed": 42,
+        "path": "experiments/outputs/mucars_bvival_v5_risk_mae/models/seed_42.cbm",
+        "sha256": "db782efca7019d2ce977e907bd66b320ec6b9ba6d5022546e5007a268fb85807",
+        "tree_count": 200,
+        "parameters": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10,
+        "model_feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "year",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "feat_body_condition",
+          "fiscal_power",
+          "number_of_doors",
+          "origin",
+          "first_owner",
+          "location",
+          "sector",
+          "equipment_count"
+        ]
+      }
+    ],
+    "reader_catboost_version": "1.2.10",
+    "reader_version_is_not_training_environment_certification": true,
+    "training_called": false,
+    "prediction_called": false
+  },
+  "new_synthetic_test_methods_passed": 14,
+  "combined_release_checker_test_methods_passed": 36,
+  "historical_source_search": {
+    "search_roots": [
+      "release-bvival/output",
+      "experiments/outputs"
+    ],
+    "candidate_source_files_checked": 32,
+    "exact_historical_source_matches": [],
+    "candidate_sha256": [
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v2/code/experiments/bvi_val_baselines.py",
+        "historical_source": "experiments/bvi_val_baselines.py",
+        "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v2/code/experiments/evaluate_bvival_policies.py",
+        "historical_source": "experiments/evaluate_bvival_policies.py",
+        "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v2/code/experiments/fit_bvival_value_policy.py",
+        "historical_source": "experiments/fit_bvival_value_policy.py",
+        "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v2/code/experiments/generate_bvival_prediction_pairs.py",
+        "historical_source": "experiments/generate_bvival_prediction_pairs.py",
+        "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v2/code/experiments/fit_bvival_risk_baseline.py",
+        "historical_source": "experiments/fit_bvival_risk_baseline.py",
+        "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v2/code/experiments/assemble_bvival_policy_scores.py",
+        "historical_source": "experiments/assemble_bvival_policy_scores.py",
+        "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/code-preflight/code/experiments/bvi_val_baselines.py",
+        "historical_source": "experiments/bvi_val_baselines.py",
+        "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/code-preflight/code/experiments/evaluate_bvival_policies.py",
+        "historical_source": "experiments/evaluate_bvival_policies.py",
+        "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/code-preflight/code/experiments/fit_bvival_value_policy.py",
+        "historical_source": "experiments/fit_bvival_value_policy.py",
+        "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/code-preflight/code/experiments/generate_bvival_prediction_pairs.py",
+        "historical_source": "experiments/generate_bvival_prediction_pairs.py",
+        "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/code-preflight/code/experiments/fit_bvival_risk_baseline.py",
+        "historical_source": "experiments/fit_bvival_risk_baseline.py",
+        "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/code-preflight/code/experiments/assemble_bvival_policy_scores.py",
+        "historical_source": "experiments/assemble_bvival_policy_scores.py",
+        "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v1/code/experiments/bvi_val_baselines.py",
+        "historical_source": "experiments/bvi_val_baselines.py",
+        "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v1/code/experiments/evaluate_bvival_policies.py",
+        "historical_source": "experiments/evaluate_bvival_policies.py",
+        "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v1/code/experiments/fit_bvival_value_policy.py",
+        "historical_source": "experiments/fit_bvival_value_policy.py",
+        "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v1/code/experiments/generate_bvival_prediction_pairs.py",
+        "historical_source": "experiments/generate_bvival_prediction_pairs.py",
+        "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v1/code/experiments/fit_bvival_risk_baseline.py",
+        "historical_source": "experiments/fit_bvival_risk_baseline.py",
+        "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/four-source-review-prep-2026-10-01-v1/code/experiments/assemble_bvival_policy_scores.py",
+        "historical_source": "experiments/assemble_bvival_policy_scores.py",
+        "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/clean-env-check-2026-10-01-qcVHPN/synthetic-code/experiments/bvi_val_baselines.py",
+        "historical_source": "experiments/bvi_val_baselines.py",
+        "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/clean-env-check-2026-10-01-qcVHPN/synthetic-code/experiments/evaluate_bvival_policies.py",
+        "historical_source": "experiments/evaluate_bvival_policies.py",
+        "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/clean-env-check-2026-10-01-qcVHPN/synthetic-code/experiments/fit_bvival_value_policy.py",
+        "historical_source": "experiments/fit_bvival_value_policy.py",
+        "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "experiments/outputs/matched_portfolio_autoscout_development_2026-10-01_v1/fit_bvival_value_policy.py.snapshot",
+        "historical_source": "experiments/fit_bvival_value_policy.py",
+        "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/clean-env-check-2026-10-01-qcVHPN/synthetic-code/experiments/generate_bvival_prediction_pairs.py",
+        "historical_source": "experiments/generate_bvival_prediction_pairs.py",
+        "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/clean-env-check-2026-10-01-qcVHPN/synthetic-code/experiments/fit_bvival_risk_baseline.py",
+        "historical_source": "experiments/fit_bvival_risk_baseline.py",
+        "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/clean-env-check-2026-10-01-qcVHPN/synthetic-code/experiments/assemble_bvival_policy_scores.py",
+        "historical_source": "experiments/assemble_bvival_policy_scores.py",
+        "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "experiments/outputs/gdfs_upstream_autoscout_development_2026-10-01_v1/fit_bvival_value_policy.py.snapshot",
+        "historical_source": "experiments/fit_bvival_value_policy.py",
+        "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/synthetic-code/experiments/bvi_val_baselines.py",
+        "historical_source": "experiments/bvi_val_baselines.py",
+        "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/synthetic-code/experiments/evaluate_bvival_policies.py",
+        "historical_source": "experiments/evaluate_bvival_policies.py",
+        "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/synthetic-code/experiments/fit_bvival_value_policy.py",
+        "historical_source": "experiments/fit_bvival_value_policy.py",
+        "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/synthetic-code/experiments/generate_bvival_prediction_pairs.py",
+        "historical_source": "experiments/generate_bvival_prediction_pairs.py",
+        "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/synthetic-code/experiments/fit_bvival_risk_baseline.py",
+        "historical_source": "experiments/fit_bvival_risk_baseline.py",
+        "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+        "matches_pretest": false
+      },
+      {
+        "candidate": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/synthetic-code/experiments/assemble_bvival_policy_scores.py",
+        "historical_source": "experiments/assemble_bvival_policy_scores.py",
+        "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+        "matches_pretest": false
+      }
+    ],
+    "no_global_absence_claim": true
+  }
+}

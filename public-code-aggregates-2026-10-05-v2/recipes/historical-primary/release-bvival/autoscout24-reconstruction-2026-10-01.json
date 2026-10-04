@@ -1,0 +1,1592 @@
+{
+  "date": "2026-10-01",
+  "stage": "AUTOSCOUT24_FINAL_AND_STRICT_SELECTION_CONTRACT_RECOVERED_NOT_REPLAYED",
+  "audit_file_sha256": {
+    "experiments/data/processed/autoscout24_bvival_v2/autoscout24_bvival_audit.json": "8cf8a66fb4530a3faecc501df6d008bcf37c62b00a1f2f52189ea40a842c5f91",
+    "experiments/outputs/autoscout24_bvival_v2_full_pairs/prediction_pair_generation_audit.json": "d635e1fa70a090603b3510da0c3cf14ab0cd3ea4e2eea6af03479562d97d0397",
+    "experiments/outputs/autoscout24_bvival_v2_full_actions_dev/bvival_action_dataset_audit.json": "9e08faa42e915ffd7532cc8eb2bcbc774bfeb5ff4a1a682814d68e563daa4cde",
+    "experiments/outputs/autoscout24_bvival_v2_full_actions_cal/bvival_action_dataset_audit.json": "df0c31d86587485e94d408de512468d5b64e487b112871e4cace2c43fe725b45",
+    "experiments/outputs/autoscout24_bvival_v2_full_value/value_policy_fit_audit.json": "9425488cd497a82090b6237f86029239d3d5ec423fae701a8321c6c5709f6700",
+    "experiments/outputs/autoscout24_bvival_v2_full_risk/risk_baseline_fit_audit.json": "0254513144694af06957120e08b7d5fae55bbd6f932df3dc80981a78c5b4f8b5",
+    "experiments/outputs/autoscout24_bvival_v2_full_scores/policy_score_assembly_audit_absolute_price_error.json": "b23ac6a1327172b2070151e907dd5b22ad09e5f2face5fab2c2802013f5cb897",
+    "experiments/outputs/autoscout24_bvival_v2_full_evaluation_inputs/evaluation_outcome_join_audit.json": "26dacaa9396f8907f8c0edb23275c1166afdd6fd2394aa78f6433af4cf5ffd7a",
+    "experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_evaluation_audit.json": "50da0068f04fc0d388e6773e67ae19516f032c8ce86958b78bf6b1f6215d5e53",
+    "experiments/outputs/autoscout24_bvival_v2_full_selection_pairs/field_selection_pair_audit.json": "bd3809ff4e546c884ae4db5799663c2ccd71ff28a50680c42e4b82cd7a20efc6",
+    "experiments/outputs/autoscout24_bvival_v2_full_selection_train_actions/bvival_action_dataset_audit.json": "991ea812682668b90948710cff25481abccbf142b20985cb36aa834ad687ca19",
+    "experiments/outputs/autoscout24_bvival_v2_full_selection_validation_actions/bvival_action_dataset_audit.json": "7b54be51d76df92dd87796cbc2b23a18c3ad3fc9a40d3252ba48ba7ae2ee1098",
+    "experiments/outputs/autoscout24_bvival_v2_full_selection_risk/risk_baseline_fit_audit.json": "74b079e7a7441fd3cb05c9fee101a0a3c2a1f50437cebea32fc730d539ad2228",
+    "experiments/outputs/autoscout24_bvival_v2_full_fixed_field/selection.json": "8e7c514e1b8dc3b2e705f4347723caff2270d04d3d99c4aefb65263ee6fd65e9"
+  },
+  "config_sha256": "8e8db1ca122ddb4e80dc0785a3e99ff510dfa0cd96013681bd3121cc499bf70c",
+  "final_graph_checks": [
+    "cohort_train_to_pairs",
+    "cohort_validation_to_pairs",
+    "cohort_calibration_to_pairs",
+    "cohort_test_features_to_pairs",
+    "pairs_development_pairs_to_action",
+    "pairs_development_features_to_action",
+    "pairs_development_labels_to_action",
+    "development_pair_count",
+    "development_listing_count",
+    "pairs_calibration_pairs_to_action",
+    "pairs_calibration_features_to_action",
+    "pairs_calibration_labels_to_action",
+    "calibration_pair_count",
+    "calibration_listing_count",
+    "development_targets_to_value",
+    "calibration_targets_to_value",
+    "development_targets_to_risk",
+    "evaluation_features_to_value",
+    "value_feature_allowlist",
+    "value_seeds",
+    "evaluation_features_to_risk",
+    "risk_feature_allowlist",
+    "risk_seeds",
+    "action_allowlists_match",
+    "value_scores_to_assembly",
+    "risk_scores_to_assembly",
+    "development_targets_to_assembly",
+    "evaluation_features_to_assembly",
+    "assembly_scores_to_join",
+    "evaluation_pairs_to_join",
+    "cohort_test_labels_to_join",
+    "joined_outcomes_to_evaluation",
+    "assembly_scores_to_evaluation",
+    "risk_primary_objective",
+    "assembly_primary_objective",
+    "evaluation_primary_objective",
+    "evaluation_reference_policy",
+    "join_evaluation_freeze_id",
+    "cohort_development_count",
+    "cohort_calibration_count",
+    "cohort_evaluation_count",
+    "evaluation_join_listing_count",
+    "evaluation_join_pair_count",
+    "historical_test_opening_retained"
+  ],
+  "strict_selection_graph_checks": [
+    "cohort_to_selection_train",
+    "selection_train_count",
+    "cohort_to_selection_validation",
+    "selection_validation_count",
+    "train_oof_pairs_to_targets",
+    "train_oof_features_to_targets",
+    "train_oof_labels_to_targets",
+    "train_oof_out_of_sample",
+    "train_oof_pair_count",
+    "train_oof_listing_count",
+    "validation_heldout_pairs_to_targets",
+    "validation_heldout_features_to_targets",
+    "validation_heldout_labels_to_targets",
+    "validation_heldout_out_of_sample",
+    "validation_heldout_pair_count",
+    "validation_heldout_listing_count",
+    "train_targets_to_selection_risk",
+    "validation_features_to_selection_risk",
+    "validation_targets_to_field_decision",
+    "selection_risk_to_field_decision",
+    "field_decision_to_final_assembly",
+    "fixed_field_matches_decision",
+    "selection_no_train_validation_overlap",
+    "validation_labels_not_base_fit",
+    "selection_test_not_read",
+    "field_decision_not_test_estimate",
+    "field_decision_scope",
+    "validation_selection_denominator",
+    "fixed_budget",
+    "fixed_capacity",
+    "risk_selection_objective",
+    "head_schema",
+    "base_schema",
+    "base_settings",
+    "final_base_seeds",
+    "selection_base_seeds",
+    "value_seeds",
+    "risk_seeds",
+    "selection_risk_seeds",
+    "declared_action_set",
+    "evaluation_single_budget",
+    "minimum_validation_post_mae_with_lexical_tie"
+  ],
+  "historical_test_labels_already_opened": true,
+  "historical_freeze_comparison": {
+    "freeze_sha256": "86aaf10672e79a140bcbc598e9a7ea5b0943c6dd62f2d1acafd767f95ccbe6cd",
+    "code_and_metadata_comparisons": [
+      {
+        "path": "experiments/assemble_bvival_policy_scores.py",
+        "frozen_sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+        "current_sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+        "matches": true
+      },
+      {
+        "path": "experiments/build_autoscout24_quasi_duplicate_mask.py",
+        "frozen_sha256": "ee1a83c3c6ab64047ca972bee180d888ebfe230d53fe36ba45524d3bbee98c78",
+        "current_sha256": "ee1a83c3c6ab64047ca972bee180d888ebfe230d53fe36ba45524d3bbee98c78",
+        "matches": true
+      },
+      {
+        "path": "experiments/build_bvival_action_dataset.py",
+        "frozen_sha256": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+        "current_sha256": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+        "matches": true
+      },
+      {
+        "path": "experiments/bvi_val_baselines.py",
+        "frozen_sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+        "current_sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+        "matches": true
+      },
+      {
+        "path": "experiments/configs/autoscout24_bvival_v2_full.json",
+        "frozen_sha256": "8e8db1ca122ddb4e80dc0785a3e99ff510dfa0cd96013681bd3121cc499bf70c",
+        "current_sha256": "8e8db1ca122ddb4e80dc0785a3e99ff510dfa0cd96013681bd3121cc499bf70c",
+        "matches": true
+      },
+      {
+        "path": "experiments/data/processed/autoscout24_bvival_v2/autoscout24_bvival_audit.json",
+        "frozen_sha256": "8cf8a66fb4530a3faecc501df6d008bcf37c62b00a1f2f52189ea40a842c5f91",
+        "current_sha256": "8cf8a66fb4530a3faecc501df6d008bcf37c62b00a1f2f52189ea40a842c5f91",
+        "matches": true
+      },
+      {
+        "path": "experiments/evaluate_bvival_policies.py",
+        "frozen_sha256": "c87e5bf5829ff9d6d5864b7f5d281eb7522e029e0fda65cacf8e62c20eb1ecfb",
+        "current_sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+        "matches": false
+      },
+      {
+        "path": "experiments/fit_bvival_risk_baseline.py",
+        "frozen_sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+        "current_sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+        "matches": true
+      },
+      {
+        "path": "experiments/fit_bvival_value_policy.py",
+        "frozen_sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "current_sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+        "matches": true
+      },
+      {
+        "path": "experiments/freeze_autoscout24_v2.py",
+        "frozen_sha256": "4ea35a0bd301f4b3c0168ca142aa6d97da5f88e88d6f6d471c9024c793c42ed7",
+        "current_sha256": "4ea35a0bd301f4b3c0168ca142aa6d97da5f88e88d6f6d471c9024c793c42ed7",
+        "matches": true
+      },
+      {
+        "path": "experiments/generate_bvival_field_selection_pairs.py",
+        "frozen_sha256": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568",
+        "current_sha256": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568",
+        "matches": true
+      },
+      {
+        "path": "experiments/generate_bvival_prediction_pairs.py",
+        "frozen_sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+        "current_sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+        "matches": true
+      },
+      {
+        "path": "experiments/join_bvival_evaluation_outcomes.py",
+        "frozen_sha256": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+        "current_sha256": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_actions_cal/bvival_action_dataset_audit.json",
+        "frozen_sha256": "df0c31d86587485e94d408de512468d5b64e487b112871e4cace2c43fe725b45",
+        "current_sha256": "df0c31d86587485e94d408de512468d5b64e487b112871e4cace2c43fe725b45",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_actions_dev/bvival_action_dataset_audit.json",
+        "frozen_sha256": "9e08faa42e915ffd7532cc8eb2bcbc774bfeb5ff4a1a682814d68e563daa4cde",
+        "current_sha256": "9e08faa42e915ffd7532cc8eb2bcbc774bfeb5ff4a1a682814d68e563daa4cde",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_fixed_field/selection.json",
+        "frozen_sha256": "8e7c514e1b8dc3b2e705f4347723caff2270d04d3d99c4aefb65263ee6fd65e9",
+        "current_sha256": "8e7c514e1b8dc3b2e705f4347723caff2270d04d3d99c4aefb65263ee6fd65e9",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/prediction_pair_generation_audit.json",
+        "frozen_sha256": "d635e1fa70a090603b3510da0c3cf14ab0cd3ea4e2eea6af03479562d97d0397",
+        "current_sha256": "d635e1fa70a090603b3510da0c3cf14ab0cd3ea4e2eea6af03479562d97d0397",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_quasi_duplicate/quasi_duplicate_audit.json",
+        "frozen_sha256": "f9d07f7c363b2d8cdae940f6db283a5b65c08fb06f9edad3a887e9f230fb57d7",
+        "current_sha256": "f9d07f7c363b2d8cdae940f6db283a5b65c08fb06f9edad3a887e9f230fb57d7",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_risk/risk_baseline_fit_audit.json",
+        "frozen_sha256": "0254513144694af06957120e08b7d5fae55bbd6f932df3dc80981a78c5b4f8b5",
+        "current_sha256": "0254513144694af06957120e08b7d5fae55bbd6f932df3dc80981a78c5b4f8b5",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_scores/policy_score_assembly_audit_absolute_price_error.json",
+        "frozen_sha256": "b23ac6a1327172b2070151e907dd5b22ad09e5f2face5fab2c2802013f5cb897",
+        "current_sha256": "b23ac6a1327172b2070151e907dd5b22ad09e5f2face5fab2c2802013f5cb897",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_pairs/field_selection_pair_audit.json",
+        "frozen_sha256": "bd3809ff4e546c884ae4db5799663c2ccd71ff28a50680c42e4b82cd7a20efc6",
+        "current_sha256": "bd3809ff4e546c884ae4db5799663c2ccd71ff28a50680c42e4b82cd7a20efc6",
+        "matches": true
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/value_policy_fit_audit.json",
+        "frozen_sha256": "9425488cd497a82090b6237f86029239d3d5ec423fae701a8321c6c5709f6700",
+        "current_sha256": "9425488cd497a82090b6237f86029239d3d5ec423fae701a8321c6c5709f6700",
+        "matches": true
+      },
+      {
+        "path": "experiments/select_bvival_fixed_field_development.py",
+        "frozen_sha256": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4",
+        "current_sha256": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4",
+        "matches": true
+      },
+      {
+        "path": "notes/analysis/autoscout24-v2-full-validation-field-decision-2026-09-25.md",
+        "frozen_sha256": "99cd603cd05e42504d36a22d60bffc3d87eea841f299add25c0384f611a6f22d",
+        "current_sha256": "99cd603cd05e42504d36a22d60bffc3d87eea841f299add25c0384f611a6f22d",
+        "matches": true
+      },
+      {
+        "path": "notes/analysis/autoscout24-v2-policy-protocol-before-model-2026-09-25.md",
+        "frozen_sha256": "9fb22c42f19f98c2db8ebb44434f4b0fd4336ef71f5b79146e35956dbd4fe1f3",
+        "current_sha256": "9fb22c42f19f98c2db8ebb44434f4b0fd4336ef71f5b79146e35956dbd4fe1f3",
+        "matches": true
+      },
+      {
+        "path": "notes/analysis/autoscout24-v2-pretest-score-audit-2026-09-25.md",
+        "frozen_sha256": "36a49103e27e93d08fb7ddaeefc11c51e78809ef035b4f1b0d46b01588ab08df",
+        "current_sha256": "36a49103e27e93d08fb7ddaeefc11c51e78809ef035b4f1b0d46b01588ab08df",
+        "matches": true
+      }
+    ],
+    "recorded_csv_bindings_not_opened": [
+      {
+        "path": "experiments/data/processed/autoscout24_bvival_v2/sealed_labels/test_labels.csv",
+        "recorded_sha256": "e939162a1b0f960c2276fdb4b3b581d694ee8af135e9704d544aa4f6a64a1c9b",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/data/processed/autoscout24_bvival_v2/splits/calibration.csv",
+        "recorded_sha256": "d6127a4ae8f533f1d7893fa27441ceeab2fe10c11925a5aa337836c55fea4285",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/data/processed/autoscout24_bvival_v2/splits/test_features.csv",
+        "recorded_sha256": "4c481b3572ae4601e8dd97063dc57edb40cf521902e4e61055d935ca8795b4df",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/data/processed/autoscout24_bvival_v2/splits/train.csv",
+        "recorded_sha256": "52608e7f20e4bfaf9de1aa29fafc3fa52efbef7930b0c38cefdd2fbed06c829a",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/data/processed/autoscout24_bvival_v2/splits/validation.csv",
+        "recorded_sha256": "8b9043d93062151479b38e2b2125c45a727c397a72ea0bab1cb99ccad4dadf46",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/evaluation_pre_action_features.csv",
+        "recorded_sha256": "9f1442655ab77fe244cc14db7c46231bf5880558a721ae6c57b662aff499efbb",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/evaluation_prediction_pairs.csv",
+        "recorded_sha256": "ebb8ba9dd9af760961d281befc79f18b93c3cb64ef652ba8e4857a63a3736851",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_quasi_duplicate/quasi_duplicate_test_mask.csv",
+        "recorded_sha256": "59c43d8f2b1c7bcb22a5ecb57b26c1f9dd92fd9efcd2bcb036f95010d6e3b9ca",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_risk/evaluation_risk_scores.csv",
+        "recorded_sha256": "2ad09ba0da7c5b825a61209aa28765bf4ad6e32ad9bbe5603e66a0fe88702a2b",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_scores/frozen_policy_scores_absolute_price_error.csv",
+        "recorded_sha256": "3a1f50bd9e83f9288fe67a14a0037f9e693520aae5a7c6efd9e9999889aed05f",
+        "row_bytes_checked": false
+      },
+      {
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/evaluation_action_scores.csv",
+        "recorded_sha256": "9ca63eb5af4a76808595512aa9b85a1678769d37cfceffc308c4841e161725ab",
+        "row_bytes_checked": false
+      }
+    ],
+    "primary_recorded_row_bindings_match": true,
+    "historical_pretest_flags_preserved_not_current_unopened_status": true,
+    "full_upstream_source_identity_certified": false
+  },
+  "current_static_import_closure": {
+    "local_source_sha256": {
+      "experiments/assemble_bvival_policy_scores.py": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "experiments/audit_autoscout24_candidate.py": "1b6f638893d96fd893823a9398764f882abcfa4dec75a38b70d74368bcd50647",
+      "experiments/build_autoscout24_bvival_manifest.py": "114cee7910d7ac9ff26ef03557973c4c574c40b0905d7ec8a742c3e5d6c796ec",
+      "experiments/build_bvival_action_dataset.py": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "experiments/build_jucars_bvival_manifest.py": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0",
+      "experiments/bvi_val.py": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "experiments/bvi_val_baselines.py": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "experiments/evaluate_bvival_policies.py": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "experiments/fit_bvival_risk_baseline.py": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "experiments/fit_bvival_value_policy.py": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "experiments/generate_bvival_field_selection_pairs.py": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568",
+      "experiments/generate_bvival_prediction_pairs.py": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "experiments/join_bvival_evaluation_outcomes.py": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+      "experiments/select_bvival_fixed_field_development.py": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4"
+    },
+    "external_import_roots": [
+      "catboost",
+      "numpy",
+      "pandas",
+      "scipy"
+    ],
+    "static_only_not_runtime_or_installation_validation": true
+  },
+  "source_path": "experiments/data/external/autoscout24_2025_zenodo/autoscout24_dataset_20251108.csv",
+  "recorded_source_sha256_not_raw_bytes_checked": "57029c539e42ad247ec485c9f60983b09b980f13a36e0884c71a23b37d31d0f3",
+  "split_counts": {
+    "calibration": 14047,
+    "test": 14005,
+    "train": 51045,
+    "validation": 14160
+  },
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "service_history"
+  ],
+  "final_base_fit_scope": "train_plus_validation_after_fixed_field_selected_on_separate_train_only_branch",
+  "selection_branch_counts": {
+    "train_listing_count": 51045,
+    "validation_listing_count": 14160,
+    "train_pair_count": 203731,
+    "validation_pair_count": 56522
+  },
+  "validation_fixed_field": "mileage_km",
+  "validation_capacity": 1416,
+  "validation_field_selection_is_not_test_performance": true,
+  "recorded_config": {
+    "protocol": "autoscout24-bvival-v2-full-before-sealed-test",
+    "evidence_status": "third-source prospective-within-source-test-after-earlier-source-results",
+    "dataset": "AutoScout24 2025 Zenodo record 17643343",
+    "processed_manifest": "experiments/data/processed/autoscout24_bvival_v2/autoscout24_bvival_audit.json",
+    "action_fields": [
+      "mileage_km",
+      "transmission",
+      "fuel_type",
+      "service_history"
+    ],
+    "objective": "absolute_price_error",
+    "primary_budget_fraction": 0.1,
+    "independent_unit": "retained listing after plausible-VIN deduplication",
+    "primary_comparison": [
+      "score_mean_value",
+      "score_uncertainty_only"
+    ],
+    "relevance_gate": [
+      "score_mean_value",
+      "score_fixed_field_risk"
+    ],
+    "additional_descriptive_policies": [
+      "score_random",
+      "score_no_acquisition",
+      "score_global_field_prior"
+    ],
+    "fixed_field_selection": "minimum validation post-MAE at global 10% budget after train-only base and risk fitting",
+    "base_model": {
+      "seeds": [
+        13,
+        42,
+        2026
+      ],
+      "folds": 5,
+      "iterations": 400,
+      "depth": 8,
+      "learning_rate": 0.08,
+      "l2_leaf_reg": 10.0
+    },
+    "value_model": {
+      "seeds": [
+        13,
+        42,
+        2026
+      ],
+      "iterations": 400,
+      "depth": 6,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 10.0,
+      "alpha": 0.1,
+      "minimum_action_group_size": 100
+    },
+    "risk_model": {
+      "seeds": [
+        13,
+        42,
+        2026
+      ],
+      "iterations": 400,
+      "depth": 6,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 10.0
+    },
+    "uncertainty": {
+      "method": "listing-paired percentile bootstrap",
+      "repetitions": 10000,
+      "seed": 2026,
+      "interval_level": 0.95
+    },
+    "practical_reference_relative_mae_percent": 2.0,
+    "secondary_metric": "RMSLE",
+    "duplicate_sensitivity": {
+      "status": "descriptive_only",
+      "mask_audit": "experiments/outputs/autoscout24_bvival_v2_full_quasi_duplicate/quasi_duplicate_audit.json",
+      "quasi_key": [
+        "make",
+        "model",
+        "registration_year",
+        "mileage_km",
+        "power_hp",
+        "body_type",
+        "country_code"
+      ],
+      "novel_key_test_n": 13052,
+      "interpretation": "exact specification overlap is not verified same vehicle"
+    },
+    "test_label_status": "sealed",
+    "nonclaims": [
+      "no zero-shot market transfer",
+      "no temporal validation",
+      "no image-based condition grade",
+      "no carbon prediction",
+      "no causal profit or observed review cost",
+      "no completed transaction price"
+    ]
+  },
+  "saved_model_parameter_inspection": {
+    "records": [
+      {
+        "role": "final_base",
+        "seed": 13,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/base_models/mask_aware_catboost_seed_13.cbm",
+        "sha256": "2335212011f2e452576ac30a1149f20cf179742ff491259672fd3cd5390eaa64",
+        "feature_names": [
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "service_history",
+          "action_mask"
+        ],
+        "categorical_columns": [
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code",
+          "transmission",
+          "fuel_type",
+          "action_mask"
+        ],
+        "categorical_feature_indices": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12,
+          13,
+          15
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 8,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "final_base",
+        "seed": 42,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/base_models/mask_aware_catboost_seed_42.cbm",
+        "sha256": "88004ba90b8416853f56274291c21a13b62198c69021c9f6e7679d593c3f1b36",
+        "feature_names": [
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "service_history",
+          "action_mask"
+        ],
+        "categorical_columns": [
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code",
+          "transmission",
+          "fuel_type",
+          "action_mask"
+        ],
+        "categorical_feature_indices": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12,
+          13,
+          15
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 8,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "final_base",
+        "seed": 2026,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/base_models/mask_aware_catboost_seed_2026.cbm",
+        "sha256": "d5db586ec111f98894cb23ad9f175a081cc3b5fce0019771b1d90ade9d5f43f1",
+        "feature_names": [
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "service_history",
+          "action_mask"
+        ],
+        "categorical_columns": [
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code",
+          "transmission",
+          "fuel_type",
+          "action_mask"
+        ],
+        "categorical_feature_indices": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12,
+          13,
+          15
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 8,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 2026,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "selection_base",
+        "seed": 13,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_pairs/train_only_base_seed_13.cbm",
+        "sha256": "c135b934f369d231efdb627f429251055c6041b707399e2ff8e9a847e0b6d3ce",
+        "feature_names": [
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "service_history",
+          "action_mask"
+        ],
+        "categorical_columns": [
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code",
+          "transmission",
+          "fuel_type",
+          "action_mask"
+        ],
+        "categorical_feature_indices": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12,
+          13,
+          15
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 8,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "selection_base",
+        "seed": 42,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_pairs/train_only_base_seed_42.cbm",
+        "sha256": "e45fded3d86b4f0e3905275462bbf46a5a102e2f1e790faa9b9857462e5ab27e",
+        "feature_names": [
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "service_history",
+          "action_mask"
+        ],
+        "categorical_columns": [
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code",
+          "transmission",
+          "fuel_type",
+          "action_mask"
+        ],
+        "categorical_feature_indices": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12,
+          13,
+          15
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 8,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "selection_base",
+        "seed": 2026,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_pairs/train_only_base_seed_2026.cbm",
+        "sha256": "af99974cdb60e0c064fee119254e7cbff3b14d6ac5ae7172c3cf8ccf34f9898e",
+        "feature_names": [
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "mileage_km",
+          "transmission",
+          "fuel_type",
+          "service_history",
+          "action_mask"
+        ],
+        "categorical_columns": [
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code",
+          "transmission",
+          "fuel_type",
+          "action_mask"
+        ],
+        "categorical_feature_indices": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          12,
+          13,
+          15
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 8,
+          "learning_rate": 0.07999999821,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 2026,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "final_risk",
+        "seed": 13,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_risk/models/seed_13.cbm",
+        "sha256": "261e0d4459be3b4f0af73956d50bba3462c60060489a0d6bce0af0080518260b",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "final_risk",
+        "seed": 42,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_risk/models/seed_42.cbm",
+        "sha256": "e9a3ee2e9882233f5a5f92701ba70604a0ee8f0ab82e89d29cc27642819bb489",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "final_risk",
+        "seed": 2026,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_risk/models/seed_2026.cbm",
+        "sha256": "259abaa341bb39b7a49aef5e7058bcaca4c9102dd07cd91d4481a325b2784790",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 2026,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "selection_risk",
+        "seed": 13,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_risk/models/seed_13.cbm",
+        "sha256": "79f233989dd48b9d955509e6c241fae16e5e0c5a40ede61dab143ce7bb16fb30",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "selection_risk",
+        "seed": 42,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_risk/models/seed_42.cbm",
+        "sha256": "e7d8d0e8a38b58d99d913c6be8fcbef91091f9676e058889c4de490fdca7bcfc",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "selection_risk",
+        "seed": 2026,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_risk/models/seed_2026.cbm",
+        "sha256": "fbe2d0ddb7fc643fb8e604496df7b8c1c2a7f7848475e373bdd80387afd7dda8",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 2026,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "absolute_price_error",
+        "seed": 13,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/absolute_price_error/seed_13.cbm",
+        "sha256": "2bb5a2187b557cb13a4ad6ce763195666743fef2605c3a1372012867e1e2aab5",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "absolute_price_error",
+        "seed": 42,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/absolute_price_error/seed_42.cbm",
+        "sha256": "fb26cc427e7438a001ffce0d7707ce8c5f8abaa423730ecaf30d94df47852c2f",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "absolute_price_error",
+        "seed": 2026,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/absolute_price_error/seed_2026.cbm",
+        "sha256": "641a70b19690d6da5e324d023b293960a8ba69d30296a0073c64c00c3be5464f",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 2026,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "squared_log_error",
+        "seed": 13,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/squared_log_error/seed_13.cbm",
+        "sha256": "ef86bdf45a00f9ceee156205517437d0ae6dd4e10ec3592d0a674272c3c84273",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 13,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "squared_log_error",
+        "seed": 42,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/squared_log_error/seed_42.cbm",
+        "sha256": "1e4852aabbaf9b6b5b6229c261ce03a9a5387617c9193288565741730d7de663",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 42,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      },
+      {
+        "role": "squared_log_error",
+        "seed": 2026,
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/squared_log_error/seed_2026.cbm",
+        "sha256": "3a11aeb593cdab72d1c33ea5e13b7979e325caaeed3aefb7f2d6ed2c83bb0933",
+        "feature_names": [
+          "action_id",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners"
+        ],
+        "categorical_columns": [
+          "action_id",
+          "make",
+          "model",
+          "vehicle_type",
+          "body_type",
+          "country_code"
+        ],
+        "categorical_feature_indices": [
+          0,
+          4,
+          5,
+          7,
+          8,
+          12
+        ],
+        "tree_count": 400,
+        "parameters": {
+          "iterations": 400,
+          "depth": 6,
+          "learning_rate": 0.05000000075,
+          "l2_leaf_reg": 10,
+          "loss_function": "RMSE",
+          "random_seed": 2026,
+          "task_type": "CPU",
+          "bootstrap_type": "MVS",
+          "boosting_type": "Plain"
+        },
+        "serialized_thread_count": 10
+      }
+    ],
+    "reader_catboost_version": "1.2.10",
+    "training_environment_certified": false,
+    "fitting_called": false,
+    "prediction_called": false
+  },
+  "target_header_inspection": {
+    "records": [
+      {
+        "role": "development",
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_actions_dev/bvival_action_dataset.csv",
+        "sha256": "e5fab69a6aa0ace469af2bb25a68c377d3bf7c93fd9098f032415dbd12ed3d9c",
+        "header": [
+          "listing_id",
+          "action_id",
+          "fold_id",
+          "prediction_is_oof",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "value_squared_log_error",
+          "value_absolute_price_error",
+          "risk_target_squared_log_error_before",
+          "risk_target_absolute_log_error_before",
+          "risk_target_absolute_price_error_before"
+        ]
+      },
+      {
+        "role": "calibration",
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_actions_cal/bvival_action_dataset.csv",
+        "sha256": "f02643c52a7dbaba4311a65e85706a7ab3b660b4261e316f3303dd6f9b11bf10",
+        "header": [
+          "listing_id",
+          "action_id",
+          "fold_id",
+          "prediction_is_oof",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "value_squared_log_error",
+          "value_absolute_price_error",
+          "risk_target_squared_log_error_before",
+          "risk_target_absolute_log_error_before",
+          "risk_target_absolute_price_error_before"
+        ]
+      },
+      {
+        "role": "selection_train",
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_train_actions/bvival_action_dataset.csv",
+        "sha256": "2b041e401f6094fe2a921b7247a1e52485b0d010f61d4b0c7f832f7e18cdd86e",
+        "header": [
+          "listing_id",
+          "action_id",
+          "fold_id",
+          "prediction_is_oof",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "value_squared_log_error",
+          "value_absolute_price_error",
+          "risk_target_squared_log_error_before",
+          "risk_target_absolute_log_error_before",
+          "risk_target_absolute_price_error_before"
+        ]
+      },
+      {
+        "role": "selection_validation",
+        "path": "experiments/outputs/autoscout24_bvival_v2_full_selection_validation_actions/bvival_action_dataset.csv",
+        "sha256": "85479e4878d966494664579d143f2f65f14152906c3b998f7edbfee9904625e3",
+        "header": [
+          "listing_id",
+          "action_id",
+          "fold_id",
+          "prediction_is_oof",
+          "before_prediction_log",
+          "before_prediction_std",
+          "missing_action_field_count",
+          "make",
+          "model",
+          "registration_year",
+          "vehicle_type",
+          "body_type",
+          "power_hp",
+          "nr_seats",
+          "nr_doors",
+          "country_code",
+          "seller_is_dealer",
+          "nr_prev_owners",
+          "value_squared_log_error",
+          "value_absolute_price_error",
+          "risk_target_squared_log_error_before",
+          "risk_target_absolute_log_error_before",
+          "risk_target_absolute_price_error_before"
+        ]
+      }
+    ],
+    "all_four_headers_equal": true,
+    "opaque_row_bytes_hashed": true,
+    "data_rows_parsed": false,
+    "current_generator_schema_and_generated_hashes_verified": false
+  },
+  "rights_correction_note": "notes/analysis/autoscout24-rights-metadata-correction-2026-09-26.md",
+  "rights_correction_note_sha256": "f1a0074f4922bc2392ed65beba66eab2af78f81d296124bdcd6268616d8e6ff5",
+  "underlying_data_or_derivative_publication_rights_adjudicated": false,
+  "raw_source_records_parsed": false,
+  "target_or_score_rows_parsed": false,
+  "study_model_fitted_or_prediction_called": false,
+  "outcome_evaluation_called": false,
+  "empirical_replay_completed": false,
+  "independent_confirmation": false,
+  "public_release_created": false,
+  "submission_ready": false
+}

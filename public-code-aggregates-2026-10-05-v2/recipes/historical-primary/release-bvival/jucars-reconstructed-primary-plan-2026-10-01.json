@@ -1,0 +1,663 @@
+{
+  "date": "2026-10-01",
+  "schema_version": 1,
+  "stage": "DRAFT_JUCARS_PRIMARY_RECONSTRUCTION_PLAN_NOT_EXECUTED",
+  "replay_name": "jucars-reconstructed-primary-v1",
+  "planned_output_root": "experiments/replays/jucars-reconstructed-primary-v1",
+  "execution_started": false,
+  "orchestrator_implemented": false,
+  "historical_tests_already_opened": true,
+  "new_preregistration": false,
+  "historical_full_source_identity_claimed": false,
+  "uniform_historical_v5_full_refit_claimed": false,
+  "public_release_created": false,
+  "submission_ready": false,
+  "source_doi": "10.17632/ddcz486x5t.2",
+  "recovery_receipt_sha256": "a066cc5ac617ccdfe14b239de00da1754e7ddb7fa453c5fdb948e9b995e9f236",
+  "source_bindings_to_verify_before_execution": {
+    "source": {
+      "path": "experiments/data/external/jucars_2024_v2/cars_jordan.csv",
+      "sha256": "d0099b330027bbf1c380307c75c72520ef3c4be8784880d0a9845c79e3d00d0a"
+    },
+    "dictionary": {
+      "path": "experiments/data/external/jucars_2024_v2/data_dictionary.csv",
+      "sha256": "c56d9c24d39707f3b85079dba10b25fcd5b087e7d559c81da936278b50566d52"
+    }
+  },
+  "static_study_source_closure": {
+    "local_source_sha256": {
+      "experiments/assemble_bvival_policy_scores.py": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "experiments/build_bvival_action_dataset.py": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "experiments/build_jucars_bvival_manifest.py": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0",
+      "experiments/bvi_val.py": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "experiments/bvi_val_baselines.py": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "experiments/evaluate_bvival_policies.py": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "experiments/fit_bvival_risk_baseline.py": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "experiments/fit_bvival_value_policy.py": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "experiments/generate_bvival_prediction_pairs.py": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "experiments/join_bvival_evaluation_outcomes.py": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1"
+    },
+    "external_import_roots": [
+      "catboost",
+      "numpy",
+      "pandas",
+      "scipy"
+    ],
+    "static_only_not_runtime_or_installation_validation": true
+  },
+  "schema_adapter_source": {
+    "path": "release-bvival/project_jucars_legacy_targets.py",
+    "sha256": "7034fb6ed65358cf0a39e9b1c4e94ecc60bfbeb72540c3214d8d04435db7cbf6",
+    "standard_library_only": true
+  },
+  "expected_structural_contract": {
+    "split_counts": {
+      "calibration": 1343,
+      "test": 1267,
+      "train": 4774,
+      "validation": 1374
+    },
+    "cohort_output_sha256": {
+      "jucars_bvival_manifest.csv": "856460ede47e9609f02867b520eba154cc59d87145918d509a58d4f40f516505",
+      "sealed_labels/test_labels.csv": "a98011583b0c8c45387d9cf98088d97cc5c0762cbfd5e0a70b7b5be75185d7c3",
+      "splits/calibration.csv": "201d7368eaa50ba98904a2c6051537c44897ce1ca45674fda222691d9edfafda",
+      "splits/test_features.csv": "5b7a19738ee704dea01ef8f2a83d1341b4ef0489232c1115e0c7792acdebe450",
+      "splits/train.csv": "c1f56a13d04b953c448699269966236d2b7e78e039410110327ab1494b8fac2b",
+      "splits/validation.csv": "4d57d04ab0944af11713c67e5c3b1f35d135f4f2314a9a1f5f4b78906541548b"
+    },
+    "phase_counts": {
+      "development": {
+        "listings": 6148,
+        "pairs": 23346
+      },
+      "calibration": {
+        "listings": 1343,
+        "pairs": 5083
+      },
+      "evaluation": {
+        "listings": 1267,
+        "pairs": 4823
+      }
+    },
+    "base_feature_columns": [
+      "make",
+      "model",
+      "year",
+      "mileage_km",
+      "body_type",
+      "condition",
+      "transmission",
+      "fuel_type",
+      "color",
+      "interior_color",
+      "seats",
+      "city",
+      "feat_insurance",
+      "feat_carcustoms",
+      "feat_license",
+      "feat_paintcondition",
+      "feat_body_condition",
+      "feat_battery_capacity",
+      "feat_battery_range"
+    ],
+    "base_categorical_columns": [
+      "make",
+      "model",
+      "body_type",
+      "condition",
+      "transmission",
+      "fuel_type",
+      "color",
+      "interior_color",
+      "seats",
+      "city",
+      "feat_insurance",
+      "feat_carcustoms",
+      "feat_license",
+      "feat_paintcondition",
+      "feat_body_condition",
+      "feat_battery_capacity",
+      "feat_battery_range"
+    ],
+    "appended_base_feature_and_category": "action_mask",
+    "policy_feature_columns": [
+      "action_id",
+      "before_prediction_log",
+      "before_prediction_std",
+      "missing_action_field_count",
+      "make",
+      "model",
+      "year",
+      "mileage_km",
+      "body_type",
+      "condition",
+      "transmission",
+      "fuel_type",
+      "color",
+      "interior_color",
+      "seats",
+      "city",
+      "feat_insurance",
+      "feat_carcustoms",
+      "feat_license",
+      "feat_paintcondition",
+      "feat_body_condition",
+      "feat_battery_capacity",
+      "feat_battery_range"
+    ],
+    "policy_categorical_columns": [
+      "action_id",
+      "make",
+      "model",
+      "body_type",
+      "condition",
+      "transmission",
+      "fuel_type",
+      "color",
+      "interior_color",
+      "city",
+      "feat_insurance",
+      "feat_carcustoms",
+      "feat_license",
+      "feat_paintcondition",
+      "feat_body_condition",
+      "feat_battery_capacity",
+      "feat_battery_range"
+    ],
+    "new_target_header": [
+      "listing_id",
+      "action_id",
+      "fold_id",
+      "prediction_is_oof",
+      "before_prediction_log",
+      "before_prediction_std",
+      "missing_action_field_count",
+      "make",
+      "model",
+      "year",
+      "mileage_km",
+      "body_type",
+      "condition",
+      "transmission",
+      "fuel_type",
+      "color",
+      "interior_color",
+      "seats",
+      "city",
+      "feat_insurance",
+      "feat_carcustoms",
+      "feat_license",
+      "feat_paintcondition",
+      "feat_body_condition",
+      "feat_battery_capacity",
+      "feat_battery_range",
+      "value_squared_log_error",
+      "value_absolute_price_error",
+      "risk_target_squared_log_error_before",
+      "risk_target_absolute_log_error_before",
+      "risk_target_absolute_price_error_before"
+    ],
+    "legacy_target_header": [
+      "listing_id",
+      "action_id",
+      "fold_id",
+      "prediction_is_oof",
+      "before_prediction_log",
+      "before_prediction_std",
+      "missing_action_field_count",
+      "make",
+      "model",
+      "year",
+      "mileage_km",
+      "body_type",
+      "condition",
+      "transmission",
+      "fuel_type",
+      "color",
+      "interior_color",
+      "seats",
+      "city",
+      "feat_insurance",
+      "feat_carcustoms",
+      "feat_license",
+      "feat_paintcondition",
+      "feat_body_condition",
+      "feat_battery_capacity",
+      "feat_battery_range",
+      "value_squared_log_error",
+      "value_absolute_price_error",
+      "risk_target_squared_log_error_before",
+      "risk_target_absolute_log_error_before"
+    ],
+    "development_current_sha256": "6ab8303dbb3ce6d79fdfdc3d67de8f90aadeb1abee4f91e33248b20115957e37",
+    "development_legacy_sha256": "9566a27df3f268123c7d05c98ffc393e11b22d628c0786e9c05e5d930f06e8ee",
+    "calibration_legacy_sha256": "7027cd0ac99f83722a9462bb8bb045035c8e7e67213b017ed3c9e527ce66b8f6"
+  },
+  "stages": [
+    {
+      "id": "cohort",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/build_jucars_bvival_manifest.py",
+        "--source",
+        "experiments/data/external/jucars_2024_v2/cars_jordan.csv",
+        "--data-dictionary",
+        "experiments/data/external/jucars_2024_v2/data_dictionary.csv",
+        "--source-record-sha256",
+        "d0099b330027bbf1c380307c75c72520ef3c4be8784880d0a9845c79e3d00d0a",
+        "--dictionary-record-sha256",
+        "c56d9c24d39707f3b85079dba10b25fcd5b087e7d559c81da936278b50566d52",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/cohort"
+      ],
+      "depends_on": [],
+      "phase": "reconstruction"
+    },
+    {
+      "id": "pairs",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/generate_bvival_prediction_pairs.py",
+        "--train",
+        "experiments/replays/jucars-reconstructed-primary-v1/cohort/splits/train.csv",
+        "--validation",
+        "experiments/replays/jucars-reconstructed-primary-v1/cohort/splits/validation.csv",
+        "--calibration",
+        "experiments/replays/jucars-reconstructed-primary-v1/cohort/splits/calibration.csv",
+        "--evaluation-features",
+        "experiments/replays/jucars-reconstructed-primary-v1/cohort/splits/test_features.csv",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs",
+        "--action-fields",
+        "mileage_km,transmission,fuel_type,feat_body_condition",
+        "--seeds",
+        "13,42,2026",
+        "--folds",
+        "5",
+        "--iterations",
+        "400",
+        "--depth",
+        "8",
+        "--learning-rate",
+        "0.08",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "cohort"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "development-current",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/development_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/development_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/development_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,body_type,condition,transmission,fuel_type,color,interior_color,seats,city,feat_insurance,feat_carcustoms,feat_license,feat_paintcondition,feat_body_condition,feat_battery_capacity,feat_battery_range",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/development-current",
+        "--evidence-status",
+        "development_only"
+      ],
+      "depends_on": [
+        "pairs"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "calibration-current",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/calibration_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/calibration_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/calibration_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,body_type,condition,transmission,fuel_type,color,interior_color,seats,city,feat_insurance,feat_carcustoms,feat_license,feat_paintcondition,feat_body_condition,feat_battery_capacity,feat_battery_range",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/calibration-current",
+        "--evidence-status",
+        "development_only"
+      ],
+      "depends_on": [
+        "pairs"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "development-legacy",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "release-bvival/project_jucars_legacy_targets.py",
+        "--input",
+        "experiments/replays/jucars-reconstructed-primary-v1/development-current/bvival_action_dataset.csv",
+        "--contract",
+        "release-bvival/jucars-reconstruction-2026-10-01.json",
+        "--expected-contract-sha256",
+        "a066cc5ac617ccdfe14b239de00da1754e7ddb7fa453c5fdb948e9b995e9f236",
+        "--role",
+        "development_value",
+        "--expected-input-sha256",
+        {
+          "generated_target_hash_from_audit": "experiments/replays/jucars-reconstructed-primary-v1/development-current/bvival_action_dataset_audit.json"
+        },
+        "--expected-output-sha256",
+        "9566a27df3f268123c7d05c98ffc393e11b22d628c0786e9c05e5d930f06e8ee",
+        "--expected-listings",
+        "6148",
+        "--expected-pairs",
+        "23346",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/development-legacy"
+      ],
+      "depends_on": [
+        "development-current",
+        "target_schema_checkpoint"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "calibration-legacy",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "release-bvival/project_jucars_legacy_targets.py",
+        "--input",
+        "experiments/replays/jucars-reconstructed-primary-v1/calibration-current/bvival_action_dataset.csv",
+        "--contract",
+        "release-bvival/jucars-reconstruction-2026-10-01.json",
+        "--expected-contract-sha256",
+        "a066cc5ac617ccdfe14b239de00da1754e7ddb7fa453c5fdb948e9b995e9f236",
+        "--role",
+        "calibration",
+        "--expected-input-sha256",
+        {
+          "generated_target_hash_from_audit": "experiments/replays/jucars-reconstructed-primary-v1/calibration-current/bvival_action_dataset_audit.json"
+        },
+        "--expected-output-sha256",
+        "7027cd0ac99f83722a9462bb8bb045035c8e7e67213b017ed3c9e527ce66b8f6",
+        "--expected-listings",
+        "1343",
+        "--expected-pairs",
+        "5083",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/calibration-legacy"
+      ],
+      "depends_on": [
+        "calibration-current",
+        "target_schema_checkpoint"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "value",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/fit_bvival_value_policy.py",
+        "--train-actions",
+        "experiments/replays/jucars-reconstructed-primary-v1/development-legacy/bvival_action_dataset.csv",
+        "--calibration-actions",
+        "experiments/replays/jucars-reconstructed-primary-v1/calibration-legacy/bvival_action_dataset.csv",
+        "--evaluation-features",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/evaluation_pre_action_features.csv",
+        "--feature-columns",
+        "action_id,before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,body_type,condition,transmission,fuel_type,color,interior_color,seats,city,feat_insurance,feat_carcustoms,feat_license,feat_paintcondition,feat_body_condition,feat_battery_capacity,feat_battery_range",
+        "--categorical-columns",
+        "action_id,make,model,body_type,condition,transmission,fuel_type,color,interior_color,city,feat_insurance,feat_carcustoms,feat_license,feat_paintcondition,feat_body_condition,feat_battery_capacity,feat_battery_range",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/value",
+        "--seeds",
+        "13,42,2026",
+        "--iterations",
+        "400",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.05",
+        "--l2-leaf-reg",
+        "10",
+        "--alpha",
+        "0.1",
+        "--minimum-action-group-size",
+        "100"
+      ],
+      "depends_on": [
+        "development-legacy",
+        "calibration-legacy"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "risk-mae",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/fit_bvival_risk_baseline.py",
+        "--train-actions",
+        "experiments/replays/jucars-reconstructed-primary-v1/development-current/bvival_action_dataset.csv",
+        "--evaluation-features",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/evaluation_pre_action_features.csv",
+        "--feature-columns",
+        "action_id,before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,body_type,condition,transmission,fuel_type,color,interior_color,seats,city,feat_insurance,feat_carcustoms,feat_license,feat_paintcondition,feat_body_condition,feat_battery_capacity,feat_battery_range",
+        "--categorical-columns",
+        "action_id,make,model,body_type,condition,transmission,fuel_type,color,interior_color,city,feat_insurance,feat_carcustoms,feat_license,feat_paintcondition,feat_body_condition,feat_battery_capacity,feat_battery_range",
+        "--objective",
+        "absolute_price_error",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/risk-mae",
+        "--seeds",
+        "13,42,2026",
+        "--iterations",
+        "400",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.05",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "development-current",
+        "target_schema_checkpoint"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "scores",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/assemble_bvival_policy_scores.py",
+        "--development-actions",
+        "experiments/replays/jucars-reconstructed-primary-v1/development-current/bvival_action_dataset.csv",
+        "--value-scores",
+        "experiments/replays/jucars-reconstructed-primary-v1/value/evaluation_action_scores.csv",
+        "--risk-scores",
+        "experiments/replays/jucars-reconstructed-primary-v1/risk-mae/evaluation_risk_scores.csv",
+        "--evaluation-features",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/evaluation_pre_action_features.csv",
+        "--objective",
+        "absolute_price_error",
+        "--random-seed",
+        "2026",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/scores"
+      ],
+      "depends_on": [
+        "value",
+        "risk-mae"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "join",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/join_bvival_evaluation_outcomes.py",
+        "--evaluation-prediction-pairs",
+        "experiments/replays/jucars-reconstructed-primary-v1/pairs/evaluation_prediction_pairs.csv",
+        "--sealed-labels",
+        "experiments/replays/jucars-reconstructed-primary-v1/cohort/sealed_labels/test_labels.csv",
+        "--frozen-policy-scores",
+        "experiments/replays/jucars-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv",
+        "--expected-policy-scores-sha256",
+        {
+          "frozen_artifact_sha256": "experiments/replays/jucars-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv"
+        },
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/evaluation-inputs",
+        "--freeze-id",
+        "jucars-reconstructed-primary-v1"
+      ],
+      "depends_on": [
+        "scores",
+        "new_scoring_freeze_checkpoint"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "evaluate",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_jucars_python"
+        },
+        "experiments/evaluate_bvival_policies.py",
+        "--evaluation-outcomes",
+        "experiments/replays/jucars-reconstructed-primary-v1/evaluation-inputs/evaluation_outcomes.csv",
+        "--frozen-policy-scores",
+        "experiments/replays/jucars-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv",
+        "--score-columns",
+        "score_no_acquisition,score_random,score_global_field_prior,score_uncertainty_only,score_disagreement_only,score_mean_value,score_conservative_lower_value",
+        "--reference-policy",
+        "score_uncertainty_only",
+        "--objective",
+        "absolute_price_error",
+        "--budgets",
+        "0.01,0.05,0.10,0.20,0.30",
+        "--bootstrap-repetitions",
+        "10000",
+        "--bootstrap-seed",
+        "2026",
+        "--output-dir",
+        "experiments/replays/jucars-reconstructed-primary-v1/evaluation-mae",
+        "--freeze-id",
+        "jucars-reconstructed-primary-v1",
+        "--analysis-status",
+        "post_test_exploratory",
+        "--include-oracle-diagnostic"
+      ],
+      "depends_on": [
+        "join"
+      ],
+      "phase": "evaluation"
+    }
+  ],
+  "target_schema_checkpoint": {
+    "before": [
+      "development-legacy",
+      "calibration-legacy",
+      "risk-mae"
+    ],
+    "conditions": [
+      "current development bytes match recorded v2 hash and all phase listing/action counts match",
+      "both current target headers match recorded v2 schema and listing/action keys are valid",
+      "cohort/pair feature and categorical schemas match before fitting heads"
+    ],
+    "on_failure": "retain discrepancy and stop; no value adjustments, alternative projection or silent template change"
+  },
+  "legacy_projection_checkpoints": {
+    "before": "value",
+    "conditions": [
+      "both projection audits pass recorded legacy byte hashes, counts, headers and unique keys",
+      "numeric cell text was not recomputed and no historical target rows were used"
+    ]
+  },
+  "new_scoring_freeze_checkpoint": {
+    "required_before": "join",
+    "bind": [
+      "plan_sha256",
+      "study_source_hashes",
+      "adapter_source_hash",
+      "runtime_lock_hash",
+      "generated_inputs_and_projection_hashes",
+      "new_score_sha256"
+    ],
+    "implemented_by_planner": false
+  },
+  "primary_only_join_contract": {
+    "historical_join_also_checked_secondary_score": true,
+    "historical_secondary_score_sha256": "fbac511d02f380935f827dbb82b0710716f3c8707906cdbed99f5a69425051bd",
+    "secondary_score_verification_replayed": false,
+    "exact_full_historical_join_protocol_claimed": false,
+    "reason": "Primary-MAE numerical reconstruction only; no cached historical secondary-policy artifact dependency or secondary routing refit"
+  },
+  "engineering_concordance_rules": {
+    "integer_counts_and_aggregate_key_sets": "exact",
+    "price_mae_absolute_tolerance_JOD": 0.05,
+    "rmsle_absolute_tolerance": 1e-06,
+    "relative_gain_and_ci_endpoint_tolerance_percentage_points": 0.01,
+    "fraction_metrics_absolute_tolerance": 1e-06,
+    "original_aggregate_reference": "experiments/outputs/jucars_bvival_v5_stress_mae",
+    "reference_aggregate_hashes": {
+      "bvival_action_mix.csv": "935c642671bd87a3e7535da91d21d12768116ab173b13205b3e9b428b0db1a82",
+      "bvival_error_budget_curve.csv": "2dc0495c23060a0667e3f50a666560a7c392fcac0115677229a001c8d5df0023",
+      "bvival_policy_summary.csv": "5ceae8cc3d2944b0ee7a91e756afdb71e34d4333cf0b655f92258b33961afe47",
+      "bvival_reference_comparisons.csv": "bb0e1165a343df99dbe21692f53276decb0568ea004f40a607735bb96617fae0"
+    },
+    "interval_boundary_changes_at_zero_or_two_percent_must_be_disclosed": true,
+    "author_chosen_engineering_tolerances_after_historical_results_known": true,
+    "not_journal_or_statistical_equivalence_rules": true,
+    "on_failure": "retain and disclose; no retuning, tolerance widening, seed selection or original result replacement"
+  },
+  "unresolved_bindings": [
+    "validated_jucars_python",
+    "generated_target_hash_from_audit",
+    "target_schema_checkpoint",
+    "new_scoring_freeze_checkpoint",
+    "frozen_artifact_sha256"
+  ],
+  "data_access_this_planning_step": {
+    "original_data_rows_read": false,
+    "models_loaded": false,
+    "study_modules_imported": false,
+    "training_or_inference_called": false,
+    "replay_output_directory_created": false
+  },
+  "scope_exclusions": [
+    "secondary routing evaluation",
+    "subgroup bootstrap",
+    "new comparators",
+    "unopened independent source",
+    "full historical source-byte recovery",
+    "public deposit and licence",
+    "scientific novelty claim"
+  ],
+  "recorded_dependency_checks_revalidated": 55
+}
