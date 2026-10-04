@@ -1,0 +1,51 @@
+{
+  "analysis_status": "post_test_exploratory",
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 2026,
+  "budget_fraction": 0.1,
+  "comparison_family_size": 3,
+  "fixed_field_rule": "maximum_recorded_development_mean_gain_lexical_tie",
+  "independent_confirmation": false,
+  "runtime_python": "__VALIDATED_RUNTIME_PYTHON__",
+  "sources": [
+    {
+      "assembly_audit": "experiments/outputs/mucars_bvival_v5_frozen_scores/policy_score_assembly_audit_absolute_price_error.json",
+      "expected_n": 10699,
+      "fixed_field": "transmission",
+      "historical_curve": "experiments/outputs/mucars_bvival_v5_confirmatory_mae/bvival_error_budget_curve.csv",
+      "historical_curve_sha256": "384d899434a072d6c8401661dd2f528fa0202d7bdb79aac9630297d5604677c9",
+      "name": "mucars",
+      "outcomes": "experiments/outputs/mucars_bvival_v5_evaluation_inputs/evaluation_outcomes.csv",
+      "outcomes_sha256": "fc22c2c808e699a2c0da2b6983c0f32bdc6dee58f14920b0898dde7f86c34a14",
+      "price_unit": "source price units",
+      "scores": "experiments/outputs/mucars_bvival_v5_frozen_scores/frozen_policy_scores_absolute_price_error.csv",
+      "scores_sha256": "e80af927b8de18f7e305e16d220f59e96603736871be2d8cec27c5aebc47170e"
+    },
+    {
+      "assembly_audit": "experiments/outputs/autoscout24_bvival_v2_full_scores/policy_score_assembly_audit_absolute_price_error.json",
+      "expected_n": 14005,
+      "fixed_field": "mileage_km",
+      "historical_curve": "experiments/outputs/autoscout24_bvival_v2_full_mae_test/bvival_error_budget_curve.csv",
+      "historical_curve_sha256": "76253d56cd04a50e6bde1250244ffcff6f0cf6980e49b298c86b7ce93b6c5963",
+      "name": "autoscout24",
+      "outcomes": "experiments/outputs/autoscout24_bvival_v2_full_evaluation_inputs/evaluation_outcomes.csv",
+      "outcomes_sha256": "87e5e54dcc084eea3ee77a9f7eefe99fe507488d99b75ac6b6256c67cd2958e4",
+      "price_unit": "EUR",
+      "scores": "experiments/outputs/autoscout24_bvival_v2_full_scores/frozen_policy_scores_absolute_price_error.csv",
+      "scores_sha256": "3a1f50bd9e83f9288fe67a14a0037f9e693520aae5a7c6efd9e9999889aed05f"
+    },
+    {
+      "assembly_audit": "experiments/outputs/jucars_bvival_v5_frozen_mae_scores/policy_score_assembly_audit_absolute_price_error.json",
+      "expected_n": 1267,
+      "fixed_field": "fuel_type",
+      "historical_curve": "experiments/outputs/jucars_bvival_v5_stress_mae/bvival_error_budget_curve.csv",
+      "historical_curve_sha256": "2dc0495c23060a0667e3f50a666560a7c392fcac0115677229a001c8d5df0023",
+      "name": "jucars",
+      "outcomes": "experiments/outputs/jucars_bvival_v5_evaluation_inputs/evaluation_outcomes.csv",
+      "outcomes_sha256": "277a75229e00c021d37700d96458d0a650b994ebfda6d15627af2f2478d96f5b",
+      "price_unit": "source price units",
+      "scores": "experiments/outputs/jucars_bvival_v5_frozen_mae_scores/frozen_policy_scores_absolute_price_error.csv",
+      "scores_sha256": "c5c486098c9c099c2fe3aad404c6e674402d903d2d02cd026e7948ed8d693a73"
+    }
+  ]
+}
