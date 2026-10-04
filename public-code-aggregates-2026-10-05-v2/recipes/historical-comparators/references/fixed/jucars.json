@@ -1,0 +1,69 @@
+{
+  "analysis_status": "post_test_exploratory",
+  "budget_fraction": 0.1,
+  "contrast": "joint_mean_benefit_vs_development_prior_fixed_field_mean_benefit",
+  "historical_MAE_reconstruction_passed": true,
+  "historical_curve_sha256": "2dc0495c23060a0667e3f50a666560a7c392fcac0115677229a001c8d5df0023",
+  "independent_confirmation": false,
+  "inference": {
+    "bootstrap_unit": "listing_not_verified_vehicle",
+    "ci95_percent": [
+      0.0,
+      0.0
+    ],
+    "conditioning": "fixed models and selected actions; excludes training/selection/market uncertainty",
+    "family_adjusted_interval_percent": [
+      0.0,
+      0.0
+    ],
+    "family_adjusted_nominal_confidence": 0.9833333333333333,
+    "historical_adaptive_analysis_multiplicity_controlled": false,
+    "n": 1267,
+    "relative_mae_gain_percent": 0.0,
+    "repetitions": 10000,
+    "seed": 2026
+  },
+  "joint_minus_fixed_MAE_reduction": 0.0,
+  "mae": {
+    "score_fixed_field_mean_value": 11315.750865122875,
+    "score_mean_value": 11315.750865122875,
+    "score_no_acquisition": 11323.120979355659,
+    "score_uncertainty_only": 11323.355122661991
+  },
+  "outcomes_sha256": "277a75229e00c021d37700d96458d0a650b994ebfda6d15627af2f2478d96f5b",
+  "price_unit": "source price units",
+  "selection": {
+    "assembly_audit_sha256": "6e0a19245273f7e90d096708d2e88bc771512e46c0a88759019ac8986ab2b753",
+    "capacity": 127,
+    "config_sha256": "77744a3bd46ccf7becb960af8f7c267d0e7da47b5301d7dd5a0e02534649cb87",
+    "created_at_utc": "2026-10-03T17:10:33.218055+00:00",
+    "fixed_field": "fuel_type",
+    "fixed_field_eligible_listings": 1266,
+    "independent_confirmation": false,
+    "joint_action_counts": {
+      "fuel_type": 127
+    },
+    "joint_selected_listings_without_fixed_field": 0,
+    "listing_action_selection_overlap": 127,
+    "listing_selection_overlap": 127,
+    "n_action_rows": 4823,
+    "n_listings": 1267,
+    "original_scores_sha256": "c5c486098c9c099c2fe3aad404c6e674402d903d2d02cd026e7948ed8d693a73",
+    "outcomes_read_in_prepare": false,
+    "runner_sha256": "d1a4cfbe41034bbb3b023a3be9d7dcca1cfe775820e3cbbda5ade4c95022c32d",
+    "selected_count": {
+      "score_fixed_field_mean_value": 127,
+      "score_mean_value": 127,
+      "score_no_acquisition": 0,
+      "score_uncertainty_only": 127
+    },
+    "selection_hashes": {
+      "score_fixed_field_mean_value_selection.csv": "3906da6159da689ad0d53ed1d60fb1dda8d061ccdbd2d768245447847019a9a5",
+      "score_mean_value_selection.csv": "3906da6159da689ad0d53ed1d60fb1dda8d061ccdbd2d768245447847019a9a5",
+      "score_no_acquisition_selection.csv": "5de0165d1885489b50bdefbe802f4901578faee0fd6670c3b201a79829004dd5",
+      "score_uncertainty_only_selection.csv": "d42d205eddbf0583c043ec2c52c0b9f932739025573efbf9d13dd51bbe5ad41b"
+    },
+    "source": "jucars"
+  },
+  "source": "jucars"
+}
