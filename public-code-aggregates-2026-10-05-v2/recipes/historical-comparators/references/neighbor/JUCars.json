@@ -1,0 +1,202 @@
+{
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition"
+  ],
+  "all_scores_and_actions_saved_before_evaluation_label_parsing": true,
+  "categorical_fields": [
+    "make",
+    "model",
+    "body_type",
+    "condition",
+    "color",
+    "interior_color",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "development_eligible_counts": {
+    "feat_body_condition": 6143,
+    "fuel_type": 6147,
+    "mileage_km": 4909,
+    "transmission": 6147
+  },
+  "development_listings": 6148,
+  "development_partition": "historical_train_plus_validation_OOF_not_train_only",
+  "evaluation_listings": 1267,
+  "fallback_counts_all_query_action_scores": {
+    "128": {
+      "feat_body_condition": 0,
+      "fuel_type": 0,
+      "mileage_km": 0,
+      "transmission": 0
+    },
+    "16": {
+      "feat_body_condition": 0,
+      "fuel_type": 0,
+      "mileage_km": 0,
+      "transmission": 0
+    },
+    "64": {
+      "feat_body_condition": 0,
+      "fuel_type": 0,
+      "mileage_km": 0,
+      "transmission": 0
+    }
+  },
+  "full_published_method_reproduction": false,
+  "historical_reference_replay_verified": true,
+  "new_confirmatory_validation": false,
+  "numeric_fields": [
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "year",
+    "seats"
+  ],
+  "p_values_or_intervals_computed": false,
+  "preprocessed_dimensions": 233,
+  "rows": {
+    "frozen_benefit": {
+      "action_mix": {
+        "feat_body_condition": 0,
+        "fuel_type": 127,
+        "mileage_km": 0,
+        "transmission": 0
+      },
+      "actions": 127,
+      "gross_harm": 34176.96342501641,
+      "harmful_action_rate": 0.4409448818897638,
+      "mae_reduction_vs_frozen_benefit_percent": 0.0,
+      "mae_reduction_vs_frozen_risk_percent": 0.06715551580553904,
+      "post_mae": 11315.750865122875
+    },
+    "frozen_risk": {
+      "action_mix": {
+        "feat_body_condition": 0,
+        "fuel_type": 127,
+        "mileage_km": 0,
+        "transmission": 0
+      },
+      "actions": 127,
+      "gross_harm": 29197.544214713296,
+      "harmful_action_rate": 0.47244094488188976,
+      "mae_reduction_vs_frozen_benefit_percent": -0.06720064474514229,
+      "mae_reduction_vs_frozen_risk_percent": 0.0,
+      "post_mae": 11323.355122661991
+    },
+    "neighbor_joint_k128": {
+      "action_mix": {
+        "feat_body_condition": 0,
+        "fuel_type": 127,
+        "mileage_km": 0,
+        "transmission": 0
+      },
+      "actions": 127,
+      "gross_harm": 33760.38583410205,
+      "harmful_action_rate": 0.4330708661417323,
+      "mae_reduction_vs_frozen_benefit_percent": -0.015655996026845233,
+      "mae_reduction_vs_frozen_risk_percent": 0.05151003364358013,
+      "post_mae": 11317.522458628726
+    },
+    "neighbor_joint_k16": {
+      "action_mix": {
+        "feat_body_condition": 10,
+        "fuel_type": 116,
+        "mileage_km": 0,
+        "transmission": 1
+      },
+      "actions": 127,
+      "gross_harm": 29285.10171431722,
+      "harmful_action_rate": 0.36220472440944884,
+      "mae_reduction_vs_frozen_benefit_percent": 0.023271741534199183,
+      "mae_reduction_vs_frozen_risk_percent": 0.09041162908167401,
+      "post_mae": 11313.11749282889
+    },
+    "neighbor_joint_k64": {
+      "action_mix": {
+        "feat_body_condition": 0,
+        "fuel_type": 127,
+        "mileage_km": 0,
+        "transmission": 0
+      },
+      "actions": 127,
+      "gross_harm": 32917.551719666604,
+      "harmful_action_rate": 0.4094488188976378,
+      "mae_reduction_vs_frozen_benefit_percent": 0.014854968602294032,
+      "mae_reduction_vs_frozen_risk_percent": 0.08200050847704546,
+      "post_mae": 11314.069913884747
+    },
+    "no_acquisition": {
+      "action_mix": {
+        "feat_body_condition": 0,
+        "fuel_type": 0,
+        "mileage_km": 0,
+        "transmission": 0
+      },
+      "actions": 0,
+      "gross_harm": -0.0,
+      "harmful_action_rate": null,
+      "mae_reduction_vs_frozen_benefit_percent": -0.06513146428047058,
+      "mae_reduction_vs_frozen_risk_percent": 0.0020677908958577225,
+      "post_mae": 11323.120979355659
+    },
+    "risk_neighbor_field_k128": {
+      "action_mix": {
+        "feat_body_condition": 38,
+        "fuel_type": 82,
+        "mileage_km": 2,
+        "transmission": 5
+      },
+      "actions": 127,
+      "gross_harm": 29791.48582039427,
+      "harmful_action_rate": 0.4566929133858268,
+      "mae_reduction_vs_frozen_benefit_percent": -0.06971262905443103,
+      "mae_reduction_vs_frozen_risk_percent": -0.0025102973732688792,
+      "post_mae": 11323.639372548201
+    },
+    "risk_neighbor_field_k16": {
+      "action_mix": {
+        "feat_body_condition": 34,
+        "fuel_type": 70,
+        "mileage_km": 11,
+        "transmission": 12
+      },
+      "actions": 127,
+      "gross_harm": 27536.83279021026,
+      "harmful_action_rate": 0.4330708661417323,
+      "mae_reduction_vs_frozen_benefit_percent": -0.06529581343869471,
+      "mae_reduction_vs_frozen_risk_percent": 0.0019035521071585045,
+      "post_mae": 11323.139576696953
+    },
+    "risk_neighbor_field_k64": {
+      "action_mix": {
+        "feat_body_condition": 42,
+        "fuel_type": 76,
+        "mileage_km": 6,
+        "transmission": 3
+      },
+      "actions": 127,
+      "gross_harm": 29917.74459636047,
+      "harmful_action_rate": 0.4330708661417323,
+      "mae_reduction_vs_frozen_benefit_percent": -0.04800959505378793,
+      "mae_reduction_vs_frozen_risk_percent": 0.019178161842945636,
+      "post_mae": 11321.183511290516
+    }
+  },
+  "selected_neighbor_count": null,
+  "source": "JUCars",
+  "stage": "POST_TEST_EXPLORATORY_ESTIMATOR_COMPARISON",
+  "timing_seconds": {
+    "representation_and_cache_fit": 0.04186754200782161,
+    "retrieval_all_three_k": 0.07955154200317338,
+    "total": 0.37999787500302773
+  },
+  "valuation_models_refitted": false
+}
