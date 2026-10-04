@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "stage": "DRAFT_RECONSTRUCTED_PRIMARY_REPLAY_PLAN_NOT_EXECUTED",
+  "date": "2026-10-01",
+  "replay_name": "mucars-reconstructed-primary-v1",
+  "planned_output_root": "experiments/replays/mucars-reconstructed-primary-v1",
+  "execution_started": false,
+  "executor_implemented": false,
+  "submission_ready": false,
+  "historical_tests_previously_opened": true,
+  "new_preregistration": false,
+  "historical_source_byte_identity_claimed": false,
+  "source_doi": "10.17632/vjrbcb2rrt.2",
+  "source_sha256_to_verify_before_execution": "cb3574e38f34adfd70ee08d18c7748899fe86dc01338b50562bf91bcd145e749",
+  "parameter_recovery_receipt_sha256": "bf7c03e2abe88e34f87735a7439ec166da7f195f09a320993043d2b65874ca95",
+  "expected_structural_contract": {
+    "split_listing_counts": {
+      "calibration": 10696,
+      "test": 10699,
+      "train": 39244,
+      "validation": 10672
+    },
+    "recorded_cohort_output_sha256_to_check_after_rebuilding": {
+      "mucars_bvival_manifest_features_only.csv": "6b78645fcf109c3e35bcffa0c037101ff1adc61f422b9769d68a20cd7ac6308a",
+      "sealed_labels/test_labels.csv": "e6b1621df2d00ce0fc19fa068636884ade267cc034db545a14d151888d24574c",
+      "splits/calibration.csv": "24a6b62ebf8586b275132bb235429c7b7b9e9dae2fb9befbd99a029ba72ed88e",
+      "splits/test_features.csv": "36ad00a345c3e7769ba414bae5920c675ce98ce5a4409c7b3aecec3349aa4b4d",
+      "splits/train.csv": "a8a2231abfdac008a9739c89a5ea3b1ab3518f647b856df501d525f7e46952fa",
+      "splits/validation.csv": "ce27add36fb375f8e86953c5fdc2310addd412274add3ec9c62ad265c3a486a7"
+    },
+    "phase_counts": {
+      "development": {
+        "listings": 49916,
+        "action_pairs": 198170
+      },
+      "calibration": {
+        "listings": 10696,
+        "action_pairs": 42469
+      },
+      "evaluation": {
+        "listings": 10699,
+        "action_pairs": 42477
+      }
+    },
+    "base_feature_columns": [
+      "make",
+      "model",
+      "year",
+      "mileage_km",
+      "transmission",
+      "fuel_type",
+      "feat_body_condition",
+      "fiscal_power",
+      "number_of_doors",
+      "origin",
+      "first_owner",
+      "location",
+      "sector",
+      "equipment_count"
+    ],
+    "base_categorical_columns": [
+      "make",
+      "model",
+      "transmission",
+      "fuel_type",
+      "feat_body_condition",
+      "origin",
+      "first_owner",
+      "location",
+      "sector"
+    ],
+    "final_valuation_model_appended_feature": "action_mask",
+    "policy_feature_columns": [
+      "action_id",
+      "before_prediction_log",
+      "before_prediction_std",
+      "missing_action_field_count",
+      "make",
+      "model",
+      "year",
+      "mileage_km",
+      "transmission",
+      "fuel_type",
+      "feat_body_condition",
+      "fiscal_power",
+      "number_of_doors",
+      "origin",
+      "first_owner",
+      "location",
+      "sector",
+      "equipment_count"
+    ],
+    "policy_categorical_columns": [
+      "action_id",
+      "make",
+      "model",
+      "transmission",
+      "fuel_type",
+      "feat_body_condition",
+      "origin",
+      "first_owner",
+      "location",
+      "sector"
+    ]
+  },
+  "static_source_closure": {
+    "local_source_sha256": {
+      "experiments/assemble_bvival_policy_scores.py": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "experiments/build_bvival_action_dataset.py": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "experiments/build_jucars_bvival_manifest.py": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0",
+      "experiments/build_mucars_bvival_manifest.py": "e93c85dd57da857a0e97d37a8fda137627398afa81e197d5efe11351b6c5764d",
+      "experiments/bvi_val.py": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "experiments/bvi_val_baselines.py": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "experiments/evaluate_bvival_policies.py": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "experiments/fit_bvival_risk_baseline.py": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "experiments/fit_bvival_value_policy.py": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "experiments/generate_bvival_prediction_pairs.py": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "experiments/join_bvival_evaluation_outcomes.py": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1"
+    },
+    "external_import_roots": [
+      "catboost",
+      "numpy",
+      "pandas",
+      "scipy"
+    ],
+    "static_only_not_runtime_or_installation_validation": true
+  },
+  "stages": [
+    {
+      "id": "cohort",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/build_mucars_bvival_manifest.py",
+        "--source",
+        "experiments/data/external/mucars_2024_v2/cars_dataframe.csv",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/cohort"
+      ],
+      "depends_on": [],
+      "phase": "reconstruction",
+      "declared_data_access": "Historical full-source prices are read for quality filtering/split construction; not an unseen-label claim"
+    },
+    {
+      "id": "pairs",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/generate_bvival_prediction_pairs.py",
+        "--train",
+        "experiments/replays/mucars-reconstructed-primary-v1/cohort/splits/train.csv",
+        "--validation",
+        "experiments/replays/mucars-reconstructed-primary-v1/cohort/splits/validation.csv",
+        "--calibration",
+        "experiments/replays/mucars-reconstructed-primary-v1/cohort/splits/calibration.csv",
+        "--evaluation-features",
+        "experiments/replays/mucars-reconstructed-primary-v1/cohort/splits/test_features.csv",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs",
+        "--action-fields",
+        "mileage_km,transmission,fuel_type,feat_body_condition",
+        "--seeds",
+        "13,42",
+        "--folds",
+        "3",
+        "--iterations",
+        "200",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.08",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "cohort"
+      ],
+      "phase": "scoring",
+      "declared_data_access": "Development/calibration data and label-free evaluation features; no evaluation loss"
+    },
+    {
+      "id": "development-actions",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/development_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/development_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/development_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,transmission,fuel_type,feat_body_condition,fiscal_power,number_of_doors,origin,first_owner,location,sector,equipment_count",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/development-actions",
+        "--evidence-status",
+        "development_only"
+      ],
+      "depends_on": [
+        "pairs"
+      ],
+      "phase": "scoring",
+      "declared_data_access": "Permitted development or held-out calibration targets, not evaluation outcomes"
+    },
+    {
+      "id": "calibration-actions",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/calibration_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/calibration_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/calibration_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,transmission,fuel_type,feat_body_condition,fiscal_power,number_of_doors,origin,first_owner,location,sector,equipment_count",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/calibration-actions",
+        "--evidence-status",
+        "development_only"
+      ],
+      "depends_on": [
+        "pairs"
+      ],
+      "phase": "scoring",
+      "declared_data_access": "Permitted development or held-out calibration targets, not evaluation outcomes"
+    },
+    {
+      "id": "value",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/fit_bvival_value_policy.py",
+        "--train-actions",
+        "experiments/replays/mucars-reconstructed-primary-v1/development-actions/bvival_action_dataset.csv",
+        "--calibration-actions",
+        "experiments/replays/mucars-reconstructed-primary-v1/calibration-actions/bvival_action_dataset.csv",
+        "--evaluation-features",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/evaluation_pre_action_features.csv",
+        "--feature-columns",
+        "action_id,before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,transmission,fuel_type,feat_body_condition,fiscal_power,number_of_doors,origin,first_owner,location,sector,equipment_count",
+        "--categorical-columns",
+        "action_id,make,model,transmission,fuel_type,feat_body_condition,origin,first_owner,location,sector",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/value",
+        "--seeds",
+        "13,42",
+        "--iterations",
+        "200",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.05",
+        "--l2-leaf-reg",
+        "10",
+        "--alpha",
+        "0.1",
+        "--minimum-action-group-size",
+        "100"
+      ],
+      "depends_on": [
+        "development-actions",
+        "calibration-actions"
+      ],
+      "phase": "scoring",
+      "declared_data_access": "Fits both original value objectives; no evaluation targets"
+    },
+    {
+      "id": "risk-mae",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/fit_bvival_risk_baseline.py",
+        "--train-actions",
+        "experiments/replays/mucars-reconstructed-primary-v1/development-actions/bvival_action_dataset.csv",
+        "--evaluation-features",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/evaluation_pre_action_features.csv",
+        "--feature-columns",
+        "action_id,before_prediction_log,before_prediction_std,missing_action_field_count,make,model,year,mileage_km,transmission,fuel_type,feat_body_condition,fiscal_power,number_of_doors,origin,first_owner,location,sector,equipment_count",
+        "--categorical-columns",
+        "action_id,make,model,transmission,fuel_type,feat_body_condition,origin,first_owner,location,sector",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/risk-mae",
+        "--objective",
+        "absolute_price_error",
+        "--seeds",
+        "13,42",
+        "--iterations",
+        "200",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.05",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "development-actions"
+      ],
+      "phase": "scoring",
+      "declared_data_access": "Original MAE risk objective; no new development-risk OOF selection"
+    },
+    {
+      "id": "scores",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/assemble_bvival_policy_scores.py",
+        "--development-actions",
+        "experiments/replays/mucars-reconstructed-primary-v1/development-actions/bvival_action_dataset.csv",
+        "--value-scores",
+        "experiments/replays/mucars-reconstructed-primary-v1/value/evaluation_action_scores.csv",
+        "--risk-scores",
+        "experiments/replays/mucars-reconstructed-primary-v1/risk-mae/evaluation_risk_scores.csv",
+        "--evaluation-features",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/evaluation_pre_action_features.csv",
+        "--objective",
+        "absolute_price_error",
+        "--random-seed",
+        "2026",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/scores"
+      ],
+      "depends_on": [
+        "value",
+        "risk-mae"
+      ],
+      "phase": "scoring",
+      "declared_data_access": "Original seven policy columns; no new fixed-field comparator or outcome-based selection"
+    },
+    {
+      "id": "join",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/join_bvival_evaluation_outcomes.py",
+        "--evaluation-prediction-pairs",
+        "experiments/replays/mucars-reconstructed-primary-v1/pairs/evaluation_prediction_pairs.csv",
+        "--sealed-labels",
+        "experiments/replays/mucars-reconstructed-primary-v1/cohort/sealed_labels/test_labels.csv",
+        "--frozen-policy-scores",
+        "experiments/replays/mucars-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv",
+        "--expected-policy-scores-sha256",
+        {
+          "frozen_artifact_sha256": "experiments/replays/mucars-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv"
+        },
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/evaluation-inputs",
+        "--freeze-id",
+        "mucars-reconstructed-primary-v1"
+      ],
+      "depends_on": [
+        "scores",
+        "new_scoring_freeze_checkpoint"
+      ],
+      "phase": "evaluation",
+      "declared_data_access": "Already-opened historical labels; new score hash must be frozen before this outcome join"
+    },
+    {
+      "id": "evaluate",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_main_python"
+        },
+        "experiments/evaluate_bvival_policies.py",
+        "--evaluation-outcomes",
+        "experiments/replays/mucars-reconstructed-primary-v1/evaluation-inputs/evaluation_outcomes.csv",
+        "--frozen-policy-scores",
+        "experiments/replays/mucars-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv",
+        "--score-columns",
+        "score_no_acquisition,score_random,score_global_field_prior,score_uncertainty_only,score_disagreement_only,score_mean_value,score_conservative_lower_value",
+        "--reference-policy",
+        "score_uncertainty_only",
+        "--objective",
+        "absolute_price_error",
+        "--budgets",
+        "0.01,0.05,0.10,0.20,0.30",
+        "--bootstrap-repetitions",
+        "10000",
+        "--bootstrap-seed",
+        "2026",
+        "--output-dir",
+        "experiments/replays/mucars-reconstructed-primary-v1/evaluation-mae",
+        "--freeze-id",
+        "mucars-reconstructed-primary-v1",
+        "--analysis-status",
+        "post_test_exploratory",
+        "--include-oracle-diagnostic"
+      ],
+      "depends_on": [
+        "join"
+      ],
+      "phase": "evaluation",
+      "declared_data_access": "Historical primary-MAE reconstruction, not a fresh confirmatory experiment"
+    }
+  ],
+  "unresolved_runtime_bindings": [
+    "validated_main_python",
+    "new_scoring_freeze_checkpoint",
+    "frozen_artifact_sha256"
+  ],
+  "runtime_role": {
+    "task": "CPU",
+    "original_serialized_thread_count": 10,
+    "thread_count_cli_option_available": false,
+    "record_actual_parallelism_and_implicit_catboost_defaults": true,
+    "complete_historical_training_environment_certified": false
+  },
+  "pre_execution_gates": [
+    "validate a dedicated environment against this static closure and archive its actual lock",
+    "verify original source bytes against the recorded SHA256 and confirm legitimate access",
+    "snapshot current bound code and plan before running; do not claim historical source identity",
+    "use a new output root; original outputs/freezes/manuscript remain read-only"
+  ],
+  "new_scoring_freeze_checkpoint": {
+    "required_before": "join",
+    "bind": [
+      "plan_sha256",
+      "code_closure_sha256",
+      "runtime_lock_sha256",
+      "new_score_sha256",
+      "generated_input_hashes"
+    ],
+    "feature_schema_and_cohort_counts_must_match_recovered_metadata": true,
+    "not_an_external_preregistration_or_unseen_label_security_guarantee": true
+  },
+  "engineering_concordance_rules": {
+    "author_chosen_not_journal_or_statistical_significance_thresholds": true,
+    "historical_results_already_known_when_rules_chosen": true,
+    "integer_counts_and_aggregate_key_sets": "exact",
+    "price_mae_absolute_tolerance_MAD": 0.05,
+    "rmsle_absolute_tolerance": 0.000001,
+    "relative_gain_and_ci_endpoint_tolerance_percentage_points": 0.01,
+    "fraction_metrics_absolute_tolerance": 0.000001,
+    "original_aggregate_reference": "experiments/outputs/mucars_bvival_v5_confirmatory_mae",
+    "reference_aggregate_hashes": {
+      "bvival_action_mix.csv": "7901119edfcd914ef61b9a4fbb41430a1e77a3151ef57fa2d5c5f1055a55afac",
+      "bvival_error_budget_curve.csv": "384d899434a072d6c8401661dd2f528fa0202d7bdb79aac9630297d5604677c9",
+      "bvival_policy_summary.csv": "9f7eef94c0ef691e8e20270a4eaaed8a3ddbb62e3779552c6d5bd5973079f592",
+      "bvival_reference_comparisons.csv": "601983196cae38991a6367d88d31d61365db198d4a3fa9cc3f4e960a1f9c9ad2"
+    },
+    "a_changed_zero_or_two_percent_interval_boundary_must_be_disclosed": true,
+    "on_failure": "Retain and explain discrepancies; no threshold relaxation, seed selection, tuning or replacement of original results",
+    "passing_does_not_establish_independent_scientific_replication": true
+  },
+  "scope_exclusions": [
+    "secondary RMSLE routing refit",
+    "subgroup bootstrap",
+    "post-test new comparators",
+    "cross-source reruns",
+    "real workflow/cost outcomes",
+    "public deposit or software licensing"
+  ],
+  "data_access_this_planning_command": {
+    "row_files_read": false,
+    "models_loaded": false,
+    "study_modules_imported": false,
+    "training_called": false,
+    "inference_called": false,
+    "directories_created": false
+  }
+}
