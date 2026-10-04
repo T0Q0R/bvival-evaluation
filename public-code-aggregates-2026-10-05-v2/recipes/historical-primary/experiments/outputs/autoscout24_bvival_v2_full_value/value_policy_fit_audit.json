@@ -1,0 +1,120 @@
+{
+  "categorical_columns": [
+    "action_id",
+    "make",
+    "model",
+    "vehicle_type",
+    "body_type",
+    "country_code"
+  ],
+  "evaluation_action_scores_sha256": "9ca63eb5af4a76808595512aa9b85a1678769d37cfceffc308c4841e161725ab",
+  "evaluation_outcomes_read": false,
+  "feature_columns": [
+    "action_id",
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "registration_year",
+    "vehicle_type",
+    "body_type",
+    "power_hp",
+    "nr_seats",
+    "nr_doors",
+    "country_code",
+    "seller_is_dealer",
+    "nr_prev_owners"
+  ],
+  "inputs": {
+    "calibration_actions_sha256": "f02643c52a7dbaba4311a65e85706a7ab3b660b4261e316f3303dd6f9b11bf10",
+    "evaluation_features_sha256": "9f1442655ab77fe244cc14db7c46231bf5880558a721ae6c57b662aff499efbb",
+    "train_actions_sha256": "e5fab69a6aa0ace469af2bb25a68c377d3bf7c93fd9098f032415dbd12ed3d9c"
+  },
+  "objectives": {
+    "absolute_price_error": {
+      "calibration_marginal_lower_coverage": 0.9001123535391364,
+      "calibrator": {
+        "action_corrections": {
+          "fuel_type": 1298.4522795244511,
+          "mileage_km": 3095.2688423383465,
+          "service_history": 392.4121869090093,
+          "transmission": 460.123118809959
+        },
+        "action_counts": {
+          "fuel_type": 14041,
+          "mileage_km": 14047,
+          "service_history": 14047,
+          "transmission": 13938
+        },
+        "alpha": 0.1,
+        "minimum_group_size": 100,
+        "nonnegative_correction": true,
+        "pooled_correction": 1270.753565484017
+      },
+      "models": [
+        {
+          "model_path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/absolute_price_error/seed_13.cbm",
+          "seed": 13,
+          "sha256": "2bb5a2187b557cb13a4ad6ce763195666743fef2605c3a1372012867e1e2aab5"
+        },
+        {
+          "model_path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/absolute_price_error/seed_42.cbm",
+          "seed": 42,
+          "sha256": "fb26cc427e7438a001ffce0d7707ce8c5f8abaa423730ecaf30d94df47852c2f"
+        },
+        {
+          "model_path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/absolute_price_error/seed_2026.cbm",
+          "seed": 2026,
+          "sha256": "641a70b19690d6da5e324d023b293960a8ba69d30296a0073c64c00c3be5464f"
+        }
+      ],
+      "target_column": "value_absolute_price_error"
+    },
+    "squared_log_error": {
+      "calibration_marginal_lower_coverage": 0.9001123535391364,
+      "calibrator": {
+        "action_corrections": {
+          "fuel_type": 0.007233025229154458,
+          "mileage_km": 0.03152330713026804,
+          "service_history": 0.0030913826544576757,
+          "transmission": 0.0056401509404876374
+        },
+        "action_counts": {
+          "fuel_type": 14041,
+          "mileage_km": 14047,
+          "service_history": 14047,
+          "transmission": 13938
+        },
+        "alpha": 0.1,
+        "minimum_group_size": 100,
+        "nonnegative_correction": true,
+        "pooled_correction": 0.01186121807732879
+      },
+      "models": [
+        {
+          "model_path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/squared_log_error/seed_13.cbm",
+          "seed": 13,
+          "sha256": "ef86bdf45a00f9ceee156205517437d0ae6dd4e10ec3592d0a674272c3c84273"
+        },
+        {
+          "model_path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/squared_log_error/seed_42.cbm",
+          "seed": 42,
+          "sha256": "1e4852aabbaf9b6b5b6229c261ce03a9a5387617c9193288565741730d7de663"
+        },
+        {
+          "model_path": "experiments/outputs/autoscout24_bvival_v2_full_value/models/squared_log_error/seed_2026.cbm",
+          "seed": 2026,
+          "sha256": "3a11aeb593cdab72d1c33ea5e13b7979e325caaeed3aefb7f2d6ed2c83bb0933"
+        }
+      ],
+      "target_column": "value_squared_log_error"
+    }
+  },
+  "protocol": "v4-bvival-prospective",
+  "seeds": [
+    13,
+    42,
+    2026
+  ]
+}
