@@ -1,0 +1,108 @@
+{
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition"
+  ],
+  "calibration_action_pair_count": 5083,
+  "calibration_listing_count": 1343,
+  "categorical_columns": [
+    "make",
+    "model",
+    "body_type",
+    "condition",
+    "transmission",
+    "fuel_type",
+    "color",
+    "interior_color",
+    "seats",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_body_condition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "development_action_pair_count": 23346,
+  "development_listing_count": 6148,
+  "evaluation_action_pair_count": 4823,
+  "evaluation_labels_read": false,
+  "evaluation_listing_count": 1267,
+  "feature_columns": [
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "body_type",
+    "condition",
+    "transmission",
+    "fuel_type",
+    "color",
+    "interior_color",
+    "seats",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_body_condition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "folds": 5,
+  "inputs": {
+    "calibration_sha256": "201d7368eaa50ba98904a2c6051537c44897ce1ca45674fda222691d9edfafda",
+    "evaluation_features_sha256": "5b7a19738ee704dea01ef8f2a83d1341b4ef0489232c1115e0c7792acdebe450",
+    "train_sha256": "c1f56a13d04b953c448699269966236d2b7e78e039410110327ab1494b8fac2b",
+    "validation_sha256": "4d57d04ab0944af11713c67e5c3b1f35d135f4f2314a9a1f5f4b78906541548b"
+  },
+  "model_parameters": {
+    "depth": 8,
+    "iterations": 400,
+    "l2_leaf_reg": 10.0,
+    "learning_rate": 0.08
+  },
+  "models": [
+    {
+      "path": "experiments/outputs/jucars_bvival_prediction_pairs_v1/base_models/mask_aware_catboost_seed_13.cbm",
+      "seed": 13,
+      "sha256": "ec3d84ad7e0cbb4d0df55688d8856e4cfd4fe9adbeb8a3e4e4763caf74d92b8e"
+    },
+    {
+      "path": "experiments/outputs/jucars_bvival_prediction_pairs_v1/base_models/mask_aware_catboost_seed_42.cbm",
+      "seed": 42,
+      "sha256": "72783578cfbf3e4c61f418a784b7585a31ddef0f29a37af0571766b939528f4f"
+    },
+    {
+      "path": "experiments/outputs/jucars_bvival_prediction_pairs_v1/base_models/mask_aware_catboost_seed_2026.cbm",
+      "seed": 2026,
+      "sha256": "f707a6d9b6bb958f03efdfa7b27c8562769a9d1ddfcb3a68e490ffa48e967694"
+    }
+  ],
+  "outputs": {
+    "calibration": {
+      "features": "3bb744528733d11c448e0e1f3643fcaca4499b4c9d2fe7392835387fee893f03",
+      "labels": "9cdbbef85f1d7fb7a82ee87bc9af49963f92da8f29aa23ce4e879fb76dc11211",
+      "pairs": "ff57a9fa22c4195e36a186ebb33f98a11d160c688c2e94d78c7c31adf48838d5"
+    },
+    "development": {
+      "features": "1289fc89cb99da6c35c41eba201cf4c95289ce8b8cd01ab26fec1f2f3b254cca",
+      "labels": "929a7e30394361debb61e6926199ee347a66b0576a61c59e5d9533c9c9e025f0",
+      "pairs": "0ca36ac16343d3f89bf271d24dadd73fb78b8feb5d9498c6420b809ca7dc75bb"
+    },
+    "evaluation": {
+      "features": "26916b8cde83a6311935c7ee7700d5eb4439e8ec9e916d6a45f53174afaa979a",
+      "pairs": "3d67ebd7fa852169dad9979cc63bd939f34329b0fbd73764aa3d57988746afcf"
+    }
+  },
+  "performance_metrics_computed": false,
+  "protocol": "v4-bvival-prospective-external-replication",
+  "seeds": [
+    13,
+    42,
+    2026
+  ]
+}
