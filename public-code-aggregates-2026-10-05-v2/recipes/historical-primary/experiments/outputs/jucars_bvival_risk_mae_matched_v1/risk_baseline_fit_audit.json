@@ -1,0 +1,79 @@
+{
+  "categorical_columns": [
+    "action_id",
+    "make",
+    "model",
+    "body_type",
+    "condition",
+    "transmission",
+    "fuel_type",
+    "color",
+    "interior_color",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_body_condition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "evaluation_outcomes_read": false,
+  "evaluation_risk_scores_sha256": "3baa4561626e1f284bf6b3e9fea3ce09358477b91b9e3e88fdcc42c9673bd204",
+  "feature_columns": [
+    "action_id",
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "body_type",
+    "condition",
+    "transmission",
+    "fuel_type",
+    "color",
+    "interior_color",
+    "seats",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_body_condition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "inputs": {
+    "evaluation_features_sha256": "26916b8cde83a6311935c7ee7700d5eb4439e8ec9e916d6a45f53174afaa979a",
+    "train_actions_sha256": "6ab8303dbb3ce6d79fdfdc3d67de8f90aadeb1abee4f91e33248b20115957e37"
+  },
+  "interpretation": "Predicted pre-acquisition error is a risk-routing baseline and is not an estimate of action value.",
+  "models": [
+    {
+      "model_path": "experiments/outputs/jucars_bvival_risk_mae_matched_v1/models/seed_13.cbm",
+      "seed": 13,
+      "sha256": "2e2752e1f5a7f59eea9abd268595f6dbbbc769f51e2d9f6d93642c32d237afb8"
+    },
+    {
+      "model_path": "experiments/outputs/jucars_bvival_risk_mae_matched_v1/models/seed_42.cbm",
+      "seed": 42,
+      "sha256": "8379eda61aa83b2052b43a9cb79302d1e1356c4f2f767b7a09303a48712fbcf3"
+    },
+    {
+      "model_path": "experiments/outputs/jucars_bvival_risk_mae_matched_v1/models/seed_2026.cbm",
+      "seed": 2026,
+      "sha256": "86e2fe65a8be06594b0f977ac799c26d8ead5823a446a9b329d6e77f12ca1ef6"
+    }
+  ],
+  "objective": "absolute_price_error",
+  "protocol": "v4-bvival-prospective",
+  "risk_score_column": "predicted_pre_action_absolute_price_error",
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "target_column": "risk_target_absolute_price_error_before"
+}
