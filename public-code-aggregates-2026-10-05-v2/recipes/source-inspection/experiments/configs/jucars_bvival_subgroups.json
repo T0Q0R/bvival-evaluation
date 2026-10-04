@@ -1,0 +1,19 @@
+{
+  "protocol": "v4-bvival-jucars-prespecified-subgroups",
+  "primary_budget_fraction": 0.1,
+  "reference_policy": "score_uncertainty_only",
+  "candidate_policy": "score_conservative_lower_value",
+  "maker_groups": ["Hyundai", "Toyota", "Kia", "Mercedes Benz", "Volkswagen"],
+  "maker_other_group": "Other makers",
+  "model_year_groups": [
+    {"label": "2019 or newer", "minimum": 2019},
+    {"label": "2014 to 2018", "minimum": 2014},
+    {"label": "2013 or older", "minimum": null}
+  ],
+  "price_cutpoints_JOD": [6000.0, 13700.0],
+  "price_cutpoint_source": "training_partition_tertiles_rounded_to_100_JOD",
+  "mileage_groups": ["numeric mileage available", "numeric mileage missing"],
+  "minimum_group_size_for_safety_gate": 50,
+  "material_relative_rmsle_deterioration_percent": 5.0,
+  "inference": "descriptive_safety_gate_only; no subgroup superiority or conditional coverage claim"
+}
