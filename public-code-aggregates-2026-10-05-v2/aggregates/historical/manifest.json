@@ -1,0 +1,212 @@
+{
+  "exclusions": [
+    "raw marketplace rows",
+    "listing-action rows",
+    "prediction pairs and scores",
+    "evaluation outcome rows",
+    "identifiers, VINs, images, and model artifacts"
+  ],
+  "file_count": 22,
+  "files": [
+    {
+      "analysis": "primary",
+      "dataset": "mucars",
+      "file": "mucars_primary_bvival_error_budget_curve.csv",
+      "package_sha256": "d2e02b5f7a390ff5e22fb6f24813cb1cb7f06ef90ef7891d6549c5abd58a2939",
+      "rows": 40,
+      "source_sha256": "384d899434a072d6c8401661dd2f528fa0202d7bdb79aac9630297d5604677c9",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "mucars",
+      "file": "mucars_primary_bvival_reference_comparisons.csv",
+      "package_sha256": "942c988787583b760be405ff1599591b48ecb03cf9e75a850208f66b6f4588d8",
+      "rows": 35,
+      "source_sha256": "601983196cae38991a6367d88d31d61365db198d4a3fa9cc3f4e960a1f9c9ad2",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "mucars",
+      "file": "mucars_primary_bvival_action_mix.csv",
+      "package_sha256": "fe23e1bb4ab780f7e275772bf4fe365021633424f3f970098a2873bc1f66ef21",
+      "rows": 85,
+      "source_sha256": "7901119edfcd914ef61b9a4fbb41430a1e77a3151ef57fa2d5c5f1055a55afac",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "mucars",
+      "file": "mucars_two_head_bvival_error_budget_curve.csv",
+      "package_sha256": "b30856c9e31faa71f88f816295fcdb6c7286b65cac62397ba42f715c32e5834b",
+      "rows": 2,
+      "source_sha256": "98bfdef12d426c3521f59c4ebe141ec59770f75787a3d75096478c069f7093c1",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "mucars",
+      "file": "mucars_two_head_bvival_reference_comparisons.csv",
+      "package_sha256": "1200a90f345ee631867973464f4471dd0f70b93e37a4ff56736a1d720002ef82",
+      "rows": 1,
+      "source_sha256": "1200a90f345ee631867973464f4471dd0f70b93e37a4ff56736a1d720002ef82",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "mucars",
+      "file": "mucars_two_head_bvival_action_mix.csv",
+      "package_sha256": "3d221117ae88c0bb39fbbb088ca9fa95b0b3ef49c207c45d10185d67eb262566",
+      "rows": 7,
+      "source_sha256": "42920461e39aa2adad502615532803001c92eced90d388ddfcbd82f4cfc8d857",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "decomposition",
+      "dataset": "mucars",
+      "file": "mucars_exploratory_decomposition.json",
+      "package_sha256": "e89e6fd16aa1bbc092279c28da380a0a6e873239e74ae37efd22268885782861",
+      "rows": null,
+      "source_sha256": "b00774e8c97a6e121cba8ceac34f54b815f610cb84d630237999fba4008c3d52",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "jucars",
+      "file": "jucars_primary_bvival_error_budget_curve.csv",
+      "package_sha256": "4572c09c0739b2dfae7546d7f9d476c841bcf07f7de2c6c97ba6e273f445b860",
+      "rows": 40,
+      "source_sha256": "2dc0495c23060a0667e3f50a666560a7c392fcac0115677229a001c8d5df0023",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "jucars",
+      "file": "jucars_primary_bvival_reference_comparisons.csv",
+      "package_sha256": "42f8ccbb960731a7bb280fe1c3f7c1ce816ffd8a1f576b28e19b7b2572cf071c",
+      "rows": 35,
+      "source_sha256": "bb0e1165a343df99dbe21692f53276decb0568ea004f40a607735bb96617fae0",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "jucars",
+      "file": "jucars_primary_bvival_action_mix.csv",
+      "package_sha256": "10f176a637ffea75e07cfbda5500aac488e6afbc96f9af4e3ea282354fe403e1",
+      "rows": 70,
+      "source_sha256": "935c642671bd87a3e7535da91d21d12768116ab173b13205b3e9b428b0db1a82",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "jucars",
+      "file": "jucars_two_head_bvival_error_budget_curve.csv",
+      "package_sha256": "a30af74aa78dc3899c21519d5460b275302287f0cc5e616ded7856220368c670",
+      "rows": 2,
+      "source_sha256": "aa3ee58623c23b6b420bf707a488d7b1942f2d5b63a7d8fe670f1a8a1efccf6b",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "jucars",
+      "file": "jucars_two_head_bvival_reference_comparisons.csv",
+      "package_sha256": "a702bbe92d45867c6da15ca244e0961bb6167cb75c645488e08946b893ee8e09",
+      "rows": 1,
+      "source_sha256": "8701efeb6e90439296a6b72a8c00cdb72a471f482d7e781b2728263d913834db",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "jucars",
+      "file": "jucars_two_head_bvival_action_mix.csv",
+      "package_sha256": "8412d90b4f3dd601dfdb3499636b805e13ccc882252b4a2716b7869c6c2337d1",
+      "rows": 5,
+      "source_sha256": "3964ed772ba137a72030ad0ac45d370dbb2fd407779c64353beb8126cea490f4",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "decomposition",
+      "dataset": "jucars",
+      "file": "jucars_exploratory_decomposition.json",
+      "package_sha256": "10fdf612eeae113dba6df39cdbe42487131f4ffdf9ec987e7797ab32e0e9df3a",
+      "rows": null,
+      "source_sha256": "df2911e3239d02960c2bed4c020daa5c2340f9e34ea7504f97c25f0adaab570c",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "autoscout",
+      "file": "autoscout_primary_bvival_error_budget_curve.csv",
+      "package_sha256": "cb4d8b55188b28bb16cbebf6cb5dba9d34006083e7dbe536f335ea3e951d5f81",
+      "rows": 7,
+      "source_sha256": "76253d56cd04a50e6bde1250244ffcff6f0cf6980e49b298c86b7ce93b6c5963",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "autoscout",
+      "file": "autoscout_primary_bvival_reference_comparisons.csv",
+      "package_sha256": "7247a795d003a982b981673dba3369262e488917cc2f92e9a08f26338441e15b",
+      "rows": 6,
+      "source_sha256": "67eed81e833d1ce0e1cc48951306092047af1dc00fff9e3acce21aabc733e1a8",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "primary",
+      "dataset": "autoscout",
+      "file": "autoscout_primary_bvival_action_mix.csv",
+      "package_sha256": "3362479fd4d2fb739ff76bd6f2eb58893cdf745082f06f233f4e687eb15feee5",
+      "rows": 14,
+      "source_sha256": "19c64c3eb23240a0e7d8d2ababf78004796489afba5f2f0ae0b81cde0fb072ae",
+      "status": "source_specific_frozen_test"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "autoscout",
+      "file": "autoscout_two_head_bvival_error_budget_curve.csv",
+      "package_sha256": "499dd4d7cf14fbc1956938176bb7e589b74d636e29cf89579384ca8cb8356459",
+      "rows": 2,
+      "source_sha256": "f223221c984e924a388a5de97b683bc09d8e9f4a5089088c5fe3d78e7e044c10",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "autoscout",
+      "file": "autoscout_two_head_bvival_reference_comparisons.csv",
+      "package_sha256": "432d5a6cfb5200fd9f0849671e3d2ca2fa9b2bbd25bfb1424e710adc7105947d",
+      "rows": 1,
+      "source_sha256": "432d5a6cfb5200fd9f0849671e3d2ca2fa9b2bbd25bfb1424e710adc7105947d",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "two_head",
+      "dataset": "autoscout",
+      "file": "autoscout_two_head_bvival_action_mix.csv",
+      "package_sha256": "a5a695baee728fcff0dda46cfc137d4f5b7549b0d70bd4c425c546c39bc41fa7",
+      "rows": 4,
+      "source_sha256": "6c9a4dbca7589d28acd33c2884f01d46411c7ce9d53ef22232b75299e7b64b69",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "decomposition",
+      "dataset": "autoscout",
+      "file": "autoscout_exploratory_decomposition.json",
+      "package_sha256": "cfc4fe20bb4e07e720df2c8f59d28718754cf38e9e0dbcaf665f480b5400bc84",
+      "rows": null,
+      "source_sha256": "c8b39c14f3850812b52af6014d19f918c406d54d0d6d9048d08f91aa4ce19fd7",
+      "status": "post_test_exploratory"
+    },
+    {
+      "analysis": "cohort_counts",
+      "dataset": "all_three",
+      "file": "cohort_counts.csv",
+      "package_sha256": "2b15da81197b0c130710231986ccfe948aff89127816ded3ac9757533e8b189f",
+      "rows": 3,
+      "source_sha256": null,
+      "status": "pretest_split_construction"
+    }
+  ],
+  "source_count": 3,
+  "status": "local aggregate-only staging; not a public archive"
+}

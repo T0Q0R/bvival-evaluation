@@ -1,0 +1,6 @@
+policy,budget,action_id,count,share_of_actions
+score_mean_value,0.1,fuel_type,127,1.0
+score_risk_minus_posterror_full_budget,0.1,mileage_km,60,0.4724409448818897
+score_risk_minus_posterror_full_budget,0.1,feat_body_condition,42,0.3307086614173228
+score_risk_minus_posterror_full_budget,0.1,transmission,21,0.1653543307086614
+score_risk_minus_posterror_full_budget,0.1,fuel_type,4,0.0314960629921259

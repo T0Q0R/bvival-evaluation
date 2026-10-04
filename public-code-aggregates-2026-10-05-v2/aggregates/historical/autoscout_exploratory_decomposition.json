@@ -1,0 +1,64 @@
+{
+  "analysis_status": "post-test exploratory; no prospective inference",
+  "budget": 0.1,
+  "contrasts": {
+    "field_effect_on_risk_listings": {
+      "candidate_cell": "risk_listings_value_field",
+      "ci_lower_percent": 1.2229409410997205,
+      "ci_upper_percent": 2.1376865820256796,
+      "n": 14005,
+      "reference_cell": "risk_listings_fixed_field",
+      "relative_mae_gain_percent": 1.6749531121976167
+    },
+    "field_effect_on_value_listings": {
+      "candidate_cell": "value_listings_value_field",
+      "ci_lower_percent": 1.3747398406335662,
+      "ci_upper_percent": 2.141908091391004,
+      "n": 14005,
+      "reference_cell": "value_listings_fixed_field",
+      "relative_mae_gain_percent": 1.7451632119410183
+    },
+    "listing_effect_at_fixed_field": {
+      "candidate_cell": "value_listings_fixed_field",
+      "ci_lower_percent": 0.14623015172277823,
+      "ci_upper_percent": 1.0279456480956233,
+      "n": 14005,
+      "reference_cell": "risk_listings_fixed_field",
+      "relative_mae_gain_percent": 0.5853375772605595
+    },
+    "total_value_vs_risk_fixed": {
+      "candidate_cell": "value_listings_value_field",
+      "ci_lower_percent": 1.754401568569799,
+      "ci_upper_percent": 2.901133302183238,
+      "n": 14005,
+      "reference_cell": "risk_listings_fixed_field",
+      "relative_mae_gain_percent": 2.3202856931375595
+    }
+  },
+  "evaluation_outcomes_sha256": "87e5e54dcc084eea3ee77a9f7eefe99fe507488d99b75ac6b6256c67cd2958e4",
+  "exploratory_crossed_selections_sha256": "dcdc2fc9c73c8d6f4694bce6bd89b65051d1cc2915fabadbae1ce3d8c1e91c6b",
+  "fixed_field": "mileage_km",
+  "fixed_field_unavailable_fallback_count": {
+    "risk_listings": 0,
+    "value_listings": 0
+  },
+  "frozen_policy_scores_sha256": "3a1f50bd9e83f9288fe67a14a0037f9e693520aae5a7c6efd9e9999889aed05f",
+  "independent_resampling_unit": "listing",
+  "listing_set_overlap": 776,
+  "post_reveal_mae_by_cell": {
+    "risk_listings_fixed_field": 6868.188403873786,
+    "risk_listings_value_field": 6753.149468451506,
+    "value_listings_fixed_field": 6827.986316268861,
+    "value_listings_value_field": 6708.82681096097
+  },
+  "risk_original_action_agreement_with_fixed": 1.0,
+  "selected_count_per_cell": {
+    "risk_listings_fixed_field": 1401,
+    "risk_listings_value_field": 1401,
+    "value_listings_fixed_field": 1401,
+    "value_listings_value_field": 1401
+  },
+  "test_listing_count": 14005,
+  "uncertainty_boundary": "Percentile intervals resample listings while keeping fitted models, scores, selected listing sets, and actions fixed. The four contrasts were devised after test opening; intervals are descriptive and not multiplicity adjusted.",
+  "value_original_action_agreement_with_value_field": 1.0
+}
