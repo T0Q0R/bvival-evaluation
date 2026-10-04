@@ -1,0 +1,980 @@
+{
+  "version": "bvival-local-source-inspection-2026-10-02-v2",
+  "scope": "source_inspection_and_synthetic_tests_only",
+  "publicly_archived": false,
+  "project_license_selected": false,
+  "public_archive_or_reviewer_link": null,
+  "raw_or_row_level_data_included": false,
+  "full_empirical_pipeline_portable": false,
+  "new_independent_confirmation": false,
+  "historical_tests_already_opened": true,
+  "original_artifact_bindings_included": false,
+  "reconstructed_inspection_plans_included": true,
+  "inspection_plans_executable_without_original_artifacts": false,
+  "closure_roots": [
+    "experiments/analyze_bvival_listing_field_decomposition.py",
+    "experiments/assemble_bvival_policy_scores.py",
+    "experiments/build_autoscout24_bvival_manifest.py",
+    "experiments/build_autoscout24_quasi_duplicate_mask.py",
+    "experiments/build_bvival_action_dataset.py",
+    "experiments/build_jucars_bvival_manifest.py",
+    "experiments/build_mucars_bvival_manifest.py",
+    "experiments/evaluate_autoscout24_exploratory_groups.py",
+    "experiments/evaluate_bvival_mask_sensitivity.py",
+    "experiments/evaluate_bvival_policies.py",
+    "experiments/evaluate_bvival_subgroups.py",
+    "experiments/evaluate_turkey_released_phase.py",
+    "experiments/fit_bvival_posterror_baseline.py",
+    "experiments/fit_bvival_risk_baseline.py",
+    "experiments/fit_bvival_value_policy.py",
+    "experiments/freeze_autoscout24_v2.py",
+    "experiments/generate_bvival_field_selection_pairs.py",
+    "experiments/generate_bvival_prediction_pairs.py",
+    "experiments/join_bvival_evaluation_outcomes.py",
+    "experiments/prepare_external_bvival_scores.py",
+    "experiments/select_bvival_fixed_field_development.py",
+    "experiments/select_bvival_penalty_development.py",
+    "experiments/tests/test_analyze_bvival_listing_field_decomposition.py",
+    "experiments/tests/test_assemble_bvival_policy_scores.py",
+    "experiments/tests/test_autoscout24_quasi_duplicate_mask.py",
+    "experiments/tests/test_build_autoscout24_bvival_manifest.py",
+    "experiments/tests/test_build_bvival_action_dataset.py",
+    "experiments/tests/test_build_jucars_bvival_manifest.py",
+    "experiments/tests/test_build_mucars_bvival_manifest.py",
+    "experiments/tests/test_bvi_val.py",
+    "experiments/tests/test_bvi_val_baselines.py",
+    "experiments/tests/test_evaluate_bvival_mask_sensitivity.py",
+    "experiments/tests/test_evaluate_bvival_policies.py",
+    "experiments/tests/test_evaluate_bvival_subgroups.py",
+    "experiments/tests/test_fit_bvival_posterror_baseline.py",
+    "experiments/tests/test_fit_bvival_risk_baseline.py",
+    "experiments/tests/test_fit_bvival_risk_oof.py",
+    "experiments/tests/test_fit_bvival_value_policy.py",
+    "experiments/tests/test_generate_bvival_prediction_pairs.py",
+    "experiments/tests/test_join_bvival_evaluation_outcomes.py",
+    "experiments/tests/test_prepare_external_bvival_scores.py",
+    "experiments/tests/test_select_bvival_fixed_field_development.py",
+    "experiments/tests/test_select_bvival_penalty_development.py",
+    "release-bvival/check_autoscout24_reconstruction.py",
+    "release-bvival/check_jucars_reconstruction.py",
+    "release-bvival/check_mucars_reconstruction.py",
+    "release-bvival/check_rerun_entrypoints.py",
+    "release-bvival/check_source_bundle.py",
+    "release-bvival/plan_autoscout24_replay.py",
+    "release-bvival/plan_jucars_replay.py",
+    "release-bvival/plan_mucars_replay.py",
+    "release-bvival/project_jucars_legacy_targets.py",
+    "release-bvival/replay_autoscout24_cached_field_selection.py",
+    "release-bvival/run_autoscout24_outcome_replay.py",
+    "release-bvival/run_autoscout24_scoring_replay.py",
+    "release-bvival/run_jucars_outcome_replay.py",
+    "release-bvival/run_jucars_scoring_replay.py",
+    "release-bvival/run_mucars_outcome_replay.py",
+    "release-bvival/run_mucars_scoring_replay.py",
+    "release-bvival/run_turkey_cached_outcome_replay.py",
+    "release-bvival/tests/test_check_autoscout24_reconstruction.py",
+    "release-bvival/tests/test_check_jucars_reconstruction.py",
+    "release-bvival/tests/test_check_mucars_reconstruction.py",
+    "release-bvival/tests/test_check_rerun_entrypoints.py",
+    "release-bvival/tests/test_plan_autoscout24_replay.py",
+    "release-bvival/tests/test_plan_jucars_replay.py",
+    "release-bvival/tests/test_plan_mucars_replay.py",
+    "release-bvival/tests/test_project_jucars_legacy_targets.py",
+    "release-bvival/tests/test_replay_autoscout24_cached_field_selection.py",
+    "release-bvival/tests/test_run_autoscout24_outcome_replay.py",
+    "release-bvival/tests/test_run_autoscout24_scoring_replay.py",
+    "release-bvival/tests/test_run_jucars_outcome_replay.py",
+    "release-bvival/tests/test_run_jucars_scoring_replay.py",
+    "release-bvival/tests/test_run_mucars_outcome_replay.py",
+    "release-bvival/tests/test_run_mucars_scoring_replay.py",
+    "release-bvival/tests/test_run_turkey_cached_outcome_replay.py",
+    "release-bvival/tests/test_source_bundle.py"
+  ],
+  "static_import_closure": {
+    "local_source_sha256": {
+      "experiments/analyze_bvival_listing_field_decomposition.py": "dc725fae19618e8c5f50bf7dde44889b980a5a6eccaeb0f378b998d14489ee73",
+      "experiments/archive_turkey_candidate.py": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+      "experiments/assemble_bvival_policy_scores.py": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "experiments/audit_autoscout24_candidate.py": "1b6f638893d96fd893823a9398764f882abcfa4dec75a38b70d74368bcd50647",
+      "experiments/audit_turkey_feature_only.py": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+      "experiments/build_autoscout24_bvival_manifest.py": "114cee7910d7ac9ff26ef03557973c4c574c40b0905d7ec8a742c3e5d6c796ec",
+      "experiments/build_autoscout24_quasi_duplicate_mask.py": "ee1a83c3c6ab64047ca972bee180d888ebfe230d53fe36ba45524d3bbee98c78",
+      "experiments/build_bvival_action_dataset.py": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "experiments/build_jucars_bvival_manifest.py": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0",
+      "experiments/build_mucars_bvival_manifest.py": "e93c85dd57da857a0e97d37a8fda137627398afa81e197d5efe11351b6c5764d",
+      "experiments/build_turkey_price_free_manifest.py": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1",
+      "experiments/bvi_val.py": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "experiments/bvi_val_baselines.py": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "experiments/evaluate_autoscout24_exploratory_groups.py": "bf63ce9d8adfa96fa7579bae7abca13928bc8c312d8e7c542aa5506c1eac1f5b",
+      "experiments/evaluate_bvival_mask_sensitivity.py": "63ec970422192c45c3451ee3353874fcdf13cafe60d2e523c4bb5a927e58f40f",
+      "experiments/evaluate_bvival_policies.py": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "experiments/evaluate_bvival_subgroups.py": "0b753067cc34fe3b2cf8dac0ebffbc5a227b1b0761ea1dbb9da3b44f7c0b69da",
+      "experiments/evaluate_turkey_released_phase.py": "9dca9182508b57ba2d9799a21c1426cdeaa7cc015af3fb242ac8a71914f45d1c",
+      "experiments/fit_bvival_posterror_baseline.py": "034622ac2eb97ab009299ae7bfc95793040a6545cdbc595ddd2ff020407db900",
+      "experiments/fit_bvival_risk_baseline.py": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "experiments/fit_bvival_value_policy.py": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "experiments/freeze_autoscout24_v2.py": "4ea35a0bd301f4b3c0168ca142aa6d97da5f88e88d6f6d471c9024c793c42ed7",
+      "experiments/freeze_turkey_heldout_scores.py": "81447047dcba9d3f33d7645bd475dac15f12e976ddc82243005455d4a690ef10",
+      "experiments/generate_bvival_field_selection_pairs.py": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568",
+      "experiments/generate_bvival_prediction_pairs.py": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "experiments/join_bvival_evaluation_outcomes.py": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+      "experiments/prepare_external_bvival_scores.py": "980aa8b7249fdb34309b7ec19272cfd9f516c778cd74d86391eae038493386d2",
+      "experiments/run_turkey_development.py": "6d34c0599c505d8e7d25ab625e593f0612528e0c0d87e7a94e9242202c9a2862",
+      "experiments/select_bvival_fixed_field_development.py": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4",
+      "experiments/select_bvival_penalty_development.py": "3d5964e49ca28666978509a1331776a825a71ea8e889366b5970d1b151518e0e",
+      "experiments/tests/test_analyze_bvival_listing_field_decomposition.py": "83451ab8cde9cf4eedeea7697382dfa8af56091a72c5f397303f253f7235dd7b",
+      "experiments/tests/test_assemble_bvival_policy_scores.py": "90bcfc07098ff73d0e339f8eeb780c05f96080431195ea76d6614f7d8b07cfc1",
+      "experiments/tests/test_autoscout24_quasi_duplicate_mask.py": "56eec6e932d7309e1cd1e012279d22487deb2f6d7c6b4a1f62075423eee709a0",
+      "experiments/tests/test_build_autoscout24_bvival_manifest.py": "f27eb13d4f3610516a873ce534b8502e00d27b81f185f6a2737091fcccea6c5c",
+      "experiments/tests/test_build_bvival_action_dataset.py": "7852142011ffd3d866dcf445a86fe1bcb429b3d2048dc047bc733735f5a3e7b2",
+      "experiments/tests/test_build_jucars_bvival_manifest.py": "8a2f70cd8308fe2516f1d9338769cf26151928bf8ce6b63226d9e750efe8d03e",
+      "experiments/tests/test_build_mucars_bvival_manifest.py": "6bc9a2ae3af5e401f8e646964097e055d884508a294202731f731ded79a4c772",
+      "experiments/tests/test_bvi_val.py": "ec5420578d6797449e6ba4cd7967a6f76d72d1eee08936b10c9a965c1c2bc177",
+      "experiments/tests/test_bvi_val_baselines.py": "de74cb9a842d4827fd42a8ec6db45983a0e088566ab4b9d88c39f34c311f1ff2",
+      "experiments/tests/test_evaluate_bvival_mask_sensitivity.py": "276db649b9eee605e46e9bb2a926b4f6f861da8c3b70b4fdde0d6ca455ccd89e",
+      "experiments/tests/test_evaluate_bvival_policies.py": "240d2bd04931a6a95840ec67461a1680eaeaf4d2be4adf1e0d6d78802d220ff5",
+      "experiments/tests/test_evaluate_bvival_subgroups.py": "eda271ecda191756ce47f4d199c6009391ad74e30a4b3e8306781db3a0ec3d55",
+      "experiments/tests/test_fit_bvival_posterror_baseline.py": "9a7d829c5ba6b111e6557fc4021d5336f9e24c2f4e6d4630a824ca01bee07d48",
+      "experiments/tests/test_fit_bvival_risk_baseline.py": "8722c491d042f9222af86bcee06e7e7ee119f3b44152690da1fe5b3e86325e3a",
+      "experiments/tests/test_fit_bvival_risk_oof.py": "ba8e915a1162d9380d335291908b4bd7b22df73dae7cf409fc6f81d00886d357",
+      "experiments/tests/test_fit_bvival_value_policy.py": "80d2adb57f21e28ea7d33b7d1b29c7601142d6ab951e577cdd6cbd56fd3fe656",
+      "experiments/tests/test_generate_bvival_prediction_pairs.py": "c7515c0f804cd5b7699210bed4f5e91980a4272aff5670e348f3679e9cfc1649",
+      "experiments/tests/test_join_bvival_evaluation_outcomes.py": "9174d777646f932088a216ed55479fa160534d214299a8569fcabc99d3683a92",
+      "experiments/tests/test_prepare_external_bvival_scores.py": "6c1f0463b768e555be14e34eede1a309d960e37a8d6073abf551b7ec7b3abaa1",
+      "experiments/tests/test_select_bvival_fixed_field_development.py": "8c79581b53bf2af82a0e3b9a03b461d04eef097985d445056a7421de32379a9e",
+      "experiments/tests/test_select_bvival_penalty_development.py": "c8672168d8ac8252c01c3d3fd408038f1a0bdd05f8c481cbde171dab3eefc730",
+      "experiments/train_turkey_nested_valuation.py": "cd47900a9b7a025a2efefe86f75bb7ec707668477504f9c7c2b7159875381f71",
+      "experiments/turkey_development_io.py": "09494f1bb9db30a011d46d48b016593b5fe3f939cb5e26421fd171766af58731",
+      "experiments/turkey_execution_contract.py": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7",
+      "experiments/turkey_frozen_outcome_evaluation.py": "274845ecf28b4a13df035a27cdd54a9f0858c20beb54386976adf1a5d4359153",
+      "experiments/turkey_information_boundary.py": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682",
+      "experiments/turkey_policy_components.py": "fd66673bb2455f144e5fe08cb6820b48a6090091ba557f709253529e7fb9df47",
+      "experiments/turkey_price_access_accounting_v2.py": "c0ff13976c49a1fb79cc46b0aa8dbb90ac20b12d142a9bae26cccda29a9fa6c4",
+      "experiments/turkey_price_cells.py": "722440cef119fa53084047bc412db442eb7aaffdca995be7f2145818887aa740",
+      "experiments/turkey_price_free_scoring.py": "30dfee0db38a8284e3940e1cc387c852d85b6ad4885afea1c0c7f0f022c7a56b",
+      "experiments/turkey_source_access_binding.py": "363ab1d942b4bbc99c65f77b5b0a4d2088cce672297d1a3b12e42058c69677e8",
+      "experiments/turkey_source_price_release.py": "a8dcaff0e7bdcdcb44cc4c1134f67cd1ef26b8cac389baf3a864f097a18edd8d",
+      "experiments/turkey_valuation_components.py": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a",
+      "experiments/verify_turkey_heldout_score_freeze.py": "bc6e707dea1ea8c9766f150d11b6b95d6b02221e9721cc7bf465abe273a834b9",
+      "experiments/verify_turkey_price_free_bundle.py": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad",
+      "release-bvival/check_autoscout24_reconstruction.py": "65d86c6c7616347dcc773550b63887744d22053e394936b76230f11810e50ca3",
+      "release-bvival/check_jucars_reconstruction.py": "fe68ce380d26e82cdd894e71fee557fa1c441dd67f9c0c2a1d9b4129485c144d",
+      "release-bvival/check_mucars_reconstruction.py": "053b6aac8d35fbdc77e11ecf2d95ca4abc63296c0c18eca0ee249efc9203b660",
+      "release-bvival/check_remaining_source_metadata.py": "a86f166d5930f3c8def4c66d673c61bfe4d213249d391cbefb0f8144086f9598",
+      "release-bvival/check_rerun_entrypoints.py": "13e8f7fcbb2edceda5479dfcb8d5f2510f6d03b0add06a5211151bc460f0bc13",
+      "release-bvival/check_source_bundle.py": "b1faf513bbab576cf7d08995c5348d898a0af4a35ae3bfccbb656cb2d64d506b",
+      "release-bvival/plan_autoscout24_replay.py": "c38123bf22fe26e029b9b7e5d2def73e6b1eeff5ba1403a16b0a60dad4f92cb8",
+      "release-bvival/plan_jucars_replay.py": "eeb9006d691579f0b3a494a3af05b2f2a1b5720ffff1c00392de84041f9c7477",
+      "release-bvival/plan_mucars_replay.py": "046b40fd7a510cd6e9e19e2b228492e5b6ffb155b3420de6ca22eec74fffab9d",
+      "release-bvival/project_jucars_legacy_targets.py": "7034fb6ed65358cf0a39e9b1c4e94ecc60bfbeb72540c3214d8d04435db7cbf6",
+      "release-bvival/replay_autoscout24_cached_field_selection.py": "b1b76bf277ce4bb5d1c113c9e66fdeffca078c17386df5d49e1b36a95634ae4d",
+      "release-bvival/run_autoscout24_outcome_replay.py": "476cf666c0a69590e5cbbb0f629fb03115b20f792d46f32ec5edad8f341bcbaf",
+      "release-bvival/run_autoscout24_scoring_replay.py": "0ed43fdfd02c83c2988ee02346aff8184575996c3b705813109f14192cbeebcc",
+      "release-bvival/run_jucars_outcome_replay.py": "e8b07baec456bb25da99f4e72c84101ff3574020c2812e41a1f6de3be4e0145b",
+      "release-bvival/run_jucars_scoring_replay.py": "57e4f1e7b1e180f259ee51c7c69855a83b22ae0a597505624cdba744f68ed066",
+      "release-bvival/run_mucars_outcome_replay.py": "b6b53f00de7701cbce5a87d122c5d6840211837d71b7819993dacecc010a9d51",
+      "release-bvival/run_mucars_scoring_replay.py": "e0971417f85422e26bfcab1e5e60699653ee2379ca9c528c821248c564d6069d",
+      "release-bvival/run_turkey_cached_outcome_replay.py": "576cb21dafdc8bb4cf23e47ab2fab40dc92e62db0e9a098d33f983ac902bca57",
+      "release-bvival/tests/test_check_autoscout24_reconstruction.py": "75adc3e42ac46ea2883099bb19581d05939ed47d5a3f6fff0d7f5b7a4767482d",
+      "release-bvival/tests/test_check_jucars_reconstruction.py": "53e1f4d6dcf9f4e5fd2dd7c2d50c1105d6319ab3440a45e7180bc5e6c6d0095a",
+      "release-bvival/tests/test_check_mucars_reconstruction.py": "ecf329f08bc0f2dc162c0f82fc55e66266f58b9de7c3c9b69a4a67cc6da812c6",
+      "release-bvival/tests/test_check_rerun_entrypoints.py": "c9c5cd75951c3201dd38c1cd8c8b3bac893c401db441629d3190bc6c0bc4403f",
+      "release-bvival/tests/test_plan_autoscout24_replay.py": "6c70df5852f27840312b527826c0c4cafad5c75e646e4ec3ae5b1c861c4c0c7f",
+      "release-bvival/tests/test_plan_jucars_replay.py": "06ded3c4d1eaad9774206ecf05676acd13af5ef0f1214baffc0485a1f06791ed",
+      "release-bvival/tests/test_plan_mucars_replay.py": "70739ffa8844b9a2028d4817df9cf0ce8f25ca57334792a8e13f117d20614ea2",
+      "release-bvival/tests/test_project_jucars_legacy_targets.py": "87b8783beb8668456343f69cbaf05b4ff51113af2ce0c6d67307645fa694db2f",
+      "release-bvival/tests/test_replay_autoscout24_cached_field_selection.py": "1d3f1d28019cbc092a45697add5c191669a3a2e21eb74750676f1c86dc548edb",
+      "release-bvival/tests/test_run_autoscout24_outcome_replay.py": "9c5fd0bc9f5ca1d1e5d8cec290c63bd34f8a766f04bd0cbde16ce8f81595b409",
+      "release-bvival/tests/test_run_autoscout24_scoring_replay.py": "05c9061c215d87f8cda75b65eb923ac76ea20fa7962d35fad229e60e6494c883",
+      "release-bvival/tests/test_run_jucars_outcome_replay.py": "0fc65ea5d95ec65d286311e326c0d34b6a09a8935d3bd8285037f52b7d58d0cc",
+      "release-bvival/tests/test_run_jucars_scoring_replay.py": "7003737e0f6193fc0562277a63ab514fb403a7dcf14884c76c3cc733df0eb458",
+      "release-bvival/tests/test_run_mucars_outcome_replay.py": "6b0a69a58a04c6e27913251e632b35cee21e1146cab59666e418a07805340a54",
+      "release-bvival/tests/test_run_mucars_scoring_replay.py": "9390be7b3943dbd6a8632cdc425fe5ccd5ced75865bd1cca942a87de5606a546",
+      "release-bvival/tests/test_run_turkey_cached_outcome_replay.py": "4f2d40add1d69aaa44745dea041ee5720d2c81bd5525535d6bcfe66be602ad67",
+      "release-bvival/tests/test_source_bundle.py": "7247be7c02154946eb8cebd24c995ffb8caa94ffe1f61ae88e068ce372f5c634"
+    },
+    "external_import_roots": [
+      "catboost",
+      "joblib",
+      "numpy",
+      "pandas",
+      "pytest",
+      "scipy",
+      "sklearn"
+    ],
+    "embedded_workers": [
+      {
+        "file": "release-bvival/replay_autoscout24_cached_field_selection.py",
+        "string_line": 24
+      },
+      {
+        "file": "release-bvival/run_mucars_outcome_replay.py",
+        "string_line": 41
+      },
+      {
+        "file": "release-bvival/run_mucars_scoring_replay.py",
+        "string_line": 31
+      },
+      {
+        "file": "release-bvival/run_turkey_cached_outcome_replay.py",
+        "string_line": 32
+      },
+      {
+        "file": "release-bvival/tests/test_plan_jucars_replay.py",
+        "string_line": 171
+      },
+      {
+        "file": "release-bvival/tests/test_replay_autoscout24_cached_field_selection.py",
+        "string_line": 37
+      },
+      {
+        "file": "release-bvival/tests/test_run_turkey_cached_outcome_replay.py",
+        "string_line": 103
+      },
+      {
+        "file": "release-bvival/tests/test_source_bundle.py",
+        "string_line": 17
+      }
+    ],
+    "unresolved_dynamic_imports": [],
+    "not_a_runtime_or_full_file_dependency_closure": true
+  },
+  "empirical_entrypoints": [
+    "experiments/analyze_bvival_listing_field_decomposition.py",
+    "experiments/assemble_bvival_policy_scores.py",
+    "experiments/build_autoscout24_bvival_manifest.py",
+    "experiments/build_autoscout24_quasi_duplicate_mask.py",
+    "experiments/build_bvival_action_dataset.py",
+    "experiments/build_jucars_bvival_manifest.py",
+    "experiments/build_mucars_bvival_manifest.py",
+    "experiments/evaluate_autoscout24_exploratory_groups.py",
+    "experiments/evaluate_bvival_mask_sensitivity.py",
+    "experiments/evaluate_bvival_policies.py",
+    "experiments/evaluate_bvival_subgroups.py",
+    "experiments/fit_bvival_posterror_baseline.py",
+    "experiments/fit_bvival_risk_baseline.py",
+    "experiments/fit_bvival_value_policy.py",
+    "experiments/freeze_autoscout24_v2.py",
+    "experiments/generate_bvival_field_selection_pairs.py",
+    "experiments/generate_bvival_prediction_pairs.py",
+    "experiments/join_bvival_evaluation_outcomes.py",
+    "experiments/prepare_external_bvival_scores.py",
+    "experiments/select_bvival_fixed_field_development.py",
+    "experiments/select_bvival_penalty_development.py",
+    "release-bvival/check_mucars_reconstruction.py",
+    "release-bvival/check_jucars_reconstruction.py",
+    "release-bvival/check_autoscout24_reconstruction.py",
+    "release-bvival/plan_mucars_replay.py",
+    "release-bvival/plan_jucars_replay.py",
+    "release-bvival/plan_autoscout24_replay.py",
+    "release-bvival/run_mucars_scoring_replay.py",
+    "release-bvival/run_mucars_outcome_replay.py",
+    "release-bvival/run_jucars_scoring_replay.py",
+    "release-bvival/run_jucars_outcome_replay.py",
+    "release-bvival/run_autoscout24_scoring_replay.py",
+    "release-bvival/run_autoscout24_outcome_replay.py",
+    "release-bvival/project_jucars_legacy_targets.py",
+    "release-bvival/replay_autoscout24_cached_field_selection.py",
+    "release-bvival/run_turkey_cached_outcome_replay.py",
+    "release-bvival/check_rerun_entrypoints.py",
+    "experiments/evaluate_turkey_released_phase.py",
+    "release-bvival/check_source_bundle.py"
+  ],
+  "synthetic_test_files": [
+    "experiments/tests/test_analyze_bvival_listing_field_decomposition.py",
+    "experiments/tests/test_assemble_bvival_policy_scores.py",
+    "experiments/tests/test_autoscout24_quasi_duplicate_mask.py",
+    "experiments/tests/test_build_autoscout24_bvival_manifest.py",
+    "experiments/tests/test_build_bvival_action_dataset.py",
+    "experiments/tests/test_build_jucars_bvival_manifest.py",
+    "experiments/tests/test_build_mucars_bvival_manifest.py",
+    "experiments/tests/test_bvi_val.py",
+    "experiments/tests/test_bvi_val_baselines.py",
+    "experiments/tests/test_evaluate_bvival_mask_sensitivity.py",
+    "experiments/tests/test_evaluate_bvival_policies.py",
+    "experiments/tests/test_evaluate_bvival_subgroups.py",
+    "experiments/tests/test_fit_bvival_posterror_baseline.py",
+    "experiments/tests/test_fit_bvival_risk_baseline.py",
+    "experiments/tests/test_fit_bvival_risk_oof.py",
+    "experiments/tests/test_fit_bvival_value_policy.py",
+    "experiments/tests/test_generate_bvival_prediction_pairs.py",
+    "experiments/tests/test_join_bvival_evaluation_outcomes.py",
+    "experiments/tests/test_prepare_external_bvival_scores.py",
+    "experiments/tests/test_select_bvival_fixed_field_development.py",
+    "experiments/tests/test_select_bvival_penalty_development.py",
+    "release-bvival/tests/test_check_autoscout24_reconstruction.py",
+    "release-bvival/tests/test_check_jucars_reconstruction.py",
+    "release-bvival/tests/test_check_mucars_reconstruction.py",
+    "release-bvival/tests/test_check_rerun_entrypoints.py",
+    "release-bvival/tests/test_plan_autoscout24_replay.py",
+    "release-bvival/tests/test_plan_jucars_replay.py",
+    "release-bvival/tests/test_plan_mucars_replay.py",
+    "release-bvival/tests/test_project_jucars_legacy_targets.py",
+    "release-bvival/tests/test_replay_autoscout24_cached_field_selection.py",
+    "release-bvival/tests/test_run_autoscout24_outcome_replay.py",
+    "release-bvival/tests/test_run_autoscout24_scoring_replay.py",
+    "release-bvival/tests/test_run_jucars_outcome_replay.py",
+    "release-bvival/tests/test_run_jucars_scoring_replay.py",
+    "release-bvival/tests/test_run_mucars_outcome_replay.py",
+    "release-bvival/tests/test_run_mucars_scoring_replay.py",
+    "release-bvival/tests/test_run_turkey_cached_outcome_replay.py",
+    "release-bvival/tests/test_source_bundle.py"
+  ],
+  "platform_lock": {
+    "python": "3.12.14",
+    "platform": "macOS arm64",
+    "source_sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a",
+    "new_installation_verified_here": false,
+    "covers_turkey_neural_runtime": false
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "source": "release-bvival/SOURCE_INSPECTION_README.md",
+      "bytes": 7677,
+      "sha256": "9204a3e77c1a50e28c1845a5571d961ec94d10d379ad4a84c86d3d8cfb465e97"
+    },
+    {
+      "file": "environment/resolved-main-macos-arm64.lock",
+      "source": "release-bvival/output/hash-lock-check-2026-10-01-X1Ohm9/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a"
+    },
+    {
+      "file": "experiments/analyze_bvival_listing_field_decomposition.py",
+      "source": "experiments/analyze_bvival_listing_field_decomposition.py",
+      "bytes": 9458,
+      "sha256": "dc725fae19618e8c5f50bf7dde44889b980a5a6eccaeb0f378b998d14489ee73"
+    },
+    {
+      "file": "experiments/archive_turkey_candidate.py",
+      "source": "experiments/archive_turkey_candidate.py",
+      "bytes": 8195,
+      "sha256": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23"
+    },
+    {
+      "file": "experiments/assemble_bvival_policy_scores.py",
+      "source": "experiments/assemble_bvival_policy_scores.py",
+      "bytes": 8724,
+      "sha256": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2"
+    },
+    {
+      "file": "experiments/audit_autoscout24_candidate.py",
+      "source": "experiments/audit_autoscout24_candidate.py",
+      "bytes": 6226,
+      "sha256": "1b6f638893d96fd893823a9398764f882abcfa4dec75a38b70d74368bcd50647"
+    },
+    {
+      "file": "experiments/audit_turkey_feature_only.py",
+      "source": "experiments/audit_turkey_feature_only.py",
+      "bytes": 16875,
+      "sha256": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f"
+    },
+    {
+      "file": "experiments/build_autoscout24_bvival_manifest.py",
+      "source": "experiments/build_autoscout24_bvival_manifest.py",
+      "bytes": 9376,
+      "sha256": "114cee7910d7ac9ff26ef03557973c4c574c40b0905d7ec8a742c3e5d6c796ec"
+    },
+    {
+      "file": "experiments/build_autoscout24_quasi_duplicate_mask.py",
+      "source": "experiments/build_autoscout24_quasi_duplicate_mask.py",
+      "bytes": 2885,
+      "sha256": "ee1a83c3c6ab64047ca972bee180d888ebfe230d53fe36ba45524d3bbee98c78"
+    },
+    {
+      "file": "experiments/build_bvival_action_dataset.py",
+      "source": "experiments/build_bvival_action_dataset.py",
+      "bytes": 10635,
+      "sha256": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96"
+    },
+    {
+      "file": "experiments/build_jucars_bvival_manifest.py",
+      "source": "experiments/build_jucars_bvival_manifest.py",
+      "bytes": 9693,
+      "sha256": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0"
+    },
+    {
+      "file": "experiments/build_mucars_bvival_manifest.py",
+      "source": "experiments/build_mucars_bvival_manifest.py",
+      "bytes": 8595,
+      "sha256": "e93c85dd57da857a0e97d37a8fda137627398afa81e197d5efe11351b6c5764d"
+    },
+    {
+      "file": "experiments/build_turkey_price_free_manifest.py",
+      "source": "experiments/build_turkey_price_free_manifest.py",
+      "bytes": 12597,
+      "sha256": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1"
+    },
+    {
+      "file": "experiments/bvi_val.py",
+      "source": "experiments/bvi_val.py",
+      "bytes": 16505,
+      "sha256": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee"
+    },
+    {
+      "file": "experiments/bvi_val_baselines.py",
+      "source": "experiments/bvi_val_baselines.py",
+      "bytes": 7071,
+      "sha256": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5"
+    },
+    {
+      "file": "experiments/configs/autoscout24_bvival_v2_full.json",
+      "source": "experiments/configs/autoscout24_bvival_v2_full.json",
+      "bytes": 2326,
+      "sha256": "8e8db1ca122ddb4e80dc0785a3e99ff510dfa0cd96013681bd3121cc499bf70c"
+    },
+    {
+      "file": "experiments/configs/jucars_bvival_subgroups.json",
+      "source": "experiments/configs/jucars_bvival_subgroups.json",
+      "bytes": 892,
+      "sha256": "ccfffb390e5104a0066d8e4d71df5f86016f752f242daa76cf9e718a9e2ea996"
+    },
+    {
+      "file": "experiments/configs/mucars_bvival_v5_subgroups.json",
+      "source": "experiments/configs/mucars_bvival_v5_subgroups.json",
+      "bytes": 1078,
+      "sha256": "98ea1744eacb106d783ceac72fe303d46d192469ecdb0ca718e261d4b08186ca"
+    },
+    {
+      "file": "experiments/evaluate_autoscout24_exploratory_groups.py",
+      "source": "experiments/evaluate_autoscout24_exploratory_groups.py",
+      "bytes": 5829,
+      "sha256": "bf63ce9d8adfa96fa7579bae7abca13928bc8c312d8e7c542aa5506c1eac1f5b"
+    },
+    {
+      "file": "experiments/evaluate_bvival_mask_sensitivity.py",
+      "source": "experiments/evaluate_bvival_mask_sensitivity.py",
+      "bytes": 5982,
+      "sha256": "63ec970422192c45c3451ee3353874fcdf13cafe60d2e523c4bb5a927e58f40f"
+    },
+    {
+      "file": "experiments/evaluate_bvival_policies.py",
+      "source": "experiments/evaluate_bvival_policies.py",
+      "bytes": 18036,
+      "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774"
+    },
+    {
+      "file": "experiments/evaluate_bvival_subgroups.py",
+      "source": "experiments/evaluate_bvival_subgroups.py",
+      "bytes": 8925,
+      "sha256": "0b753067cc34fe3b2cf8dac0ebffbc5a227b1b0761ea1dbb9da3b44f7c0b69da"
+    },
+    {
+      "file": "experiments/evaluate_turkey_released_phase.py",
+      "source": "experiments/evaluate_turkey_released_phase.py",
+      "bytes": 17509,
+      "sha256": "9dca9182508b57ba2d9799a21c1426cdeaa7cc015af3fb242ac8a71914f45d1c"
+    },
+    {
+      "file": "experiments/fit_bvival_posterror_baseline.py",
+      "source": "experiments/fit_bvival_posterror_baseline.py",
+      "bytes": 13361,
+      "sha256": "034622ac2eb97ab009299ae7bfc95793040a6545cdbc595ddd2ff020407db900"
+    },
+    {
+      "file": "experiments/fit_bvival_risk_baseline.py",
+      "source": "experiments/fit_bvival_risk_baseline.py",
+      "bytes": 10129,
+      "sha256": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448"
+    },
+    {
+      "file": "experiments/fit_bvival_value_policy.py",
+      "source": "experiments/fit_bvival_value_policy.py",
+      "bytes": 10831,
+      "sha256": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947"
+    },
+    {
+      "file": "experiments/freeze_autoscout24_v2.py",
+      "source": "experiments/freeze_autoscout24_v2.py",
+      "bytes": 4483,
+      "sha256": "4ea35a0bd301f4b3c0168ca142aa6d97da5f88e88d6f6d471c9024c793c42ed7"
+    },
+    {
+      "file": "experiments/freeze_turkey_heldout_scores.py",
+      "source": "experiments/freeze_turkey_heldout_scores.py",
+      "bytes": 15845,
+      "sha256": "81447047dcba9d3f33d7645bd475dac15f12e976ddc82243005455d4a690ef10"
+    },
+    {
+      "file": "experiments/generate_bvival_field_selection_pairs.py",
+      "source": "experiments/generate_bvival_field_selection_pairs.py",
+      "bytes": 5803,
+      "sha256": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568"
+    },
+    {
+      "file": "experiments/generate_bvival_prediction_pairs.py",
+      "source": "experiments/generate_bvival_prediction_pairs.py",
+      "bytes": 19853,
+      "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba"
+    },
+    {
+      "file": "experiments/join_bvival_evaluation_outcomes.py",
+      "source": "experiments/join_bvival_evaluation_outcomes.py",
+      "bytes": 6940,
+      "sha256": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1"
+    },
+    {
+      "file": "experiments/prepare_external_bvival_scores.py",
+      "source": "experiments/prepare_external_bvival_scores.py",
+      "bytes": 6011,
+      "sha256": "980aa8b7249fdb34309b7ec19272cfd9f516c778cd74d86391eae038493386d2"
+    },
+    {
+      "file": "experiments/run_turkey_development.py",
+      "source": "experiments/run_turkey_development.py",
+      "bytes": 20403,
+      "sha256": "6d34c0599c505d8e7d25ab625e593f0612528e0c0d87e7a94e9242202c9a2862"
+    },
+    {
+      "file": "experiments/select_bvival_fixed_field_development.py",
+      "source": "experiments/select_bvival_fixed_field_development.py",
+      "bytes": 5370,
+      "sha256": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4"
+    },
+    {
+      "file": "experiments/select_bvival_penalty_development.py",
+      "source": "experiments/select_bvival_penalty_development.py",
+      "bytes": 8949,
+      "sha256": "3d5964e49ca28666978509a1331776a825a71ea8e889366b5970d1b151518e0e"
+    },
+    {
+      "file": "experiments/tests/test_analyze_bvival_listing_field_decomposition.py",
+      "source": "experiments/tests/test_analyze_bvival_listing_field_decomposition.py",
+      "bytes": 3210,
+      "sha256": "83451ab8cde9cf4eedeea7697382dfa8af56091a72c5f397303f253f7235dd7b"
+    },
+    {
+      "file": "experiments/tests/test_assemble_bvival_policy_scores.py",
+      "source": "experiments/tests/test_assemble_bvival_policy_scores.py",
+      "bytes": 4464,
+      "sha256": "90bcfc07098ff73d0e339f8eeb780c05f96080431195ea76d6614f7d8b07cfc1"
+    },
+    {
+      "file": "experiments/tests/test_autoscout24_quasi_duplicate_mask.py",
+      "source": "experiments/tests/test_autoscout24_quasi_duplicate_mask.py",
+      "bytes": 894,
+      "sha256": "56eec6e932d7309e1cd1e012279d22487deb2f6d7c6b4a1f62075423eee709a0"
+    },
+    {
+      "file": "experiments/tests/test_build_autoscout24_bvival_manifest.py",
+      "source": "experiments/tests/test_build_autoscout24_bvival_manifest.py",
+      "bytes": 1610,
+      "sha256": "f27eb13d4f3610516a873ce534b8502e00d27b81f185f6a2737091fcccea6c5c"
+    },
+    {
+      "file": "experiments/tests/test_build_bvival_action_dataset.py",
+      "source": "experiments/tests/test_build_bvival_action_dataset.py",
+      "bytes": 3596,
+      "sha256": "7852142011ffd3d866dcf445a86fe1bcb429b3d2048dc047bc733735f5a3e7b2"
+    },
+    {
+      "file": "experiments/tests/test_build_jucars_bvival_manifest.py",
+      "source": "experiments/tests/test_build_jucars_bvival_manifest.py",
+      "bytes": 2100,
+      "sha256": "8a2f70cd8308fe2516f1d9338769cf26151928bf8ce6b63226d9e750efe8d03e"
+    },
+    {
+      "file": "experiments/tests/test_build_mucars_bvival_manifest.py",
+      "source": "experiments/tests/test_build_mucars_bvival_manifest.py",
+      "bytes": 1406,
+      "sha256": "6bc9a2ae3af5e401f8e646964097e055d884508a294202731f731ded79a4c772"
+    },
+    {
+      "file": "experiments/tests/test_bvi_val.py",
+      "source": "experiments/tests/test_bvi_val.py",
+      "bytes": 4218,
+      "sha256": "ec5420578d6797449e6ba4cd7967a6f76d72d1eee08936b10c9a965c1c2bc177"
+    },
+    {
+      "file": "experiments/tests/test_bvi_val_baselines.py",
+      "source": "experiments/tests/test_bvi_val_baselines.py",
+      "bytes": 3234,
+      "sha256": "de74cb9a842d4827fd42a8ec6db45983a0e088566ab4b9d88c39f34c311f1ff2"
+    },
+    {
+      "file": "experiments/tests/test_evaluate_bvival_mask_sensitivity.py",
+      "source": "experiments/tests/test_evaluate_bvival_mask_sensitivity.py",
+      "bytes": 1322,
+      "sha256": "276db649b9eee605e46e9bb2a926b4f6f861da8c3b70b4fdde0d6ca455ccd89e"
+    },
+    {
+      "file": "experiments/tests/test_evaluate_bvival_policies.py",
+      "source": "experiments/tests/test_evaluate_bvival_policies.py",
+      "bytes": 4028,
+      "sha256": "240d2bd04931a6a95840ec67461a1680eaeaf4d2be4adf1e0d6d78802d220ff5"
+    },
+    {
+      "file": "experiments/tests/test_evaluate_bvival_subgroups.py",
+      "source": "experiments/tests/test_evaluate_bvival_subgroups.py",
+      "bytes": 2870,
+      "sha256": "eda271ecda191756ce47f4d199c6009391ad74e30a4b3e8306781db3a0ec3d55"
+    },
+    {
+      "file": "experiments/tests/test_fit_bvival_posterror_baseline.py",
+      "source": "experiments/tests/test_fit_bvival_posterror_baseline.py",
+      "bytes": 3121,
+      "sha256": "9a7d829c5ba6b111e6557fc4021d5336f9e24c2f4e6d4630a824ca01bee07d48"
+    },
+    {
+      "file": "experiments/tests/test_fit_bvival_risk_baseline.py",
+      "source": "experiments/tests/test_fit_bvival_risk_baseline.py",
+      "bytes": 1861,
+      "sha256": "8722c491d042f9222af86bcee06e7e7ee119f3b44152690da1fe5b3e86325e3a"
+    },
+    {
+      "file": "experiments/tests/test_fit_bvival_risk_oof.py",
+      "source": "experiments/tests/test_fit_bvival_risk_oof.py",
+      "bytes": 1473,
+      "sha256": "ba8e915a1162d9380d335291908b4bd7b22df73dae7cf409fc6f81d00886d357"
+    },
+    {
+      "file": "experiments/tests/test_fit_bvival_value_policy.py",
+      "source": "experiments/tests/test_fit_bvival_value_policy.py",
+      "bytes": 2560,
+      "sha256": "80d2adb57f21e28ea7d33b7d1b29c7601142d6ab951e577cdd6cbd56fd3fe656"
+    },
+    {
+      "file": "experiments/tests/test_generate_bvival_prediction_pairs.py",
+      "source": "experiments/tests/test_generate_bvival_prediction_pairs.py",
+      "bytes": 5195,
+      "sha256": "c7515c0f804cd5b7699210bed4f5e91980a4272aff5670e348f3679e9cfc1649"
+    },
+    {
+      "file": "experiments/tests/test_join_bvival_evaluation_outcomes.py",
+      "source": "experiments/tests/test_join_bvival_evaluation_outcomes.py",
+      "bytes": 2330,
+      "sha256": "9174d777646f932088a216ed55479fa160534d214299a8569fcabc99d3683a92"
+    },
+    {
+      "file": "experiments/tests/test_prepare_external_bvival_scores.py",
+      "source": "experiments/tests/test_prepare_external_bvival_scores.py",
+      "bytes": 3761,
+      "sha256": "6c1f0463b768e555be14e34eede1a309d960e37a8d6073abf551b7ec7b3abaa1"
+    },
+    {
+      "file": "experiments/tests/test_select_bvival_fixed_field_development.py",
+      "source": "experiments/tests/test_select_bvival_fixed_field_development.py",
+      "bytes": 1428,
+      "sha256": "8c79581b53bf2af82a0e3b9a03b461d04eef097985d445056a7421de32379a9e"
+    },
+    {
+      "file": "experiments/tests/test_select_bvival_penalty_development.py",
+      "source": "experiments/tests/test_select_bvival_penalty_development.py",
+      "bytes": 625,
+      "sha256": "c8672168d8ac8252c01c3d3fd408038f1a0bdd05f8c481cbde171dab3eefc730"
+    },
+    {
+      "file": "experiments/train_turkey_nested_valuation.py",
+      "source": "experiments/train_turkey_nested_valuation.py",
+      "bytes": 16076,
+      "sha256": "cd47900a9b7a025a2efefe86f75bb7ec707668477504f9c7c2b7159875381f71"
+    },
+    {
+      "file": "experiments/turkey_development_io.py",
+      "source": "experiments/turkey_development_io.py",
+      "bytes": 11330,
+      "sha256": "09494f1bb9db30a011d46d48b016593b5fe3f939cb5e26421fd171766af58731"
+    },
+    {
+      "file": "experiments/turkey_execution_contract.py",
+      "source": "experiments/turkey_execution_contract.py",
+      "bytes": 18269,
+      "sha256": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7"
+    },
+    {
+      "file": "experiments/turkey_frozen_outcome_evaluation.py",
+      "source": "experiments/turkey_frozen_outcome_evaluation.py",
+      "bytes": 10617,
+      "sha256": "274845ecf28b4a13df035a27cdd54a9f0858c20beb54386976adf1a5d4359153"
+    },
+    {
+      "file": "experiments/turkey_information_boundary.py",
+      "source": "experiments/turkey_information_boundary.py",
+      "bytes": 2311,
+      "sha256": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682"
+    },
+    {
+      "file": "experiments/turkey_policy_components.py",
+      "source": "experiments/turkey_policy_components.py",
+      "bytes": 14453,
+      "sha256": "fd66673bb2455f144e5fe08cb6820b48a6090091ba557f709253529e7fb9df47"
+    },
+    {
+      "file": "experiments/turkey_price_access_accounting_v2.py",
+      "source": "experiments/turkey_price_access_accounting_v2.py",
+      "bytes": 6583,
+      "sha256": "c0ff13976c49a1fb79cc46b0aa8dbb90ac20b12d142a9bae26cccda29a9fa6c4"
+    },
+    {
+      "file": "experiments/turkey_price_cells.py",
+      "source": "experiments/turkey_price_cells.py",
+      "bytes": 4801,
+      "sha256": "722440cef119fa53084047bc412db442eb7aaffdca995be7f2145818887aa740"
+    },
+    {
+      "file": "experiments/turkey_price_free_scoring.py",
+      "source": "experiments/turkey_price_free_scoring.py",
+      "bytes": 10189,
+      "sha256": "30dfee0db38a8284e3940e1cc387c852d85b6ad4885afea1c0c7f0f022c7a56b"
+    },
+    {
+      "file": "experiments/turkey_source_access_binding.py",
+      "source": "experiments/turkey_source_access_binding.py",
+      "bytes": 10644,
+      "sha256": "363ab1d942b4bbc99c65f77b5b0a4d2088cce672297d1a3b12e42058c69677e8"
+    },
+    {
+      "file": "experiments/turkey_source_price_release.py",
+      "source": "experiments/turkey_source_price_release.py",
+      "bytes": 20157,
+      "sha256": "a8dcaff0e7bdcdcb44cc4c1134f67cd1ef26b8cac389baf3a864f097a18edd8d"
+    },
+    {
+      "file": "experiments/turkey_valuation_components.py",
+      "source": "experiments/turkey_valuation_components.py",
+      "bytes": 7328,
+      "sha256": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a"
+    },
+    {
+      "file": "experiments/verify_turkey_heldout_score_freeze.py",
+      "source": "experiments/verify_turkey_heldout_score_freeze.py",
+      "bytes": 4340,
+      "sha256": "bc6e707dea1ea8c9766f150d11b6b95d6b02221e9721cc7bf465abe273a834b9"
+    },
+    {
+      "file": "experiments/verify_turkey_price_free_bundle.py",
+      "source": "experiments/verify_turkey_price_free_bundle.py",
+      "bytes": 6420,
+      "sha256": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad"
+    },
+    {
+      "file": "inspection-plans/autoscout24-reconstructed-primary-plan-2026-10-01.json",
+      "source": "release-bvival/autoscout24-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 22573,
+      "sha256": "aaaa6753a119c1e081a70b71d7eee04b5ce17a0f60d9ea1a2907e635262dd683"
+    },
+    {
+      "file": "inspection-plans/jucars-reconstructed-primary-plan-2026-10-01.json",
+      "source": "release-bvival/jucars-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 24492,
+      "sha256": "201c8fbd418034aa545c0ee5aa70dbd1f476cfd359dbf4c2c9db36eb8eaa81b3"
+    },
+    {
+      "file": "inspection-plans/mucars-reconstructed-primary-plan-2026-10-01.json",
+      "source": "release-bvival/mucars-reconstructed-primary-plan-2026-10-01.json",
+      "bytes": 18644,
+      "sha256": "bfe5325edbc22b3b5d5cde44dab90d8436fea0e7a5ea6d8b168c0ed5bf01257f"
+    },
+    {
+      "file": "release-bvival/check_autoscout24_reconstruction.py",
+      "source": "release-bvival/check_autoscout24_reconstruction.py",
+      "bytes": 15703,
+      "sha256": "65d86c6c7616347dcc773550b63887744d22053e394936b76230f11810e50ca3"
+    },
+    {
+      "file": "release-bvival/check_jucars_reconstruction.py",
+      "source": "release-bvival/check_jucars_reconstruction.py",
+      "bytes": 19443,
+      "sha256": "fe68ce380d26e82cdd894e71fee557fa1c441dd67f9c0c2a1d9b4129485c144d"
+    },
+    {
+      "file": "release-bvival/check_mucars_reconstruction.py",
+      "source": "release-bvival/check_mucars_reconstruction.py",
+      "bytes": 15355,
+      "sha256": "053b6aac8d35fbdc77e11ecf2d95ca4abc63296c0c18eca0ee249efc9203b660"
+    },
+    {
+      "file": "release-bvival/check_remaining_source_metadata.py",
+      "source": "release-bvival/check_remaining_source_metadata.py",
+      "bytes": 11570,
+      "sha256": "a86f166d5930f3c8def4c66d673c61bfe4d213249d391cbefb0f8144086f9598"
+    },
+    {
+      "file": "release-bvival/check_rerun_entrypoints.py",
+      "source": "release-bvival/check_rerun_entrypoints.py",
+      "bytes": 10144,
+      "sha256": "13e8f7fcbb2edceda5479dfcb8d5f2510f6d03b0add06a5211151bc460f0bc13"
+    },
+    {
+      "file": "release-bvival/check_source_bundle.py",
+      "source": "release-bvival/check_source_bundle.py",
+      "bytes": 7821,
+      "sha256": "b1faf513bbab576cf7d08995c5348d898a0af4a35ae3bfccbb656cb2d64d506b"
+    },
+    {
+      "file": "release-bvival/plan_autoscout24_replay.py",
+      "source": "release-bvival/plan_autoscout24_replay.py",
+      "bytes": 14799,
+      "sha256": "c38123bf22fe26e029b9b7e5d2def73e6b1eeff5ba1403a16b0a60dad4f92cb8"
+    },
+    {
+      "file": "release-bvival/plan_jucars_replay.py",
+      "source": "release-bvival/plan_jucars_replay.py",
+      "bytes": 22217,
+      "sha256": "eeb9006d691579f0b3a494a3af05b2f2a1b5720ffff1c00392de84041f9c7477"
+    },
+    {
+      "file": "release-bvival/plan_mucars_replay.py",
+      "source": "release-bvival/plan_mucars_replay.py",
+      "bytes": 18836,
+      "sha256": "046b40fd7a510cd6e9e19e2b228492e5b6ffb155b3420de6ca22eec74fffab9d"
+    },
+    {
+      "file": "release-bvival/project_jucars_legacy_targets.py",
+      "source": "release-bvival/project_jucars_legacy_targets.py",
+      "bytes": 6634,
+      "sha256": "7034fb6ed65358cf0a39e9b1c4e94ecc60bfbeb72540c3214d8d04435db7cbf6"
+    },
+    {
+      "file": "release-bvival/replay_autoscout24_cached_field_selection.py",
+      "source": "release-bvival/replay_autoscout24_cached_field_selection.py",
+      "bytes": 6606,
+      "sha256": "b1b76bf277ce4bb5d1c113c9e66fdeffca078c17386df5d49e1b36a95634ae4d"
+    },
+    {
+      "file": "release-bvival/run_autoscout24_outcome_replay.py",
+      "source": "release-bvival/run_autoscout24_outcome_replay.py",
+      "bytes": 19970,
+      "sha256": "476cf666c0a69590e5cbbb0f629fb03115b20f792d46f32ec5edad8f341bcbaf"
+    },
+    {
+      "file": "release-bvival/run_autoscout24_scoring_replay.py",
+      "source": "release-bvival/run_autoscout24_scoring_replay.py",
+      "bytes": 21735,
+      "sha256": "0ed43fdfd02c83c2988ee02346aff8184575996c3b705813109f14192cbeebcc"
+    },
+    {
+      "file": "release-bvival/run_jucars_outcome_replay.py",
+      "source": "release-bvival/run_jucars_outcome_replay.py",
+      "bytes": 16999,
+      "sha256": "e8b07baec456bb25da99f4e72c84101ff3574020c2812e41a1f6de3be4e0145b"
+    },
+    {
+      "file": "release-bvival/run_jucars_scoring_replay.py",
+      "source": "release-bvival/run_jucars_scoring_replay.py",
+      "bytes": 22715,
+      "sha256": "57e4f1e7b1e180f259ee51c7c69855a83b22ae0a597505624cdba744f68ed066"
+    },
+    {
+      "file": "release-bvival/run_mucars_outcome_replay.py",
+      "source": "release-bvival/run_mucars_outcome_replay.py",
+      "bytes": 21145,
+      "sha256": "b6b53f00de7701cbce5a87d122c5d6840211837d71b7819993dacecc010a9d51"
+    },
+    {
+      "file": "release-bvival/run_mucars_scoring_replay.py",
+      "source": "release-bvival/run_mucars_scoring_replay.py",
+      "bytes": 17040,
+      "sha256": "e0971417f85422e26bfcab1e5e60699653ee2379ca9c528c821248c564d6069d"
+    },
+    {
+      "file": "release-bvival/run_turkey_cached_outcome_replay.py",
+      "source": "release-bvival/run_turkey_cached_outcome_replay.py",
+      "bytes": 13157,
+      "sha256": "576cb21dafdc8bb4cf23e47ab2fab40dc92e62db0e9a098d33f983ac902bca57"
+    },
+    {
+      "file": "release-bvival/tests/test_check_autoscout24_reconstruction.py",
+      "source": "release-bvival/tests/test_check_autoscout24_reconstruction.py",
+      "bytes": 7336,
+      "sha256": "75adc3e42ac46ea2883099bb19581d05939ed47d5a3f6fff0d7f5b7a4767482d"
+    },
+    {
+      "file": "release-bvival/tests/test_check_jucars_reconstruction.py",
+      "source": "release-bvival/tests/test_check_jucars_reconstruction.py",
+      "bytes": 8787,
+      "sha256": "53e1f4d6dcf9f4e5fd2dd7c2d50c1105d6319ab3440a45e7180bc5e6c6d0095a"
+    },
+    {
+      "file": "release-bvival/tests/test_check_mucars_reconstruction.py",
+      "source": "release-bvival/tests/test_check_mucars_reconstruction.py",
+      "bytes": 9380,
+      "sha256": "ecf329f08bc0f2dc162c0f82fc55e66266f58b9de7c3c9b69a4a67cc6da812c6"
+    },
+    {
+      "file": "release-bvival/tests/test_check_rerun_entrypoints.py",
+      "source": "release-bvival/tests/test_check_rerun_entrypoints.py",
+      "bytes": 7926,
+      "sha256": "c9c5cd75951c3201dd38c1cd8c8b3bac893c401db441629d3190bc6c0bc4403f"
+    },
+    {
+      "file": "release-bvival/tests/test_plan_autoscout24_replay.py",
+      "source": "release-bvival/tests/test_plan_autoscout24_replay.py",
+      "bytes": 6000,
+      "sha256": "6c70df5852f27840312b527826c0c4cafad5c75e646e4ec3ae5b1c861c4c0c7f"
+    },
+    {
+      "file": "release-bvival/tests/test_plan_jucars_replay.py",
+      "source": "release-bvival/tests/test_plan_jucars_replay.py",
+      "bytes": 11211,
+      "sha256": "06ded3c4d1eaad9774206ecf05676acd13af5ef0f1214baffc0485a1f06791ed"
+    },
+    {
+      "file": "release-bvival/tests/test_plan_mucars_replay.py",
+      "source": "release-bvival/tests/test_plan_mucars_replay.py",
+      "bytes": 10736,
+      "sha256": "70739ffa8844b9a2028d4817df9cf0ce8f25ca57334792a8e13f117d20614ea2"
+    },
+    {
+      "file": "release-bvival/tests/test_project_jucars_legacy_targets.py",
+      "source": "release-bvival/tests/test_project_jucars_legacy_targets.py",
+      "bytes": 6585,
+      "sha256": "87b8783beb8668456343f69cbaf05b4ff51113af2ce0c6d67307645fa694db2f"
+    },
+    {
+      "file": "release-bvival/tests/test_replay_autoscout24_cached_field_selection.py",
+      "source": "release-bvival/tests/test_replay_autoscout24_cached_field_selection.py",
+      "bytes": 3003,
+      "sha256": "1d3f1d28019cbc092a45697add5c191669a3a2e21eb74750676f1c86dc548edb"
+    },
+    {
+      "file": "release-bvival/tests/test_run_autoscout24_outcome_replay.py",
+      "source": "release-bvival/tests/test_run_autoscout24_outcome_replay.py",
+      "bytes": 14648,
+      "sha256": "9c5fd0bc9f5ca1d1e5d8cec290c63bd34f8a766f04bd0cbde16ce8f81595b409"
+    },
+    {
+      "file": "release-bvival/tests/test_run_autoscout24_scoring_replay.py",
+      "source": "release-bvival/tests/test_run_autoscout24_scoring_replay.py",
+      "bytes": 15481,
+      "sha256": "05c9061c215d87f8cda75b65eb923ac76ea20fa7962d35fad229e60e6494c883"
+    },
+    {
+      "file": "release-bvival/tests/test_run_jucars_outcome_replay.py",
+      "source": "release-bvival/tests/test_run_jucars_outcome_replay.py",
+      "bytes": 18697,
+      "sha256": "0fc65ea5d95ec65d286311e326c0d34b6a09a8935d3bd8285037f52b7d58d0cc"
+    },
+    {
+      "file": "release-bvival/tests/test_run_jucars_scoring_replay.py",
+      "source": "release-bvival/tests/test_run_jucars_scoring_replay.py",
+      "bytes": 15956,
+      "sha256": "7003737e0f6193fc0562277a63ab514fb403a7dcf14884c76c3cc733df0eb458"
+    },
+    {
+      "file": "release-bvival/tests/test_run_mucars_outcome_replay.py",
+      "source": "release-bvival/tests/test_run_mucars_outcome_replay.py",
+      "bytes": 10633,
+      "sha256": "6b0a69a58a04c6e27913251e632b35cee21e1146cab59666e418a07805340a54"
+    },
+    {
+      "file": "release-bvival/tests/test_run_mucars_scoring_replay.py",
+      "source": "release-bvival/tests/test_run_mucars_scoring_replay.py",
+      "bytes": 9950,
+      "sha256": "9390be7b3943dbd6a8632cdc425fe5ccd5ced75865bd1cca942a87de5606a546"
+    },
+    {
+      "file": "release-bvival/tests/test_run_turkey_cached_outcome_replay.py",
+      "source": "release-bvival/tests/test_run_turkey_cached_outcome_replay.py",
+      "bytes": 5624,
+      "sha256": "4f2d40add1d69aaa44745dea041ee5720d2c81bd5525535d6bcfe66be602ad67"
+    },
+    {
+      "file": "release-bvival/tests/test_source_bundle.py",
+      "source": "release-bvival/tests/test_source_bundle.py",
+      "bytes": 4760,
+      "sha256": "7247be7c02154946eb8cebd24c995ffb8caa94ffe1f61ae88e068ce372f5c634"
+    }
+  ]
+}
