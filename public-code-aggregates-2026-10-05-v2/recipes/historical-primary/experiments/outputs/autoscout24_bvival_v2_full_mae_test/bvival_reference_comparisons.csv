@@ -1,0 +1,7 @@
+n,relative_mae_gain_percent,ci_lower_percent,ci_upper_percent,policy,reference_policy,budget
+14005,2.3202856931375595,1.754401568569799,2.901133302183238,score_mean_value,score_uncertainty_only,0.1
+14005,0.0,0.0,0.0,score_fixed_field_risk,score_uncertainty_only,0.1
+14005,-2.552741719651253,-3.344167854300444,-1.7661130758118164,score_random,score_uncertainty_only,0.1
+14005,-3.136531838687406,-3.9256402612632164,-2.35398865390787,score_no_acquisition,score_uncertainty_only,0.1
+14005,-1.903785288305527,-2.6665207688874526,-1.1435439670299998,score_global_field_prior,score_uncertainty_only,0.1
+14005,1.0812836722104653,0.4466263843047259,1.7300118180520665,score_conservative_lower_value,score_uncertainty_only,0.1

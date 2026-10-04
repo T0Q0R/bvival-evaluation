@@ -1,0 +1,15 @@
+policy,budget,action_id,count,share_of_actions
+score_mean_value,0.1,mileage_km,1188,0.8479657387580299
+score_mean_value,0.1,fuel_type,211,0.15060670949321914
+score_mean_value,0.1,transmission,2,0.0014275517487508922
+score_uncertainty_only,0.1,mileage_km,1401,1.0
+score_fixed_field_risk,0.1,mileage_km,1401,1.0
+score_random,0.1,mileage_km,395,0.2819414703783012
+score_random,0.1,transmission,355,0.2533904354032834
+score_random,0.1,fuel_type,342,0.24411134903640258
+score_random,0.1,service_history,309,0.22055674518201285
+score_global_field_prior,0.1,mileage_km,1401,1.0
+score_conservative_lower_value,0.1,mileage_km,473,0.4437148217636023
+score_conservative_lower_value,0.1,fuel_type,324,0.30393996247654786
+score_conservative_lower_value,0.1,transmission,258,0.24202626641651032
+score_conservative_lower_value,0.1,service_history,11,0.010318949343339587
