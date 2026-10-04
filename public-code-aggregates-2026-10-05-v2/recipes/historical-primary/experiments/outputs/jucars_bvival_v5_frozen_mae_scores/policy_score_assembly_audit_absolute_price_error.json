@@ -1,0 +1,43 @@
+{
+  "development_action_prior": {
+    "feat_body_condition": 6.447657007101776,
+    "fuel_type": 43.37043386889465,
+    "mileage_km": 2.2099980313009278,
+    "transmission": 3.000531506397631
+  },
+  "evaluation_outcomes_read": false,
+  "inputs": {
+    "development_actions": {
+      "path": "experiments/outputs/jucars_bvival_actions_development_v2/bvival_action_dataset.csv",
+      "sha256": "6ab8303dbb3ce6d79fdfdc3d67de8f90aadeb1abee4f91e33248b20115957e37"
+    },
+    "evaluation_features": {
+      "path": "experiments/outputs/jucars_bvival_prediction_pairs_v1/evaluation_pre_action_features.csv",
+      "sha256": "26916b8cde83a6311935c7ee7700d5eb4439e8ec9e916d6a45f53174afaa979a"
+    },
+    "risk_scores": {
+      "path": "experiments/outputs/jucars_bvival_risk_mae_matched_v1/evaluation_risk_scores.csv",
+      "sha256": "3baa4561626e1f284bf6b3e9fea3ce09358477b91b9e3e88fdcc42c9673bd204"
+    },
+    "value_scores": {
+      "path": "experiments/outputs/jucars_bvival_value_policy_v1/evaluation_action_scores.csv",
+      "sha256": "698aa4cc5d37acaa1b04bb93ee8d05c6ec1f154e83983c7f010bfca29819fd46"
+    }
+  },
+  "objective": "absolute_price_error",
+  "output": {
+    "path": "experiments/outputs/jucars_bvival_v5_frozen_mae_scores/frozen_policy_scores_absolute_price_error.csv",
+    "sha256": "c5c486098c9c099c2fe3aad404c6e674402d903d2d02cd026e7948ed8d693a73"
+  },
+  "protocol": "v4-bvival-prospective",
+  "random_seed": 2026,
+  "score_columns": [
+    "score_no_acquisition",
+    "score_random",
+    "score_global_field_prior",
+    "score_uncertainty_only",
+    "score_disagreement_only",
+    "score_mean_value",
+    "score_conservative_lower_value"
+  ]
+}
