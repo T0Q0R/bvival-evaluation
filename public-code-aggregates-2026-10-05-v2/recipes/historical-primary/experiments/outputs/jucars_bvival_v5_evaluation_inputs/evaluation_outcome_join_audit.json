@@ -1,0 +1,15 @@
+{
+  "freeze_id": "jucars-bvival-v5-stress-2026-09-25",
+  "inputs": {
+    "additional_frozen_policy_scores_sha256": "fbac511d02f380935f827dbb82b0710716f3c8707906cdbed99f5a69425051bd",
+    "frozen_policy_scores_sha256": "c5c486098c9c099c2fe3aad404c6e674402d903d2d02cd026e7948ed8d693a73",
+    "prediction_pairs_sha256": "3d67ebd7fa852169dad9979cc63bd939f34329b0fbd73764aa3d57988746afcf",
+    "sealed_labels_sha256": "a98011583b0c8c45387d9cf98088d97cc5c0762cbfd5e0a70b7b5be75185d7c3"
+  },
+  "labels_opened": true,
+  "listing_action_count": 4823,
+  "listing_count": 1267,
+  "output_sha256": "277a75229e00c021d37700d96458d0a650b994ebfda6d15627af2f2478d96f5b",
+  "policy_score_hash_verified_before_label_read": true,
+  "protocol": "v4-bvival-prospective"
+}
