@@ -1,0 +1,71 @@
+{
+  "analysis_status": "post_test_exploratory",
+  "budget_fraction": 0.1,
+  "contrast": "joint_mean_benefit_vs_development_prior_fixed_field_mean_benefit",
+  "historical_MAE_reconstruction_passed": true,
+  "historical_curve_sha256": "76253d56cd04a50e6bde1250244ffcff6f0cf6980e49b298c86b7ce93b6c5963",
+  "independent_confirmation": false,
+  "inference": {
+    "bootstrap_unit": "listing_not_verified_vehicle",
+    "ci95_percent": [
+      0.9303990087690143,
+      1.718244863297187
+    ],
+    "conditioning": "fixed models and selected actions; excludes training/selection/market uncertainty",
+    "family_adjusted_interval_percent": [
+      0.8509575638424979,
+      1.8131585703596835
+    ],
+    "family_adjusted_nominal_confidence": 0.9833333333333333,
+    "historical_adaptive_analysis_multiplicity_controlled": false,
+    "n": 14005,
+    "relative_mae_gain_percent": 1.316731396707193,
+    "repetitions": 10000,
+    "seed": 2026
+  },
+  "joint_minus_fixed_MAE_reduction": 89.51591310351614,
+  "mae": {
+    "score_fixed_field_mean_value": 6798.342724064486,
+    "score_mean_value": 6708.82681096097,
+    "score_no_acquisition": 7083.611319902324,
+    "score_uncertainty_only": 6868.188403873786
+  },
+  "outcomes_sha256": "87e5e54dcc084eea3ee77a9f7eefe99fe507488d99b75ac6b6256c67cd2958e4",
+  "price_unit": "EUR",
+  "selection": {
+    "assembly_audit_sha256": "b23ac6a1327172b2070151e907dd5b22ad09e5f2face5fab2c2802013f5cb897",
+    "capacity": 1401,
+    "config_sha256": "77744a3bd46ccf7becb960af8f7c267d0e7da47b5301d7dd5a0e02534649cb87",
+    "created_at_utc": "2026-10-03T17:10:33.198567+00:00",
+    "fixed_field": "mileage_km",
+    "fixed_field_eligible_listings": 14005,
+    "independent_confirmation": false,
+    "joint_action_counts": {
+      "fuel_type": 211,
+      "mileage_km": 1188,
+      "transmission": 2
+    },
+    "joint_selected_listings_without_fixed_field": 0,
+    "listing_action_selection_overlap": 1188,
+    "listing_selection_overlap": 1226,
+    "n_action_rows": 55892,
+    "n_listings": 14005,
+    "original_scores_sha256": "3a1f50bd9e83f9288fe67a14a0037f9e693520aae5a7c6efd9e9999889aed05f",
+    "outcomes_read_in_prepare": false,
+    "runner_sha256": "d1a4cfbe41034bbb3b023a3be9d7dcca1cfe775820e3cbbda5ade4c95022c32d",
+    "selected_count": {
+      "score_fixed_field_mean_value": 1401,
+      "score_mean_value": 1401,
+      "score_no_acquisition": 0,
+      "score_uncertainty_only": 1401
+    },
+    "selection_hashes": {
+      "score_fixed_field_mean_value_selection.csv": "0cacaa9c9391318de2875aea9d36f0a8a98aaab0d1a76ee6896840e3b1156072",
+      "score_mean_value_selection.csv": "5cca91441abc2003bd785744445ef887b7866f557f850f28a531ed6be8c62da5",
+      "score_no_acquisition_selection.csv": "5de0165d1885489b50bdefbe802f4901578faee0fd6670c3b201a79829004dd5",
+      "score_uncertainty_only_selection.csv": "2119478ca20040165935ac792f39e0c085094303e5a5166b7770f3ca0b754b34"
+    },
+    "source": "autoscout24"
+  },
+  "source": "autoscout24"
+}

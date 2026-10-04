@@ -1,0 +1,5159 @@
+{
+  "descriptive_only": true,
+  "new_hypothesis_tests": 0,
+  "policy_reselection": false,
+  "subgroup_mapping": {
+    "year_reference": 2025,
+    "age_bins": [
+      "0-5",
+      "6-10",
+      "11-20",
+      ">20"
+    ],
+    "part_missing": "either initially visible part count is empty"
+  },
+  "budgets": {
+    "0.05": {
+      "policies": {
+        "no_acquisition": {
+          "post_mae": 273101.6537475568,
+          "selected_feature_records": 0,
+          "rmsle_descriptive_only": 0.2336066448714173,
+          "selected_price_valid_records": 0,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 0,
+          "negative_realized_gain_count": 0,
+          "zero_realized_gain_count": 0,
+          "field_counts": {},
+          "gross_error_reduction_sum": 0.0,
+          "gross_error_increase_sum": -0.0,
+          "net_error_reduction_sum": 0.0
+        },
+        "random": {
+          "post_mae": 272768.8417184486,
+          "selected_feature_records": 391,
+          "rmsle_descriptive_only": 0.2332646768253058,
+          "selected_price_valid_records": 391,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 202,
+          "negative_realized_gain_count": 189,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 129,
+            "vites_tipi": 135,
+            "yakit_tipi": 127
+          },
+          "gross_error_reduction_sum": 6357928.580888531,
+          "gross_error_increase_sum": 3761329.1297871256,
+          "net_error_reduction_sum": 2596599.4511014046
+        },
+        "risk_fixed_validation_best": {
+          "post_mae": 270956.67028657516,
+          "selected_feature_records": 391,
+          "rmsle_descriptive_only": 0.2326983078322147,
+          "selected_price_valid_records": 391,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 218,
+          "negative_realized_gain_count": 173,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 391
+          },
+          "gross_error_reduction_sum": 36378524.88672173,
+          "gross_error_increase_sum": 19643363.92414373,
+          "net_error_reduction_sum": 16735160.962578006
+        },
+        "risk_global_train_field": {
+          "post_mae": 270956.67028657516,
+          "selected_feature_records": 391,
+          "rmsle_descriptive_only": 0.2326983078322147,
+          "selected_price_valid_records": 391,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 218,
+          "negative_realized_gain_count": 173,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 391
+          },
+          "gross_error_reduction_sum": 36378524.88672173,
+          "gross_error_increase_sum": 19643363.92414373,
+          "net_error_reduction_sum": 16735160.962578006
+        },
+        "benefit": {
+          "post_mae": 270897.15994372783,
+          "selected_feature_records": 391,
+          "rmsle_descriptive_only": 0.2323329705749433,
+          "selected_price_valid_records": 391,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 256,
+          "negative_realized_gain_count": 135,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "yakit_tipi": 41,
+            "kilometre": 339,
+            "vites_tipi": 11
+          },
+          "gross_error_reduction_sum": 27616674.005070694,
+          "gross_error_increase_sum": 10417213.347597448,
+          "net_error_reduction_sum": 17199460.657473244
+        },
+        "direct_posterror": {
+          "post_mae": 271793.8833887162,
+          "selected_feature_records": 391,
+          "rmsle_descriptive_only": 0.23296775476884618,
+          "selected_price_valid_records": 391,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 225,
+          "negative_realized_gain_count": 166,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 324,
+            "yakit_tipi": 13,
+            "vites_tipi": 54
+          },
+          "gross_error_reduction_sum": 18011604.606987774,
+          "gross_error_increase_sum": 7808380.267313819,
+          "net_error_reduction_sum": 10203224.339673957
+        },
+        "risk_benefit_field": {
+          "post_mae": 271777.10030965944,
+          "selected_feature_records": 391,
+          "rmsle_descriptive_only": 0.23278902618613653,
+          "selected_price_valid_records": 391,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 230,
+          "negative_realized_gain_count": 161,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "vites_tipi": 21,
+            "yakit_tipi": 48,
+            "kilometre": 322
+          },
+          "gross_error_reduction_sum": 31585237.328944344,
+          "gross_error_increase_sum": 21251071.40646966,
+          "net_error_reduction_sum": 10334165.922474682
+        },
+        "risk_neural_field": {
+          "post_mae": 270956.67028657516,
+          "selected_feature_records": 391,
+          "rmsle_descriptive_only": 0.2326983078322147,
+          "selected_price_valid_records": 391,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 218,
+          "negative_realized_gain_count": 173,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 391
+          },
+          "gross_error_reduction_sum": 36378524.88672173,
+          "gross_error_increase_sum": 19643363.92414373,
+          "net_error_reduction_sum": 16735160.962578006
+        }
+      },
+      "subgroups": [
+        {
+          "dimension": "brand",
+          "value": "alfa romeo",
+          "feature_records": 39,
+          "valid_records": 39,
+          "attribute_groups": 38,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 13,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "aston martin",
+          "feature_records": 2,
+          "valid_records": 2,
+          "attribute_groups": 2,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "audi",
+          "feature_records": 390,
+          "valid_records": 390,
+          "attribute_groups": 379,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 19,
+            "risk_fixed_validation_best": 51,
+            "risk_global_train_field": 51,
+            "benefit": 21,
+            "direct_posterror": 38,
+            "risk_benefit_field": 51,
+            "risk_neural_field": 51
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 234872.46082552685,
+              "random": 234172.90167076164,
+              "risk_fixed_validation_best": 232606.12193395413,
+              "risk_global_train_field": 232606.12193395413,
+              "benefit": 232504.59705071864,
+              "direct_posterror": 235848.1118219409,
+              "risk_benefit_field": 230584.9872877052,
+              "risk_neural_field": 232606.12193395413
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.04364669441688703,
+            "benefit_relative_effect_vs_direct_percent": 1.4176559419506902
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "bentley",
+          "feature_records": 5,
+          "valid_records": 5,
+          "attribute_groups": 5,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 5,
+            "risk_global_train_field": 5,
+            "benefit": 4,
+            "direct_posterror": 1,
+            "risk_benefit_field": 5,
+            "risk_neural_field": 5
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "bmw",
+          "feature_records": 344,
+          "valid_records": 344,
+          "attribute_groups": 337,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 18,
+            "risk_fixed_validation_best": 63,
+            "risk_global_train_field": 63,
+            "benefit": 15,
+            "direct_posterror": 41,
+            "risk_benefit_field": 63,
+            "risk_neural_field": 63
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 337818.529744041,
+              "random": 337911.714722132,
+              "risk_fixed_validation_best": 334866.09795578854,
+              "risk_global_train_field": 334866.09795578854,
+              "benefit": 338739.22639398114,
+              "direct_posterror": 335133.7667711186,
+              "risk_benefit_field": 334367.77114436426,
+              "risk_neural_field": 334866.09795578854
+            },
+            "benefit_relative_effect_vs_risk_percent": -1.1566200525632049,
+            "benefit_relative_effect_vs_direct_percent": -1.0758270220275605
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "byd",
+          "feature_records": 4,
+          "valid_records": 4,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 3,
+            "direct_posterror": 2,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "chery",
+          "feature_records": 10,
+          "valid_records": 10,
+          "attribute_groups": 10,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "chevrolet",
+          "feature_records": 313,
+          "valid_records": 313,
+          "attribute_groups": 296,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 17,
+            "risk_fixed_validation_best": 8,
+            "risk_global_train_field": 8,
+            "benefit": 4,
+            "direct_posterror": 2,
+            "risk_benefit_field": 8,
+            "risk_neural_field": 8
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 161685.3553451209,
+              "random": 161855.39470188887,
+              "risk_fixed_validation_best": 155033.134287564,
+              "risk_global_train_field": 155033.134287564,
+              "benefit": 161541.1546351556,
+              "direct_posterror": 159699.58749793842,
+              "risk_benefit_field": 158564.57353538973,
+              "risk_neural_field": 155033.134287564
+            },
+            "benefit_relative_effect_vs_risk_percent": -4.197825437444986,
+            "benefit_relative_effect_vs_direct_percent": -1.1531445798136148
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "chrysler",
+          "feature_records": 11,
+          "valid_records": 11,
+          "attribute_groups": 10,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "citroen",
+          "feature_records": 329,
+          "valid_records": 329,
+          "attribute_groups": 306,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 12,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 11,
+            "direct_posterror": 7,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 80635.20161545575,
+              "random": 80068.07368125815,
+              "risk_fixed_validation_best": 80619.5662152968,
+              "risk_global_train_field": 80619.5662152968,
+              "benefit": 80077.54793956307,
+              "direct_posterror": 80018.05822465295,
+              "risk_benefit_field": 80631.03429440857,
+              "risk_neural_field": 80619.5662152968
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.6723160408557107,
+            "benefit_relative_effect_vs_direct_percent": -0.0743453618220741
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "cupra",
+          "feature_records": 14,
+          "valid_records": 14,
+          "attribute_groups": 11,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 13,
+            "risk_global_train_field": 13,
+            "benefit": 0,
+            "direct_posterror": 11,
+            "risk_benefit_field": 13,
+            "risk_neural_field": 13
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "dacia",
+          "feature_records": 303,
+          "valid_records": 303,
+          "attribute_groups": 284,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 11,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 6,
+            "direct_posterror": 9,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 83897.76470893814,
+              "random": 83988.9603767423,
+              "risk_fixed_validation_best": 83824.67987806354,
+              "risk_global_train_field": 83824.67987806354,
+              "benefit": 82568.88170009412,
+              "direct_posterror": 82249.1926683437,
+              "risk_benefit_field": 83824.67987806354,
+              "risk_neural_field": 83824.67987806354
+            },
+            "benefit_relative_effect_vs_risk_percent": 1.4981246332180258,
+            "benefit_relative_effect_vs_direct_percent": -0.38868348901551913
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "daewoo",
+          "feature_records": 8,
+          "valid_records": 8,
+          "attribute_groups": 8,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "daihatsu",
+          "feature_records": 15,
+          "valid_records": 15,
+          "attribute_groups": 14,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "ds automobiles",
+          "feature_records": 26,
+          "valid_records": 26,
+          "attribute_groups": 25,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 15,
+            "risk_global_train_field": 15,
+            "benefit": 10,
+            "direct_posterror": 15,
+            "risk_benefit_field": 15,
+            "risk_neural_field": 15
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "fiat",
+          "feature_records": 363,
+          "valid_records": 363,
+          "attribute_groups": 358,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 21,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 1,
+            "direct_posterror": 31,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 74908.94864088693,
+              "random": 75036.73965473249,
+              "risk_fixed_validation_best": 74908.94864088693,
+              "risk_global_train_field": 74908.94864088693,
+              "benefit": 74925.21045027555,
+              "direct_posterror": 71994.96926068836,
+              "risk_benefit_field": 74908.94864088693,
+              "risk_neural_field": 74908.94864088693
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.02170876735513368,
+            "benefit_relative_effect_vs_direct_percent": -4.070063810954637
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "ford",
+          "feature_records": 408,
+          "valid_records": 408,
+          "attribute_groups": 391,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 19,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 56,
+            "direct_posterror": 3,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 112648.10286901449,
+              "random": 112023.52566973434,
+              "risk_fixed_validation_best": 112124.32760051836,
+              "risk_global_train_field": 112124.32760051836,
+              "benefit": 109102.46288299045,
+              "direct_posterror": 112609.81720186313,
+              "risk_benefit_field": 112435.48772898085,
+              "risk_neural_field": 112124.32760051836
+            },
+            "benefit_relative_effect_vs_risk_percent": 2.695101751953725,
+            "benefit_relative_effect_vs_direct_percent": 3.114607949842802
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "geely",
+          "feature_records": 10,
+          "valid_records": 10,
+          "attribute_groups": 9,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "honda",
+          "feature_records": 402,
+          "valid_records": 402,
+          "attribute_groups": 372,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 20,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 4,
+            "direct_posterror": 8,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 105289.60264297453,
+              "random": 105138.38077685934,
+              "risk_fixed_validation_best": 104466.62688416247,
+              "risk_global_train_field": 104466.62688416247,
+              "benefit": 105051.64748493787,
+              "direct_posterror": 105496.0448935747,
+              "risk_benefit_field": 105260.63097929262,
+              "risk_neural_field": 104466.62688416247
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.5600071699683582,
+            "benefit_relative_effect_vs_direct_percent": 0.42124556336224467
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "hyundai",
+          "feature_records": 383,
+          "valid_records": 383,
+          "attribute_groups": 370,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 26,
+            "risk_fixed_validation_best": 5,
+            "risk_global_train_field": 5,
+            "benefit": 29,
+            "direct_posterror": 11,
+            "risk_benefit_field": 5,
+            "risk_neural_field": 5
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 93441.28359123446,
+              "random": 92512.84159564014,
+              "risk_fixed_validation_best": 93343.14159286722,
+              "risk_global_train_field": 93343.14159286722,
+              "benefit": 91753.0977180517,
+              "direct_posterror": 93900.32329259985,
+              "risk_benefit_field": 93494.35208434376,
+              "risk_neural_field": 93343.14159286722
+            },
+            "benefit_relative_effect_vs_risk_percent": 1.703439425416801,
+            "benefit_relative_effect_vs_direct_percent": 2.286707328852586
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "ikco",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "infiniti",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "jaguar",
+          "feature_records": 15,
+          "valid_records": 15,
+          "attribute_groups": 15,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 5,
+            "risk_global_train_field": 5,
+            "benefit": 2,
+            "direct_posterror": 3,
+            "risk_benefit_field": 5,
+            "risk_neural_field": 5
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "kia",
+          "feature_records": 242,
+          "valid_records": 242,
+          "attribute_groups": 233,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 11,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 2,
+            "direct_posterror": 1,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 88206.3292110761,
+              "random": 87717.57561024706,
+              "risk_fixed_validation_best": 88206.3292110761,
+              "risk_global_train_field": 88206.3292110761,
+              "benefit": 88107.64052149151,
+              "direct_posterror": 88333.02811964558,
+              "risk_benefit_field": 88206.3292110761,
+              "risk_neural_field": 88206.3292110761
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.11188390954170839,
+            "benefit_relative_effect_vs_direct_percent": 0.2551566531250108
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "lada",
+          "feature_records": 66,
+          "valid_records": 66,
+          "attribute_groups": 60,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 5,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lancia",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lexus",
+          "feature_records": 2,
+          "valid_records": 2,
+          "attribute_groups": 2,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lincoln",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "maserati",
+          "feature_records": 8,
+          "valid_records": 8,
+          "attribute_groups": 8,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 8,
+            "risk_global_train_field": 8,
+            "benefit": 1,
+            "direct_posterror": 7,
+            "risk_benefit_field": 8,
+            "risk_neural_field": 8
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mazda",
+          "feature_records": 86,
+          "valid_records": 86,
+          "attribute_groups": 84,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 5,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 3,
+            "direct_posterror": 1,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mclaren",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mercedes - benz",
+          "feature_records": 376,
+          "valid_records": 376,
+          "attribute_groups": 362,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 27,
+            "risk_fixed_validation_best": 113,
+            "risk_global_train_field": 113,
+            "benefit": 34,
+            "direct_posterror": 117,
+            "risk_benefit_field": 113,
+            "risk_neural_field": 113
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 473475.0287088622,
+              "random": 472302.9546075225,
+              "risk_fixed_validation_best": 465226.78429885715,
+              "risk_global_train_field": 465226.78429885715,
+              "benefit": 468268.814436803,
+              "direct_posterror": 468189.8080564774,
+              "risk_benefit_field": 467330.2494586779,
+              "risk_neural_field": 465226.78429885715
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.6538811264984411,
+            "benefit_relative_effect_vs_direct_percent": -0.016874861213565812
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "mini",
+          "feature_records": 50,
+          "valid_records": 50,
+          "attribute_groups": 49,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 2,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 2,
+            "direct_posterror": 3,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mitsubishi",
+          "feature_records": 60,
+          "valid_records": 60,
+          "attribute_groups": 58,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 3,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 1,
+            "direct_posterror": 10,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "nissan",
+          "feature_records": 146,
+          "valid_records": 146,
+          "attribute_groups": 140,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 6,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 92959.68053053865,
+              "random": 92471.54448960212,
+              "risk_fixed_validation_best": 91647.65799234973,
+              "risk_global_train_field": 91647.65799234973,
+              "benefit": 92330.80028426356,
+              "direct_posterror": 92959.68053053865,
+              "risk_benefit_field": 92426.91251983999,
+              "risk_neural_field": 91647.65799234973
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.7454007084074672,
+            "benefit_relative_effect_vs_direct_percent": 0.676508613934504
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "opel",
+          "feature_records": 373,
+          "valid_records": 373,
+          "attribute_groups": 363,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 26,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 3,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 84709.19073669611,
+              "random": 84769.60652799149,
+              "risk_fixed_validation_best": 84717.374213215,
+              "risk_global_train_field": 84717.374213215,
+              "benefit": 84493.49194101004,
+              "direct_posterror": 84709.19073669611,
+              "risk_benefit_field": 84717.374213215,
+              "risk_neural_field": 84717.374213215
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.26426960736706656,
+            "benefit_relative_effect_vs_direct_percent": 0.2546344662370001
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "peugeot",
+          "feature_records": 372,
+          "valid_records": 372,
+          "attribute_groups": 363,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 20,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 4,
+            "direct_posterror": 5,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 74496.0412639584,
+              "random": 74678.79240900575,
+              "risk_fixed_validation_best": 74520.82227512095,
+              "risk_global_train_field": 74520.82227512095,
+              "benefit": 74410.05558838602,
+              "direct_posterror": 74474.43882864005,
+              "risk_benefit_field": 74520.82227512095,
+              "risk_neural_field": 74520.82227512095
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.1486385728890601,
+            "benefit_relative_effect_vs_direct_percent": 0.08645011800917256
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "pontiac",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "porsche",
+          "feature_records": 33,
+          "valid_records": 33,
+          "attribute_groups": 31,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 33,
+            "risk_global_train_field": 33,
+            "benefit": 33,
+            "direct_posterror": 12,
+            "risk_benefit_field": 33,
+            "risk_neural_field": 33
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "proton",
+          "feature_records": 13,
+          "valid_records": 13,
+          "attribute_groups": 12,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "renault",
+          "feature_records": 370,
+          "valid_records": 370,
+          "attribute_groups": 357,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 14,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 4,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 93555.35940875785,
+              "random": 93452.03513133273,
+              "risk_fixed_validation_best": 93555.35940875785,
+              "risk_global_train_field": 93555.35940875785,
+              "benefit": 93519.69510782296,
+              "direct_posterror": 93555.35940875785,
+              "risk_benefit_field": 93555.35940875785,
+              "risk_neural_field": 93555.35940875785
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.0381210666714121,
+            "benefit_relative_effect_vs_direct_percent": 0.0381210666714121
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "rover",
+          "feature_records": 16,
+          "valid_records": 16,
+          "attribute_groups": 16,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 2,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "saab",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 3,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "seat",
+          "feature_records": 418,
+          "valid_records": 418,
+          "attribute_groups": 391,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 15,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 4,
+            "direct_posterror": 7,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 104091.12937966795,
+              "random": 104012.37404229303,
+              "risk_fixed_validation_best": 104091.12937966795,
+              "risk_global_train_field": 104091.12937966795,
+              "benefit": 104008.06946700969,
+              "direct_posterror": 104271.75065247697,
+              "risk_benefit_field": 104091.12937966795,
+              "risk_neural_field": 104091.12937966795
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.07979538040682596,
+            "benefit_relative_effect_vs_direct_percent": 0.25287883229859376
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "skoda",
+          "feature_records": 355,
+          "valid_records": 355,
+          "attribute_groups": 335,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 22,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 17,
+            "direct_posterror": 1,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 120091.00489028459,
+              "random": 120048.65690799578,
+              "risk_fixed_validation_best": 119880.78507471527,
+              "risk_global_train_field": 119880.78507471527,
+              "benefit": 119376.58951234652,
+              "direct_posterror": 120152.21557725215,
+              "risk_benefit_field": 119880.78507471527,
+              "risk_neural_field": 119880.78507471527
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.42058079787725405,
+            "benefit_relative_effect_vs_direct_percent": 0.6455362151910917
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "smart",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "subaru",
+          "feature_records": 14,
+          "valid_records": 14,
+          "attribute_groups": 14,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "suzuki",
+          "feature_records": 53,
+          "valid_records": 53,
+          "attribute_groups": 52,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 4,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 0,
+            "direct_posterror": 5,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tata",
+          "feature_records": 33,
+          "valid_records": 33,
+          "attribute_groups": 33,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tesla",
+          "feature_records": 29,
+          "valid_records": 29,
+          "attribute_groups": 23,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 18,
+            "risk_global_train_field": 18,
+            "benefit": 5,
+            "direct_posterror": 15,
+            "risk_benefit_field": 18,
+            "risk_neural_field": 18
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tofa\u015f",
+          "feature_records": 375,
+          "valid_records": 375,
+          "attribute_groups": 300,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 21,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 403494.5309870737,
+              "random": 403431.67362806405,
+              "risk_fixed_validation_best": 403494.5309870737,
+              "risk_global_train_field": 403494.5309870737,
+              "benefit": 403494.5309870737,
+              "direct_posterror": 403528.9908311552,
+              "risk_benefit_field": 403494.5309870737,
+              "risk_neural_field": 403494.5309870737
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.0,
+            "benefit_relative_effect_vs_direct_percent": 0.008539620415006732
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "toyota",
+          "feature_records": 373,
+          "valid_records": 373,
+          "attribute_groups": 355,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 13,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 4,
+            "direct_posterror": 6,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 96441.77032205998,
+              "random": 96137.90550281316,
+              "risk_fixed_validation_best": 96406.86012564745,
+              "risk_global_train_field": 96406.86012564745,
+              "benefit": 96215.41604239552,
+              "direct_posterror": 96380.32096478701,
+              "risk_benefit_field": 96544.0389986628,
+              "risk_neural_field": 96406.86012564745
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.19857931583128247,
+            "benefit_relative_effect_vs_direct_percent": 0.17109812536496996
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "volkswagen",
+          "feature_records": 363,
+          "valid_records": 363,
+          "attribute_groups": 355,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 20,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 88,
+            "direct_posterror": 10,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 2050906.6531640426,
+              "random": 2049989.5383588646,
+              "risk_fixed_validation_best": 2051194.3410447182,
+              "risk_global_train_field": 2051194.3410447182,
+              "benefit": 2045783.2254473835,
+              "direct_posterror": 2049835.6521205732,
+              "risk_benefit_field": 2051077.0950827429,
+              "risk_neural_field": 2051194.3410447182
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.2638031652612054,
+            "benefit_relative_effect_vs_direct_percent": 0.1976951990759584
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "volvo",
+          "feature_records": 168,
+          "valid_records": 168,
+          "attribute_groups": 162,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 6,
+            "risk_fixed_validation_best": 14,
+            "risk_global_train_field": 14,
+            "benefit": 1,
+            "direct_posterror": 3,
+            "risk_benefit_field": 14,
+            "risk_neural_field": 14
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 167696.5743515816,
+              "random": 167616.12390889865,
+              "risk_fixed_validation_best": 162850.2934263363,
+              "risk_global_train_field": 162850.2934263363,
+              "benefit": 167659.83825458479,
+              "direct_posterror": 168346.13179380973,
+              "risk_benefit_field": 162850.2934263363,
+              "risk_neural_field": 162850.2934263363
+            },
+            "benefit_relative_effect_vs_risk_percent": -2.953353492374284,
+            "benefit_relative_effect_vs_direct_percent": 0.4076681370175593
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "galeriden",
+          "feature_records": 4462,
+          "valid_records": 4462,
+          "attribute_groups": 4317,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 243,
+            "risk_fixed_validation_best": 343,
+            "risk_global_train_field": 343,
+            "benefit": 278,
+            "direct_posterror": 281,
+            "risk_benefit_field": 343,
+            "risk_neural_field": 343
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 214149.80603496393,
+              "random": 213702.6794723811,
+              "risk_fixed_validation_best": 211151.49746323083,
+              "risk_global_train_field": 211151.49746323083,
+              "benefit": 211126.82675823942,
+              "direct_posterror": 212294.00572392938,
+              "risk_benefit_field": 212271.80540344748,
+              "risk_neural_field": 211151.49746323083
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.01168388824507733,
+            "benefit_relative_effect_vs_direct_percent": 0.5497936513609255
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "sahibinden",
+          "feature_records": 3269,
+          "valid_records": 3269,
+          "attribute_groups": 3176,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 145,
+            "risk_fixed_validation_best": 36,
+            "risk_global_train_field": 36,
+            "benefit": 63,
+            "direct_posterror": 104,
+            "risk_benefit_field": 36,
+            "risk_neural_field": 36
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 338301.52299687185,
+              "random": 338140.60079494363,
+              "risk_fixed_validation_best": 338177.653181328,
+              "risk_global_train_field": 338177.653181328,
+              "benefit": 337811.69609514094,
+              "direct_posterror": 338034.6446355949,
+              "risk_benefit_field": 338122.46389479697,
+              "risk_neural_field": 338177.653181328
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.1082144496374536,
+            "benefit_relative_effect_vs_direct_percent": 0.06595434639378892
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "yetkili bayiden",
+          "feature_records": 71,
+          "valid_records": 71,
+          "attribute_groups": 71,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 3,
+            "risk_fixed_validation_best": 12,
+            "risk_global_train_field": 12,
+            "benefit": 50,
+            "direct_posterror": 6,
+            "risk_benefit_field": 12,
+            "risk_neural_field": 12
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "0-5",
+          "feature_records": 1468,
+          "valid_records": 1468,
+          "attribute_groups": 1369,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 75,
+            "risk_fixed_validation_best": 242,
+            "risk_global_train_field": 242,
+            "benefit": 104,
+            "direct_posterror": 151,
+            "risk_benefit_field": 242,
+            "risk_neural_field": 242
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 364550.71587727114,
+              "random": 364345.42495006544,
+              "risk_fixed_validation_best": 358697.7629656008,
+              "risk_global_train_field": 358697.7629656008,
+              "benefit": 361057.0263289443,
+              "direct_posterror": 362573.2819098844,
+              "risk_benefit_field": 362324.6433153814,
+              "risk_neural_field": 358697.7629656008
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.6577301580689653,
+            "benefit_relative_effect_vs_direct_percent": 0.4181928610274615
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "11-20",
+          "feature_records": 2929,
+          "valid_records": 2929,
+          "attribute_groups": 2851,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 132,
+            "risk_fixed_validation_best": 62,
+            "risk_global_train_field": 62,
+            "benefit": 141,
+            "direct_posterror": 103,
+            "risk_benefit_field": 62,
+            "risk_neural_field": 62
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 362008.8730278641,
+              "random": 361729.5801919297,
+              "risk_fixed_validation_best": 360128.0444364624,
+              "risk_global_train_field": 360128.0444364624,
+              "benefit": 359684.7543083523,
+              "direct_posterror": 360489.86617999355,
+              "risk_benefit_field": 360272.84369427006,
+              "risk_neural_field": 360128.0444364624
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.1230923653290498,
+            "benefit_relative_effect_vs_direct_percent": 0.2233382813705091
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "6-10",
+          "feature_records": 1897,
+          "valid_records": 1897,
+          "attribute_groups": 1793,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 102,
+            "risk_fixed_validation_best": 59,
+            "risk_global_train_field": 59,
+            "benefit": 139,
+            "direct_posterror": 30,
+            "risk_benefit_field": 59,
+            "risk_neural_field": 59
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 157021.5577981061,
+              "random": 156427.48924573552,
+              "risk_fixed_validation_best": 156148.76594928492,
+              "risk_global_train_field": 156148.76594928492,
+              "benefit": 154644.91938199478,
+              "direct_posterror": 155790.02669151954,
+              "risk_benefit_field": 156483.31574444237,
+              "risk_neural_field": 156148.76594928492
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.9630857843465547,
+            "benefit_relative_effect_vs_direct_percent": 0.7350324881785837
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": ">20",
+          "feature_records": 1508,
+          "valid_records": 1508,
+          "attribute_groups": 1402,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 82,
+            "risk_fixed_validation_best": 28,
+            "risk_global_train_field": 28,
+            "benefit": 7,
+            "direct_posterror": 107,
+            "risk_benefit_field": 28,
+            "risk_neural_field": 28
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 157416.95450197769,
+              "random": 157184.70277143098,
+              "risk_fixed_validation_best": 156768.1527733196,
+              "risk_global_train_field": 156768.1527733196,
+              "benefit": 156916.35927935422,
+              "direct_posterror": 157075.46530506623,
+              "risk_benefit_field": 156780.07366131234,
+              "risk_neural_field": 156768.1527733196
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.09453865687179581,
+            "benefit_relative_effect_vs_direct_percent": 0.10129272920057993
+          }
+        },
+        {
+          "dimension": "initial_optional_part_missing",
+          "value": "at_least_one_missing",
+          "feature_records": 1324,
+          "valid_records": 1324,
+          "attribute_groups": 1295,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 58,
+            "risk_fixed_validation_best": 34,
+            "risk_global_train_field": 34,
+            "benefit": 47,
+            "direct_posterror": 38,
+            "risk_benefit_field": 34,
+            "risk_neural_field": 34
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 730034.6865369641,
+              "random": 729560.7575090209,
+              "risk_fixed_validation_best": 730102.9872760902,
+              "risk_global_train_field": 730102.9872760902,
+              "benefit": 729754.3204561009,
+              "direct_posterror": 729758.6244229528,
+              "risk_benefit_field": 730071.0683263184,
+              "risk_neural_field": 730102.9872760902
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.04775584076024097,
+            "benefit_relative_effect_vs_direct_percent": 0.0005897795117266746
+          }
+        },
+        {
+          "dimension": "initial_optional_part_missing",
+          "value": "both_present",
+          "feature_records": 6478,
+          "valid_records": 6478,
+          "attribute_groups": 6221,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 333,
+            "risk_fixed_validation_best": 357,
+            "risk_global_train_field": 357,
+            "benefit": 344,
+            "direct_posterror": 353,
+            "risk_benefit_field": 357,
+            "risk_neural_field": 357
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 179711.82117374145,
+              "random": 179407.85121108257,
+              "risk_fixed_validation_best": 177114.47768174074,
+              "risk_global_train_field": 177114.47768174074,
+              "benefit": 177114.06631631474,
+              "direct_posterror": 178193.18608563975,
+              "risk_benefit_field": 178109.11425623926,
+              "risk_neural_field": 177114.47768174074
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.00023225962743664728,
+            "benefit_relative_effect_vs_direct_percent": 0.6055898056654021
+          }
+        }
+      ]
+    },
+    "0.10": {
+      "policies": {
+        "no_acquisition": {
+          "post_mae": 273101.6537475568,
+          "selected_feature_records": 0,
+          "rmsle_descriptive_only": 0.2336066448714173,
+          "selected_price_valid_records": 0,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 0,
+          "negative_realized_gain_count": 0,
+          "zero_realized_gain_count": 0,
+          "field_counts": {},
+          "gross_error_reduction_sum": 0.0,
+          "gross_error_increase_sum": -0.0,
+          "net_error_reduction_sum": 0.0
+        },
+        "random": {
+          "post_mae": 272399.90788892726,
+          "selected_feature_records": 781,
+          "rmsle_descriptive_only": 0.23284419877727605,
+          "selected_price_valid_records": 781,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 420,
+          "negative_realized_gain_count": 361,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 263,
+            "vites_tipi": 266,
+            "yakit_tipi": 252
+          },
+          "gross_error_reduction_sum": 13323686.74032395,
+          "gross_error_increase_sum": 7848665.551296257,
+          "net_error_reduction_sum": 5475021.189027693
+        },
+        "risk_fixed_validation_best": {
+          "post_mae": 269601.1019728059,
+          "selected_feature_records": 781,
+          "rmsle_descriptive_only": 0.23200944429673565,
+          "selected_price_valid_records": 781,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 455,
+          "negative_realized_gain_count": 326,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 781
+          },
+          "gross_error_reduction_sum": 54767553.80823236,
+          "gross_error_increase_sum": 27456248.86162639,
+          "net_error_reduction_sum": 27311304.946605965
+        },
+        "risk_global_train_field": {
+          "post_mae": 269601.1019728059,
+          "selected_feature_records": 781,
+          "rmsle_descriptive_only": 0.23200944429673565,
+          "selected_price_valid_records": 781,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 455,
+          "negative_realized_gain_count": 326,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 781
+          },
+          "gross_error_reduction_sum": 54767553.80823236,
+          "gross_error_increase_sum": 27456248.86162639,
+          "net_error_reduction_sum": 27311304.946605965
+        },
+        "benefit": {
+          "post_mae": 269890.44062265655,
+          "selected_feature_records": 781,
+          "rmsle_descriptive_only": 0.2313551915144299,
+          "selected_price_valid_records": 781,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 520,
+          "negative_realized_gain_count": 261,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "yakit_tipi": 42,
+            "kilometre": 723,
+            "vites_tipi": 16
+          },
+          "gross_error_reduction_sum": 40032009.96054433,
+          "gross_error_increase_sum": 14978125.160072695,
+          "net_error_reduction_sum": 25053884.800471634
+        },
+        "direct_posterror": {
+          "post_mae": 271234.85032777884,
+          "selected_feature_records": 781,
+          "rmsle_descriptive_only": 0.23242781195188777,
+          "selected_price_valid_records": 781,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 459,
+          "negative_realized_gain_count": 322,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 594,
+            "yakit_tipi": 20,
+            "vites_tipi": 167
+          },
+          "gross_error_reduction_sum": 27590528.87122381,
+          "gross_error_increase_sum": 13025728.590116821,
+          "net_error_reduction_sum": 14564800.281106994
+        },
+        "risk_benefit_field": {
+          "post_mae": 270429.62222579104,
+          "selected_feature_records": 781,
+          "rmsle_descriptive_only": 0.23209246287503893,
+          "selected_price_valid_records": 781,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 468,
+          "negative_realized_gain_count": 313,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "vites_tipi": 26,
+            "yakit_tipi": 52,
+            "kilometre": 703
+          },
+          "gross_error_reduction_sum": 49869366.557959735,
+          "gross_error_increase_sum": 29022176.625143357,
+          "net_error_reduction_sum": 20847189.93281638
+        },
+        "risk_neural_field": {
+          "post_mae": 269601.1019728059,
+          "selected_feature_records": 781,
+          "rmsle_descriptive_only": 0.23200944429673565,
+          "selected_price_valid_records": 781,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 455,
+          "negative_realized_gain_count": 326,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 781
+          },
+          "gross_error_reduction_sum": 54767553.80823236,
+          "gross_error_increase_sum": 27456248.86162639,
+          "net_error_reduction_sum": 27311304.946605965
+        }
+      },
+      "subgroups": [
+        {
+          "dimension": "brand",
+          "value": "alfa romeo",
+          "feature_records": 39,
+          "valid_records": 39,
+          "attribute_groups": 38,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 14,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "aston martin",
+          "feature_records": 2,
+          "valid_records": 2,
+          "attribute_groups": 2,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "audi",
+          "feature_records": 390,
+          "valid_records": 390,
+          "attribute_groups": 379,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 44,
+            "risk_fixed_validation_best": 125,
+            "risk_global_train_field": 125,
+            "benefit": 28,
+            "direct_posterror": 78,
+            "risk_benefit_field": 125,
+            "risk_neural_field": 125
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 234872.46082552685,
+              "random": 235180.11360245637,
+              "risk_fixed_validation_best": 226011.25883952685,
+              "risk_global_train_field": 226011.25883952685,
+              "benefit": 232209.0037599216,
+              "direct_posterror": 234852.97649630468,
+              "risk_benefit_field": 223990.124193278,
+              "risk_neural_field": 226011.25883952685
+            },
+            "benefit_relative_effect_vs_risk_percent": -2.7422283970354204,
+            "benefit_relative_effect_vs_direct_percent": 1.125799117314867
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "bentley",
+          "feature_records": 5,
+          "valid_records": 5,
+          "attribute_groups": 5,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 5,
+            "risk_global_train_field": 5,
+            "benefit": 4,
+            "direct_posterror": 1,
+            "risk_benefit_field": 5,
+            "risk_neural_field": 5
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "bmw",
+          "feature_records": 344,
+          "valid_records": 344,
+          "attribute_groups": 337,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 34,
+            "risk_fixed_validation_best": 151,
+            "risk_global_train_field": 151,
+            "benefit": 15,
+            "direct_posterror": 79,
+            "risk_benefit_field": 151,
+            "risk_neural_field": 151
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 337818.529744041,
+              "random": 336943.49232296774,
+              "risk_fixed_validation_best": 326116.923157835,
+              "risk_global_train_field": 326116.923157835,
+              "benefit": 338739.22639398114,
+              "direct_posterror": 333329.2403722416,
+              "risk_benefit_field": 325618.59634641063,
+              "risk_neural_field": 326116.923157835
+            },
+            "benefit_relative_effect_vs_risk_percent": -3.8704839705718643,
+            "benefit_relative_effect_vs_direct_percent": -1.6230157353426322
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "byd",
+          "feature_records": 4,
+          "valid_records": 4,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 3,
+            "direct_posterror": 2,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "chery",
+          "feature_records": 10,
+          "valid_records": 10,
+          "attribute_groups": 10,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "chevrolet",
+          "feature_records": 313,
+          "valid_records": 313,
+          "attribute_groups": 296,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 40,
+            "risk_fixed_validation_best": 8,
+            "risk_global_train_field": 8,
+            "benefit": 4,
+            "direct_posterror": 2,
+            "risk_benefit_field": 8,
+            "risk_neural_field": 8
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 161685.3553451209,
+              "random": 161824.98535758865,
+              "risk_fixed_validation_best": 155033.134287564,
+              "risk_global_train_field": 155033.134287564,
+              "benefit": 161541.1546351556,
+              "direct_posterror": 159699.58749793842,
+              "risk_benefit_field": 158564.57353538973,
+              "risk_neural_field": 155033.134287564
+            },
+            "benefit_relative_effect_vs_risk_percent": -4.197825437444986,
+            "benefit_relative_effect_vs_direct_percent": -1.1531445798136148
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "chrysler",
+          "feature_records": 11,
+          "valid_records": 11,
+          "attribute_groups": 10,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "citroen",
+          "feature_records": 329,
+          "valid_records": 329,
+          "attribute_groups": 306,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 23,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 30,
+            "direct_posterror": 24,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 80635.20161545575,
+              "random": 79530.02442007451,
+              "risk_fixed_validation_best": 80552.84353895769,
+              "risk_global_train_field": 80552.84353895769,
+              "benefit": 79143.92347066487,
+              "direct_posterror": 79672.10401357936,
+              "risk_benefit_field": 80564.31161806945,
+              "risk_neural_field": 80552.84353895769
+            },
+            "benefit_relative_effect_vs_risk_percent": 1.7490631073891585,
+            "benefit_relative_effect_vs_direct_percent": 0.6629428825231783
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "cupra",
+          "feature_records": 14,
+          "valid_records": 14,
+          "attribute_groups": 11,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 14,
+            "risk_global_train_field": 14,
+            "benefit": 0,
+            "direct_posterror": 13,
+            "risk_benefit_field": 14,
+            "risk_neural_field": 14
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "dacia",
+          "feature_records": 303,
+          "valid_records": 303,
+          "attribute_groups": 284,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 29,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 24,
+            "direct_posterror": 26,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 83897.76470893814,
+              "random": 84412.94467960003,
+              "risk_fixed_validation_best": 83081.36285295802,
+              "risk_global_train_field": 83081.36285295802,
+              "benefit": 80801.09058495186,
+              "direct_posterror": 80196.89308202233,
+              "risk_benefit_field": 83081.36285295802,
+              "risk_neural_field": 83081.36285295802
+            },
+            "benefit_relative_effect_vs_risk_percent": 2.744625496866136,
+            "benefit_relative_effect_vs_direct_percent": -0.753392656136414
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "daewoo",
+          "feature_records": 8,
+          "valid_records": 8,
+          "attribute_groups": 8,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "daihatsu",
+          "feature_records": 15,
+          "valid_records": 15,
+          "attribute_groups": 14,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "ds automobiles",
+          "feature_records": 26,
+          "valid_records": 26,
+          "attribute_groups": 25,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 21,
+            "risk_global_train_field": 21,
+            "benefit": 11,
+            "direct_posterror": 16,
+            "risk_benefit_field": 21,
+            "risk_neural_field": 21
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "fiat",
+          "feature_records": 363,
+          "valid_records": 363,
+          "attribute_groups": 358,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 45,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 2,
+            "direct_posterror": 121,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 74908.94864088693,
+              "random": 74859.58061591191,
+              "risk_fixed_validation_best": 74908.94864088693,
+              "risk_global_train_field": 74908.94864088693,
+              "benefit": 74883.72251265646,
+              "direct_posterror": 67205.03430111449,
+              "risk_benefit_field": 74908.94864088693,
+              "risk_neural_field": 74908.94864088693
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.0336757205756577,
+            "benefit_relative_effect_vs_direct_percent": -11.425763399118797
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "ford",
+          "feature_records": 408,
+          "valid_records": 408,
+          "attribute_groups": 391,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 38,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 136,
+            "direct_posterror": 12,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 112648.10286901449,
+              "random": 111416.34569539677,
+              "risk_fixed_validation_best": 112124.32760051836,
+              "risk_global_train_field": 112124.32760051836,
+              "benefit": 103970.58725747181,
+              "direct_posterror": 112424.79345499918,
+              "risk_benefit_field": 112435.48772898085,
+              "risk_neural_field": 112124.32760051836
+            },
+            "benefit_relative_effect_vs_risk_percent": 7.272052834151269,
+            "benefit_relative_effect_vs_direct_percent": 7.519877010858263
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "geely",
+          "feature_records": 10,
+          "valid_records": 10,
+          "attribute_groups": 9,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "honda",
+          "feature_records": 402,
+          "valid_records": 402,
+          "attribute_groups": 372,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 34,
+            "risk_fixed_validation_best": 5,
+            "risk_global_train_field": 5,
+            "benefit": 4,
+            "direct_posterror": 10,
+            "risk_benefit_field": 5,
+            "risk_neural_field": 5
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 105289.60264297453,
+              "random": 105007.00543904645,
+              "risk_fixed_validation_best": 104298.67335262548,
+              "risk_global_train_field": 104298.67335262548,
+              "benefit": 105051.64748493787,
+              "direct_posterror": 105339.48388796166,
+              "risk_benefit_field": 105092.67744775565,
+              "risk_neural_field": 104298.67335262548
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.7219402779617757,
+            "benefit_relative_effect_vs_direct_percent": 0.2732464527070657
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "hyundai",
+          "feature_records": 383,
+          "valid_records": 383,
+          "attribute_groups": 370,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 45,
+            "risk_fixed_validation_best": 5,
+            "risk_global_train_field": 5,
+            "benefit": 75,
+            "direct_posterror": 25,
+            "risk_benefit_field": 5,
+            "risk_neural_field": 5
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 93441.28359123446,
+              "random": 92212.80979987603,
+              "risk_fixed_validation_best": 93343.14159286722,
+              "risk_global_train_field": 93343.14159286722,
+              "benefit": 88948.44126658519,
+              "direct_posterror": 94604.18823406544,
+              "risk_benefit_field": 93494.35208434376,
+              "risk_neural_field": 93343.14159286722
+            },
+            "benefit_relative_effect_vs_risk_percent": 4.708112723964559,
+            "benefit_relative_effect_vs_direct_percent": 5.9783261957568525
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "ikco",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "infiniti",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "jaguar",
+          "feature_records": 15,
+          "valid_records": 15,
+          "attribute_groups": 15,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 11,
+            "risk_global_train_field": 11,
+            "benefit": 5,
+            "direct_posterror": 3,
+            "risk_benefit_field": 11,
+            "risk_neural_field": 11
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "kia",
+          "feature_records": 242,
+          "valid_records": 242,
+          "attribute_groups": 233,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 23,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 6,
+            "direct_posterror": 17,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 88206.3292110761,
+              "random": 87140.74180081848,
+              "risk_fixed_validation_best": 88286.79512365827,
+              "risk_global_train_field": 88286.79512365827,
+              "benefit": 87503.03269857237,
+              "direct_posterror": 87879.19998522602,
+              "risk_benefit_field": 88286.79512365827,
+              "risk_neural_field": 88286.79512365827
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.8877459239381572,
+            "benefit_relative_effect_vs_direct_percent": 0.4280504223034504
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "lada",
+          "feature_records": 66,
+          "valid_records": 66,
+          "attribute_groups": 60,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 10,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lancia",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lexus",
+          "feature_records": 2,
+          "valid_records": 2,
+          "attribute_groups": 2,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lincoln",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "maserati",
+          "feature_records": 8,
+          "valid_records": 8,
+          "attribute_groups": 8,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 8,
+            "risk_global_train_field": 8,
+            "benefit": 1,
+            "direct_posterror": 7,
+            "risk_benefit_field": 8,
+            "risk_neural_field": 8
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mazda",
+          "feature_records": 86,
+          "valid_records": 86,
+          "attribute_groups": 84,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 9,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 3,
+            "direct_posterror": 4,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mclaren",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mercedes - benz",
+          "feature_records": 376,
+          "valid_records": 376,
+          "attribute_groups": 362,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 48,
+            "risk_fixed_validation_best": 232,
+            "risk_global_train_field": 232,
+            "benefit": 51,
+            "direct_posterror": 164,
+            "risk_benefit_field": 232,
+            "risk_neural_field": 232
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 473475.0287088622,
+              "random": 471175.9487226848,
+              "risk_fixed_validation_best": 456502.4869515842,
+              "risk_global_train_field": 456502.4869515842,
+              "benefit": 466605.85899248323,
+              "direct_posterror": 467362.6265814289,
+              "risk_benefit_field": 458617.89824823115,
+              "risk_neural_field": 456502.4869515842
+            },
+            "benefit_relative_effect_vs_risk_percent": -2.2132129242859104,
+            "benefit_relative_effect_vs_direct_percent": 0.16192300066463178
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "mini",
+          "feature_records": 50,
+          "valid_records": 50,
+          "attribute_groups": 49,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 5,
+            "risk_fixed_validation_best": 9,
+            "risk_global_train_field": 9,
+            "benefit": 2,
+            "direct_posterror": 3,
+            "risk_benefit_field": 9,
+            "risk_neural_field": 9
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mitsubishi",
+          "feature_records": 60,
+          "valid_records": 60,
+          "attribute_groups": 58,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 6,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 1,
+            "direct_posterror": 13,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "nissan",
+          "feature_records": 146,
+          "valid_records": 146,
+          "attribute_groups": 140,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 9,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 2,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 92959.68053053865,
+              "random": 91986.81935126019,
+              "risk_fixed_validation_best": 91647.65799234973,
+              "risk_global_train_field": 91647.65799234973,
+              "benefit": 92426.91251983999,
+              "direct_posterror": 92959.68053053865,
+              "risk_benefit_field": 92426.91251983999,
+              "risk_neural_field": 91647.65799234973
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.850272166862463,
+            "benefit_relative_effect_vs_direct_percent": 0.5731172995195956
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "opel",
+          "feature_records": 373,
+          "valid_records": 373,
+          "attribute_groups": 363,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 43,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 6,
+            "direct_posterror": 2,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 84709.19073669611,
+              "random": 85002.46808889553,
+              "risk_fixed_validation_best": 84717.374213215,
+              "risk_global_train_field": 84717.374213215,
+              "benefit": 84558.34244959071,
+              "direct_posterror": 84771.83900130013,
+              "risk_benefit_field": 84717.374213215,
+              "risk_neural_field": 84717.374213215
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.18772036444854337,
+            "benefit_relative_effect_vs_direct_percent": 0.2518484371987611
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "peugeot",
+          "feature_records": 372,
+          "valid_records": 372,
+          "attribute_groups": 363,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 36,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 12,
+            "direct_posterror": 11,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 74496.0412639584,
+              "random": 74383.8740759158,
+              "risk_fixed_validation_best": 74696.61331393794,
+              "risk_global_train_field": 74696.61331393794,
+              "benefit": 74660.91239206096,
+              "direct_posterror": 74960.54918188805,
+              "risk_benefit_field": 74696.61331393794,
+              "risk_neural_field": 74696.61331393794
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.04779456563437015,
+            "benefit_relative_effect_vs_direct_percent": 0.3997259799952165
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "pontiac",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "porsche",
+          "feature_records": 33,
+          "valid_records": 33,
+          "attribute_groups": 31,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 4,
+            "risk_fixed_validation_best": 33,
+            "risk_global_train_field": 33,
+            "benefit": 33,
+            "direct_posterror": 12,
+            "risk_benefit_field": 33,
+            "risk_neural_field": 33
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "proton",
+          "feature_records": 13,
+          "valid_records": 13,
+          "attribute_groups": 12,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "renault",
+          "feature_records": 370,
+          "valid_records": 370,
+          "attribute_groups": 357,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 26,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 5,
+            "direct_posterror": 4,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 93555.35940875785,
+              "random": 92581.63534818143,
+              "risk_fixed_validation_best": 93331.31140132155,
+              "risk_global_train_field": 93331.31140132155,
+              "benefit": 93330.8386419163,
+              "direct_posterror": 93390.07840672293,
+              "risk_benefit_field": 93527.21469742773,
+              "risk_neural_field": 93331.31140132155
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.0005065389076341413,
+            "benefit_relative_effect_vs_direct_percent": 0.06343261063410863
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "rover",
+          "feature_records": 16,
+          "valid_records": 16,
+          "attribute_groups": 16,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 2,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "saab",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 0,
+            "direct_posterror": 3,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "seat",
+          "feature_records": 418,
+          "valid_records": 418,
+          "attribute_groups": 391,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 37,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 88,
+            "direct_posterror": 25,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 104091.12937966795,
+              "random": 103756.52361840033,
+              "risk_fixed_validation_best": 104280.49809701876,
+              "risk_global_train_field": 104280.49809701876,
+              "benefit": 102076.90904974092,
+              "direct_posterror": 103868.49997182668,
+              "risk_benefit_field": 104280.49809701876,
+              "risk_neural_field": 104280.49809701876
+            },
+            "benefit_relative_effect_vs_risk_percent": 2.1131362886545695,
+            "benefit_relative_effect_vs_direct_percent": 1.7248645379221892
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "skoda",
+          "feature_records": 355,
+          "valid_records": 355,
+          "attribute_groups": 335,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 50,
+            "risk_fixed_validation_best": 22,
+            "risk_global_train_field": 22,
+            "benefit": 36,
+            "direct_posterror": 7,
+            "risk_benefit_field": 22,
+            "risk_neural_field": 22
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 120091.00489028459,
+              "random": 119812.10244359293,
+              "risk_fixed_validation_best": 117194.56300114768,
+              "risk_global_train_field": 117194.56300114768,
+              "benefit": 118175.14757665442,
+              "direct_posterror": 120004.86681816998,
+              "risk_benefit_field": 117194.56300114768,
+              "risk_neural_field": 117194.56300114768
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.8367150748257317,
+            "benefit_relative_effect_vs_direct_percent": 1.5247041974455324
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "smart",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "subaru",
+          "feature_records": 14,
+          "valid_records": 14,
+          "attribute_groups": 14,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "suzuki",
+          "feature_records": 53,
+          "valid_records": 53,
+          "attribute_groups": 52,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 8,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 0,
+            "direct_posterror": 11,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tata",
+          "feature_records": 33,
+          "valid_records": 33,
+          "attribute_groups": 33,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tesla",
+          "feature_records": 29,
+          "valid_records": 29,
+          "attribute_groups": 23,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 24,
+            "risk_global_train_field": 24,
+            "benefit": 5,
+            "direct_posterror": 20,
+            "risk_benefit_field": 24,
+            "risk_neural_field": 24
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tofa\u015f",
+          "feature_records": 375,
+          "valid_records": 375,
+          "attribute_groups": 300,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 39,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 403494.5309870737,
+              "random": 403456.82069443713,
+              "risk_fixed_validation_best": 403521.3358402885,
+              "risk_global_train_field": 403521.3358402885,
+              "benefit": 403494.5309870737,
+              "direct_posterror": 403528.9908311552,
+              "risk_benefit_field": 403493.8256255515,
+              "risk_neural_field": 403521.3358402885
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.006642735051158512,
+            "benefit_relative_effect_vs_direct_percent": 0.008539620415006732
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "toyota",
+          "feature_records": 373,
+          "valid_records": 373,
+          "attribute_groups": 355,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 40,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 7,
+            "direct_posterror": 24,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 96441.77032205998,
+              "random": 95817.39740812764,
+              "risk_fixed_validation_best": 96406.86012564745,
+              "risk_global_train_field": 96406.86012564745,
+              "benefit": 96173.44490091712,
+              "direct_posterror": 96052.35295143878,
+              "risk_benefit_field": 96544.0389986628,
+              "risk_neural_field": 96406.86012564745
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.2421147462183886,
+            "benefit_relative_effect_vs_direct_percent": -0.12606869666125228
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "volkswagen",
+          "feature_records": 363,
+          "valid_records": 363,
+          "attribute_groups": 355,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 33,
+            "risk_fixed_validation_best": 20,
+            "risk_global_train_field": 20,
+            "benefit": 161,
+            "direct_posterror": 28,
+            "risk_benefit_field": 20,
+            "risk_neural_field": 20
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 2050906.6531640426,
+              "random": 2048914.4694298427,
+              "risk_fixed_validation_best": 2049857.9421147124,
+              "risk_global_train_field": 2049857.9421147124,
+              "benefit": 2041374.2054160377,
+              "direct_posterror": 2049635.9205679677,
+              "risk_benefit_field": 2049740.696152737,
+              "risk_neural_field": 2049857.9421147124
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.41386949428908165,
+            "benefit_relative_effect_vs_direct_percent": 0.4030820824822693
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "volvo",
+          "feature_records": 168,
+          "valid_records": 168,
+          "attribute_groups": 162,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 10,
+            "risk_fixed_validation_best": 29,
+            "risk_global_train_field": 29,
+            "benefit": 2,
+            "direct_posterror": 10,
+            "risk_benefit_field": 29,
+            "risk_neural_field": 29
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 167696.5743515816,
+              "random": 167846.83062348768,
+              "risk_fixed_validation_best": 163591.37854066858,
+              "risk_global_train_field": 163591.37854066858,
+              "benefit": 167555.30951609666,
+              "direct_posterror": 166777.20986877475,
+              "risk_benefit_field": 163591.37854066858,
+              "risk_neural_field": 163591.37854066858
+            },
+            "benefit_relative_effect_vs_risk_percent": -2.423068385870137,
+            "benefit_relative_effect_vs_direct_percent": -0.46655034457894146
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "galeriden",
+          "feature_records": 4462,
+          "valid_records": 4462,
+          "attribute_groups": 4317,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 479,
+            "risk_fixed_validation_best": 664,
+            "risk_global_train_field": 664,
+            "benefit": 543,
+            "direct_posterror": 535,
+            "risk_benefit_field": 664,
+            "risk_neural_field": 664
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 214149.80603496393,
+              "random": 213216.46269524185,
+              "risk_fixed_validation_best": 209119.26168041292,
+              "risk_global_train_field": 209119.26168041292,
+              "benefit": 209928.29257234748,
+              "direct_posterror": 211749.9142512217,
+              "risk_benefit_field": 210251.39466795346,
+              "risk_neural_field": 209119.26168041292
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.3868753578381311,
+            "benefit_relative_effect_vs_direct_percent": 0.860270326585838
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "sahibinden",
+          "feature_records": 3269,
+          "valid_records": 3269,
+          "attribute_groups": 3176,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 298,
+            "risk_fixed_validation_best": 97,
+            "risk_global_train_field": 97,
+            "benefit": 187,
+            "direct_posterror": 235,
+            "risk_benefit_field": 97,
+            "risk_neural_field": 97
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 338301.52299687185,
+              "random": 337903.7925411122,
+              "risk_fixed_validation_best": 337860.97572822735,
+              "risk_global_train_field": 337860.97572822735,
+              "benefit": 337049.5350415488,
+              "direct_posterror": 337466.5662992212,
+              "risk_benefit_field": 337785.194335122,
+              "risk_neural_field": 337860.97572822735
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.24016999445691783,
+            "benefit_relative_effect_vs_direct_percent": 0.12357705897971571
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "yetkili bayiden",
+          "feature_records": 71,
+          "valid_records": 71,
+          "attribute_groups": 71,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 4,
+            "risk_fixed_validation_best": 20,
+            "risk_global_train_field": 20,
+            "benefit": 51,
+            "direct_posterror": 11,
+            "risk_benefit_field": 20,
+            "risk_neural_field": 20
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "0-5",
+          "feature_records": 1468,
+          "valid_records": 1468,
+          "attribute_groups": 1369,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 146,
+            "risk_fixed_validation_best": 367,
+            "risk_global_train_field": 367,
+            "benefit": 155,
+            "direct_posterror": 315,
+            "risk_benefit_field": 367,
+            "risk_neural_field": 367
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 364550.71587727114,
+              "random": 364451.6658626038,
+              "risk_fixed_validation_best": 357068.1704810165,
+              "risk_global_train_field": 357068.1704810165,
+              "benefit": 360206.07683181844,
+              "direct_posterror": 361336.5137378861,
+              "risk_benefit_field": 360747.96105485625,
+              "risk_neural_field": 357068.1704810165
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.8787975547007649,
+            "benefit_relative_effect_vs_direct_percent": 0.31284878861915255
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "11-20",
+          "feature_records": 2929,
+          "valid_records": 2929,
+          "attribute_groups": 2851,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 282,
+            "risk_fixed_validation_best": 136,
+            "risk_global_train_field": 136,
+            "benefit": 298,
+            "direct_posterror": 207,
+            "risk_benefit_field": 136,
+            "risk_neural_field": 136
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 362008.8730278641,
+              "random": 361383.0408501274,
+              "risk_fixed_validation_best": 359774.7413186983,
+              "risk_global_train_field": 359774.7413186983,
+              "benefit": 358414.1773269636,
+              "direct_posterror": 359853.7822486344,
+              "risk_benefit_field": 359891.8137510665,
+              "risk_neural_field": 359774.7413186983
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.3781710708060728,
+            "benefit_relative_effect_vs_direct_percent": 0.4000527416094064
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "6-10",
+          "feature_records": 1897,
+          "valid_records": 1897,
+          "attribute_groups": 1793,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 190,
+            "risk_fixed_validation_best": 227,
+            "risk_global_train_field": 227,
+            "benefit": 317,
+            "direct_posterror": 87,
+            "risk_benefit_field": 227,
+            "risk_neural_field": 227
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 157021.5577981061,
+              "random": 155383.56857426648,
+              "risk_fixed_validation_best": 152505.77342263385,
+              "risk_global_train_field": 152505.77342263385,
+              "benefit": 153143.64455999853,
+              "direct_posterror": 155494.36183831832,
+              "risk_benefit_field": 152878.53313848673,
+              "risk_neural_field": 152505.77342263385
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.4182603209368149,
+            "benefit_relative_effect_vs_direct_percent": 1.5117701056994237
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": ">20",
+          "feature_records": 1508,
+          "valid_records": 1508,
+          "attribute_groups": 1402,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 163,
+            "risk_fixed_validation_best": 51,
+            "risk_global_train_field": 51,
+            "benefit": 11,
+            "direct_posterror": 172,
+            "risk_benefit_field": 51,
+            "risk_neural_field": 51
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 157416.95450197769,
+              "random": 157158.80611916515,
+              "risk_fixed_validation_best": 156610.1152655808,
+              "risk_global_train_field": 156610.1152655808,
+              "benefit": 156892.62455428578,
+              "direct_posterror": 156994.54076695896,
+              "risk_benefit_field": 156618.17369795035,
+              "risk_neural_field": 156610.1152655808
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.18039019269342946,
+            "benefit_relative_effect_vs_direct_percent": 0.06491704244956259
+          }
+        },
+        {
+          "dimension": "initial_optional_part_missing",
+          "value": "at_least_one_missing",
+          "feature_records": 1324,
+          "valid_records": 1324,
+          "attribute_groups": 1295,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 122,
+            "risk_fixed_validation_best": 90,
+            "risk_global_train_field": 90,
+            "benefit": 103,
+            "direct_posterror": 70,
+            "risk_benefit_field": 90,
+            "risk_neural_field": 90
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 730034.6865369641,
+              "random": 729276.7902397019,
+              "risk_fixed_validation_best": 729119.2848244356,
+              "risk_global_train_field": 729119.2848244356,
+              "benefit": 728725.6120463281,
+              "direct_posterror": 729131.3411717642,
+              "risk_benefit_field": 729086.5293258928,
+              "risk_neural_field": 729119.2848244356
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.053992918072692464,
+            "benefit_relative_effect_vs_direct_percent": 0.05564554731442645
+          }
+        },
+        {
+          "dimension": "initial_optional_part_missing",
+          "value": "both_present",
+          "feature_records": 6478,
+          "valid_records": 6478,
+          "attribute_groups": 6221,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 659,
+            "risk_fixed_validation_best": 691,
+            "risk_global_train_field": 691,
+            "benefit": 678,
+            "direct_posterror": 711,
+            "risk_benefit_field": 691,
+            "risk_neural_field": 691
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 179711.82117374145,
+              "random": 179021.55157024466,
+              "risk_fixed_validation_best": 175682.90590989182,
+              "risk_global_train_field": 175682.90590989182,
+              "benefit": 176111.84121466932,
+              "direct_posterror": 177648.10227630674,
+              "risk_benefit_field": 176687.4572056405,
+              "risk_neural_field": 175682.90590989182
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.24415312494745217,
+            "benefit_relative_effect_vs_direct_percent": 0.8647776373360806
+          }
+        }
+      ]
+    },
+    "0.20": {
+      "policies": {
+        "no_acquisition": {
+          "post_mae": 273101.6537475568,
+          "selected_feature_records": 0,
+          "rmsle_descriptive_only": 0.2336066448714173,
+          "selected_price_valid_records": 0,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 0,
+          "negative_realized_gain_count": 0,
+          "zero_realized_gain_count": 0,
+          "field_counts": {},
+          "gross_error_reduction_sum": 0.0,
+          "gross_error_increase_sum": -0.0,
+          "net_error_reduction_sum": 0.0
+        },
+        "random": {
+          "post_mae": 271695.89389958675,
+          "selected_feature_records": 1561,
+          "rmsle_descriptive_only": 0.23210826303660786,
+          "selected_price_valid_records": 1561,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 852,
+          "negative_realized_gain_count": 709,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 518,
+            "vites_tipi": 548,
+            "yakit_tipi": 495
+          },
+          "gross_error_reduction_sum": 26889952.566513263,
+          "gross_error_increase_sum": 15922214.232651312,
+          "net_error_reduction_sum": 10967738.333861955
+        },
+        "risk_fixed_validation_best": {
+          "post_mae": 268048.95729936735,
+          "selected_feature_records": 1561,
+          "rmsle_descriptive_only": 0.2306695099958326,
+          "selected_price_valid_records": 1561,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 918,
+          "negative_realized_gain_count": 643,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 1561
+          },
+          "gross_error_reduction_sum": 78598495.51199305,
+          "gross_error_increase_sum": 39177357.82321929,
+          "net_error_reduction_sum": 39421137.688773744
+        },
+        "risk_global_train_field": {
+          "post_mae": 268048.95729936735,
+          "selected_feature_records": 1561,
+          "rmsle_descriptive_only": 0.2306695099958326,
+          "selected_price_valid_records": 1561,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 918,
+          "negative_realized_gain_count": 643,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 1561
+          },
+          "gross_error_reduction_sum": 78598495.51199305,
+          "gross_error_increase_sum": 39177357.82321929,
+          "net_error_reduction_sum": 39421137.688773744
+        },
+        "benefit": {
+          "post_mae": 267605.3411398653,
+          "selected_feature_records": 1561,
+          "rmsle_descriptive_only": 0.22978843445275807,
+          "selected_price_valid_records": 1561,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 1024,
+          "negative_realized_gain_count": 537,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "yakit_tipi": 43,
+            "kilometre": 1501,
+            "vites_tipi": 17
+          },
+          "gross_error_reduction_sum": 67538105.06467038,
+          "gross_error_increase_sum": 24655874.09946134,
+          "net_error_reduction_sum": 42882230.965209045
+        },
+        "direct_posterror": {
+          "post_mae": 270155.59432659834,
+          "selected_feature_records": 1561,
+          "rmsle_descriptive_only": 0.2310554132499361,
+          "selected_price_valid_records": 1561,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 908,
+          "negative_realized_gain_count": 653,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 1285,
+            "yakit_tipi": 31,
+            "vites_tipi": 245
+          },
+          "gross_error_reduction_sum": 44030050.051058784,
+          "gross_error_increase_sum": 21044894.44874067,
+          "net_error_reduction_sum": 22985155.602318116
+        },
+        "risk_benefit_field": {
+          "post_mae": 268880.2091810841,
+          "selected_feature_records": 1561,
+          "rmsle_descriptive_only": 0.23075409729974083,
+          "selected_price_valid_records": 1561,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 931,
+          "negative_realized_gain_count": 630,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "vites_tipi": 29,
+            "yakit_tipi": 52,
+            "kilometre": 1480
+          },
+          "gross_error_reduction_sum": 73708158.19563805,
+          "gross_error_increase_sum": 40772447.688018896,
+          "net_error_reduction_sum": 32935710.507619146
+        },
+        "risk_neural_field": {
+          "post_mae": 268048.95729936735,
+          "selected_feature_records": 1561,
+          "rmsle_descriptive_only": 0.2306695099958326,
+          "selected_price_valid_records": 1561,
+          "invalid_selected_not_backfilled": 0,
+          "positive_realized_gain_count": 918,
+          "negative_realized_gain_count": 643,
+          "zero_realized_gain_count": 0,
+          "field_counts": {
+            "kilometre": 1561
+          },
+          "gross_error_reduction_sum": 78598495.51199305,
+          "gross_error_increase_sum": 39177357.82321929,
+          "net_error_reduction_sum": 39421137.688773744
+        }
+      },
+      "subgroups": [
+        {
+          "dimension": "brand",
+          "value": "alfa romeo",
+          "feature_records": 39,
+          "valid_records": 39,
+          "attribute_groups": 38,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 6,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 15,
+            "direct_posterror": 3,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "aston martin",
+          "feature_records": 2,
+          "valid_records": 2,
+          "attribute_groups": 2,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "audi",
+          "feature_records": 390,
+          "valid_records": 390,
+          "attribute_groups": 379,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 75,
+            "risk_fixed_validation_best": 367,
+            "risk_global_train_field": 367,
+            "benefit": 61,
+            "direct_posterror": 169,
+            "risk_benefit_field": 367,
+            "risk_neural_field": 367
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 234872.46082552685,
+              "random": 234192.17051967452,
+              "risk_fixed_validation_best": 211115.47097711032,
+              "risk_global_train_field": 211115.47097711032,
+              "benefit": 230259.43680580924,
+              "direct_posterror": 228765.0827593831,
+              "risk_benefit_field": 209094.33633086146,
+              "risk_neural_field": 211115.47097711032
+            },
+            "benefit_relative_effect_vs_risk_percent": -9.068007067456724,
+            "benefit_relative_effect_vs_direct_percent": -0.653226457639912
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "bentley",
+          "feature_records": 5,
+          "valid_records": 5,
+          "attribute_groups": 5,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 5,
+            "risk_global_train_field": 5,
+            "benefit": 4,
+            "direct_posterror": 1,
+            "risk_benefit_field": 5,
+            "risk_neural_field": 5
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "bmw",
+          "feature_records": 344,
+          "valid_records": 344,
+          "attribute_groups": 337,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 73,
+            "risk_fixed_validation_best": 337,
+            "risk_global_train_field": 337,
+            "benefit": 26,
+            "direct_posterror": 133,
+            "risk_benefit_field": 337,
+            "risk_neural_field": 337
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 337818.529744041,
+              "random": 335430.8574446129,
+              "risk_fixed_validation_best": 316338.3287412902,
+              "risk_global_train_field": 316338.3287412902,
+              "benefit": 337146.08341669285,
+              "direct_posterror": 330880.89089671767,
+              "risk_benefit_field": 315840.00192986586,
+              "risk_neural_field": 316338.3287412902
+            },
+            "benefit_relative_effect_vs_risk_percent": -6.57769001884681,
+            "benefit_relative_effect_vs_direct_percent": -1.8934887726504657
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "byd",
+          "feature_records": 4,
+          "valid_records": 4,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 3,
+            "direct_posterror": 2,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "chery",
+          "feature_records": 10,
+          "valid_records": 10,
+          "attribute_groups": 10,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 3,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "chevrolet",
+          "feature_records": 313,
+          "valid_records": 313,
+          "attribute_groups": 296,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 77,
+            "risk_fixed_validation_best": 8,
+            "risk_global_train_field": 8,
+            "benefit": 5,
+            "direct_posterror": 51,
+            "risk_benefit_field": 8,
+            "risk_neural_field": 8
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 161685.3553451209,
+              "random": 161801.87447522077,
+              "risk_fixed_validation_best": 155033.134287564,
+              "risk_global_train_field": 155033.134287564,
+              "benefit": 161171.93408834905,
+              "direct_posterror": 159069.00920142568,
+              "risk_benefit_field": 158564.57353538973,
+              "risk_neural_field": 155033.134287564
+            },
+            "benefit_relative_effect_vs_risk_percent": -3.95966954354317,
+            "benefit_relative_effect_vs_direct_percent": -1.3220204849962207
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "chrysler",
+          "feature_records": 11,
+          "valid_records": 11,
+          "attribute_groups": 10,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 10,
+            "risk_global_train_field": 10,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 10,
+            "risk_neural_field": 10
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "citroen",
+          "feature_records": 329,
+          "valid_records": 329,
+          "attribute_groups": 306,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 54,
+            "risk_fixed_validation_best": 9,
+            "risk_global_train_field": 9,
+            "benefit": 52,
+            "direct_posterror": 64,
+            "risk_benefit_field": 9,
+            "risk_neural_field": 9
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 80635.20161545575,
+              "random": 78323.50130181691,
+              "risk_fixed_validation_best": 80134.52835788911,
+              "risk_global_train_field": 80134.52835788911,
+              "benefit": 78088.08174257661,
+              "direct_posterror": 78932.05072646805,
+              "risk_benefit_field": 80145.99643700087,
+              "risk_neural_field": 80134.52835788911
+            },
+            "benefit_relative_effect_vs_risk_percent": 2.5537638484285488,
+            "benefit_relative_effect_vs_direct_percent": 1.0692348369563254
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "cupra",
+          "feature_records": 14,
+          "valid_records": 14,
+          "attribute_groups": 11,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 3,
+            "risk_fixed_validation_best": 14,
+            "risk_global_train_field": 14,
+            "benefit": 1,
+            "direct_posterror": 13,
+            "risk_benefit_field": 14,
+            "risk_neural_field": 14
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "dacia",
+          "feature_records": 303,
+          "valid_records": 303,
+          "attribute_groups": 284,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 65,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 81,
+            "direct_posterror": 48,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 83897.76470893814,
+              "random": 82616.46606156327,
+              "risk_fixed_validation_best": 83086.08668820892,
+              "risk_global_train_field": 83086.08668820892,
+              "benefit": 76034.34736679378,
+              "direct_posterror": 78626.60059860894,
+              "risk_benefit_field": 83086.08668820892,
+              "risk_neural_field": 83086.08668820892
+            },
+            "benefit_relative_effect_vs_risk_percent": 8.487268569860179,
+            "benefit_relative_effect_vs_direct_percent": 3.2969163261282164
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "daewoo",
+          "feature_records": 8,
+          "valid_records": 8,
+          "attribute_groups": 8,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "daihatsu",
+          "feature_records": 15,
+          "valid_records": 15,
+          "attribute_groups": 14,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 4,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "ds automobiles",
+          "feature_records": 26,
+          "valid_records": 26,
+          "attribute_groups": 25,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 4,
+            "risk_fixed_validation_best": 26,
+            "risk_global_train_field": 26,
+            "benefit": 11,
+            "direct_posterror": 16,
+            "risk_benefit_field": 26,
+            "risk_neural_field": 26
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "fiat",
+          "feature_records": 363,
+          "valid_records": 363,
+          "attribute_groups": 358,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 81,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 2,
+            "direct_posterror": 210,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 74908.94864088693,
+              "random": 74282.55674731157,
+              "risk_fixed_validation_best": 74862.8190096564,
+              "risk_global_train_field": 74862.8190096564,
+              "benefit": 74883.72251265646,
+              "direct_posterror": 64286.30169054315,
+              "risk_benefit_field": 74862.8190096564,
+              "risk_neural_field": 74862.8190096564
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.027922409650852173,
+            "benefit_relative_effect_vs_direct_percent": -16.48472620672196
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "ford",
+          "feature_records": 408,
+          "valid_records": 408,
+          "attribute_groups": 391,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 75,
+            "risk_fixed_validation_best": 6,
+            "risk_global_train_field": 6,
+            "benefit": 212,
+            "direct_posterror": 31,
+            "risk_benefit_field": 6,
+            "risk_neural_field": 6
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 112648.10286901449,
+              "random": 111032.77465690035,
+              "risk_fixed_validation_best": 112213.47437526802,
+              "risk_global_train_field": 112213.47437526802,
+              "benefit": 99406.82967803314,
+              "direct_posterror": 112220.40808964017,
+              "risk_benefit_field": 112524.63450373051,
+              "risk_neural_field": 112213.47437526802
+            },
+            "benefit_relative_effect_vs_risk_percent": 11.412751248042166,
+            "benefit_relative_effect_vs_direct_percent": 11.418224750503233
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "geely",
+          "feature_records": 10,
+          "valid_records": 10,
+          "attribute_groups": 9,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "honda",
+          "feature_records": 402,
+          "valid_records": 402,
+          "attribute_groups": 372,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 79,
+            "risk_fixed_validation_best": 23,
+            "risk_global_train_field": 23,
+            "benefit": 47,
+            "direct_posterror": 23,
+            "risk_benefit_field": 23,
+            "risk_neural_field": 23
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 105289.60264297453,
+              "random": 103765.62162949894,
+              "risk_fixed_validation_best": 103664.65591987137,
+              "risk_global_train_field": 103664.65591987137,
+              "benefit": 103025.79726213458,
+              "direct_posterror": 104787.66928389668,
+              "risk_benefit_field": 104458.66001500153,
+              "risk_neural_field": 103664.65591987137
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.6162743242311965,
+            "benefit_relative_effect_vs_direct_percent": 1.6813734228487685
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "hyundai",
+          "feature_records": 383,
+          "valid_records": 383,
+          "attribute_groups": 370,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 82,
+            "risk_fixed_validation_best": 9,
+            "risk_global_train_field": 9,
+            "benefit": 106,
+            "direct_posterror": 38,
+            "risk_benefit_field": 9,
+            "risk_neural_field": 9
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 93441.28359123446,
+              "random": 91441.95972731507,
+              "risk_fixed_validation_best": 93237.5353627357,
+              "risk_global_train_field": 93237.5353627357,
+              "benefit": 87066.83510978436,
+              "direct_posterror": 94229.56743786536,
+              "risk_benefit_field": 93459.32529438418,
+              "risk_neural_field": 93237.5353627357
+            },
+            "benefit_relative_effect_vs_risk_percent": 6.618257581503586,
+            "benefit_relative_effect_vs_direct_percent": 7.601363906084031
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "ikco",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "infiniti",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 2,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "jaguar",
+          "feature_records": 15,
+          "valid_records": 15,
+          "attribute_groups": 15,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 3,
+            "risk_fixed_validation_best": 15,
+            "risk_global_train_field": 15,
+            "benefit": 5,
+            "direct_posterror": 3,
+            "risk_benefit_field": 15,
+            "risk_neural_field": 15
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "kia",
+          "feature_records": 242,
+          "valid_records": 242,
+          "attribute_groups": 233,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 49,
+            "risk_fixed_validation_best": 7,
+            "risk_global_train_field": 7,
+            "benefit": 24,
+            "direct_posterror": 44,
+            "risk_benefit_field": 7,
+            "risk_neural_field": 7
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 88206.3292110761,
+              "random": 86345.92257817683,
+              "risk_fixed_validation_best": 88179.74096456903,
+              "risk_global_train_field": 88179.74096456903,
+              "benefit": 86416.7763640706,
+              "direct_posterror": 88221.22026364392,
+              "risk_benefit_field": 88179.74096456903,
+              "risk_neural_field": 88179.74096456903
+            },
+            "benefit_relative_effect_vs_risk_percent": 1.999285302059126,
+            "benefit_relative_effect_vs_direct_percent": 2.045362662385362
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "lada",
+          "feature_records": 66,
+          "valid_records": 66,
+          "attribute_groups": 60,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 16,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lancia",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lexus",
+          "feature_records": 2,
+          "valid_records": 2,
+          "attribute_groups": 2,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "lincoln",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "maserati",
+          "feature_records": 8,
+          "valid_records": 8,
+          "attribute_groups": 8,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1,
+            "risk_fixed_validation_best": 8,
+            "risk_global_train_field": 8,
+            "benefit": 2,
+            "direct_posterror": 7,
+            "risk_benefit_field": 8,
+            "risk_neural_field": 8
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mazda",
+          "feature_records": 86,
+          "valid_records": 86,
+          "attribute_groups": 84,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 18,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 5,
+            "direct_posterror": 15,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mclaren",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mercedes - benz",
+          "feature_records": 376,
+          "valid_records": 376,
+          "attribute_groups": 362,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 87,
+            "risk_fixed_validation_best": 376,
+            "risk_global_train_field": 376,
+            "benefit": 88,
+            "direct_posterror": 203,
+            "risk_benefit_field": 376,
+            "risk_neural_field": 376
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 473475.0287088622,
+              "random": 471122.7357802711,
+              "risk_fixed_validation_best": 453910.21853658627,
+              "risk_global_train_field": 453910.21853658627,
+              "benefit": 464346.8988460386,
+              "direct_posterror": 464893.54560819076,
+              "risk_benefit_field": 456025.6298332333,
+              "risk_neural_field": 453910.21853658627
+            },
+            "benefit_relative_effect_vs_risk_percent": -2.299282960207499,
+            "benefit_relative_effect_vs_direct_percent": 0.11758536278170971
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "mini",
+          "feature_records": 50,
+          "valid_records": 50,
+          "attribute_groups": 49,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 11,
+            "risk_fixed_validation_best": 15,
+            "risk_global_train_field": 15,
+            "benefit": 3,
+            "direct_posterror": 5,
+            "risk_benefit_field": 15,
+            "risk_neural_field": 15
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "mitsubishi",
+          "feature_records": 60,
+          "valid_records": 60,
+          "attribute_groups": 58,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 10,
+            "risk_fixed_validation_best": 7,
+            "risk_global_train_field": 7,
+            "benefit": 1,
+            "direct_posterror": 21,
+            "risk_benefit_field": 7,
+            "risk_neural_field": 7
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "nissan",
+          "feature_records": 146,
+          "valid_records": 146,
+          "attribute_groups": 140,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 20,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 3,
+            "direct_posterror": 27,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 92959.68053053865,
+              "random": 92308.70464975193,
+              "risk_fixed_validation_best": 91636.90049645878,
+              "risk_global_train_field": 91636.90049645878,
+              "benefit": 92479.54287920265,
+              "direct_posterror": 90327.44519017158,
+              "risk_benefit_field": 92416.15502394905,
+              "risk_neural_field": 91636.90049645878
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.9195448320258642,
+            "benefit_relative_effect_vs_direct_percent": -2.3825512661186585
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "opel",
+          "feature_records": 373,
+          "valid_records": 373,
+          "attribute_groups": 363,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 76,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 32,
+            "direct_posterror": 43,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 84709.19073669611,
+              "random": 83712.48707923277,
+              "risk_fixed_validation_best": 84717.374213215,
+              "risk_global_train_field": 84717.374213215,
+              "benefit": 83377.72815850339,
+              "direct_posterror": 84657.07747088985,
+              "risk_benefit_field": 84717.374213215,
+              "risk_neural_field": 84717.374213215
+            },
+            "benefit_relative_effect_vs_risk_percent": 1.5813120592477359,
+            "benefit_relative_effect_vs_direct_percent": 1.5112136523096695
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "peugeot",
+          "feature_records": 372,
+          "valid_records": 372,
+          "attribute_groups": 363,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 72,
+            "risk_fixed_validation_best": 10,
+            "risk_global_train_field": 10,
+            "benefit": 52,
+            "direct_posterror": 54,
+            "risk_benefit_field": 10,
+            "risk_neural_field": 10
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 74496.0412639584,
+              "random": 74604.67677080838,
+              "risk_fixed_validation_best": 74778.450046071,
+              "risk_global_train_field": 74778.450046071,
+              "benefit": 72862.36708781548,
+              "direct_posterror": 74879.82849107202,
+              "risk_benefit_field": 74778.450046071,
+              "risk_neural_field": 74778.450046071
+            },
+            "benefit_relative_effect_vs_risk_percent": 2.562346447505956,
+            "benefit_relative_effect_vs_direct_percent": 2.694265523721235
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "pontiac",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 1,
+            "risk_global_train_field": 1,
+            "benefit": 1,
+            "direct_posterror": 0,
+            "risk_benefit_field": 1,
+            "risk_neural_field": 1
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "porsche",
+          "feature_records": 33,
+          "valid_records": 33,
+          "attribute_groups": 31,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 8,
+            "risk_fixed_validation_best": 33,
+            "risk_global_train_field": 33,
+            "benefit": 33,
+            "direct_posterror": 12,
+            "risk_benefit_field": 33,
+            "risk_neural_field": 33
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "proton",
+          "feature_records": 13,
+          "valid_records": 13,
+          "attribute_groups": 12,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 2,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "renault",
+          "feature_records": 370,
+          "valid_records": 370,
+          "attribute_groups": 357,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 71,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 6,
+            "direct_posterror": 29,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 93555.35940875785,
+              "random": 91034.9781352234,
+              "risk_fixed_validation_best": 93303.10033030865,
+              "risk_global_train_field": 93303.10033030865,
+              "benefit": 93232.18749266412,
+              "direct_posterror": 93190.0119730677,
+              "risk_benefit_field": 93499.00362641481,
+              "risk_neural_field": 93303.10033030865
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.07600265949736534,
+            "benefit_relative_effect_vs_direct_percent": -0.04525755357624636
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "rover",
+          "feature_records": 16,
+          "valid_records": 16,
+          "attribute_groups": 16,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 4,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 1,
+            "direct_posterror": 1,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "saab",
+          "feature_records": 3,
+          "valid_records": 3,
+          "attribute_groups": 3,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 3,
+            "risk_global_train_field": 3,
+            "benefit": 0,
+            "direct_posterror": 3,
+            "risk_benefit_field": 3,
+            "risk_neural_field": 3
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "seat",
+          "feature_records": 418,
+          "valid_records": 418,
+          "attribute_groups": 391,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 79,
+            "risk_fixed_validation_best": 12,
+            "risk_global_train_field": 12,
+            "benefit": 234,
+            "direct_posterror": 64,
+            "risk_benefit_field": 12,
+            "risk_neural_field": 12
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 104091.12937966795,
+              "random": 103492.6536110898,
+              "risk_fixed_validation_best": 104148.44512968417,
+              "risk_global_train_field": 104148.44512968417,
+              "benefit": 98431.0823568686,
+              "direct_posterror": 102830.63501522638,
+              "risk_benefit_field": 104148.44512968417,
+              "risk_neural_field": 104148.44512968417
+            },
+            "benefit_relative_effect_vs_risk_percent": 5.489628544810621,
+            "benefit_relative_effect_vs_direct_percent": 4.278445482424884
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "skoda",
+          "feature_records": 355,
+          "valid_records": 355,
+          "attribute_groups": 335,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 81,
+            "risk_fixed_validation_best": 69,
+            "risk_global_train_field": 69,
+            "benefit": 155,
+            "direct_posterror": 30,
+            "risk_benefit_field": 69,
+            "risk_neural_field": 69
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 120091.00489028459,
+              "random": 119608.30735882136,
+              "risk_fixed_validation_best": 114868.9440493744,
+              "risk_global_train_field": 114868.9440493744,
+              "benefit": 109823.8014312901,
+              "direct_posterror": 119645.37947062767,
+              "risk_benefit_field": 114868.9440493744,
+              "risk_neural_field": 114868.9440493744
+            },
+            "benefit_relative_effect_vs_risk_percent": 4.39208583297826,
+            "benefit_relative_effect_vs_direct_percent": 8.208907090932591
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "smart",
+          "feature_records": 1,
+          "valid_records": 1,
+          "attribute_groups": 1,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 0,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "subaru",
+          "feature_records": 14,
+          "valid_records": 14,
+          "attribute_groups": 14,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 2,
+            "risk_fixed_validation_best": 6,
+            "risk_global_train_field": 6,
+            "benefit": 0,
+            "direct_posterror": 1,
+            "risk_benefit_field": 6,
+            "risk_neural_field": 6
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "suzuki",
+          "feature_records": 53,
+          "valid_records": 53,
+          "attribute_groups": 52,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 13,
+            "risk_fixed_validation_best": 4,
+            "risk_global_train_field": 4,
+            "benefit": 0,
+            "direct_posterror": 20,
+            "risk_benefit_field": 4,
+            "risk_neural_field": 4
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tata",
+          "feature_records": 33,
+          "valid_records": 33,
+          "attribute_groups": 33,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 2,
+            "risk_fixed_validation_best": 0,
+            "risk_global_train_field": 0,
+            "benefit": 0,
+            "direct_posterror": 0,
+            "risk_benefit_field": 0,
+            "risk_neural_field": 0
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tesla",
+          "feature_records": 29,
+          "valid_records": 29,
+          "attribute_groups": 23,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 7,
+            "risk_fixed_validation_best": 29,
+            "risk_global_train_field": 29,
+            "benefit": 7,
+            "direct_posterror": 20,
+            "risk_benefit_field": 29,
+            "risk_neural_field": 29
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "brand",
+          "value": "tofa\u015f",
+          "feature_records": 375,
+          "valid_records": 375,
+          "attribute_groups": 300,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 86,
+            "risk_fixed_validation_best": 2,
+            "risk_global_train_field": 2,
+            "benefit": 0,
+            "direct_posterror": 2,
+            "risk_benefit_field": 2,
+            "risk_neural_field": 2
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 403494.5309870737,
+              "random": 403329.83305762266,
+              "risk_fixed_validation_best": 403521.3358402885,
+              "risk_global_train_field": 403521.3358402885,
+              "benefit": 403494.5309870737,
+              "direct_posterror": 403555.04515901254,
+              "risk_benefit_field": 403493.8256255515,
+              "risk_neural_field": 403521.3358402885
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.006642735051158512,
+            "benefit_relative_effect_vs_direct_percent": 0.014995270822342211
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "toyota",
+          "feature_records": 373,
+          "valid_records": 373,
+          "attribute_groups": 355,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 69,
+            "risk_fixed_validation_best": 37,
+            "risk_global_train_field": 37,
+            "benefit": 8,
+            "direct_posterror": 72,
+            "risk_benefit_field": 37,
+            "risk_neural_field": 37
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 96441.77032205998,
+              "random": 95424.0478034349,
+              "risk_fixed_validation_best": 96593.60065578016,
+              "risk_global_train_field": 96593.60065578016,
+              "benefit": 96381.3638994504,
+              "direct_posterror": 95320.84428345665,
+              "risk_benefit_field": 96730.77952879551,
+              "risk_neural_field": 96593.60065578016
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.21972134270683608,
+            "benefit_relative_effect_vs_direct_percent": -1.1125789159400108
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "volkswagen",
+          "feature_records": 363,
+          "valid_records": 363,
+          "attribute_groups": 355,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 62,
+            "risk_fixed_validation_best": 44,
+            "risk_global_train_field": 44,
+            "benefit": 268,
+            "direct_posterror": 52,
+            "risk_benefit_field": 44,
+            "risk_neural_field": 44
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 2050906.6531640426,
+              "random": 2046809.637169858,
+              "risk_fixed_validation_best": 2049529.3486778806,
+              "risk_global_train_field": 2049529.3486778806,
+              "benefit": 2028984.4959668128,
+              "direct_posterror": 2048894.5859852755,
+              "risk_benefit_field": 2049412.102715905,
+              "risk_neural_field": 2049529.3486778806
+            },
+            "benefit_relative_effect_vs_risk_percent": 1.002418078292996,
+            "benefit_relative_effect_vs_direct_percent": 0.9717478954090861
+          }
+        },
+        {
+          "dimension": "brand",
+          "value": "volvo",
+          "feature_records": 168,
+          "valid_records": 168,
+          "attribute_groups": 162,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 24,
+            "risk_fixed_validation_best": 32,
+            "risk_global_train_field": 32,
+            "benefit": 4,
+            "direct_posterror": 28,
+            "risk_benefit_field": 32,
+            "risk_neural_field": 32
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 167696.5743515816,
+              "random": 165474.4384734341,
+              "risk_fixed_validation_best": 163915.05383379184,
+              "risk_global_train_field": 163915.05383379184,
+              "benefit": 167003.94938645634,
+              "direct_posterror": 166272.2499416707,
+              "risk_benefit_field": 163915.05383379184,
+              "risk_neural_field": 163915.05383379184
+            },
+            "benefit_relative_effect_vs_risk_percent": -1.8844489755020355,
+            "benefit_relative_effect_vs_direct_percent": -0.4400610715512127
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "galeriden",
+          "feature_records": 4462,
+          "valid_records": 4462,
+          "attribute_groups": 4317,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 926,
+            "risk_fixed_validation_best": 1262,
+            "risk_global_train_field": 1262,
+            "benefit": 1057,
+            "direct_posterror": 957,
+            "risk_benefit_field": 1262,
+            "risk_neural_field": 1262
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 214149.80603496393,
+              "random": 212369.80242871272,
+              "risk_fixed_validation_best": 207094.62064029812,
+              "risk_global_train_field": 207094.62064029812,
+              "benefit": 207242.90936757982,
+              "direct_posterror": 210585.51232041445,
+              "risk_benefit_field": 208226.75362783865,
+              "risk_neural_field": 207094.62064029812
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.07160433565257332,
+            "benefit_relative_effect_vs_direct_percent": 1.5872900827805854
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "sahibinden",
+          "feature_records": 3269,
+          "valid_records": 3269,
+          "attribute_groups": 3176,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 625,
+            "risk_fixed_validation_best": 259,
+            "risk_global_train_field": 259,
+            "benefit": 449,
+            "direct_posterror": 585,
+            "risk_benefit_field": 259,
+            "risk_neural_field": 259
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 338301.52299687185,
+              "random": 337367.2441473066,
+              "risk_fixed_validation_best": 336952.2953633763,
+              "risk_global_train_field": 336952.2953633763,
+              "benefit": 335279.48485037475,
+              "direct_posterror": 336545.59364220663,
+              "risk_benefit_field": 336876.5139702709,
+              "risk_neural_field": 336952.2953633763
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.49645321786503405,
+            "benefit_relative_effect_vs_direct_percent": 0.3762072110734349
+          }
+        },
+        {
+          "dimension": "source_seller_type",
+          "value": "yetkili bayiden",
+          "feature_records": 71,
+          "valid_records": 71,
+          "attribute_groups": 71,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 10,
+            "risk_fixed_validation_best": 40,
+            "risk_global_train_field": 40,
+            "benefit": 55,
+            "direct_posterror": 19,
+            "risk_benefit_field": 40,
+            "risk_neural_field": 40
+          },
+          "counts_only": true,
+          "metrics": null
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "0-5",
+          "feature_records": 1468,
+          "valid_records": 1468,
+          "attribute_groups": 1369,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 298,
+            "risk_fixed_validation_best": 542,
+            "risk_global_train_field": 542,
+            "benefit": 297,
+            "direct_posterror": 464,
+            "risk_benefit_field": 542,
+            "risk_neural_field": 542
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 364550.71587727114,
+              "random": 362906.5650292485,
+              "risk_fixed_validation_best": 356443.21175686724,
+              "risk_global_train_field": 356443.21175686724,
+              "benefit": 359418.03684717824,
+              "direct_posterror": 360911.0836887101,
+              "risk_benefit_field": 360137.52015588747,
+              "risk_neural_field": 356443.21175686724
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.8345859851414855,
+            "benefit_relative_effect_vs_direct_percent": 0.4136882764231329
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "11-20",
+          "feature_records": 2929,
+          "valid_records": 2929,
+          "attribute_groups": 2851,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 549,
+            "risk_fixed_validation_best": 454,
+            "risk_global_train_field": 454,
+            "benefit": 551,
+            "direct_posterror": 546,
+            "risk_benefit_field": 454,
+            "risk_neural_field": 454
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 362008.8730278641,
+              "random": 360604.8239516573,
+              "risk_fixed_validation_best": 357657.04193875054,
+              "risk_global_train_field": 357657.04193875054,
+              "benefit": 356036.9254714883,
+              "direct_posterror": 358356.62791972683,
+              "risk_benefit_field": 357774.1143711188,
+              "risk_neural_field": 357657.04193875054
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.4529804469891184,
+            "benefit_relative_effect_vs_direct_percent": 0.6473167419016242
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": "6-10",
+          "feature_records": 1897,
+          "valid_records": 1897,
+          "attribute_groups": 1793,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 390,
+            "risk_fixed_validation_best": 409,
+            "risk_global_train_field": 409,
+            "benefit": 698,
+            "direct_posterror": 215,
+            "risk_benefit_field": 409,
+            "risk_neural_field": 409
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 157021.5577981061,
+              "random": 154838.56267356526,
+              "risk_fixed_validation_best": 150164.35097371324,
+              "risk_global_train_field": 150164.35097371324,
+              "benefit": 148046.45840734194,
+              "direct_posterror": 154017.99387403738,
+              "risk_benefit_field": 150537.11068956615,
+              "risk_neural_field": 150164.35097371324
+            },
+            "benefit_relative_effect_vs_risk_percent": 1.410383058720805,
+            "benefit_relative_effect_vs_direct_percent": 3.877167411737111
+          }
+        },
+        {
+          "dimension": "vehicle_age_from_2025",
+          "value": ">20",
+          "feature_records": 1508,
+          "valid_records": 1508,
+          "attribute_groups": 1402,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 324,
+            "risk_fixed_validation_best": 156,
+            "risk_global_train_field": 156,
+            "benefit": 15,
+            "direct_posterror": 336,
+            "risk_benefit_field": 156,
+            "risk_neural_field": 156
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 157416.95450197769,
+              "random": 157217.66843201697,
+              "risk_fixed_validation_best": 156246.7376358414,
+              "risk_global_train_field": 156246.7376358414,
+              "benefit": 156866.64932152122,
+              "direct_posterror": 156590.03880979077,
+              "risk_benefit_field": 156254.79606821094,
+              "risk_neural_field": 156246.7376358414
+            },
+            "benefit_relative_effect_vs_risk_percent": -0.3967517626669692,
+            "benefit_relative_effect_vs_direct_percent": -0.17664630128002698
+          }
+        },
+        {
+          "dimension": "initial_optional_part_missing",
+          "value": "at_least_one_missing",
+          "feature_records": 1324,
+          "valid_records": 1324,
+          "attribute_groups": 1295,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 253,
+            "risk_fixed_validation_best": 194,
+            "risk_global_train_field": 194,
+            "benefit": 212,
+            "direct_posterror": 161,
+            "risk_benefit_field": 194,
+            "risk_neural_field": 194
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 730034.6865369641,
+              "random": 728871.2335488995,
+              "risk_fixed_validation_best": 727129.521930674,
+              "risk_global_train_field": 727129.521930674,
+              "benefit": 726748.300948508,
+              "direct_posterror": 727559.1233134267,
+              "risk_benefit_field": 727096.7664321313,
+              "risk_neural_field": 727129.521930674
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.05242820854719107,
+            "benefit_relative_effect_vs_direct_percent": 0.11144418906138509
+          }
+        },
+        {
+          "dimension": "initial_optional_part_missing",
+          "value": "both_present",
+          "feature_records": 6478,
+          "valid_records": 6478,
+          "attribute_groups": 6221,
+          "selected_feature_counts": {
+            "no_acquisition": 0,
+            "random": 1308,
+            "risk_fixed_validation_best": 1367,
+            "risk_global_train_field": 1367,
+            "benefit": 1349,
+            "direct_posterror": 1400,
+            "risk_benefit_field": 1367,
+            "risk_neural_field": 1367
+          },
+          "counts_only": false,
+          "metrics": {
+            "post_mae": {
+              "no_acquisition": 179711.82117374145,
+              "random": 178256.53766375929,
+              "risk_fixed_validation_best": 174220.20342906017,
+              "risk_global_train_field": 174220.20342906017,
+              "benefit": 173763.83468931835,
+              "direct_posterror": 176669.5998254311,
+              "risk_benefit_field": 175228.04465493624,
+              "risk_neural_field": 174220.20342906017
+            },
+            "benefit_relative_effect_vs_risk_percent": 0.2619493782921977,
+            "benefit_relative_effect_vs_direct_percent": 1.64474541119919
+          }
+        }
+      ]
+    }
+  }
+}

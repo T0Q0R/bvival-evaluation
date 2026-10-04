@@ -1,0 +1,115 @@
+{
+  "nonprice_candidates_N": 3251,
+  "valid_observed_target_n": 3251,
+  "invalid_observed_targets": 0,
+  "before_mae_EUR": 7804.172412718073,
+  "policies": {
+    "P1": {
+      "mae_EUR_valid_target_cohort": 7465.9535443267705,
+      "actions_all_nonprice_candidates": 326,
+      "actions_on_valid_target_records": 326,
+      "selected_field_counts_all_candidates": {
+        "power_kw": 326
+      },
+      "valid_actions_reducing_absolute_error": 196,
+      "valid_actions_increasing_absolute_error": 130,
+      "valid_actions_unchanged_absolute_error": 0,
+      "net_absolute_error_reduction_EUR": 1099549.5411401277
+    },
+    "P2": {
+      "mae_EUR_valid_target_cohort": 7364.4627348382755,
+      "actions_all_nonprice_candidates": 326,
+      "actions_on_valid_target_records": 326,
+      "selected_field_counts_all_candidates": {
+        "power_kw": 326
+      },
+      "valid_actions_reducing_absolute_error": 226,
+      "valid_actions_increasing_absolute_error": 100,
+      "valid_actions_unchanged_absolute_error": 0,
+      "net_absolute_error_reduction_EUR": 1429496.1627872237
+    },
+    "P3": {
+      "mae_EUR_valid_target_cohort": 7364.4627348382755,
+      "actions_all_nonprice_candidates": 326,
+      "actions_on_valid_target_records": 326,
+      "selected_field_counts_all_candidates": {
+        "power_kw": 326
+      },
+      "valid_actions_reducing_absolute_error": 226,
+      "valid_actions_increasing_absolute_error": 100,
+      "valid_actions_unchanged_absolute_error": 0,
+      "net_absolute_error_reduction_EUR": 1429496.1627872237
+    },
+    "P4": {
+      "mae_EUR_valid_target_cohort": 7318.048437791838,
+      "actions_all_nonprice_candidates": 326,
+      "actions_on_valid_target_records": 326,
+      "selected_field_counts_all_candidates": {
+        "power_kw": 268,
+        "transmission": 22,
+        "mileage_km": 26,
+        "fuel": 10
+      },
+      "valid_actions_reducing_absolute_error": 232,
+      "valid_actions_increasing_absolute_error": 94,
+      "valid_actions_unchanged_absolute_error": 0,
+      "net_absolute_error_reduction_EUR": 1580389.0424851903
+    }
+  },
+  "primary_comparisons": {
+    "P3_vs_P2": {
+      "relative_mae_improvement_percent": 0.0,
+      "nominal_97_5_percent_interval": [
+        0.0,
+        0.0
+      ],
+      "replicates": 10000,
+      "seed": 2026,
+      "paired_unique_proxy_representatives": 3251,
+      "conditional_fixed_policies_not_retrained_or_reallocated": true
+    },
+    "P3_vs_P4": {
+      "relative_mae_improvement_percent": -0.6342441901141936,
+      "nominal_97_5_percent_interval": [
+        -1.9673767055593,
+        0.6218228984569777
+      ],
+      "replicates": 10000,
+      "seed": 2026,
+      "paired_unique_proxy_representatives": 3251,
+      "conditional_fixed_policies_not_retrained_or_reallocated": true
+    }
+  },
+  "stage": "FIXED_NEW_TIME_COHORT_MATCHED_COMPARISON_COMPLETE",
+  "price_unit": "EUR",
+  "selected_parameters": {
+    "fixed_field": "power_kw",
+    "neighbor_k": 20,
+    "validation_fixed_field_P2_mae_EUR": {
+      "mileage_km": 7398.159598262143,
+      "power_kw": 7079.2793861179725,
+      "fuel": 7422.82389540568,
+      "transmission": 7395.456608897975
+    },
+    "validation_P4_mae_EUR_by_k": {
+      "5": 7118.899344194651,
+      "20": 7024.527658281321,
+      "50": 7026.257534583921,
+      "100": 7121.105223530559
+    },
+    "validation_candidates": 1723,
+    "validation_valid_targets": 1723,
+    "common_oof_currency_scale": 8093.888195053372
+  },
+  "label_access_counts": {
+    "entire_unrequested_months_skipped": 10,
+    "unrequested_rows_skipped_before_cell_decode": 16252,
+    "requested_price_cells_decoded": 3251,
+    "invalid_requested_targets": 0
+  },
+  "plan_freeze_receipt_sha256": "cbd066d39fe9b795c1c2456931f6ec9fcad4a79a4ade9509872781eaecb9f238",
+  "score_freeze_receipt_sha256": "858d44707980afb64743cf8282dc7074e8c03ed54ef65098d333f5434859ee71",
+  "predictions_actions_unchanged_after_label_join": true,
+  "source_rows_or_prices_publicly_exported": false,
+  "independent_label_custody_or_preregistration_claimed": false
+}

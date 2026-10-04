@@ -1,0 +1,71 @@
+{
+  "analysis_status": "post_test_exploratory",
+  "budget_fraction": 0.1,
+  "contrast": "joint_mean_benefit_vs_development_prior_fixed_field_mean_benefit",
+  "historical_MAE_reconstruction_passed": true,
+  "historical_curve_sha256": "384d899434a072d6c8401661dd2f528fa0202d7bdb79aac9630297d5604677c9",
+  "independent_confirmation": false,
+  "inference": {
+    "bootstrap_unit": "listing_not_verified_vehicle",
+    "ci95_percent": [
+      0.003797437684941481,
+      0.11108443792825788
+    ],
+    "conditioning": "fixed models and selected actions; excludes training/selection/market uncertainty",
+    "family_adjusted_interval_percent": [
+      -0.006275500449749886,
+      0.12316388295596695
+    ],
+    "family_adjusted_nominal_confidence": 0.9833333333333333,
+    "historical_adaptive_analysis_multiplicity_controlled": false,
+    "n": 10699,
+    "relative_mae_gain_percent": 0.05571718852974606,
+    "repetitions": 10000,
+    "seed": 2026
+  },
+  "joint_minus_fixed_MAE_reduction": 13.770505349675659,
+  "mae": {
+    "score_fixed_field_mean_value": 24715.003956676526,
+    "score_mean_value": 24701.23345132685,
+    "score_no_acquisition": 25623.6945466348,
+    "score_uncertainty_only": 25104.036389978894
+  },
+  "outcomes_sha256": "fc22c2c808e699a2c0da2b6983c0f32bdc6dee58f14920b0898dde7f86c34a14",
+  "price_unit": "source price units",
+  "selection": {
+    "assembly_audit_sha256": "8efd5d567971f6d362f47b18286a655429a5f6c87a3f2edc7c6f2a31b3aa7dbd",
+    "capacity": 1070,
+    "config_sha256": "77744a3bd46ccf7becb960af8f7c267d0e7da47b5301d7dd5a0e02534649cb87",
+    "created_at_utc": "2026-10-03T17:10:33.097781+00:00",
+    "fixed_field": "transmission",
+    "fixed_field_eligible_listings": 10699,
+    "independent_confirmation": false,
+    "joint_action_counts": {
+      "feat_body_condition": 1,
+      "fuel_type": 26,
+      "transmission": 1043
+    },
+    "joint_selected_listings_without_fixed_field": 0,
+    "listing_action_selection_overlap": 1043,
+    "listing_selection_overlap": 1043,
+    "n_action_rows": 42477,
+    "n_listings": 10699,
+    "original_scores_sha256": "e80af927b8de18f7e305e16d220f59e96603736871be2d8cec27c5aebc47170e",
+    "outcomes_read_in_prepare": false,
+    "runner_sha256": "d1a4cfbe41034bbb3b023a3be9d7dcca1cfe775820e3cbbda5ade4c95022c32d",
+    "selected_count": {
+      "score_fixed_field_mean_value": 1070,
+      "score_mean_value": 1070,
+      "score_no_acquisition": 0,
+      "score_uncertainty_only": 1070
+    },
+    "selection_hashes": {
+      "score_fixed_field_mean_value_selection.csv": "9716a9783b3faf86ccae0061d55ae9450de9f6b6a9606503019174548fd0c180",
+      "score_mean_value_selection.csv": "2d946e1ae452369648e7d533c9084fe58b90f0d0a3127354aca31201f1ed67cb",
+      "score_no_acquisition_selection.csv": "5de0165d1885489b50bdefbe802f4901578faee0fd6670c3b201a79829004dd5",
+      "score_uncertainty_only_selection.csv": "dd360a9ef392ab9964e7a4d98e4fd0670de8213392e4e7e7d2f79f727fcb0787"
+    },
+    "source": "mucars"
+  },
+  "source": "mucars"
+}

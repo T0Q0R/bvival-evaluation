@@ -1,0 +1,533 @@
+{
+  "stage": "DEVELOPMENT_COMMON_PREDICTOR_PORTFOLIO_ADAPTATION_NOT_CONFIRMATION",
+  "config_sha256": "0b18773086da4bb50900e1fdd6c41ba7e431a5143839432de0ae4dea4724bfbf",
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "catboost": "1.2.10"
+  },
+  "implementation_class": "common_predictor_local_wrapper_not_native_GDFS_portfolio",
+  "models_refitted": false,
+  "all_seeds_retained": true,
+  "select_best_seed": false,
+  "test_inputs_read": false,
+  "calibration_inputs_read": false,
+  "train_loss_rows_loaded": false,
+  "validation_previously_used": true,
+  "validation_checkpoint_selection_inherited": true,
+  "decision_receipt_sha256": "d2c7c75411e24219ad20d4941fb5738f227f107bc7c59e2216fdfdb43b780b87",
+  "listing_count": 14160,
+  "policies_per_seed": 7,
+  "result_rows": 21,
+  "unique_selected_sets": 9,
+  "old_metric_replay_checks": 9,
+  "accounting_checks": 21,
+  "mean_seed_maes_not_ensemble_maes": {
+    "risk_fixed": 6865.559630978722,
+    "risk_gdfs": 6878.543971499206,
+    "gain_fixed": 6779.096979957981,
+    "gain_gdfs_hybrid": 6789.001060895389,
+    "risk_gain": 6760.674115879879,
+    "gain_joint": 6711.605995669273,
+    "random_fixed": 7065.995587278942
+  },
+  "contrasts": [
+    {
+      "candidate": "gain_joint",
+      "reference": "gain_gdfs_hybrid",
+      "mean_seed_mae_reduction_percent": 1.1400066745004758
+    },
+    {
+      "candidate": "risk_gdfs",
+      "reference": "risk_fixed",
+      "mean_seed_mae_reduction_percent": -0.18912282783031914
+    },
+    {
+      "candidate": "gain_gdfs_hybrid",
+      "reference": "risk_gdfs",
+      "mean_seed_mae_reduction_percent": 1.3017712901863017
+    },
+    {
+      "candidate": "gain_joint",
+      "reference": "risk_gain",
+      "mean_seed_mae_reduction_percent": 0.7257873899786276
+    },
+    {
+      "candidate": "gain_joint",
+      "reference": "gain_fixed",
+      "mean_seed_mae_reduction_percent": 0.9955748455618882
+    }
+  ],
+  "native_pipeline_ranker_implemented": false,
+  "full_published_method_comparison_completed": false,
+  "common_predictor_training_execution_mismatch_disclosed": true,
+  "confidence_intervals_computed": false,
+  "p_values_computed": false,
+  "confirmation_established": false,
+  "new_method_increment_established": false,
+  "total_seconds": 0.8492095419933321,
+  "results": [
+    {
+      "seed": 13,
+      "policy": "risk_fixed",
+      "decision_sha256": "36114bba42ab5a988b6986f427af115db61ae442200576cced977fc6379d3ab9",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6865.559630978722,
+      "total_improvement": 7218735.03767302,
+      "total_deterioration": 2984745.974038141,
+      "net_error_reduction": 4233989.063634879,
+      "gain_per_all_listing": 299.0105270928587,
+      "harmful_action_count": 575,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 13,
+      "policy": "risk_gdfs",
+      "decision_sha256": "cd8e08d1e1f61df646d5b32c96601b88fce958534361c1733a74b2facb47a32e",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6903.599847302116,
+      "total_improvement": 6766643.594868175,
+      "total_deterioration": 3071303.9943725616,
+      "net_error_reduction": 3695339.600495613,
+      "gain_per_all_listing": 260.9703107694642,
+      "harmful_action_count": 575,
+      "field_counts": {
+        "fuel_type": 38,
+        "mileage_km": 1378,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 13,
+      "policy": "gain_fixed",
+      "decision_sha256": "f7fa8092cfd85fad47ca8b2c47a234b1ce86298654b0b55e8cf95c284fd6d3fe",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6779.096979957981,
+      "total_improvement": 7968694.968784006,
+      "total_deterioration": 2510394.766695449,
+      "net_error_reduction": 5458300.202088557,
+      "gain_per_all_listing": 385.4731781135987,
+      "harmful_action_count": 510,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 13,
+      "policy": "gain_gdfs_hybrid",
+      "decision_sha256": "990dc5338a8e7847ff08aa4b01c6efd311808d2ca4e3a8790d41d32378048907",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6807.749704676694,
+      "total_improvement": 7558927.612522193,
+      "total_deterioration": 2506349.992450619,
+      "net_error_reduction": 5052577.620071574,
+      "gain_per_all_listing": 356.8204533948852,
+      "harmful_action_count": 511,
+      "field_counts": {
+        "fuel_type": 21,
+        "mileage_km": 1395,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 13,
+      "policy": "risk_gain",
+      "decision_sha256": "683d2bfc6fc1905f30db9d66f64037cbad7ad5cbc5a6a444b4244becfec1c801",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6760.674115879878,
+      "total_improvement": 8412435.599188538,
+      "total_deterioration": 2693267.641754034,
+      "net_error_reduction": 5719167.957434504,
+      "gain_per_all_listing": 403.8960421917023,
+      "harmful_action_count": 505,
+      "field_counts": {
+        "fuel_type": 327,
+        "mileage_km": 1082,
+        "service_history": 0,
+        "transmission": 7
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 13,
+      "policy": "gain_joint",
+      "decision_sha256": "37b1d1ca009732423b9237b2863d0568545befb3d380c6d7ef0acb079ea658d1",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6711.605995669273,
+      "total_improvement": 8934135.441073779,
+      "total_deterioration": 2520162.901457129,
+      "net_error_reduction": 6413972.53961665,
+      "gain_per_all_listing": 452.9641624023058,
+      "harmful_action_count": 475,
+      "field_counts": {
+        "fuel_type": 204,
+        "mileage_km": 1207,
+        "service_history": 0,
+        "transmission": 5
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 13,
+      "policy": "random_fixed",
+      "decision_sha256": "ad1295f52a444ec9fa71a3973d8186ae1b18f8eb8e846676bec462743ad957c8",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 7065.995587278942,
+      "total_improvement": 2377127.55616834,
+      "total_deterioration": 981311.6337445951,
+      "net_error_reduction": 1395815.922423745,
+      "gain_per_all_listing": 98.57457079263736,
+      "harmful_action_count": 543,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 42,
+      "policy": "risk_fixed",
+      "decision_sha256": "36114bba42ab5a988b6986f427af115db61ae442200576cced977fc6379d3ab9",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6865.559630978722,
+      "total_improvement": 7218735.03767302,
+      "total_deterioration": 2984745.974038141,
+      "net_error_reduction": 4233989.063634879,
+      "gain_per_all_listing": 299.0105270928587,
+      "harmful_action_count": 575,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 42,
+      "policy": "risk_gdfs",
+      "decision_sha256": "01ad3a6601a3ab8c4904a5adb744be2262988e3278da54b9d532264c3222b35b",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6866.472436216779,
+      "total_improvement": 7186540.726569044,
+      "total_deterioration": 2965476.98510505,
+      "net_error_reduction": 4221063.741463995,
+      "gain_per_all_listing": 298.0977218548019,
+      "harmful_action_count": 580,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1371,
+        "service_history": 0,
+        "transmission": 45
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 42,
+      "policy": "gain_fixed",
+      "decision_sha256": "f7fa8092cfd85fad47ca8b2c47a234b1ce86298654b0b55e8cf95c284fd6d3fe",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6779.096979957981,
+      "total_improvement": 7968694.968784006,
+      "total_deterioration": 2510394.766695449,
+      "net_error_reduction": 5458300.202088557,
+      "gain_per_all_listing": 385.4731781135987,
+      "harmful_action_count": 510,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 42,
+      "policy": "gain_gdfs_hybrid",
+      "decision_sha256": "aaf0068822756e139cf09775edd5cb5430292cf1733a1867e43d8c8beebf442c",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6780.156498051491,
+      "total_improvement": 7953692.192579897,
+      "total_deterioration": 2510394.766695449,
+      "net_error_reduction": 5443297.425884448,
+      "gain_per_all_listing": 384.4136600200881,
+      "harmful_action_count": 510,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1413,
+        "service_history": 0,
+        "transmission": 3
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 42,
+      "policy": "risk_gain",
+      "decision_sha256": "683d2bfc6fc1905f30db9d66f64037cbad7ad5cbc5a6a444b4244becfec1c801",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6760.674115879878,
+      "total_improvement": 8412435.599188538,
+      "total_deterioration": 2693267.641754034,
+      "net_error_reduction": 5719167.957434504,
+      "gain_per_all_listing": 403.8960421917023,
+      "harmful_action_count": 505,
+      "field_counts": {
+        "fuel_type": 327,
+        "mileage_km": 1082,
+        "service_history": 0,
+        "transmission": 7
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 42,
+      "policy": "gain_joint",
+      "decision_sha256": "37b1d1ca009732423b9237b2863d0568545befb3d380c6d7ef0acb079ea658d1",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6711.605995669273,
+      "total_improvement": 8934135.441073779,
+      "total_deterioration": 2520162.901457129,
+      "net_error_reduction": 6413972.53961665,
+      "gain_per_all_listing": 452.9641624023058,
+      "harmful_action_count": 475,
+      "field_counts": {
+        "fuel_type": 204,
+        "mileage_km": 1207,
+        "service_history": 0,
+        "transmission": 5
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 42,
+      "policy": "random_fixed",
+      "decision_sha256": "ad1295f52a444ec9fa71a3973d8186ae1b18f8eb8e846676bec462743ad957c8",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 7065.995587278942,
+      "total_improvement": 2377127.55616834,
+      "total_deterioration": 981311.6337445951,
+      "net_error_reduction": 1395815.922423745,
+      "gain_per_all_listing": 98.57457079263736,
+      "harmful_action_count": 543,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 2026,
+      "policy": "risk_fixed",
+      "decision_sha256": "36114bba42ab5a988b6986f427af115db61ae442200576cced977fc6379d3ab9",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6865.559630978722,
+      "total_improvement": 7218735.03767302,
+      "total_deterioration": 2984745.974038141,
+      "net_error_reduction": 4233989.063634879,
+      "gain_per_all_listing": 299.0105270928587,
+      "harmful_action_count": 575,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 2026,
+      "policy": "risk_gdfs",
+      "decision_sha256": "023857bd5b161f58a86d30a6792ccde1c56f6d3e80b110d4455d2f39b3b4276c",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6865.559630978722,
+      "total_improvement": 7218735.03767302,
+      "total_deterioration": 2984745.974038141,
+      "net_error_reduction": 4233989.063634879,
+      "gain_per_all_listing": 299.0105270928587,
+      "harmful_action_count": 575,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 2026,
+      "policy": "gain_fixed",
+      "decision_sha256": "f7fa8092cfd85fad47ca8b2c47a234b1ce86298654b0b55e8cf95c284fd6d3fe",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6779.096979957981,
+      "total_improvement": 7968694.968784006,
+      "total_deterioration": 2510394.766695449,
+      "net_error_reduction": 5458300.202088557,
+      "gain_per_all_listing": 385.4731781135987,
+      "harmful_action_count": 510,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 2026,
+      "policy": "gain_gdfs_hybrid",
+      "decision_sha256": "395159df6b0161d20064ffd84d1c3ab5bdc556f8bedad82e475855527fd9451c",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6779.096979957981,
+      "total_improvement": 7968694.968784006,
+      "total_deterioration": 2510394.766695449,
+      "net_error_reduction": 5458300.202088557,
+      "gain_per_all_listing": 385.4731781135987,
+      "harmful_action_count": 510,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 2026,
+      "policy": "risk_gain",
+      "decision_sha256": "683d2bfc6fc1905f30db9d66f64037cbad7ad5cbc5a6a444b4244becfec1c801",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6760.674115879878,
+      "total_improvement": 8412435.599188538,
+      "total_deterioration": 2693267.641754034,
+      "net_error_reduction": 5719167.957434504,
+      "gain_per_all_listing": 403.8960421917023,
+      "harmful_action_count": 505,
+      "field_counts": {
+        "fuel_type": 327,
+        "mileage_km": 1082,
+        "service_history": 0,
+        "transmission": 7
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 2026,
+      "policy": "gain_joint",
+      "decision_sha256": "37b1d1ca009732423b9237b2863d0568545befb3d380c6d7ef0acb079ea658d1",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 6711.605995669273,
+      "total_improvement": 8934135.441073779,
+      "total_deterioration": 2520162.901457129,
+      "net_error_reduction": 6413972.53961665,
+      "gain_per_all_listing": 452.9641624023058,
+      "harmful_action_count": 475,
+      "field_counts": {
+        "fuel_type": 204,
+        "mileage_km": 1207,
+        "service_history": 0,
+        "transmission": 5
+      },
+      "selected_nonpositive_priority_count": 0
+    },
+    {
+      "seed": 2026,
+      "policy": "random_fixed",
+      "decision_sha256": "ad1295f52a444ec9fa71a3973d8186ae1b18f8eb8e846676bec462743ad957c8",
+      "all_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "capacity_mode": "exact_unit_cost",
+      "before_mae": 7164.57015807158,
+      "post_mae": 7065.995587278942,
+      "total_improvement": 2377127.55616834,
+      "total_deterioration": 981311.6337445951,
+      "net_error_reduction": 1395815.922423745,
+      "gain_per_all_listing": 98.57457079263736,
+      "harmful_action_count": 543,
+      "field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 1416,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "selected_nonpositive_priority_count": 0
+    }
+  ]
+}

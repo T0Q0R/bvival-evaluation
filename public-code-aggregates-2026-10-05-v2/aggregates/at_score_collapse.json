@@ -1,0 +1,101 @@
+{
+  "candidate_n": 3251,
+  "fixed_field": "power_kw",
+  "head_candidate_best_field_counts": {
+    "power_kw": 2154,
+    "mileage": 1052,
+    "fuel": 17,
+    "transmission": 28
+  },
+  "neighbor_candidate_best_field_counts": {
+    "mileage": 1314,
+    "power_kw": 1510,
+    "transmission": 251,
+    "fuel": 176
+  },
+  "head_maximum_tie_records": 0,
+  "neighbor_maximum_tie_records": 0,
+  "complete_action_equality_capacity_ranges_inclusive": [
+    [
+      1,
+      551
+    ]
+  ],
+  "first_capacity_with_different_actions": 552,
+  "checkpoint_results": [
+    {
+      "capacity_fraction": 0.01,
+      "actions_each": 33,
+      "complete_action_vectors_equal": true,
+      "records_with_different_action": 0,
+      "selected_listing_intersection": 33,
+      "joint_selected_field_counts": {
+        "power_kw": 33
+      }
+    },
+    {
+      "capacity_fraction": 0.05,
+      "actions_each": 163,
+      "complete_action_vectors_equal": true,
+      "records_with_different_action": 0,
+      "selected_listing_intersection": 163,
+      "joint_selected_field_counts": {
+        "power_kw": 163
+      }
+    },
+    {
+      "capacity_fraction": 0.1,
+      "actions_each": 326,
+      "complete_action_vectors_equal": true,
+      "records_with_different_action": 0,
+      "selected_listing_intersection": 326,
+      "joint_selected_field_counts": {
+        "power_kw": 326
+      }
+    },
+    {
+      "capacity_fraction": 0.2,
+      "actions_each": 651,
+      "complete_action_vectors_equal": false,
+      "records_with_different_action": 18,
+      "selected_listing_intersection": 642,
+      "joint_selected_field_counts": {
+        "power_kw": 642,
+        "mileage": 9
+      }
+    },
+    {
+      "capacity_fraction": 0.5,
+      "actions_each": 1626,
+      "complete_action_vectors_equal": false,
+      "records_with_different_action": 245,
+      "selected_listing_intersection": 1533,
+      "joint_selected_field_counts": {
+        "power_kw": 1474,
+        "mileage": 130,
+        "fuel": 17,
+        "transmission": 5
+      }
+    },
+    {
+      "capacity_fraction": 1.0,
+      "actions_each": 3251,
+      "complete_action_vectors_equal": false,
+      "records_with_different_action": 1097,
+      "selected_listing_intersection": 3251,
+      "joint_selected_field_counts": {
+        "power_kw": 2154,
+        "mileage": 1052,
+        "fuel": 17,
+        "transmission": 28
+      }
+    }
+  ],
+  "outcome_values_read": false,
+  "policy_refitted_or_changed": false,
+  "new_confirmatory_evidence": false,
+  "interpretation": "Finite frozen-score behavior only; not realized field value or population equivalence.",
+  "input_scores_sha256": "2513a169253658e6ea092a31371d081f94fbfaa069ada9322040a78305f6ead8",
+  "primary_exact_vectors_reconstructed": true,
+  "diagnostic_design": "notes/design/bvival-at-score-collapse-diagnostic-2026-10-05.md"
+}

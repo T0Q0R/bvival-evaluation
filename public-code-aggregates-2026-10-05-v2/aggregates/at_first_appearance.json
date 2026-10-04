@@ -1,0 +1,167 @@
+{
+  "monthly_flow": [
+    {
+      "month": "01",
+      "source_rows": 6325,
+      "four_field_qualified": 0,
+      "first_eligible_proxy_retained": 0,
+      "repeated_proxy_excluded": 0
+    },
+    {
+      "month": "02",
+      "source_rows": 6776,
+      "four_field_qualified": 4681,
+      "first_eligible_proxy_retained": 3831,
+      "repeated_proxy_excluded": 850
+    },
+    {
+      "month": "03",
+      "source_rows": 7275,
+      "four_field_qualified": 4980,
+      "first_eligible_proxy_retained": 1508,
+      "repeated_proxy_excluded": 3472
+    },
+    {
+      "month": "04",
+      "source_rows": 6853,
+      "four_field_qualified": 4683,
+      "first_eligible_proxy_retained": 1549,
+      "repeated_proxy_excluded": 3134
+    },
+    {
+      "month": "05",
+      "source_rows": 7844,
+      "four_field_qualified": 5389,
+      "first_eligible_proxy_retained": 1885,
+      "repeated_proxy_excluded": 3504
+    },
+    {
+      "month": "06",
+      "source_rows": 7855,
+      "four_field_qualified": 5427,
+      "first_eligible_proxy_retained": 1134,
+      "repeated_proxy_excluded": 4293
+    },
+    {
+      "month": "07",
+      "source_rows": 4034,
+      "four_field_qualified": 2949,
+      "first_eligible_proxy_retained": 865,
+      "repeated_proxy_excluded": 2084
+    },
+    {
+      "month": "08",
+      "source_rows": 8111,
+      "four_field_qualified": 5667,
+      "first_eligible_proxy_retained": 1723,
+      "repeated_proxy_excluded": 3944
+    },
+    {
+      "month": "09",
+      "source_rows": 9448,
+      "four_field_qualified": 6515,
+      "first_eligible_proxy_retained": 2038,
+      "repeated_proxy_excluded": 4477
+    },
+    {
+      "month": "10",
+      "source_rows": 9495,
+      "four_field_qualified": 6570,
+      "first_eligible_proxy_retained": 977,
+      "repeated_proxy_excluded": 5593
+    },
+    {
+      "month": "11",
+      "source_rows": 9639,
+      "four_field_qualified": 6661,
+      "first_eligible_proxy_retained": 1781,
+      "repeated_proxy_excluded": 4880
+    },
+    {
+      "month": "12",
+      "source_rows": 9862,
+      "four_field_qualified": 6783,
+      "first_eligible_proxy_retained": 1470,
+      "repeated_proxy_excluded": 5313
+    }
+  ],
+  "total_source_rows": 93517,
+  "total_qualified_observations": 60305,
+  "total_retained_proxies": 18761,
+  "total_repeated_observations_excluded": 41544,
+  "retained_role_counts": {
+    "development": 10772,
+    "validation": 1723,
+    "calibration": 3015,
+    "evaluation": 3251
+  },
+  "proxy_observation_count_distribution": {
+    "1": 8204,
+    "2": 4051,
+    "3-5": 4027,
+    "6+": 2479
+  },
+  "proxy_distinct_month_count_distribution": {
+    "1": 8466,
+    "2": 4128,
+    "3": 1908,
+    "4": 1322,
+    "5": 850,
+    "6": 612,
+    "7": 458,
+    "8": 368,
+    "9": 298,
+    "10": 214,
+    "11": 137
+  },
+  "retained_feature_summary": {
+    "n": 18761,
+    "year_median": 2017.0,
+    "mileage_km_median": 97357.0,
+    "power_kw_median": 96.0,
+    "fuel_counts": {
+      "diesel": 17217,
+      "electric": 391,
+      "hybrid": 14,
+      "petrol": 1139
+    },
+    "transmission_counts": {
+      "automatic": 4601,
+      "manual": 14160
+    },
+    "unknown_brand_n": 2321,
+    "unknown_family_n": 3868
+  },
+  "excluded_feature_summary": {
+    "n": 41544,
+    "year_median": 2019.0,
+    "mileage_km_median": 58000.0,
+    "power_kw_median": 100.0,
+    "fuel_counts": {
+      "diesel": 37912,
+      "electric": 1392,
+      "hybrid": 53,
+      "petrol": 2187
+    },
+    "transmission_counts": {
+      "automatic": 10995,
+      "manual": 30549
+    },
+    "unknown_brand_n": 3129,
+    "unknown_family_n": 6360
+  },
+  "source_prices_decoded": 0,
+  "reserved_prices_decoded": 0,
+  "new_model_fit_or_outcome_evaluation": false,
+  "verified_entity_resolution": false,
+  "estimand": "First eligible normalized title/year proxy appearances, not all later-month listings.",
+  "nonprice_cell_access_counts": {
+    "approved_data_cells_decoded": 681734,
+    "blocked_data_cells_skipped": 164184,
+    "unlabelled_data_cells_skipped": 6322
+  },
+  "source_sha256": "b0eeff0ad4f91c4dda2190cfb31d4831ff50003da6fe9c325ddf47ac556d54c7",
+  "original_retained_keys_exactly_matched": true,
+  "original_price_free_cohort_sha256": "165a790d34f63348b29184d9e965b50d52ae92f063f2f1115cd3822b589ef123",
+  "status": "POST_REVIEW_NONPRICE_CHARACTERIZATION_NOT_NEW_CONFIRMATION"
+}

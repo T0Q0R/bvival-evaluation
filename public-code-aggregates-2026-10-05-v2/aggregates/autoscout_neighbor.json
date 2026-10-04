@@ -1,0 +1,198 @@
+{
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "service_history"
+  ],
+  "all_scores_and_actions_saved_before_evaluation_label_parsing": true,
+  "categorical_fields": [
+    "make",
+    "model",
+    "vehicle_type",
+    "body_type",
+    "country_code"
+  ],
+  "development_eligible_counts": {
+    "fuel_type": 65168,
+    "mileage_km": 65205,
+    "service_history": 65205,
+    "transmission": 64675
+  },
+  "development_listings": 65205,
+  "development_partition": "historical_train_plus_validation_OOF_not_train_only",
+  "evaluation_listings": 14005,
+  "fallback_counts_all_query_action_scores": {
+    "128": {
+      "fuel_type": 0,
+      "mileage_km": 0,
+      "service_history": 0,
+      "transmission": 0
+    },
+    "16": {
+      "fuel_type": 0,
+      "mileage_km": 0,
+      "service_history": 0,
+      "transmission": 9
+    },
+    "64": {
+      "fuel_type": 0,
+      "mileage_km": 0,
+      "service_history": 0,
+      "transmission": 0
+    }
+  },
+  "full_published_method_reproduction": false,
+  "historical_reference_replay_verified": true,
+  "new_confirmatory_validation": false,
+  "numeric_fields": [
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "registration_year",
+    "power_hp",
+    "nr_seats",
+    "nr_doors",
+    "seller_is_dealer",
+    "nr_prev_owners"
+  ],
+  "p_values_or_intervals_computed": false,
+  "preprocessed_dimensions": 129,
+  "rows": {
+    "frozen_benefit": {
+      "action_mix": {
+        "fuel_type": 211,
+        "mileage_km": 1188,
+        "service_history": 0,
+        "transmission": 2
+      },
+      "actions": 1401,
+      "gross_harm": 2605192.5921791056,
+      "harmful_action_rate": 0.32548179871520344,
+      "mae_reduction_vs_frozen_benefit_percent": 0.0,
+      "mae_reduction_vs_frozen_risk_percent": 2.3202856931375595,
+      "post_mae": 6708.82681096097
+    },
+    "frozen_risk": {
+      "action_mix": {
+        "fuel_type": 0,
+        "mileage_km": 1401,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "actions": 1401,
+      "gross_harm": 3222751.3521702727,
+      "harmful_action_rate": 0.40471092077087795,
+      "mae_reduction_vs_frozen_benefit_percent": -2.3754018012873623,
+      "mae_reduction_vs_frozen_risk_percent": 0.0,
+      "post_mae": 6868.188403873786
+    },
+    "neighbor_joint_k128": {
+      "action_mix": {
+        "fuel_type": 262,
+        "mileage_km": 1139,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "actions": 1401,
+      "gross_harm": 2614622.1786411274,
+      "harmful_action_rate": 0.3518915060670949,
+      "mae_reduction_vs_frozen_benefit_percent": -0.9557327668666294,
+      "mae_reduction_vs_frozen_risk_percent": 1.3867286569251644,
+      "post_mae": 6772.945267065657
+    },
+    "neighbor_joint_k16": {
+      "action_mix": {
+        "fuel_type": 316,
+        "mileage_km": 1070,
+        "service_history": 0,
+        "transmission": 15
+      },
+      "actions": 1401,
+      "gross_harm": 2266548.6801954005,
+      "harmful_action_rate": 0.3269093504639543,
+      "mae_reduction_vs_frozen_benefit_percent": -0.5914709769739582,
+      "mae_reduction_vs_frozen_risk_percent": 1.7425385326213891,
+      "post_mae": 6748.5075744432515
+    },
+    "neighbor_joint_k64": {
+      "action_mix": {
+        "fuel_type": 250,
+        "mileage_km": 1147,
+        "service_history": 0,
+        "transmission": 4
+      },
+      "actions": 1401,
+      "gross_harm": 2470858.63883143,
+      "harmful_action_rate": 0.3454675231977159,
+      "mae_reduction_vs_frozen_benefit_percent": -0.5562109062394678,
+      "mae_reduction_vs_frozen_risk_percent": 1.776980468979237,
+      "post_mae": 6746.142037364252
+    },
+    "no_acquisition": {
+      "action_mix": {
+        "fuel_type": 0,
+        "mileage_km": 0,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "actions": 0,
+      "gross_harm": -0.0,
+      "harmful_action_rate": null,
+      "mae_reduction_vs_frozen_benefit_percent": -5.5864388737689,
+      "mae_reduction_vs_frozen_risk_percent": -3.136531838687406,
+      "post_mae": 7083.611319902324
+    },
+    "risk_neighbor_field_k128": {
+      "action_mix": {
+        "fuel_type": 442,
+        "mileage_km": 950,
+        "service_history": 4,
+        "transmission": 5
+      },
+      "actions": 1401,
+      "gross_harm": 2858983.539354435,
+      "harmful_action_rate": 0.37972876516773735,
+      "mae_reduction_vs_frozen_benefit_percent": -1.2212756176317372,
+      "mae_reduction_vs_frozen_risk_percent": 1.127347158935509,
+      "post_mae": 6790.760077032377
+    },
+    "risk_neighbor_field_k16": {
+      "action_mix": {
+        "fuel_type": 391,
+        "mileage_km": 874,
+        "service_history": 60,
+        "transmission": 76
+      },
+      "actions": 1401,
+      "gross_harm": 2635693.519738683,
+      "harmful_action_rate": 0.3740185581727338,
+      "mae_reduction_vs_frozen_benefit_percent": -1.0709515295377174,
+      "mae_reduction_vs_frozen_risk_percent": 1.2741832987201438,
+      "post_mae": 6780.675094306993
+    },
+    "risk_neighbor_field_k64": {
+      "action_mix": {
+        "fuel_type": 403,
+        "mileage_km": 968,
+        "service_history": 14,
+        "transmission": 16
+      },
+      "actions": 1401,
+      "gross_harm": 2895175.964840159,
+      "harmful_action_rate": 0.3875802997858672,
+      "mae_reduction_vs_frozen_benefit_percent": -1.1876441757849732,
+      "mae_reduction_vs_frozen_risk_percent": 1.1601982552487067,
+      "post_mae": 6788.503801844849
+    }
+  },
+  "selected_neighbor_count": null,
+  "source": "AutoScout24",
+  "stage": "POST_TEST_EXPLORATORY_ESTIMATOR_COMPARISON",
+  "timing_seconds": {
+    "representation_and_cache_fit": 0.34326929099916015,
+    "retrieval_all_three_k": 8.240400249997037,
+    "total": 10.844573249996756
+  },
+  "valuation_models_refitted": false
+}

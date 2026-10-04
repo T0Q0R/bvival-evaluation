@@ -1,0 +1,249 @@
+{
+  "stage": "POST_TEST_DEVELOPMENT_DIAGNOSTIC_NOT_CONFIRMATORY",
+  "identity": "singleton_cached_neighbor_loss_adaptation_not_full_TAFA_or_ACO",
+  "source": "Turkey",
+  "train_listings": 28024,
+  "validation_listings": 7767,
+  "budget_actions": 777,
+  "rows": {
+    "no_acquisition": {
+      "post_mae": 260001.60501766327,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 0,
+      "valid_actions": 0,
+      "negative_actions": 0,
+      "negative_action_rate": null,
+      "gross_reduction": 0.0,
+      "gross_harm": 0.0,
+      "net_reduction": 0.0,
+      "harm_per_valid_listing": 0.0,
+      "top_decile_of_negative_actions_harm_share": null,
+      "field_counts": {},
+      "mae_reduction_vs_frozen_benefit_percent": -1.7645573435135988,
+      "mae_reduction_vs_frozen_risk_percent": -1.1571233851188663,
+      "listing_overlap_with_risk_count": 0
+    },
+    "frozen_benefit": {
+      "post_mae": 255493.27959046597,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 249,
+      "negative_action_rate": 0.3204633204633205,
+      "gross_reduction": 55963635.19015422,
+      "gross_harm": 20947471.597112954,
+      "net_reduction": 35016163.593041256,
+      "harm_per_valid_listing": 2696.983596898797,
+      "top_decile_of_negative_actions_harm_share": 0.6536742798775419,
+      "field_counts": {
+        "yakit_tipi": 46,
+        "kilometre": 716,
+        "vites_tipi": 15
+      },
+      "mae_reduction_vs_frozen_benefit_percent": 0.0,
+      "mae_reduction_vs_frozen_risk_percent": 0.5969012927991183,
+      "listing_overlap_with_risk_count": 196
+    },
+    "frozen_risk_fixed": {
+      "post_mae": 257027.4799410833,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 322,
+      "negative_action_rate": 0.4144144144144144,
+      "gross_reduction": 55996718.18601586,
+      "gross_harm": 32896688.71621946,
+      "net_reduction": 23100029.469796397,
+      "harm_per_valid_listing": 4235.443377909033,
+      "top_decile_of_negative_actions_harm_share": 0.5158541509078778,
+      "field_counts": {
+        "kilometre": 777
+      },
+      "mae_reduction_vs_frozen_benefit_percent": -0.600485599103238,
+      "mae_reduction_vs_frozen_risk_percent": 0.0,
+      "listing_overlap_with_risk_count": 777
+    },
+    "frozen_risk_global": {
+      "post_mae": 257027.4799410833,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 322,
+      "negative_action_rate": 0.4144144144144144,
+      "gross_reduction": 55996718.18601586,
+      "gross_harm": 32896688.71621946,
+      "net_reduction": 23100029.469796397,
+      "harm_per_valid_listing": 4235.443377909033,
+      "top_decile_of_negative_actions_harm_share": 0.5158541509078778,
+      "field_counts": {
+        "kilometre": 777
+      },
+      "mae_reduction_vs_frozen_benefit_percent": -0.600485599103238,
+      "mae_reduction_vs_frozen_risk_percent": 0.0,
+      "listing_overlap_with_risk_count": 777
+    },
+    "neighbor_joint_k16": {
+      "post_mae": 254868.00062792024,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 226,
+      "negative_action_rate": 0.2908622908622909,
+      "gross_reduction": 60332601.29356134,
+      "gross_harm": 20459895.99842713,
+      "net_reduction": 39872705.29513421,
+      "harm_per_valid_listing": 2634.2083170370965,
+      "top_decile_of_negative_actions_harm_share": 0.5744607387588185,
+      "field_counts": {
+        "kilometre": 511,
+        "yakit_tipi": 76,
+        "vites_tipi": 190
+      },
+      "mae_reduction_vs_frozen_benefit_percent": 0.2447340155279255,
+      "mae_reduction_vs_frozen_risk_percent": 0.8401744878244384,
+      "listing_overlap_with_risk_count": 248
+    },
+    "risk_neighbor_field_k16": {
+      "post_mae": 256161.63364928917,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 295,
+      "negative_action_rate": 0.37966537966537967,
+      "gross_reduction": 54330076.94880603,
+      "gross_harm": 24505019.330644347,
+      "net_reduction": 29825057.61816169,
+      "harm_per_valid_listing": 3155.017295048841,
+      "top_decile_of_negative_actions_harm_share": 0.5594706731170431,
+      "field_counts": {
+        "kilometre": 479,
+        "yakit_tipi": 174,
+        "vites_tipi": 124
+      },
+      "mae_reduction_vs_frozen_benefit_percent": -0.26159359647130986,
+      "mae_reduction_vs_frozen_risk_percent": 0.3368691518870254,
+      "listing_overlap_with_risk_count": 777
+    },
+    "neighbor_joint_k64": {
+      "post_mae": 254482.53456233116,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 226,
+      "negative_action_rate": 0.2908622908622909,
+      "gross_reduction": 62861594.64353274,
+      "gross_harm": 19994974.4169681,
+      "net_reduction": 42866620.22656463,
+      "harm_per_valid_listing": 2574.34973824747,
+      "top_decile_of_negative_actions_harm_share": 0.5682840380161133,
+      "field_counts": {
+        "kilometre": 518,
+        "yakit_tipi": 113,
+        "vites_tipi": 146
+      },
+      "mae_reduction_vs_frozen_benefit_percent": 0.3956053285452174,
+      "mae_reduction_vs_frozen_risk_percent": 0.990145248023867,
+      "listing_overlap_with_risk_count": 300
+    },
+    "risk_neighbor_field_k64": {
+      "post_mae": 255680.14340360017,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 299,
+      "negative_action_rate": 0.38481338481338484,
+      "gross_reduction": 59836554.94652713,
+      "gross_harm": 26271762.590098854,
+      "net_reduction": 33564792.35642827,
+      "harm_per_valid_listing": 3382.485205368721,
+      "top_decile_of_negative_actions_harm_share": 0.5135073920791455,
+      "field_counts": {
+        "kilometre": 551,
+        "yakit_tipi": 169,
+        "vites_tipi": 57
+      },
+      "mae_reduction_vs_frozen_benefit_percent": -0.07313844553317729,
+      "mae_reduction_vs_frozen_risk_percent": 0.5241994115928617,
+      "listing_overlap_with_risk_count": 777
+    },
+    "neighbor_joint_k128": {
+      "post_mae": 254748.92425432938,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 243,
+      "negative_action_rate": 0.3127413127413127,
+      "gross_reduction": 61662115.21964507,
+      "gross_harm": 20864543.7308308,
+      "net_reduction": 40797571.488814265,
+      "harm_per_valid_listing": 2686.306647461156,
+      "top_decile_of_negative_actions_harm_share": 0.5581098608581708,
+      "field_counts": {
+        "kilometre": 566,
+        "yakit_tipi": 93,
+        "vites_tipi": 118
+      },
+      "mae_reduction_vs_frozen_benefit_percent": 0.2913404756985117,
+      "mae_reduction_vs_frozen_risk_percent": 0.8865027534317385,
+      "listing_overlap_with_risk_count": 323
+    },
+    "risk_neighbor_field_k128": {
+      "post_mae": 255996.59059143325,
+      "valid_records": 7767,
+      "feature_records": 7767,
+      "actions": 777,
+      "valid_actions": 777,
+      "negative_actions": 303,
+      "negative_action_rate": 0.38996138996138996,
+      "gross_reduction": 57827630.012386814,
+      "gross_harm": 26720682.963858135,
+      "net_reduction": 31106947.04852868,
+      "harm_per_valid_listing": 3440.283631242196,
+      "top_decile_of_negative_actions_harm_share": 0.5118646988531679,
+      "field_counts": {
+        "kilometre": 577,
+        "yakit_tipi": 165,
+        "vites_tipi": 35
+      },
+      "mae_reduction_vs_frozen_benefit_percent": -0.19699578860706107,
+      "mae_reduction_vs_frozen_risk_percent": 0.40108137460101256,
+      "listing_overlap_with_risk_count": 777
+    }
+  },
+  "timing_seconds": {
+    "preprocessing_and_cache_fit": 0.1268489999929443,
+    "joint_retrieval_and_all_three_k_scoring": 1.892672791989753,
+    "total_including_source_audits_io_and_evaluation": 3.7240366660116706
+  },
+  "preprocessed_dimensions": 170,
+  "fixed_field": "kilometre",
+  "global_train_field": "kilometre",
+  "selected_neighbor_count": null,
+  "p_values_or_intervals_computed": false,
+  "validation_outcomes_used_for_neighbor_fit_or_scores": false,
+  "historically_untouched_validation": false,
+  "calibration_or_test_labels_read": false,
+  "published_method_reproduction_gap_closed": false,
+  "new_method_increment_established": false,
+  "runtime_environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.9.1",
+      "catboost": "1.2.10",
+      "pytest": "9.1.1"
+    }
+  }
+}

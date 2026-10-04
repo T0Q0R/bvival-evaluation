@@ -1,0 +1,3152 @@
+{
+  "stage": "DEVELOPMENT_OFFICIAL_CODE_TASK_ADAPTATION_NOT_CONFIRMATION",
+  "config_sha256": "947d14326fc7345d9c866da5aed37051f1aca620b66cdb20c438e36e3bdd577c",
+  "upstream_commit": "e2b6f7403fdac4d217ac2ec5dea96acd60240b60",
+  "upstream_hashes": {
+    "dynamic_selection/greedy.py": "a9e4b266880625627081840db5b84f8e3781b646d5f793c51bcd7496f3eedadc",
+    "dynamic_selection/utils.py": "67aa9fe1cd8fa454c505676c702afa85f506fcc735cf86ad358d1f0debc748eb",
+    "LICENSE": "ba259238ad1f4575e08555a1ec22838f2ccea8dcedcb5f16dcec70c7d6e09553"
+  },
+  "implementation_class": "official_code_task_adaptation_not_paper_result_reproduction",
+  "environment": {
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0"
+  },
+  "python": "3.12.14",
+  "preprocessing_fitted_on": "train_only",
+  "train_listings": 51045,
+  "validation_listings": 14160,
+  "train_validation_overlap": 0,
+  "free_width": 185,
+  "candidate_group_widths": [
+    10,
+    1,
+    2,
+    4
+  ],
+  "price_scale": 52073.54516602997,
+  "action_fields": [
+    "fuel_type",
+    "mileage_km",
+    "service_history",
+    "transmission"
+  ],
+  "common_risk_cohort_size": 1416,
+  "common_predictor_fixed_reference": {
+    "validation_listing_count": 14160,
+    "selected_listing_count": 1416,
+    "post_mae": 6865.559630978722,
+    "before_mae": 7164.57015807158,
+    "gain_per_all_listing": 299.0105270928587,
+    "field_counts": {
+      "mileage_km": 1416
+    }
+  },
+  "legacy_direct_value_reference": {
+    "validation_listing_count": 14160,
+    "selected_listing_count": 1416,
+    "post_mae": 6760.674115879878,
+    "before_mae": 7164.57015807158,
+    "gain_per_all_listing": 403.89604219170235,
+    "field_counts": {
+      "fuel_type": 327,
+      "mileage_km": 1082,
+      "transmission": 7
+    },
+    "relative_mae_gain_over_fixed_percent": 1.5277052525417034
+  },
+  "legacy_fixed_predictor_expected_loss_reference": {
+    "validation_listing_count": 14160,
+    "selected_listing_count": 1416,
+    "post_mae": 6865.559630978722,
+    "before_mae": 7164.57015807158,
+    "gain_per_all_listing": 299.0105270928587,
+    "field_counts": {
+      "mileage_km": 1416
+    },
+    "relative_mae_gain_over_fixed_percent": 0.0
+  },
+  "common_predictor_field_choice_by_seed": [
+    {
+      "seed": 13,
+      "validation_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "post_mae": 6903.599847302116,
+      "before_mae": 7164.57015807158,
+      "gain_per_all_listing": 260.9703107694642,
+      "field_counts": {
+        "fuel_type": 38,
+        "mileage_km": 1378
+      },
+      "relative_mae_gain_over_fixed_percent": -0.5540730598529674,
+      "relative_mae_gain_over_legacy_direct_value_percent": -2.114075149496203
+    },
+    {
+      "seed": 42,
+      "validation_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "post_mae": 6866.472436216779,
+      "before_mae": 7164.57015807158,
+      "gain_per_all_listing": 298.09772185480193,
+      "field_counts": {
+        "mileage_km": 1371,
+        "transmission": 45
+      },
+      "relative_mae_gain_over_fixed_percent": -0.013295423637976759,
+      "relative_mae_gain_over_legacy_direct_value_percent": -1.5649078556884708
+    },
+    {
+      "seed": 2026,
+      "validation_listing_count": 14160,
+      "selected_listing_count": 1416,
+      "post_mae": 6865.559630978722,
+      "before_mae": 7164.57015807158,
+      "gain_per_all_listing": 299.0105270928587,
+      "field_counts": {
+        "mileage_km": 1416
+      },
+      "relative_mae_gain_over_fixed_percent": 0.0,
+      "relative_mae_gain_over_legacy_direct_value_percent": -1.5514061660283749
+    }
+  ],
+  "native_pipeline_by_seed": [
+    {
+      "seed": 13,
+      "free_information_mae": 6877.878642048809,
+      "fixed_all_reveal_mae": 5975.432002870377,
+      "dynamic_all_reveal_mae": 5961.490847928277,
+      "fixed_risk_cohort_mixed_mae": 6683.575428840939,
+      "dynamic_risk_cohort_mixed_mae": 6613.913286744046,
+      "negative_prediction_counts": {
+        "free": 0,
+        "fixed": 0,
+        "dynamic": 0
+      }
+    },
+    {
+      "seed": 42,
+      "free_information_mae": 6927.612745106153,
+      "fixed_all_reveal_mae": 6094.860216698943,
+      "dynamic_all_reveal_mae": 6022.849358079873,
+      "fixed_risk_cohort_mixed_mae": 6844.574651720295,
+      "dynamic_risk_cohort_mixed_mae": 6820.579548339594,
+      "negative_prediction_counts": {
+        "free": 0,
+        "fixed": 0,
+        "dynamic": 0
+      }
+    },
+    {
+      "seed": 2026,
+      "free_information_mae": 6843.945957024353,
+      "fixed_all_reveal_mae": 6012.743411961787,
+      "dynamic_all_reveal_mae": 6019.594499500702,
+      "fixed_risk_cohort_mixed_mae": 6751.777799444683,
+      "dynamic_risk_cohort_mixed_mae": 6735.167312184358,
+      "negative_prediction_counts": {
+        "free": 0,
+        "fixed": 0,
+        "dynamic": 0
+      }
+    }
+  ],
+  "choice_audits": [
+    {
+      "seed": 13,
+      "all_validation_field_counts": {
+        "fuel_type": 39,
+        "mileage_km": 14121,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "choice_artifact_sha256": "ba909728cdc6b2f96f21144c3bb38e08671cbf8cfcb719bd9ad5666af905bfff"
+    },
+    {
+      "seed": 42,
+      "all_validation_field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 13610,
+        "service_history": 0,
+        "transmission": 550
+      },
+      "choice_artifact_sha256": "c73337bd3ceca3e98727b95d0db633822a8630600ea44b1e486a18cecf5dcb41"
+    },
+    {
+      "seed": 2026,
+      "all_validation_field_counts": {
+        "fuel_type": 0,
+        "mileage_km": 14160,
+        "service_history": 0,
+        "transmission": 0
+      },
+      "choice_artifact_sha256": "770ca4be93112584f9d0067c4d9e0a38b604b7d8e76e9ac3f03be482bcbedb42"
+    }
+  ],
+  "model_audits": [
+    {
+      "fit_seconds": 19.951517334004166,
+      "epochs_run": 77,
+      "history": [
+        {
+          "total_epoch": 1,
+          "soft_price_mae": 9457.915508496511,
+          "hard_price_mae": 9465.696798177185
+        },
+        {
+          "total_epoch": 2,
+          "soft_price_mae": 7513.605711287077,
+          "hard_price_mae": 7528.481569331373
+        },
+        {
+          "total_epoch": 3,
+          "soft_price_mae": 6900.61110521639,
+          "hard_price_mae": 6918.462755634577
+        },
+        {
+          "total_epoch": 4,
+          "soft_price_mae": 6895.456427578903,
+          "hard_price_mae": 6917.274766553892
+        },
+        {
+          "total_epoch": 5,
+          "soft_price_mae": 6561.751769131366,
+          "hard_price_mae": 6576.582621710815
+        },
+        {
+          "total_epoch": 6,
+          "soft_price_mae": 6588.778326727883,
+          "hard_price_mae": 6610.667277725303
+        },
+        {
+          "total_epoch": 7,
+          "soft_price_mae": 6542.541419248593,
+          "hard_price_mae": 6578.133758335433
+        },
+        {
+          "total_epoch": 8,
+          "soft_price_mae": 6416.640183253541,
+          "hard_price_mae": 6463.376030627593
+        },
+        {
+          "total_epoch": 9,
+          "soft_price_mae": 6196.2499738136,
+          "hard_price_mae": 6211.979383777396
+        },
+        {
+          "total_epoch": 10,
+          "soft_price_mae": 6130.091164533192,
+          "hard_price_mae": 6151.389224815432
+        },
+        {
+          "total_epoch": 11,
+          "soft_price_mae": 6132.9544432449675,
+          "hard_price_mae": 6145.031814927741
+        },
+        {
+          "total_epoch": 12,
+          "soft_price_mae": 6301.792444616008,
+          "hard_price_mae": 6301.335794339076
+        },
+        {
+          "total_epoch": 13,
+          "soft_price_mae": 6142.202678292745,
+          "hard_price_mae": 6148.987640096476
+        },
+        {
+          "total_epoch": 14,
+          "soft_price_mae": 6101.240721675962,
+          "hard_price_mae": 6117.485754594764
+        },
+        {
+          "total_epoch": 15,
+          "soft_price_mae": 6027.649415067439,
+          "hard_price_mae": 6047.279557303347
+        },
+        {
+          "total_epoch": 16,
+          "soft_price_mae": 6012.106234613352,
+          "hard_price_mae": 6019.849114457649
+        },
+        {
+          "total_epoch": 17,
+          "soft_price_mae": 6010.8639285923355,
+          "hard_price_mae": 6017.04791224911
+        },
+        {
+          "total_epoch": 18,
+          "soft_price_mae": 6035.289868681395,
+          "hard_price_mae": 6050.8598196275025
+        },
+        {
+          "total_epoch": 19,
+          "soft_price_mae": 6052.211147507329,
+          "hard_price_mae": 6079.267579421028
+        },
+        {
+          "total_epoch": 20,
+          "soft_price_mae": 5984.781709801301,
+          "hard_price_mae": 5998.726420297052
+        },
+        {
+          "total_epoch": 21,
+          "soft_price_mae": 6119.796164449592,
+          "hard_price_mae": 6130.493497869792
+        },
+        {
+          "total_epoch": 22,
+          "soft_price_mae": 6230.419597041893,
+          "hard_price_mae": 6251.129094477823
+        },
+        {
+          "total_epoch": 23,
+          "soft_price_mae": 6125.323301106497,
+          "hard_price_mae": 6127.492874894606
+        },
+        {
+          "total_epoch": 24,
+          "soft_price_mae": 6119.192082477473,
+          "hard_price_mae": 6123.296115297685
+        },
+        {
+          "total_epoch": 25,
+          "soft_price_mae": 6049.434775900084,
+          "hard_price_mae": 6051.825885209118
+        },
+        {
+          "total_epoch": 26,
+          "soft_price_mae": 6048.277437092871,
+          "hard_price_mae": 6052.193688490794
+        },
+        {
+          "total_epoch": 27,
+          "soft_price_mae": 5998.8606607353,
+          "hard_price_mae": 6002.072731799635
+        },
+        {
+          "total_epoch": 28,
+          "soft_price_mae": 5987.26593386519,
+          "hard_price_mae": 5997.761518649872
+        },
+        {
+          "total_epoch": 29,
+          "soft_price_mae": 5988.922600545309,
+          "hard_price_mae": 5993.4774639702755
+        },
+        {
+          "total_epoch": 30,
+          "soft_price_mae": 5993.114704404488,
+          "hard_price_mae": 5995.593108796198
+        },
+        {
+          "total_epoch": 31,
+          "soft_price_mae": 5975.475278031739,
+          "hard_price_mae": 5980.034409216303
+        },
+        {
+          "total_epoch": 32,
+          "soft_price_mae": 5980.249349108759,
+          "hard_price_mae": 5986.487649705865
+        },
+        {
+          "total_epoch": 33,
+          "soft_price_mae": 5980.938010316537,
+          "hard_price_mae": 5982.519797214627
+        },
+        {
+          "total_epoch": 34,
+          "soft_price_mae": 5961.164316166894,
+          "hard_price_mae": 5969.183436450592
+        },
+        {
+          "total_epoch": 35,
+          "soft_price_mae": 5987.622873758799,
+          "hard_price_mae": 5995.765759070824
+        },
+        {
+          "total_epoch": 36,
+          "soft_price_mae": 6013.806354845738,
+          "hard_price_mae": 6017.360234656017
+        },
+        {
+          "total_epoch": 37,
+          "soft_price_mae": 6043.321792243886,
+          "hard_price_mae": 6053.19544806177
+        },
+        {
+          "total_epoch": 38,
+          "soft_price_mae": 5972.2938572408775,
+          "hard_price_mae": 5972.901043038159
+        },
+        {
+          "total_epoch": 39,
+          "soft_price_mae": 6140.996066261088,
+          "hard_price_mae": 6146.870443357971
+        },
+        {
+          "total_epoch": 40,
+          "soft_price_mae": 6008.977578850241,
+          "hard_price_mae": 6015.594158138943
+        },
+        {
+          "total_epoch": 41,
+          "soft_price_mae": 6243.40134578119,
+          "hard_price_mae": 6246.804302092977
+        },
+        {
+          "total_epoch": 42,
+          "soft_price_mae": 6330.352291842462,
+          "hard_price_mae": 6330.580422991856
+        },
+        {
+          "total_epoch": 43,
+          "soft_price_mae": 6067.9044755036175,
+          "hard_price_mae": 6070.059306122209
+        },
+        {
+          "total_epoch": 44,
+          "soft_price_mae": 6028.1646500443,
+          "hard_price_mae": 6026.728742928815
+        },
+        {
+          "total_epoch": 45,
+          "soft_price_mae": 6072.497748764961,
+          "hard_price_mae": 6081.4957379090665
+        },
+        {
+          "total_epoch": 46,
+          "soft_price_mae": 6142.645749334594,
+          "hard_price_mae": 6139.176836738119
+        },
+        {
+          "total_epoch": 47,
+          "soft_price_mae": 6107.020044127265,
+          "hard_price_mae": 6107.019268170974
+        },
+        {
+          "total_epoch": 48,
+          "soft_price_mae": 6121.446623479388,
+          "hard_price_mae": 6117.607579732366
+        },
+        {
+          "total_epoch": 49,
+          "soft_price_mae": 6032.252387782413,
+          "hard_price_mae": 6032.2201855963585
+        },
+        {
+          "total_epoch": 50,
+          "soft_price_mae": 6045.863825051414,
+          "hard_price_mae": 6054.181300528791
+        },
+        {
+          "total_epoch": 51,
+          "soft_price_mae": 6022.169223766106,
+          "hard_price_mae": 6022.818311203072
+        },
+        {
+          "total_epoch": 52,
+          "soft_price_mae": 6048.171519059224,
+          "hard_price_mae": 6048.926136551691
+        },
+        {
+          "total_epoch": 53,
+          "soft_price_mae": 5989.830469405141,
+          "hard_price_mae": 5990.174993998103
+        },
+        {
+          "total_epoch": 54,
+          "soft_price_mae": 6086.440131391841,
+          "hard_price_mae": 6086.213552155028
+        },
+        {
+          "total_epoch": 55,
+          "soft_price_mae": 6037.609977989853,
+          "hard_price_mae": 6036.607442462587
+        },
+        {
+          "total_epoch": 56,
+          "soft_price_mae": 5997.194294601551,
+          "hard_price_mae": 6000.741578783362
+        },
+        {
+          "total_epoch": 57,
+          "soft_price_mae": 6045.150721220486,
+          "hard_price_mae": 6038.931819530642
+        },
+        {
+          "total_epoch": 58,
+          "soft_price_mae": 6049.590743114465,
+          "hard_price_mae": 6049.657863333589
+        },
+        {
+          "total_epoch": 59,
+          "soft_price_mae": 6202.7195093852615,
+          "hard_price_mae": 6202.768006653415
+        },
+        {
+          "total_epoch": 60,
+          "soft_price_mae": 6094.596983917094,
+          "hard_price_mae": 6094.637721622343
+        },
+        {
+          "total_epoch": 61,
+          "soft_price_mae": 6048.426032722493,
+          "hard_price_mae": 6052.578562810859
+        },
+        {
+          "total_epoch": 62,
+          "soft_price_mae": 6141.274634569362,
+          "hard_price_mae": 6140.275978823547
+        },
+        {
+          "total_epoch": 63,
+          "soft_price_mae": 6101.615120586107,
+          "hard_price_mae": 6101.60348124175
+        },
+        {
+          "total_epoch": 64,
+          "soft_price_mae": 6123.350820216162,
+          "hard_price_mae": 6123.751213662036
+        },
+        {
+          "total_epoch": 65,
+          "soft_price_mae": 6042.673092785067,
+          "hard_price_mae": 6042.872901529859
+        },
+        {
+          "total_epoch": 66,
+          "soft_price_mae": 6049.896857871049,
+          "hard_price_mae": 6050.286387928857
+        },
+        {
+          "total_epoch": 67,
+          "soft_price_mae": 6038.617169254862,
+          "hard_price_mae": 6041.007114629461
+        },
+        {
+          "total_epoch": 68,
+          "soft_price_mae": 6027.005759324507,
+          "hard_price_mae": 6027.027098122495
+        },
+        {
+          "total_epoch": 69,
+          "soft_price_mae": 6007.431873919657,
+          "hard_price_mae": 6013.098294730698
+        },
+        {
+          "total_epoch": 70,
+          "soft_price_mae": 6002.972453118417,
+          "hard_price_mae": 6004.35249138099
+        },
+        {
+          "total_epoch": 71,
+          "soft_price_mae": 6010.185742794479,
+          "hard_price_mae": 6013.239518775561
+        },
+        {
+          "total_epoch": 72,
+          "soft_price_mae": 5981.6522780819,
+          "hard_price_mae": 5982.726589566034
+        },
+        {
+          "total_epoch": 73,
+          "soft_price_mae": 6006.659021454365,
+          "hard_price_mae": 6008.766130761092
+        },
+        {
+          "total_epoch": 74,
+          "soft_price_mae": 6019.643874018824,
+          "hard_price_mae": 6019.934081671454
+        },
+        {
+          "total_epoch": 75,
+          "soft_price_mae": 5974.016480205686,
+          "hard_price_mae": 5976.122425577979
+        },
+        {
+          "total_epoch": 76,
+          "soft_price_mae": 5961.281873544898,
+          "hard_price_mae": 5961.4909937651755
+        },
+        {
+          "total_epoch": 77,
+          "soft_price_mae": 6083.854257053902,
+          "hard_price_mae": 6084.68026252509
+        }
+      ],
+      "scheduler_compatibility_events": [
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword"
+      ],
+      "role": "dynamic",
+      "seed": 13,
+      "checks": {
+        "public_choices_match_original_forward": true,
+        "only_eligible_one_action": true,
+        "hidden_value_intervention_preserves_selection": true,
+        "unselected_value_intervention_preserves_prediction": true,
+        "selector_updated": true,
+        "predictor_updated": true
+      },
+      "inference_and_intervention_seconds": 0.10891591700783465,
+      "parameters": 87685,
+      "model_bytes": 355727
+    },
+    {
+      "role": "free",
+      "seed": 13,
+      "fit_seconds": 11.347311917008483,
+      "epochs_run": 73,
+      "history": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "validation_price_mae": 10581.944064072215
+        },
+        {
+          "stage": 1,
+          "epoch": 2,
+          "validation_price_mae": 8572.953654315688
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "validation_price_mae": 7948.360829571582
+        },
+        {
+          "stage": 1,
+          "epoch": 4,
+          "validation_price_mae": 7712.263712900269
+        },
+        {
+          "stage": 1,
+          "epoch": 5,
+          "validation_price_mae": 7433.802486595323
+        },
+        {
+          "stage": 1,
+          "epoch": 6,
+          "validation_price_mae": 7377.203458813309
+        },
+        {
+          "stage": 1,
+          "epoch": 7,
+          "validation_price_mae": 7238.71465987451
+        },
+        {
+          "stage": 1,
+          "epoch": 8,
+          "validation_price_mae": 7243.122091604289
+        },
+        {
+          "stage": 1,
+          "epoch": 9,
+          "validation_price_mae": 7197.1854792094055
+        },
+        {
+          "stage": 1,
+          "epoch": 10,
+          "validation_price_mae": 7083.504778832716
+        },
+        {
+          "stage": 1,
+          "epoch": 11,
+          "validation_price_mae": 7103.337445660432
+        },
+        {
+          "stage": 1,
+          "epoch": 12,
+          "validation_price_mae": 7084.2636640847795
+        },
+        {
+          "stage": 1,
+          "epoch": 13,
+          "validation_price_mae": 7027.5001335691895
+        },
+        {
+          "stage": 1,
+          "epoch": 14,
+          "validation_price_mae": 7101.473598650761
+        },
+        {
+          "stage": 1,
+          "epoch": 15,
+          "validation_price_mae": 7098.7080904315835
+        },
+        {
+          "stage": 1,
+          "epoch": 16,
+          "validation_price_mae": 6984.776756173076
+        },
+        {
+          "stage": 1,
+          "epoch": 17,
+          "validation_price_mae": 6967.2370401836515
+        },
+        {
+          "stage": 1,
+          "epoch": 18,
+          "validation_price_mae": 6949.702755888259
+        },
+        {
+          "stage": 1,
+          "epoch": 19,
+          "validation_price_mae": 6950.072111082516
+        },
+        {
+          "stage": 1,
+          "epoch": 20,
+          "validation_price_mae": 6988.977007573304
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "validation_price_mae": 7186.915697705245
+        },
+        {
+          "stage": 2,
+          "epoch": 2,
+          "validation_price_mae": 6965.124111204745
+        },
+        {
+          "stage": 2,
+          "epoch": 3,
+          "validation_price_mae": 6951.083958085268
+        },
+        {
+          "stage": 2,
+          "epoch": 4,
+          "validation_price_mae": 6945.573116510463
+        },
+        {
+          "stage": 2,
+          "epoch": 5,
+          "validation_price_mae": 6929.044471567499
+        },
+        {
+          "stage": 2,
+          "epoch": 6,
+          "validation_price_mae": 7079.757685906113
+        },
+        {
+          "stage": 2,
+          "epoch": 7,
+          "validation_price_mae": 6937.801914261565
+        },
+        {
+          "stage": 2,
+          "epoch": 8,
+          "validation_price_mae": 6957.903837922069
+        },
+        {
+          "stage": 2,
+          "epoch": 9,
+          "validation_price_mae": 6901.921695390966
+        },
+        {
+          "stage": 2,
+          "epoch": 10,
+          "validation_price_mae": 6907.252515106386
+        },
+        {
+          "stage": 2,
+          "epoch": 11,
+          "validation_price_mae": 6918.088744702578
+        },
+        {
+          "stage": 2,
+          "epoch": 12,
+          "validation_price_mae": 6887.2623291517075
+        },
+        {
+          "stage": 2,
+          "epoch": 13,
+          "validation_price_mae": 6925.444034379792
+        },
+        {
+          "stage": 2,
+          "epoch": 14,
+          "validation_price_mae": 6877.878689731246
+        },
+        {
+          "stage": 2,
+          "epoch": 15,
+          "validation_price_mae": 6892.379760887252
+        },
+        {
+          "stage": 2,
+          "epoch": 16,
+          "validation_price_mae": 6884.647356452877
+        },
+        {
+          "stage": 2,
+          "epoch": 17,
+          "validation_price_mae": 6917.706198251384
+        },
+        {
+          "stage": 2,
+          "epoch": 18,
+          "validation_price_mae": 6889.932394747159
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "validation_price_mae": 6922.246318506831
+        },
+        {
+          "stage": 3,
+          "epoch": 2,
+          "validation_price_mae": 6918.09184852774
+        },
+        {
+          "stage": 3,
+          "epoch": 3,
+          "validation_price_mae": 6989.1539256075275
+        },
+        {
+          "stage": 3,
+          "epoch": 4,
+          "validation_price_mae": 7087.677095806487
+        },
+        {
+          "stage": 3,
+          "epoch": 5,
+          "validation_price_mae": 6985.087914645548
+        },
+        {
+          "stage": 3,
+          "epoch": 6,
+          "validation_price_mae": 6916.1030725553055
+        },
+        {
+          "stage": 3,
+          "epoch": 7,
+          "validation_price_mae": 6907.524875764336
+        },
+        {
+          "stage": 3,
+          "epoch": 8,
+          "validation_price_mae": 6887.220427512023
+        },
+        {
+          "stage": 3,
+          "epoch": 9,
+          "validation_price_mae": 6948.513990851284
+        },
+        {
+          "stage": 3,
+          "epoch": 10,
+          "validation_price_mae": 6898.963750011755
+        },
+        {
+          "stage": 3,
+          "epoch": 11,
+          "validation_price_mae": 6926.344919633009
+        },
+        {
+          "stage": 3,
+          "epoch": 12,
+          "validation_price_mae": 6878.625159682662
+        },
+        {
+          "stage": 3,
+          "epoch": 13,
+          "validation_price_mae": 6894.63158604215
+        },
+        {
+          "stage": 3,
+          "epoch": 14,
+          "validation_price_mae": 6882.469247145572
+        },
+        {
+          "stage": 3,
+          "epoch": 15,
+          "validation_price_mae": 6899.4960560270065
+        },
+        {
+          "stage": 3,
+          "epoch": 16,
+          "validation_price_mae": 6884.551137872861
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "validation_price_mae": 6897.327258195188
+        },
+        {
+          "stage": 4,
+          "epoch": 2,
+          "validation_price_mae": 6888.376602384799
+        },
+        {
+          "stage": 4,
+          "epoch": 3,
+          "validation_price_mae": 6925.746657333069
+        },
+        {
+          "stage": 4,
+          "epoch": 4,
+          "validation_price_mae": 6983.470045779952
+        },
+        {
+          "stage": 4,
+          "epoch": 5,
+          "validation_price_mae": 7021.021674500188
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "validation_price_mae": 6930.801236609088
+        },
+        {
+          "stage": 5,
+          "epoch": 1,
+          "validation_price_mae": 6973.262340779028
+        },
+        {
+          "stage": 5,
+          "epoch": 2,
+          "validation_price_mae": 6970.700909064239
+        },
+        {
+          "stage": 5,
+          "epoch": 3,
+          "validation_price_mae": 6955.5860564824825
+        },
+        {
+          "stage": 5,
+          "epoch": 4,
+          "validation_price_mae": 7023.645182718214
+        },
+        {
+          "stage": 5,
+          "epoch": 5,
+          "validation_price_mae": 6923.131684634239
+        },
+        {
+          "stage": 5,
+          "epoch": 6,
+          "validation_price_mae": 7144.068167302659
+        },
+        {
+          "stage": 5,
+          "epoch": 7,
+          "validation_price_mae": 7114.671063238805
+        },
+        {
+          "stage": 5,
+          "epoch": 8,
+          "validation_price_mae": 7072.307729561463
+        },
+        {
+          "stage": 5,
+          "epoch": 9,
+          "validation_price_mae": 6915.840023372842
+        },
+        {
+          "stage": 5,
+          "epoch": 10,
+          "validation_price_mae": 6973.117236952713
+        },
+        {
+          "stage": 5,
+          "epoch": 11,
+          "validation_price_mae": 6938.694263995587
+        },
+        {
+          "stage": 5,
+          "epoch": 12,
+          "validation_price_mae": 6959.51161935589
+        },
+        {
+          "stage": 5,
+          "epoch": 13,
+          "validation_price_mae": 6942.245039980705
+        }
+      ],
+      "validation_selection": "own_price_MAE_not_common_CatBoost_field_choice",
+      "parameters": 43649,
+      "model_bytes": 177681
+    },
+    {
+      "role": "fixed",
+      "seed": 13,
+      "fit_seconds": 8.845883000001777,
+      "epochs_run": 57,
+      "history": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "validation_price_mae": 9843.235227472474
+        },
+        {
+          "stage": 1,
+          "epoch": 2,
+          "validation_price_mae": 7842.018347833717
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "validation_price_mae": 7071.05611206496
+        },
+        {
+          "stage": 1,
+          "epoch": 4,
+          "validation_price_mae": 6902.670493211254
+        },
+        {
+          "stage": 1,
+          "epoch": 5,
+          "validation_price_mae": 6537.417779862725
+        },
+        {
+          "stage": 1,
+          "epoch": 6,
+          "validation_price_mae": 6500.727462624892
+        },
+        {
+          "stage": 1,
+          "epoch": 7,
+          "validation_price_mae": 6338.002444910049
+        },
+        {
+          "stage": 1,
+          "epoch": 8,
+          "validation_price_mae": 6274.009329636298
+        },
+        {
+          "stage": 1,
+          "epoch": 9,
+          "validation_price_mae": 6276.446996322759
+        },
+        {
+          "stage": 1,
+          "epoch": 10,
+          "validation_price_mae": 6169.281224960722
+        },
+        {
+          "stage": 1,
+          "epoch": 11,
+          "validation_price_mae": 6173.383705868353
+        },
+        {
+          "stage": 1,
+          "epoch": 12,
+          "validation_price_mae": 6212.694815477194
+        },
+        {
+          "stage": 1,
+          "epoch": 13,
+          "validation_price_mae": 6136.906776610395
+        },
+        {
+          "stage": 1,
+          "epoch": 14,
+          "validation_price_mae": 6172.176317880407
+        },
+        {
+          "stage": 1,
+          "epoch": 15,
+          "validation_price_mae": 6229.680498675235
+        },
+        {
+          "stage": 1,
+          "epoch": 16,
+          "validation_price_mae": 6076.431071201273
+        },
+        {
+          "stage": 1,
+          "epoch": 17,
+          "validation_price_mae": 6039.565775819943
+        },
+        {
+          "stage": 1,
+          "epoch": 18,
+          "validation_price_mae": 6070.243595741192
+        },
+        {
+          "stage": 1,
+          "epoch": 19,
+          "validation_price_mae": 6027.498491568946
+        },
+        {
+          "stage": 1,
+          "epoch": 20,
+          "validation_price_mae": 6068.71884163045
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "validation_price_mae": 6264.268750322228
+        },
+        {
+          "stage": 2,
+          "epoch": 2,
+          "validation_price_mae": 6121.1548639141765
+        },
+        {
+          "stage": 2,
+          "epoch": 3,
+          "validation_price_mae": 6034.014196539889
+        },
+        {
+          "stage": 2,
+          "epoch": 4,
+          "validation_price_mae": 6103.463836448113
+        },
+        {
+          "stage": 2,
+          "epoch": 5,
+          "validation_price_mae": 6049.517027266872
+        },
+        {
+          "stage": 2,
+          "epoch": 6,
+          "validation_price_mae": 6035.88619109061
+        },
+        {
+          "stage": 2,
+          "epoch": 7,
+          "validation_price_mae": 5994.5288847438405
+        },
+        {
+          "stage": 2,
+          "epoch": 8,
+          "validation_price_mae": 5975.431436501329
+        },
+        {
+          "stage": 2,
+          "epoch": 9,
+          "validation_price_mae": 5986.319655168982
+        },
+        {
+          "stage": 2,
+          "epoch": 10,
+          "validation_price_mae": 5979.478436534193
+        },
+        {
+          "stage": 2,
+          "epoch": 11,
+          "validation_price_mae": 5995.064294584254
+        },
+        {
+          "stage": 2,
+          "epoch": 12,
+          "validation_price_mae": 5976.523207001998
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "validation_price_mae": 6016.496983282887
+        },
+        {
+          "stage": 3,
+          "epoch": 2,
+          "validation_price_mae": 6039.507967076304
+        },
+        {
+          "stage": 3,
+          "epoch": 3,
+          "validation_price_mae": 6082.409038462932
+        },
+        {
+          "stage": 3,
+          "epoch": 4,
+          "validation_price_mae": 6098.320410176839
+        },
+        {
+          "stage": 3,
+          "epoch": 5,
+          "validation_price_mae": 6047.791688455047
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "validation_price_mae": 6085.174158703965
+        },
+        {
+          "stage": 4,
+          "epoch": 2,
+          "validation_price_mae": 6056.000918029907
+        },
+        {
+          "stage": 4,
+          "epoch": 3,
+          "validation_price_mae": 6006.8584422210115
+        },
+        {
+          "stage": 4,
+          "epoch": 4,
+          "validation_price_mae": 6093.059814505705
+        },
+        {
+          "stage": 4,
+          "epoch": 5,
+          "validation_price_mae": 6093.881552217295
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "validation_price_mae": 6092.733136907424
+        },
+        {
+          "stage": 4,
+          "epoch": 7,
+          "validation_price_mae": 6071.155344382475
+        },
+        {
+          "stage": 5,
+          "epoch": 1,
+          "validation_price_mae": 6177.234000981586
+        },
+        {
+          "stage": 5,
+          "epoch": 2,
+          "validation_price_mae": 6142.389295780599
+        },
+        {
+          "stage": 5,
+          "epoch": 3,
+          "validation_price_mae": 6176.032044687673
+        },
+        {
+          "stage": 5,
+          "epoch": 4,
+          "validation_price_mae": 6072.012000127137
+        },
+        {
+          "stage": 5,
+          "epoch": 5,
+          "validation_price_mae": 6152.5737220928095
+        },
+        {
+          "stage": 5,
+          "epoch": 6,
+          "validation_price_mae": 6330.291767251807
+        },
+        {
+          "stage": 5,
+          "epoch": 7,
+          "validation_price_mae": 6115.879525073525
+        },
+        {
+          "stage": 5,
+          "epoch": 8,
+          "validation_price_mae": 6033.725152821695
+        },
+        {
+          "stage": 5,
+          "epoch": 9,
+          "validation_price_mae": 6014.980376713194
+        },
+        {
+          "stage": 5,
+          "epoch": 10,
+          "validation_price_mae": 6028.699671906568
+        },
+        {
+          "stage": 5,
+          "epoch": 11,
+          "validation_price_mae": 6026.606141834924
+        },
+        {
+          "stage": 5,
+          "epoch": 12,
+          "validation_price_mae": 6033.320879594368
+        },
+        {
+          "stage": 5,
+          "epoch": 13,
+          "validation_price_mae": 6052.071087396902
+        }
+      ],
+      "validation_selection": "own_price_MAE_not_common_CatBoost_field_choice",
+      "parameters": 43649,
+      "model_bytes": 177693
+    },
+    {
+      "fit_seconds": 13.944782540987944,
+      "epochs_run": 54,
+      "history": [
+        {
+          "total_epoch": 1,
+          "soft_price_mae": 9856.067992604005,
+          "hard_price_mae": 10172.351656374556
+        },
+        {
+          "total_epoch": 2,
+          "soft_price_mae": 7627.211919859884,
+          "hard_price_mae": 7710.8700954026135
+        },
+        {
+          "total_epoch": 3,
+          "soft_price_mae": 7122.578833794823,
+          "hard_price_mae": 7158.423358676061
+        },
+        {
+          "total_epoch": 4,
+          "soft_price_mae": 6817.830536238163,
+          "hard_price_mae": 6858.387443671329
+        },
+        {
+          "total_epoch": 5,
+          "soft_price_mae": 6665.1657918290575,
+          "hard_price_mae": 6691.773333028729
+        },
+        {
+          "total_epoch": 6,
+          "soft_price_mae": 6567.816643497556,
+          "hard_price_mae": 6586.99517917242
+        },
+        {
+          "total_epoch": 7,
+          "soft_price_mae": 6450.8392928208705,
+          "hard_price_mae": 6466.056959611112
+        },
+        {
+          "total_epoch": 8,
+          "soft_price_mae": 6489.788418820215,
+          "hard_price_mae": 6495.313615586394
+        },
+        {
+          "total_epoch": 9,
+          "soft_price_mae": 6237.621247373598,
+          "hard_price_mae": 6261.523804944746
+        },
+        {
+          "total_epoch": 10,
+          "soft_price_mae": 6219.666394768779,
+          "hard_price_mae": 6229.057017795855
+        },
+        {
+          "total_epoch": 11,
+          "soft_price_mae": 6212.921394714007,
+          "hard_price_mae": 6219.5624166258585
+        },
+        {
+          "total_epoch": 12,
+          "soft_price_mae": 6157.372235792977,
+          "hard_price_mae": 6164.56108284589
+        },
+        {
+          "total_epoch": 13,
+          "soft_price_mae": 6182.171410857746,
+          "hard_price_mae": 6188.885760639046
+        },
+        {
+          "total_epoch": 14,
+          "soft_price_mae": 6078.653797995279,
+          "hard_price_mae": 6085.19898930526
+        },
+        {
+          "total_epoch": 15,
+          "soft_price_mae": 6094.600475720401,
+          "hard_price_mae": 6110.313590602097
+        },
+        {
+          "total_epoch": 16,
+          "soft_price_mae": 6096.726983934391,
+          "hard_price_mae": 6100.29638287048
+        },
+        {
+          "total_epoch": 17,
+          "soft_price_mae": 6079.30482532297,
+          "hard_price_mae": 6081.557814412303
+        },
+        {
+          "total_epoch": 18,
+          "soft_price_mae": 6017.579442308071,
+          "hard_price_mae": 6022.848961476545
+        },
+        {
+          "total_epoch": 19,
+          "soft_price_mae": 6021.768054363942,
+          "hard_price_mae": 6024.157611760395
+        },
+        {
+          "total_epoch": 20,
+          "soft_price_mae": 6043.98639880666,
+          "hard_price_mae": 6045.514256742565
+        },
+        {
+          "total_epoch": 21,
+          "soft_price_mae": 6170.262033711856,
+          "hard_price_mae": 6172.4288916529495
+        },
+        {
+          "total_epoch": 22,
+          "soft_price_mae": 6107.024699865007,
+          "hard_price_mae": 6104.563366511687
+        },
+        {
+          "total_epoch": 23,
+          "soft_price_mae": 6093.916470250366,
+          "hard_price_mae": 6093.7535194293705
+        },
+        {
+          "total_epoch": 24,
+          "soft_price_mae": 6095.137437473396,
+          "hard_price_mae": 6097.20497300931
+        },
+        {
+          "total_epoch": 25,
+          "soft_price_mae": 6105.798300947945,
+          "hard_price_mae": 6107.092984018567
+        },
+        {
+          "total_epoch": 26,
+          "soft_price_mae": 6025.415436907221,
+          "hard_price_mae": 6033.647169214504
+        },
+        {
+          "total_epoch": 27,
+          "soft_price_mae": 6026.719819431475,
+          "hard_price_mae": 6028.751660978029
+        },
+        {
+          "total_epoch": 28,
+          "soft_price_mae": 6100.579994894641,
+          "hard_price_mae": 6104.448524980699
+        },
+        {
+          "total_epoch": 29,
+          "soft_price_mae": 6052.433458984544,
+          "hard_price_mae": 6056.688027325104
+        },
+        {
+          "total_epoch": 30,
+          "soft_price_mae": 6084.921972909567,
+          "hard_price_mae": 6086.774180574881
+        },
+        {
+          "total_epoch": 31,
+          "soft_price_mae": 6225.634274598662,
+          "hard_price_mae": 6225.5322363464675
+        },
+        {
+          "total_epoch": 32,
+          "soft_price_mae": 6088.009502989284,
+          "hard_price_mae": 6087.648295336077
+        },
+        {
+          "total_epoch": 33,
+          "soft_price_mae": 6100.176109645459,
+          "hard_price_mae": 6101.413371950588
+        },
+        {
+          "total_epoch": 34,
+          "soft_price_mae": 6059.126857946001,
+          "hard_price_mae": 6058.234120233833
+        },
+        {
+          "total_epoch": 35,
+          "soft_price_mae": 6081.704470151199,
+          "hard_price_mae": 6084.504508425302
+        },
+        {
+          "total_epoch": 36,
+          "soft_price_mae": 6243.755957805928,
+          "hard_price_mae": 6247.607028875452
+        },
+        {
+          "total_epoch": 37,
+          "soft_price_mae": 6158.727443454256,
+          "hard_price_mae": 6160.467137457454
+        },
+        {
+          "total_epoch": 38,
+          "soft_price_mae": 6125.434650834177,
+          "hard_price_mae": 6126.778607129243
+        },
+        {
+          "total_epoch": 39,
+          "soft_price_mae": 6172.92627963513,
+          "hard_price_mae": 6174.765684021652
+        },
+        {
+          "total_epoch": 40,
+          "soft_price_mae": 6087.0981423261455,
+          "hard_price_mae": 6087.485344515082
+        },
+        {
+          "total_epoch": 41,
+          "soft_price_mae": 6146.058017121866,
+          "hard_price_mae": 6146.804487073283
+        },
+        {
+          "total_epoch": 42,
+          "soft_price_mae": 6162.059011787321,
+          "hard_price_mae": 6162.710039115012
+        },
+        {
+          "total_epoch": 43,
+          "soft_price_mae": 6116.098344747433,
+          "hard_price_mae": 6116.360617973606
+        },
+        {
+          "total_epoch": 44,
+          "soft_price_mae": 6137.295918690058,
+          "hard_price_mae": 6138.164989735367
+        },
+        {
+          "total_epoch": 45,
+          "soft_price_mae": 6150.760312242018,
+          "hard_price_mae": 6150.562831366097
+        },
+        {
+          "total_epoch": 46,
+          "soft_price_mae": 6099.260481222724,
+          "hard_price_mae": 6099.476585049615
+        },
+        {
+          "total_epoch": 47,
+          "soft_price_mae": 6275.5018815609865,
+          "hard_price_mae": 6275.675307791903
+        },
+        {
+          "total_epoch": 48,
+          "soft_price_mae": 6205.035350934122,
+          "hard_price_mae": 6205.090055852599
+        },
+        {
+          "total_epoch": 49,
+          "soft_price_mae": 6225.571422139135,
+          "hard_price_mae": 6225.960952196943
+        },
+        {
+          "total_epoch": 50,
+          "soft_price_mae": 6071.439732362926,
+          "hard_price_mae": 6072.05157389795
+        },
+        {
+          "total_epoch": 51,
+          "soft_price_mae": 6088.681481136818,
+          "hard_price_mae": 6088.932890974925
+        },
+        {
+          "total_epoch": 52,
+          "soft_price_mae": 6105.546115153547,
+          "hard_price_mae": 6106.3174157062585
+        },
+        {
+          "total_epoch": 53,
+          "soft_price_mae": 6083.604011150231,
+          "hard_price_mae": 6084.1165302800755
+        },
+        {
+          "total_epoch": 54,
+          "soft_price_mae": 6094.161672438149,
+          "hard_price_mae": 6094.733940202359
+        }
+      ],
+      "scheduler_compatibility_events": [
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword"
+      ],
+      "role": "dynamic",
+      "seed": 42,
+      "checks": {
+        "public_choices_match_original_forward": true,
+        "only_eligible_one_action": true,
+        "hidden_value_intervention_preserves_selection": true,
+        "unselected_value_intervention_preserves_prediction": true,
+        "selector_updated": true,
+        "predictor_updated": true
+      },
+      "inference_and_intervention_seconds": 0.10217562499747146,
+      "parameters": 87685,
+      "model_bytes": 355727
+    },
+    {
+      "role": "free",
+      "seed": 42,
+      "fit_seconds": 9.687458874992444,
+      "epochs_run": 62,
+      "history": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "validation_price_mae": 11171.716626238482
+        },
+        {
+          "stage": 1,
+          "epoch": 2,
+          "validation_price_mae": 8612.34352348801
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "validation_price_mae": 8015.482600608444
+        },
+        {
+          "stage": 1,
+          "epoch": 4,
+          "validation_price_mae": 7795.32517805564
+        },
+        {
+          "stage": 1,
+          "epoch": 5,
+          "validation_price_mae": 7471.049164493411
+        },
+        {
+          "stage": 1,
+          "epoch": 6,
+          "validation_price_mae": 7406.796879818648
+        },
+        {
+          "stage": 1,
+          "epoch": 7,
+          "validation_price_mae": 7442.0881478647925
+        },
+        {
+          "stage": 1,
+          "epoch": 8,
+          "validation_price_mae": 7241.331960442212
+        },
+        {
+          "stage": 1,
+          "epoch": 9,
+          "validation_price_mae": 7213.891042186592
+        },
+        {
+          "stage": 1,
+          "epoch": 10,
+          "validation_price_mae": 7188.703500998452
+        },
+        {
+          "stage": 1,
+          "epoch": 11,
+          "validation_price_mae": 7174.335894324404
+        },
+        {
+          "stage": 1,
+          "epoch": 12,
+          "validation_price_mae": 7108.042844605746
+        },
+        {
+          "stage": 1,
+          "epoch": 13,
+          "validation_price_mae": 7061.427270456715
+        },
+        {
+          "stage": 1,
+          "epoch": 14,
+          "validation_price_mae": 7238.398845664296
+        },
+        {
+          "stage": 1,
+          "epoch": 15,
+          "validation_price_mae": 7080.754013783056
+        },
+        {
+          "stage": 1,
+          "epoch": 16,
+          "validation_price_mae": 6990.64453764149
+        },
+        {
+          "stage": 1,
+          "epoch": 17,
+          "validation_price_mae": 7121.834691712278
+        },
+        {
+          "stage": 1,
+          "epoch": 18,
+          "validation_price_mae": 7066.777489079396
+        },
+        {
+          "stage": 1,
+          "epoch": 19,
+          "validation_price_mae": 7008.153215379297
+        },
+        {
+          "stage": 1,
+          "epoch": 20,
+          "validation_price_mae": 6978.2928654100415
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "validation_price_mae": 7022.447882162042
+        },
+        {
+          "stage": 2,
+          "epoch": 2,
+          "validation_price_mae": 7212.422932885053
+        },
+        {
+          "stage": 2,
+          "epoch": 3,
+          "validation_price_mae": 7106.940986673301
+        },
+        {
+          "stage": 2,
+          "epoch": 4,
+          "validation_price_mae": 7197.839610362259
+        },
+        {
+          "stage": 2,
+          "epoch": 5,
+          "validation_price_mae": 6952.263411646758
+        },
+        {
+          "stage": 2,
+          "epoch": 6,
+          "validation_price_mae": 6953.742384336364
+        },
+        {
+          "stage": 2,
+          "epoch": 7,
+          "validation_price_mae": 6932.659651924725
+        },
+        {
+          "stage": 2,
+          "epoch": 8,
+          "validation_price_mae": 6927.612832211612
+        },
+        {
+          "stage": 2,
+          "epoch": 9,
+          "validation_price_mae": 6940.818832318851
+        },
+        {
+          "stage": 2,
+          "epoch": 10,
+          "validation_price_mae": 7017.4887455097505
+        },
+        {
+          "stage": 2,
+          "epoch": 11,
+          "validation_price_mae": 6942.264438887966
+        },
+        {
+          "stage": 2,
+          "epoch": 12,
+          "validation_price_mae": 6945.744602850653
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "validation_price_mae": 7065.2977404335
+        },
+        {
+          "stage": 3,
+          "epoch": 2,
+          "validation_price_mae": 7005.600319183703
+        },
+        {
+          "stage": 3,
+          "epoch": 3,
+          "validation_price_mae": 7032.550057107465
+        },
+        {
+          "stage": 3,
+          "epoch": 4,
+          "validation_price_mae": 7073.923270558188
+        },
+        {
+          "stage": 3,
+          "epoch": 5,
+          "validation_price_mae": 6979.387739735872
+        },
+        {
+          "stage": 3,
+          "epoch": 6,
+          "validation_price_mae": 7019.978013289528
+        },
+        {
+          "stage": 3,
+          "epoch": 7,
+          "validation_price_mae": 6962.719422660627
+        },
+        {
+          "stage": 3,
+          "epoch": 8,
+          "validation_price_mae": 7235.849053293863
+        },
+        {
+          "stage": 3,
+          "epoch": 9,
+          "validation_price_mae": 7085.184724201549
+        },
+        {
+          "stage": 3,
+          "epoch": 10,
+          "validation_price_mae": 7050.136330474317
+        },
+        {
+          "stage": 3,
+          "epoch": 11,
+          "validation_price_mae": 6954.942012761406
+        },
+        {
+          "stage": 3,
+          "epoch": 12,
+          "validation_price_mae": 7059.348483554589
+        },
+        {
+          "stage": 3,
+          "epoch": 13,
+          "validation_price_mae": 7019.632712740276
+        },
+        {
+          "stage": 3,
+          "epoch": 14,
+          "validation_price_mae": 6974.798734234127
+        },
+        {
+          "stage": 3,
+          "epoch": 15,
+          "validation_price_mae": 6988.1692370749415
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "validation_price_mae": 7045.056920597004
+        },
+        {
+          "stage": 4,
+          "epoch": 2,
+          "validation_price_mae": 7264.101621829298
+        },
+        {
+          "stage": 4,
+          "epoch": 3,
+          "validation_price_mae": 7025.332887649951
+        },
+        {
+          "stage": 4,
+          "epoch": 4,
+          "validation_price_mae": 7016.978942226922
+        },
+        {
+          "stage": 4,
+          "epoch": 5,
+          "validation_price_mae": 7085.333707809316
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "validation_price_mae": 6933.933772153651
+        },
+        {
+          "stage": 4,
+          "epoch": 7,
+          "validation_price_mae": 7021.652526964327
+        },
+        {
+          "stage": 4,
+          "epoch": 8,
+          "validation_price_mae": 7061.038516355197
+        },
+        {
+          "stage": 4,
+          "epoch": 9,
+          "validation_price_mae": 7215.107741650025
+        },
+        {
+          "stage": 4,
+          "epoch": 10,
+          "validation_price_mae": 7118.014658894372
+        },
+        {
+          "stage": 5,
+          "epoch": 1,
+          "validation_price_mae": 7030.90114999025
+        },
+        {
+          "stage": 5,
+          "epoch": 2,
+          "validation_price_mae": 7190.298867131625
+        },
+        {
+          "stage": 5,
+          "epoch": 3,
+          "validation_price_mae": 7045.586898743385
+        },
+        {
+          "stage": 5,
+          "epoch": 4,
+          "validation_price_mae": 7098.983554914695
+        },
+        {
+          "stage": 5,
+          "epoch": 5,
+          "validation_price_mae": 7058.079795019696
+        }
+      ],
+      "validation_selection": "own_price_MAE_not_common_CatBoost_field_choice",
+      "parameters": 43649,
+      "model_bytes": 177681
+    },
+    {
+      "role": "fixed",
+      "seed": 42,
+      "fit_seconds": 8.894081457998254,
+      "epochs_run": 57,
+      "history": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "validation_price_mae": 10534.481145654008
+        },
+        {
+          "stage": 1,
+          "epoch": 2,
+          "validation_price_mae": 7761.764292537208
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "validation_price_mae": 7168.429315041467
+        },
+        {
+          "stage": 1,
+          "epoch": 4,
+          "validation_price_mae": 6800.84174921496
+        },
+        {
+          "stage": 1,
+          "epoch": 5,
+          "validation_price_mae": 6624.936337950464
+        },
+        {
+          "stage": 1,
+          "epoch": 6,
+          "validation_price_mae": 6488.867746681592
+        },
+        {
+          "stage": 1,
+          "epoch": 7,
+          "validation_price_mae": 6504.983194899888
+        },
+        {
+          "stage": 1,
+          "epoch": 8,
+          "validation_price_mae": 6362.38531942499
+        },
+        {
+          "stage": 1,
+          "epoch": 9,
+          "validation_price_mae": 6354.959417725343
+        },
+        {
+          "stage": 1,
+          "epoch": 10,
+          "validation_price_mae": 6297.014881735682
+        },
+        {
+          "stage": 1,
+          "epoch": 11,
+          "validation_price_mae": 6369.936150087398
+        },
+        {
+          "stage": 1,
+          "epoch": 12,
+          "validation_price_mae": 6240.303340291553
+        },
+        {
+          "stage": 1,
+          "epoch": 13,
+          "validation_price_mae": 6259.830668318975
+        },
+        {
+          "stage": 1,
+          "epoch": 14,
+          "validation_price_mae": 6311.808876391335
+        },
+        {
+          "stage": 1,
+          "epoch": 15,
+          "validation_price_mae": 6210.068591412152
+        },
+        {
+          "stage": 1,
+          "epoch": 16,
+          "validation_price_mae": 6185.145651319057
+        },
+        {
+          "stage": 1,
+          "epoch": 17,
+          "validation_price_mae": 6244.969941422343
+        },
+        {
+          "stage": 1,
+          "epoch": 18,
+          "validation_price_mae": 6238.039487814152
+        },
+        {
+          "stage": 1,
+          "epoch": 19,
+          "validation_price_mae": 6094.860033099558
+        },
+        {
+          "stage": 1,
+          "epoch": 20,
+          "validation_price_mae": 6161.64697899709
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "validation_price_mae": 6170.288416225731
+        },
+        {
+          "stage": 2,
+          "epoch": 2,
+          "validation_price_mae": 6163.990754972406
+        },
+        {
+          "stage": 2,
+          "epoch": 3,
+          "validation_price_mae": 6237.598356663029
+        },
+        {
+          "stage": 2,
+          "epoch": 4,
+          "validation_price_mae": 6349.045854835792
+        },
+        {
+          "stage": 2,
+          "epoch": 5,
+          "validation_price_mae": 6187.275263358208
+        },
+        {
+          "stage": 2,
+          "epoch": 6,
+          "validation_price_mae": 6150.98689147883
+        },
+        {
+          "stage": 2,
+          "epoch": 7,
+          "validation_price_mae": 6109.928328303887
+        },
+        {
+          "stage": 2,
+          "epoch": 8,
+          "validation_price_mae": 6103.172852839193
+        },
+        {
+          "stage": 2,
+          "epoch": 9,
+          "validation_price_mae": 6117.021344754928
+        },
+        {
+          "stage": 2,
+          "epoch": 10,
+          "validation_price_mae": 6140.308181009601
+        },
+        {
+          "stage": 2,
+          "epoch": 11,
+          "validation_price_mae": 6114.569322877092
+        },
+        {
+          "stage": 2,
+          "epoch": 12,
+          "validation_price_mae": 6119.966098877201
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "validation_price_mae": 6180.889143087771
+        },
+        {
+          "stage": 3,
+          "epoch": 2,
+          "validation_price_mae": 6172.632192201048
+        },
+        {
+          "stage": 3,
+          "epoch": 3,
+          "validation_price_mae": 6176.5558151837295
+        },
+        {
+          "stage": 3,
+          "epoch": 4,
+          "validation_price_mae": 6213.5856132986355
+        },
+        {
+          "stage": 3,
+          "epoch": 5,
+          "validation_price_mae": 6235.541296537035
+        },
+        {
+          "stage": 3,
+          "epoch": 6,
+          "validation_price_mae": 6210.820493057603
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "validation_price_mae": 6183.484716879339
+        },
+        {
+          "stage": 4,
+          "epoch": 2,
+          "validation_price_mae": 6195.774700585697
+        },
+        {
+          "stage": 4,
+          "epoch": 3,
+          "validation_price_mae": 6201.125307186524
+        },
+        {
+          "stage": 4,
+          "epoch": 4,
+          "validation_price_mae": 6177.67435617642
+        },
+        {
+          "stage": 4,
+          "epoch": 5,
+          "validation_price_mae": 6270.813165675918
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "validation_price_mae": 6391.569035508968
+        },
+        {
+          "stage": 4,
+          "epoch": 7,
+          "validation_price_mae": 6287.192827011114
+        },
+        {
+          "stage": 4,
+          "epoch": 8,
+          "validation_price_mae": 6168.776853371927
+        },
+        {
+          "stage": 4,
+          "epoch": 9,
+          "validation_price_mae": 6206.960498490738
+        },
+        {
+          "stage": 4,
+          "epoch": 10,
+          "validation_price_mae": 6196.786159610304
+        },
+        {
+          "stage": 4,
+          "epoch": 11,
+          "validation_price_mae": 6257.43723114107
+        },
+        {
+          "stage": 4,
+          "epoch": 12,
+          "validation_price_mae": 6175.221170364149
+        },
+        {
+          "stage": 5,
+          "epoch": 1,
+          "validation_price_mae": 6260.8491109501965
+        },
+        {
+          "stage": 5,
+          "epoch": 2,
+          "validation_price_mae": 6278.342269562194
+        },
+        {
+          "stage": 5,
+          "epoch": 3,
+          "validation_price_mae": 6181.297684074695
+        },
+        {
+          "stage": 5,
+          "epoch": 4,
+          "validation_price_mae": 6309.994302606108
+        },
+        {
+          "stage": 5,
+          "epoch": 5,
+          "validation_price_mae": 6312.3481660132
+        },
+        {
+          "stage": 5,
+          "epoch": 6,
+          "validation_price_mae": 6435.987877399724
+        },
+        {
+          "stage": 5,
+          "epoch": 7,
+          "validation_price_mae": 6365.054609064151
+        }
+      ],
+      "validation_selection": "own_price_MAE_not_common_CatBoost_field_choice",
+      "parameters": 43649,
+      "model_bytes": 177693
+    },
+    {
+      "fit_seconds": 16.22865395800909,
+      "epochs_run": 63,
+      "history": [
+        {
+          "total_epoch": 1,
+          "soft_price_mae": 10290.691974275423,
+          "hard_price_mae": 10290.691974275423
+        },
+        {
+          "total_epoch": 2,
+          "soft_price_mae": 7833.595342300837,
+          "hard_price_mae": 7833.595342300837
+        },
+        {
+          "total_epoch": 3,
+          "soft_price_mae": 7154.694112744139,
+          "hard_price_mae": 7154.694112744139
+        },
+        {
+          "total_epoch": 4,
+          "soft_price_mae": 6816.550984315204,
+          "hard_price_mae": 6816.550984315204
+        },
+        {
+          "total_epoch": 5,
+          "soft_price_mae": 6629.336010117338,
+          "hard_price_mae": 6629.336010117338
+        },
+        {
+          "total_epoch": 6,
+          "soft_price_mae": 6594.228643712033,
+          "hard_price_mae": 6594.228643712033
+        },
+        {
+          "total_epoch": 7,
+          "soft_price_mae": 6499.60504185075,
+          "hard_price_mae": 6499.60504185075
+        },
+        {
+          "total_epoch": 8,
+          "soft_price_mae": 6330.349575995446,
+          "hard_price_mae": 6330.349575995446
+        },
+        {
+          "total_epoch": 9,
+          "soft_price_mae": 6368.6934560882355,
+          "hard_price_mae": 6368.6934560882355
+        },
+        {
+          "total_epoch": 10,
+          "soft_price_mae": 6304.197133160125,
+          "hard_price_mae": 6304.197133160125
+        },
+        {
+          "total_epoch": 11,
+          "soft_price_mae": 6228.341974074202,
+          "hard_price_mae": 6228.341974074202
+        },
+        {
+          "total_epoch": 12,
+          "soft_price_mae": 6309.330859977769,
+          "hard_price_mae": 6309.330859977769
+        },
+        {
+          "total_epoch": 13,
+          "soft_price_mae": 6213.281826410923,
+          "hard_price_mae": 6213.281826410923
+        },
+        {
+          "total_epoch": 14,
+          "soft_price_mae": 6196.000115888074,
+          "hard_price_mae": 6196.000115888074
+        },
+        {
+          "total_epoch": 15,
+          "soft_price_mae": 6148.679585449166,
+          "hard_price_mae": 6148.679585449166
+        },
+        {
+          "total_epoch": 16,
+          "soft_price_mae": 6145.615334058162,
+          "hard_price_mae": 6145.615334058162
+        },
+        {
+          "total_epoch": 17,
+          "soft_price_mae": 6154.029804071846,
+          "hard_price_mae": 6154.029804071846
+        },
+        {
+          "total_epoch": 18,
+          "soft_price_mae": 6150.2640881942725,
+          "hard_price_mae": 6150.2640881942725
+        },
+        {
+          "total_epoch": 19,
+          "soft_price_mae": 6109.091847422777,
+          "hard_price_mae": 6109.091847422777
+        },
+        {
+          "total_epoch": 20,
+          "soft_price_mae": 6053.794486318,
+          "hard_price_mae": 6053.794486318
+        },
+        {
+          "total_epoch": 21,
+          "soft_price_mae": 6065.929278766267,
+          "hard_price_mae": 6065.929278766267
+        },
+        {
+          "total_epoch": 22,
+          "soft_price_mae": 6116.10261250703,
+          "hard_price_mae": 6116.10261250703
+        },
+        {
+          "total_epoch": 23,
+          "soft_price_mae": 6096.586535845819,
+          "hard_price_mae": 6096.586535845819
+        },
+        {
+          "total_epoch": 24,
+          "soft_price_mae": 6092.510049473918,
+          "hard_price_mae": 6092.510049473918
+        },
+        {
+          "total_epoch": 25,
+          "soft_price_mae": 6024.663923239917,
+          "hard_price_mae": 6024.663923239917
+        },
+        {
+          "total_epoch": 26,
+          "soft_price_mae": 6019.724961451177,
+          "hard_price_mae": 6019.724961451177
+        },
+        {
+          "total_epoch": 27,
+          "soft_price_mae": 6031.336759359677,
+          "hard_price_mae": 6031.336759359677
+        },
+        {
+          "total_epoch": 28,
+          "soft_price_mae": 6066.38670499949,
+          "hard_price_mae": 6066.38670499949
+        },
+        {
+          "total_epoch": 29,
+          "soft_price_mae": 6038.136464332926,
+          "hard_price_mae": 6038.136464332926
+        },
+        {
+          "total_epoch": 30,
+          "soft_price_mae": 6019.594212816235,
+          "hard_price_mae": 6019.594212816235
+        },
+        {
+          "total_epoch": 31,
+          "soft_price_mae": 6108.948295509043,
+          "hard_price_mae": 6108.948295509043
+        },
+        {
+          "total_epoch": 32,
+          "soft_price_mae": 6171.420536453505,
+          "hard_price_mae": 6171.420536453505
+        },
+        {
+          "total_epoch": 33,
+          "soft_price_mae": 6155.655820478493,
+          "hard_price_mae": 6155.655820478493
+        },
+        {
+          "total_epoch": 34,
+          "soft_price_mae": 6065.978551990711,
+          "hard_price_mae": 6065.978551990711
+        },
+        {
+          "total_epoch": 35,
+          "soft_price_mae": 6154.2730663689035,
+          "hard_price_mae": 6154.2730663689035
+        },
+        {
+          "total_epoch": 36,
+          "soft_price_mae": 6165.340142961506,
+          "hard_price_mae": 6165.340142961506
+        },
+        {
+          "total_epoch": 37,
+          "soft_price_mae": 6194.00164046201,
+          "hard_price_mae": 6194.00164046201
+        },
+        {
+          "total_epoch": 38,
+          "soft_price_mae": 6088.614748895839,
+          "hard_price_mae": 6088.614748895839
+        },
+        {
+          "total_epoch": 39,
+          "soft_price_mae": 6153.700022648403,
+          "hard_price_mae": 6153.700022648403
+        },
+        {
+          "total_epoch": 40,
+          "soft_price_mae": 6098.90392930726,
+          "hard_price_mae": 6098.90392930726
+        },
+        {
+          "total_epoch": 41,
+          "soft_price_mae": 6090.020781694141,
+          "hard_price_mae": 6090.020781694141
+        },
+        {
+          "total_epoch": 42,
+          "soft_price_mae": 6083.9950931206195,
+          "hard_price_mae": 6083.9950931206195
+        },
+        {
+          "total_epoch": 43,
+          "soft_price_mae": 6245.024258362675,
+          "hard_price_mae": 6245.024258362675
+        },
+        {
+          "total_epoch": 44,
+          "soft_price_mae": 6487.79653902262,
+          "hard_price_mae": 6487.79653902262
+        },
+        {
+          "total_epoch": 45,
+          "soft_price_mae": 6178.553126675359,
+          "hard_price_mae": 6178.553126675359
+        },
+        {
+          "total_epoch": 46,
+          "soft_price_mae": 6125.016022415477,
+          "hard_price_mae": 6125.016022415477
+        },
+        {
+          "total_epoch": 47,
+          "soft_price_mae": 6108.553333757202,
+          "hard_price_mae": 6108.553333757202
+        },
+        {
+          "total_epoch": 48,
+          "soft_price_mae": 6114.253120688732,
+          "hard_price_mae": 6114.253120688732
+        },
+        {
+          "total_epoch": 49,
+          "soft_price_mae": 6152.135694766848,
+          "hard_price_mae": 6152.135694766848
+        },
+        {
+          "total_epoch": 50,
+          "soft_price_mae": 6136.798142729732,
+          "hard_price_mae": 6136.798142729732
+        },
+        {
+          "total_epoch": 51,
+          "soft_price_mae": 6095.681382833004,
+          "hard_price_mae": 6095.681382833004
+        },
+        {
+          "total_epoch": 52,
+          "soft_price_mae": 6097.1180659047795,
+          "hard_price_mae": 6097.1180659047795
+        },
+        {
+          "total_epoch": 53,
+          "soft_price_mae": 6075.813409994072,
+          "hard_price_mae": 6075.813409994072
+        },
+        {
+          "total_epoch": 54,
+          "soft_price_mae": 6084.016043940462,
+          "hard_price_mae": 6084.016043940462
+        },
+        {
+          "total_epoch": 55,
+          "soft_price_mae": 6073.355180465913,
+          "hard_price_mae": 6073.355180465913
+        },
+        {
+          "total_epoch": 56,
+          "soft_price_mae": 6092.003737994397,
+          "hard_price_mae": 6092.003737994397
+        },
+        {
+          "total_epoch": 57,
+          "soft_price_mae": 6074.430655884482,
+          "hard_price_mae": 6074.430655884482
+        },
+        {
+          "total_epoch": 58,
+          "soft_price_mae": 6053.612912546034,
+          "hard_price_mae": 6053.612912546034
+        },
+        {
+          "total_epoch": 59,
+          "soft_price_mae": 6033.755027138877,
+          "hard_price_mae": 6033.755027138877
+        },
+        {
+          "total_epoch": 60,
+          "soft_price_mae": 6104.956000394657,
+          "hard_price_mae": 6104.956000394657
+        },
+        {
+          "total_epoch": 61,
+          "soft_price_mae": 6043.9394534510875,
+          "hard_price_mae": 6043.9394534510875
+        },
+        {
+          "total_epoch": 62,
+          "soft_price_mae": 6128.97766725639,
+          "hard_price_mae": 6128.97766725639
+        },
+        {
+          "total_epoch": 63,
+          "soft_price_mae": 6067.996426324036,
+          "hard_price_mae": 6067.996426324036
+        }
+      ],
+      "scheduler_compatibility_events": [
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword",
+        "removed_deleted_verbose_keyword"
+      ],
+      "role": "dynamic",
+      "seed": 2026,
+      "checks": {
+        "public_choices_match_original_forward": true,
+        "only_eligible_one_action": true,
+        "hidden_value_intervention_preserves_selection": true,
+        "unselected_value_intervention_preserves_prediction": true,
+        "selector_updated": true,
+        "predictor_updated": true
+      },
+      "inference_and_intervention_seconds": 0.10136866600078065,
+      "parameters": 87685,
+      "model_bytes": 355763
+    },
+    {
+      "role": "free",
+      "seed": 2026,
+      "fit_seconds": 9.030009833004442,
+      "epochs_run": 58,
+      "history": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "validation_price_mae": 10844.729421397407
+        },
+        {
+          "stage": 1,
+          "epoch": 2,
+          "validation_price_mae": 8579.760342895552
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "validation_price_mae": 7936.096064444664
+        },
+        {
+          "stage": 1,
+          "epoch": 4,
+          "validation_price_mae": 7724.586674748971
+        },
+        {
+          "stage": 1,
+          "epoch": 5,
+          "validation_price_mae": 7582.636334798456
+        },
+        {
+          "stage": 1,
+          "epoch": 6,
+          "validation_price_mae": 7348.1151853530555
+        },
+        {
+          "stage": 1,
+          "epoch": 7,
+          "validation_price_mae": 7323.567032148249
+        },
+        {
+          "stage": 1,
+          "epoch": 8,
+          "validation_price_mae": 7242.55874733742
+        },
+        {
+          "stage": 1,
+          "epoch": 9,
+          "validation_price_mae": 7227.625468527631
+        },
+        {
+          "stage": 1,
+          "epoch": 10,
+          "validation_price_mae": 7147.535140008408
+        },
+        {
+          "stage": 1,
+          "epoch": 11,
+          "validation_price_mae": 7175.277905261015
+        },
+        {
+          "stage": 1,
+          "epoch": 12,
+          "validation_price_mae": 7091.189849933373
+        },
+        {
+          "stage": 1,
+          "epoch": 13,
+          "validation_price_mae": 7023.687084357898
+        },
+        {
+          "stage": 1,
+          "epoch": 14,
+          "validation_price_mae": 7112.291205295983
+        },
+        {
+          "stage": 1,
+          "epoch": 15,
+          "validation_price_mae": 7038.584669178326
+        },
+        {
+          "stage": 1,
+          "epoch": 16,
+          "validation_price_mae": 7010.042668946553
+        },
+        {
+          "stage": 1,
+          "epoch": 17,
+          "validation_price_mae": 7118.71069168691
+        },
+        {
+          "stage": 1,
+          "epoch": 18,
+          "validation_price_mae": 6969.924952773785
+        },
+        {
+          "stage": 1,
+          "epoch": 19,
+          "validation_price_mae": 7083.198276097986
+        },
+        {
+          "stage": 1,
+          "epoch": 20,
+          "validation_price_mae": 7132.628243712495
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "validation_price_mae": 7046.012898746844
+        },
+        {
+          "stage": 2,
+          "epoch": 2,
+          "validation_price_mae": 6944.659040000308
+        },
+        {
+          "stage": 2,
+          "epoch": 3,
+          "validation_price_mae": 6982.230843584096
+        },
+        {
+          "stage": 2,
+          "epoch": 4,
+          "validation_price_mae": 6957.534482727813
+        },
+        {
+          "stage": 2,
+          "epoch": 5,
+          "validation_price_mae": 6924.918711971155
+        },
+        {
+          "stage": 2,
+          "epoch": 6,
+          "validation_price_mae": 6928.897815828604
+        },
+        {
+          "stage": 2,
+          "epoch": 7,
+          "validation_price_mae": 6976.075182331923
+        },
+        {
+          "stage": 2,
+          "epoch": 8,
+          "validation_price_mae": 6908.616646265004
+        },
+        {
+          "stage": 2,
+          "epoch": 9,
+          "validation_price_mae": 6958.778340661411
+        },
+        {
+          "stage": 2,
+          "epoch": 10,
+          "validation_price_mae": 6889.750045018903
+        },
+        {
+          "stage": 2,
+          "epoch": 11,
+          "validation_price_mae": 6965.38948825608
+        },
+        {
+          "stage": 2,
+          "epoch": 12,
+          "validation_price_mae": 6934.316318604845
+        },
+        {
+          "stage": 2,
+          "epoch": 13,
+          "validation_price_mae": 6920.660263849143
+        },
+        {
+          "stage": 2,
+          "epoch": 14,
+          "validation_price_mae": 6915.237881291449
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "validation_price_mae": 7012.342603391458
+        },
+        {
+          "stage": 3,
+          "epoch": 2,
+          "validation_price_mae": 6894.869028667029
+        },
+        {
+          "stage": 3,
+          "epoch": 3,
+          "validation_price_mae": 6942.809936160155
+        },
+        {
+          "stage": 3,
+          "epoch": 4,
+          "validation_price_mae": 6914.721094402007
+        },
+        {
+          "stage": 3,
+          "epoch": 5,
+          "validation_price_mae": 6892.534176189052
+        },
+        {
+          "stage": 3,
+          "epoch": 6,
+          "validation_price_mae": 6929.28424206125
+        },
+        {
+          "stage": 3,
+          "epoch": 7,
+          "validation_price_mae": 6977.55570693411
+        },
+        {
+          "stage": 3,
+          "epoch": 8,
+          "validation_price_mae": 6980.9171495843575
+        },
+        {
+          "stage": 3,
+          "epoch": 9,
+          "validation_price_mae": 6924.479520710758
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "validation_price_mae": 6982.826778015165
+        },
+        {
+          "stage": 4,
+          "epoch": 2,
+          "validation_price_mae": 6893.428853791946
+        },
+        {
+          "stage": 4,
+          "epoch": 3,
+          "validation_price_mae": 6919.078864929197
+        },
+        {
+          "stage": 4,
+          "epoch": 4,
+          "validation_price_mae": 6945.48310558077
+        },
+        {
+          "stage": 4,
+          "epoch": 5,
+          "validation_price_mae": 6931.13024207624
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "validation_price_mae": 6894.401127023885
+        },
+        {
+          "stage": 5,
+          "epoch": 1,
+          "validation_price_mae": 6882.491749877995
+        },
+        {
+          "stage": 5,
+          "epoch": 2,
+          "validation_price_mae": 6907.25794680042
+        },
+        {
+          "stage": 5,
+          "epoch": 3,
+          "validation_price_mae": 6913.95600149962
+        },
+        {
+          "stage": 5,
+          "epoch": 4,
+          "validation_price_mae": 6994.802887402034
+        },
+        {
+          "stage": 5,
+          "epoch": 5,
+          "validation_price_mae": 6843.945345193396
+        },
+        {
+          "stage": 5,
+          "epoch": 6,
+          "validation_price_mae": 6946.023947115216
+        },
+        {
+          "stage": 5,
+          "epoch": 7,
+          "validation_price_mae": 6880.662820901395
+        },
+        {
+          "stage": 5,
+          "epoch": 8,
+          "validation_price_mae": 6878.077334541602
+        },
+        {
+          "stage": 5,
+          "epoch": 9,
+          "validation_price_mae": 6849.02630698329
+        }
+      ],
+      "validation_selection": "own_price_MAE_not_common_CatBoost_field_choice",
+      "parameters": 43649,
+      "model_bytes": 177705
+    },
+    {
+      "role": "fixed",
+      "seed": 2026,
+      "fit_seconds": 9.398516374989413,
+      "epochs_run": 60,
+      "history": [
+        {
+          "stage": 1,
+          "epoch": 1,
+          "validation_price_mae": 9910.931982120563
+        },
+        {
+          "stage": 1,
+          "epoch": 2,
+          "validation_price_mae": 7736.3788824950025
+        },
+        {
+          "stage": 1,
+          "epoch": 3,
+          "validation_price_mae": 7060.860046408393
+        },
+        {
+          "stage": 1,
+          "epoch": 4,
+          "validation_price_mae": 6735.6916831121425
+        },
+        {
+          "stage": 1,
+          "epoch": 5,
+          "validation_price_mae": 6555.714829191633
+        },
+        {
+          "stage": 1,
+          "epoch": 6,
+          "validation_price_mae": 6485.976921521505
+        },
+        {
+          "stage": 1,
+          "epoch": 7,
+          "validation_price_mae": 6428.351691545366
+        },
+        {
+          "stage": 1,
+          "epoch": 8,
+          "validation_price_mae": 6420.540915525654
+        },
+        {
+          "stage": 1,
+          "epoch": 9,
+          "validation_price_mae": 6409.95687172386
+        },
+        {
+          "stage": 1,
+          "epoch": 10,
+          "validation_price_mae": 6260.903427890528
+        },
+        {
+          "stage": 1,
+          "epoch": 11,
+          "validation_price_mae": 6336.078849266014
+        },
+        {
+          "stage": 1,
+          "epoch": 12,
+          "validation_price_mae": 6179.857509199612
+        },
+        {
+          "stage": 1,
+          "epoch": 13,
+          "validation_price_mae": 6185.566995584773
+        },
+        {
+          "stage": 1,
+          "epoch": 14,
+          "validation_price_mae": 6212.903935697472
+        },
+        {
+          "stage": 1,
+          "epoch": 15,
+          "validation_price_mae": 6200.459924667459
+        },
+        {
+          "stage": 1,
+          "epoch": 16,
+          "validation_price_mae": 6084.5421423053895
+        },
+        {
+          "stage": 1,
+          "epoch": 17,
+          "validation_price_mae": 6086.954978390557
+        },
+        {
+          "stage": 1,
+          "epoch": 18,
+          "validation_price_mae": 6083.760754320902
+        },
+        {
+          "stage": 1,
+          "epoch": 19,
+          "validation_price_mae": 6065.348087504717
+        },
+        {
+          "stage": 1,
+          "epoch": 20,
+          "validation_price_mae": 6064.2601967855
+        },
+        {
+          "stage": 2,
+          "epoch": 1,
+          "validation_price_mae": 6208.922115993007
+        },
+        {
+          "stage": 2,
+          "epoch": 2,
+          "validation_price_mae": 6093.440033088027
+        },
+        {
+          "stage": 2,
+          "epoch": 3,
+          "validation_price_mae": 6160.261509040483
+        },
+        {
+          "stage": 2,
+          "epoch": 4,
+          "validation_price_mae": 6110.158011365861
+        },
+        {
+          "stage": 2,
+          "epoch": 5,
+          "validation_price_mae": 6141.1896673555575
+        },
+        {
+          "stage": 2,
+          "epoch": 6,
+          "validation_price_mae": 6012.7429067496705
+        },
+        {
+          "stage": 2,
+          "epoch": 7,
+          "validation_price_mae": 6045.395535430124
+        },
+        {
+          "stage": 2,
+          "epoch": 8,
+          "validation_price_mae": 6020.98783031389
+        },
+        {
+          "stage": 2,
+          "epoch": 9,
+          "validation_price_mae": 6031.582737503751
+        },
+        {
+          "stage": 2,
+          "epoch": 10,
+          "validation_price_mae": 6015.116169064024
+        },
+        {
+          "stage": 3,
+          "epoch": 1,
+          "validation_price_mae": 6027.318081731415
+        },
+        {
+          "stage": 3,
+          "epoch": 2,
+          "validation_price_mae": 6087.718519380363
+        },
+        {
+          "stage": 3,
+          "epoch": 3,
+          "validation_price_mae": 6094.952759876268
+        },
+        {
+          "stage": 3,
+          "epoch": 4,
+          "validation_price_mae": 6243.984864911612
+        },
+        {
+          "stage": 3,
+          "epoch": 5,
+          "validation_price_mae": 6025.299043463653
+        },
+        {
+          "stage": 3,
+          "epoch": 6,
+          "validation_price_mae": 6026.150655492427
+        },
+        {
+          "stage": 3,
+          "epoch": 7,
+          "validation_price_mae": 6026.174322159286
+        },
+        {
+          "stage": 3,
+          "epoch": 8,
+          "validation_price_mae": 6021.916649993564
+        },
+        {
+          "stage": 3,
+          "epoch": 9,
+          "validation_price_mae": 6048.280152939888
+        },
+        {
+          "stage": 3,
+          "epoch": 10,
+          "validation_price_mae": 6064.588038318217
+        },
+        {
+          "stage": 3,
+          "epoch": 11,
+          "validation_price_mae": 6044.3053168420365
+        },
+        {
+          "stage": 3,
+          "epoch": 12,
+          "validation_price_mae": 6022.505212839874
+        },
+        {
+          "stage": 4,
+          "epoch": 1,
+          "validation_price_mae": 6171.236246834522
+        },
+        {
+          "stage": 4,
+          "epoch": 2,
+          "validation_price_mae": 6206.9011378345185
+        },
+        {
+          "stage": 4,
+          "epoch": 3,
+          "validation_price_mae": 6174.4428862048235
+        },
+        {
+          "stage": 4,
+          "epoch": 4,
+          "validation_price_mae": 6136.784175516504
+        },
+        {
+          "stage": 4,
+          "epoch": 5,
+          "validation_price_mae": 6213.460684335872
+        },
+        {
+          "stage": 4,
+          "epoch": 6,
+          "validation_price_mae": 6140.117295762149
+        },
+        {
+          "stage": 4,
+          "epoch": 7,
+          "validation_price_mae": 6090.526317217372
+        },
+        {
+          "stage": 4,
+          "epoch": 8,
+          "validation_price_mae": 6109.463530485905
+        },
+        {
+          "stage": 4,
+          "epoch": 9,
+          "validation_price_mae": 6171.945858862142
+        },
+        {
+          "stage": 4,
+          "epoch": 10,
+          "validation_price_mae": 6140.7877219971015
+        },
+        {
+          "stage": 4,
+          "epoch": 11,
+          "validation_price_mae": 6134.694137248166
+        },
+        {
+          "stage": 5,
+          "epoch": 1,
+          "validation_price_mae": 6155.656596434784
+        },
+        {
+          "stage": 5,
+          "epoch": 2,
+          "validation_price_mae": 6242.268449597127
+        },
+        {
+          "stage": 5,
+          "epoch": 3,
+          "validation_price_mae": 6109.126377477703
+        },
+        {
+          "stage": 5,
+          "epoch": 4,
+          "validation_price_mae": 6312.723340879635
+        },
+        {
+          "stage": 5,
+          "epoch": 5,
+          "validation_price_mae": 6145.702241162693
+        },
+        {
+          "stage": 5,
+          "epoch": 6,
+          "validation_price_mae": 6238.051127158509
+        },
+        {
+          "stage": 5,
+          "epoch": 7,
+          "validation_price_mae": 6171.211416233227
+        }
+      ],
+      "validation_selection": "own_price_MAE_not_common_CatBoost_field_choice",
+      "parameters": 43649,
+      "model_bytes": 177717
+    }
+  ],
+  "total_seconds": 109.02582329200231,
+  "whole_process_peak_rss_bytes": 850624512,
+  "test_inputs_read": false,
+  "calibration_inputs_read": false,
+  "portfolio_ranking_implemented": false,
+  "published_performance_reproduced": false,
+  "confirmatory_inference_computed": false,
+  "validation_previously_used": true,
+  "seed_selection_performed": false,
+  "cmi_guarantees_transferred": false,
+  "manuscript_changed": false,
+  "common_predictor_objective_mismatch_disclosed": true
+}
