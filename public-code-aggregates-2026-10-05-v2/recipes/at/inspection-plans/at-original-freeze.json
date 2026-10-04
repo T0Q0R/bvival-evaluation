@@ -1,0 +1,30 @@
+{
+  "stage": "FIXED_TASK_AND_CODE_BEFORE_ANY_SOURCE_TARGET_DECODE",
+  "time_utc": "2026-10-04T06:25:30.736563+00:00",
+  "config_sha256": "b21d8bbd52d8fe0d6d287cc4585a0930241393819a1a8a74eb040921d923090f",
+  "protocol_sha256": "e811308ab39487c0aeec236bb246ad92541a294f11f9d5afd1880be9e3659062",
+  "cohort_sha256": "165a790d34f63348b29184d9e965b50d52ae92f063f2f1115cd3822b589ef123",
+  "source_sha256": "b0eeff0ad4f91c4dda2190cfb31d4831ff50003da6fe9c325ddf47ac556d54c7",
+  "source_hashes": {
+    "audit_european_at_schema.py": "a52188952511157b2142b96389915aa5f937464270fcb5777356b47ce4228e6c",
+    "audit_european_at_features.py": "02d2122a72840a3377abdd79e4b60e299a4f0292073f3fdb1e988a625acb75ea",
+    "build_european_at_cohort.py": "b160db4bdf9fbd6ec956a006099cf320a7618a8f69d5a496132503abc6ef6403",
+    "european_at_matched.py": "d1d1687ad09f5a2ddbce29fee0f9a09cea92e4af2e53abbb0a231a30a3dff690",
+    "run_european_at_matched.py": "acb76b1510f193033007a844745b47a0173398bcf1924ae70ae25909cd1a0617",
+    "audit_turkey_feature_only.py": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+    "archive_turkey_candidate.py": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+    "bvival_neighbor_available.py": "389b90d5243cba355998a078992df5d64580c281f2ade4e1e2688240dff2b84b",
+    "bvival_neighbor_loss.py": "42d2131638b4b8bdaacf2ac3a0b6d6f5582fd7800e1455e913ddba4b03880959"
+  },
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.9.1",
+    "catboost": "1.2.10"
+  },
+  "any_source_target_values_decoded_before_freeze": false,
+  "external_preregistration_or_independent_label_custody": false,
+  "formal_human_author_approval_claimed": false,
+  "reserved_months_prices_will_not_be_read": true
+}
