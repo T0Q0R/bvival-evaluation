@@ -1,0 +1,61 @@
+{
+  "categorical_columns": [
+    "action_id",
+    "make",
+    "model",
+    "vehicle_type",
+    "body_type",
+    "country_code"
+  ],
+  "development_oof": null,
+  "evaluation_outcomes_read": false,
+  "evaluation_risk_scores_sha256": "2ad09ba0da7c5b825a61209aa28765bf4ad6e32ad9bbe5603e66a0fe88702a2b",
+  "feature_columns": [
+    "action_id",
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "registration_year",
+    "vehicle_type",
+    "body_type",
+    "power_hp",
+    "nr_seats",
+    "nr_doors",
+    "country_code",
+    "seller_is_dealer",
+    "nr_prev_owners"
+  ],
+  "inputs": {
+    "evaluation_features_sha256": "9f1442655ab77fe244cc14db7c46231bf5880558a721ae6c57b662aff499efbb",
+    "train_actions_sha256": "e5fab69a6aa0ace469af2bb25a68c377d3bf7c93fd9098f032415dbd12ed3d9c"
+  },
+  "interpretation": "Predicted pre-acquisition error is a risk-routing baseline and is not an estimate of action value.",
+  "models": [
+    {
+      "model_path": "experiments/outputs/autoscout24_bvival_v2_full_risk/models/seed_13.cbm",
+      "seed": 13,
+      "sha256": "261e0d4459be3b4f0af73956d50bba3462c60060489a0d6bce0af0080518260b"
+    },
+    {
+      "model_path": "experiments/outputs/autoscout24_bvival_v2_full_risk/models/seed_42.cbm",
+      "seed": 42,
+      "sha256": "e9a3ee2e9882233f5a5f92701ba70604a0ee8f0ab82e89d29cc27642819bb489"
+    },
+    {
+      "model_path": "experiments/outputs/autoscout24_bvival_v2_full_risk/models/seed_2026.cbm",
+      "seed": 2026,
+      "sha256": "259abaa341bb39b7a49aef5e7058bcaca4c9102dd07cd91d4481a325b2784790"
+    }
+  ],
+  "objective": "absolute_price_error",
+  "protocol": "v4-bvival-prospective",
+  "risk_score_column": "predicted_pre_action_absolute_price_error",
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "target_column": "risk_target_absolute_price_error_before"
+}
