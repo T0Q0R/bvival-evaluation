@@ -1,0 +1,54 @@
+{
+  "action_counts": {
+    "fuel_type": 14041,
+    "mileage_km": 14047,
+    "service_history": 14047,
+    "transmission": 13938
+  },
+  "all_predictions_oof": true,
+  "evidence_status": "development_only",
+  "feature_allowlist": [
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "registration_year",
+    "vehicle_type",
+    "body_type",
+    "power_hp",
+    "nr_seats",
+    "nr_doors",
+    "country_code",
+    "seller_is_dealer",
+    "nr_prev_owners"
+  ],
+  "fold_counts": {
+    "-1": 56073
+  },
+  "forbidden_columns_excluded": [
+    "target_log",
+    "after_prediction_log"
+  ],
+  "freeze_id": null,
+  "inputs": {
+    "labels": {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/calibration_labels.csv",
+      "sha256": "de1966828ae27cabf20e6b1d135a4b41ebc337630b78790df975ffce610903c9"
+    },
+    "pre_action_features": {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/calibration_pre_action_features.csv",
+      "sha256": "726420dcd6a510ef76e29086fe98aebaf80d59a909dc97bfb823e4b2f7f1323e"
+    },
+    "prediction_pairs": {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/calibration_prediction_pairs.csv",
+      "sha256": "ab57bc0abe37acc02faeaf97c24a49589c9b33719bd487960ccace1d75bf37e9"
+    }
+  },
+  "listing_action_count": 56073,
+  "listing_count": 14047,
+  "nonclaim": "Dataset construction alone does not establish policy superiority or selection-conditional coverage.",
+  "output_sha256": "f02643c52a7dbaba4311a65e85706a7ab3b660b4261e316f3303dd6f9b11bf10",
+  "positive_value_rate_absolute_price_error": 0.5473044067554794,
+  "positive_value_rate_squared_log_error": 0.5470725661191661
+}
