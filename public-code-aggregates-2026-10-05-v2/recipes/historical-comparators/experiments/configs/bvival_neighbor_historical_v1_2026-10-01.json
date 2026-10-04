@@ -1,0 +1,20 @@
+{
+  "stage": "POST_TEST_EXPLORATORY_ESTIMATOR_COMPARISON",
+  "identity": "action_eligible_singleton_cached_neighbor_gain_not_full_TAFA_ACO",
+  "neighbor_counts": [16, 64, 128],
+  "budget": 0.1,
+  "max_categories": 64,
+  "working_memory_mib": 64,
+  "neighbor_missing_action_rule": "omit_unavailable_then_development_global_mean_if_zero",
+  "capacity_rule": "exact_ceil_listing_count_for_all_active_policies_keep_negative_scores",
+  "reference_policy": "score_uncertainty_only",
+  "select_neighbor_count": false,
+  "compute_confirmatory_inference": false,
+  "evaluation_outcomes_in_scores": false,
+  "historically_unopened_test": false,
+  "sources": [
+    {"name": "MUCars", "pairs": "mucars_bvival_v5_pairs", "value": "mucars_bvival_v5_value", "development_actions": "mucars_bvival_v5_actions_development", "scores": "mucars_bvival_v5_frozen_scores", "outcomes": "mucars_bvival_v5_evaluation_inputs", "historical_evaluation": "mucars_bvival_v5_confirmatory_mae"},
+    {"name": "JUCars", "pairs": "jucars_bvival_prediction_pairs_v1", "value": "jucars_bvival_value_policy_v1", "development_actions": "jucars_bvival_actions_development_v1", "scores": "jucars_bvival_v5_frozen_mae_scores", "outcomes": "jucars_bvival_v5_evaluation_inputs", "historical_evaluation": "jucars_bvival_v5_stress_mae"},
+    {"name": "AutoScout24", "pairs": "autoscout24_bvival_v2_full_pairs", "value": "autoscout24_bvival_v2_full_value", "development_actions": "autoscout24_bvival_v2_full_actions_dev", "scores": "autoscout24_bvival_v2_full_scores", "outcomes": "autoscout24_bvival_v2_full_evaluation_inputs", "historical_evaluation": "autoscout24_bvival_v2_full_mae_test"}
+  ]
+}
