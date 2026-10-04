@@ -1,0 +1,116 @@
+{
+  "categorical_columns": [
+    "action_id",
+    "make",
+    "model",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "origin",
+    "first_owner",
+    "location",
+    "sector"
+  ],
+  "evaluation_action_scores_sha256": "3092ced43cbd3546e322c5025b2413a95ed8ed7e5cae57499348b59dd1d4f120",
+  "evaluation_outcomes_read": false,
+  "feature_columns": [
+    "action_id",
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "fiscal_power",
+    "number_of_doors",
+    "origin",
+    "first_owner",
+    "location",
+    "sector",
+    "equipment_count"
+  ],
+  "inputs": {
+    "calibration_actions_sha256": "ede9487da07ea2f98d03ad25b18739c36e9ce6cf256f626dc4a69566acb4c232",
+    "evaluation_features_sha256": "39c12ec1ec5ed8c197ad308e975b5e8843236c22fdbb4d2e9c8714aaa1ff4e06",
+    "train_actions_sha256": "f99efb36985ec9730da4238c250de7d4b3738e6ac0cd4a70be8fbce6b1fd31cf"
+  },
+  "objectives": {
+    "absolute_price_error": {
+      "calibration_marginal_lower_coverage": 0.9002095646236078,
+      "calibrator": {
+        "action_corrections": {
+          "feat_body_condition": 2205.619936127592,
+          "fuel_type": 2749.314688332617,
+          "mileage_km": 478.8543096785727,
+          "transmission": 6586.967913295533
+        },
+        "action_counts": {
+          "feat_body_condition": 10381,
+          "fuel_type": 10696,
+          "mileage_km": 10696,
+          "transmission": 10696
+        },
+        "alpha": 0.1,
+        "minimum_group_size": 100,
+        "nonnegative_correction": true,
+        "pooled_correction": 2536.2837934713584
+      },
+      "models": [
+        {
+          "model_path": "experiments/outputs/mucars_bvival_v5_value/models/absolute_price_error/seed_13.cbm",
+          "seed": 13,
+          "sha256": "d52194284e67b49790fa6cdd037ed59a60d242f75d95be4453f00ceecb87ec4f"
+        },
+        {
+          "model_path": "experiments/outputs/mucars_bvival_v5_value/models/absolute_price_error/seed_42.cbm",
+          "seed": 42,
+          "sha256": "5159bff46d8ec1f9af0e71cf26281a18fa5ecdb85b9c1eb6f51fb84601fc414b"
+        }
+      ],
+      "target_column": "value_absolute_price_error"
+    },
+    "squared_log_error": {
+      "calibration_marginal_lower_coverage": 0.9001389248628411,
+      "calibrator": {
+        "action_corrections": {
+          "feat_body_condition": 0.00798339484694509,
+          "fuel_type": 0.01613865933814395,
+          "mileage_km": 0.001566335768516572,
+          "transmission": 0.012800893105816528
+        },
+        "action_counts": {
+          "feat_body_condition": 10381,
+          "fuel_type": 10696,
+          "mileage_km": 10696,
+          "transmission": 10696
+        },
+        "alpha": 0.1,
+        "minimum_group_size": 100,
+        "nonnegative_correction": true,
+        "pooled_correction": 0.009264734388856381
+      },
+      "models": [
+        {
+          "model_path": "experiments/outputs/mucars_bvival_v5_value/models/squared_log_error/seed_13.cbm",
+          "seed": 13,
+          "sha256": "440ae14ef32949e261c9ff9fda0732eb8298bc05319bb4a89aac4583d4d59c1b"
+        },
+        {
+          "model_path": "experiments/outputs/mucars_bvival_v5_value/models/squared_log_error/seed_42.cbm",
+          "seed": 42,
+          "sha256": "772f2a34b9a0cb808f92df79fad097b08bf3d9f6c4540f877ba1ead542d2362d"
+        }
+      ],
+      "target_column": "value_squared_log_error"
+    }
+  },
+  "protocol": "v4-bvival-prospective",
+  "seeds": [
+    13,
+    42
+  ]
+}
