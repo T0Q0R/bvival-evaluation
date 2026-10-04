@@ -1,0 +1,57 @@
+{
+  "action_eligibility_counts": {
+    "fuel_type": 93204,
+    "mileage_km": 93257,
+    "service_history": 93257,
+    "transmission": 92500
+  },
+  "dedup_rule": "minimum SHA256 listing ID per VIN/ID group; no price used",
+  "duplicate_group_rows_removed": 2085,
+  "known_limitations": [
+    "no_images",
+    "no_sale_prices",
+    "no_listing_date",
+    "registration_year_is_not_listing_year",
+    "seller_reported_service_history",
+    "VIN_missing_for_majority",
+    "VIN_structural_screen_only"
+  ],
+  "output_hashes": {
+    "autoscout24_bvival_manifest_features_only.csv": "1bc197137d6591cfc7faadee929dd562546ed1fe75b3ba5e8fc78827fd5d6ef3",
+    "sealed_labels/test_labels.csv": "e939162a1b0f960c2276fdb4b3b581d694ee8af135e9704d544aa4f6a64a1c9b",
+    "splits/calibration.csv": "d6127a4ae8f533f1d7893fa27441ceeab2fe10c11925a5aa337836c55fea4285",
+    "splits/test_features.csv": "4c481b3572ae4601e8dd97063dc57edb40cf521902e4e61055d935ca8795b4df",
+    "splits/train.csv": "52608e7f20e4bfaf9de1aa29fafc3fa52efbef7930b0c38cefdd2fbed06c829a",
+    "splits/validation.csv": "8b9043d93062151479b38e2b2125c45a727c397a72ea0bab1cb99ccad4dadf46"
+  },
+  "performance_metrics_computed": false,
+  "pre_dedup_filter_count": 95342,
+  "pre_joint_filter_exclusion_flags": {
+    "not_eur": 0,
+    "not_marked_used": 22698,
+    "price_missing_or_outside_range": 322,
+    "registration_missing_or_outside_1950_to_snapshot": 392
+  },
+  "price_filter_eur": [
+    1000.0,
+    1000000.0
+  ],
+  "raw_rows": 118382,
+  "representatives_retained": 93257,
+  "snapshot_date": "2025-11-08",
+  "source": "https://zenodo.org/records/17643343",
+  "source_path": "experiments/data/external/autoscout24_2025_zenodo/autoscout24_dataset_20251108.csv",
+  "source_rights": "No machine-readable license in Zenodo API; do not redistribute raw records",
+  "source_sha256": "57029c539e42ad247ec485c9f60983b09b980f13a36e0884c71a23b37d31d0f3",
+  "split_counts": {
+    "calibration": 14047,
+    "test": 14005,
+    "train": 51045,
+    "validation": 14160
+  },
+  "split_rule": "sha256 of plausible VIN else listing ID, then first8 mod100; JUCars 55/15/15/15 buckets",
+  "target": "log1p advertised price EUR",
+  "test_features_exclude_target": true,
+  "test_label_permissions": "0o444",
+  "test_performance_opened": false
+}
