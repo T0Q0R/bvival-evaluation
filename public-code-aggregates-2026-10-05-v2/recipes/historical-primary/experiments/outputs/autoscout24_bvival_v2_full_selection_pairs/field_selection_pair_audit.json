@@ -1,0 +1,85 @@
+{
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "service_history"
+  ],
+  "categorical_columns": [
+    "make",
+    "model",
+    "vehicle_type",
+    "body_type",
+    "country_code",
+    "transmission",
+    "fuel_type"
+  ],
+  "feature_columns": [
+    "make",
+    "model",
+    "registration_year",
+    "vehicle_type",
+    "body_type",
+    "power_hp",
+    "nr_seats",
+    "nr_doors",
+    "country_code",
+    "seller_is_dealer",
+    "nr_prev_owners",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "service_history"
+  ],
+  "folds": 5,
+  "inputs": {
+    "train_sha256": "52608e7f20e4bfaf9de1aa29fafc3fa52efbef7930b0c38cefdd2fbed06c829a",
+    "validation_sha256": "8b9043d93062151479b38e2b2125c45a727c397a72ea0bab1cb99ccad4dadf46"
+  },
+  "model_parameters": {
+    "depth": 8,
+    "iterations": 400,
+    "l2_leaf_reg": 10.0,
+    "learning_rate": 0.08
+  },
+  "outputs": {
+    "train_oof": {
+      "features": "27ed1812b95c5da4dccb9559909ae96508edee83c1f713997451f7c12d6ff5a1",
+      "labels": "6e10afd656843b2ac0146d50cc9c4fad75ba11d85a704d346ea79fa7ed20a14a",
+      "pairs": "18a3a538314fb08f9edf58bb063cd392d20135bdffab493b0e08845df498a569"
+    },
+    "validation_heldout": {
+      "features": "bad3b6f67e3a65c2894a631edafcd43e1942b7fe381327c28225ae036cad708d",
+      "labels": "323209858fda22c42927aa7f7f0162966542e016fd6b15192962b9eae008750a",
+      "pairs": "5ca80eac09cd97a25365ed9a5d14f1d857388e211c835fc1ab48d4159d914f74"
+    }
+  },
+  "performance_metrics_computed": false,
+  "protocol": "strict-train-validation-fixed-field-selection",
+  "sealed_test_input_read": false,
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "train_listing_count": 51045,
+  "train_only_base_models": [
+    {
+      "seed": 13,
+      "sha256": "c135b934f369d231efdb627f429251055c6041b707399e2ff8e9a847e0b6d3ce"
+    },
+    {
+      "seed": 42,
+      "sha256": "e45fded3d86b4f0e3905275462bbf46a5a102e2f1e790faa9b9857462e5ab27e"
+    },
+    {
+      "seed": 2026,
+      "sha256": "af99974cdb60e0c064fee119254e7cbff3b14d6ac5ae7172c3cf8ccf34f9898e"
+    }
+  ],
+  "train_pair_count": 203731,
+  "train_validation_id_overlap": 0,
+  "validation_labels_used_in_base_fit": false,
+  "validation_listing_count": 14160,
+  "validation_pair_count": 56522
+}
