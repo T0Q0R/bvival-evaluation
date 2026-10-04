@@ -1,0 +1,139 @@
+{
+  "categorical_columns": [
+    "action_id",
+    "make",
+    "model",
+    "body_type",
+    "condition",
+    "transmission",
+    "fuel_type",
+    "color",
+    "interior_color",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_body_condition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "evaluation_action_scores_sha256": "698aa4cc5d37acaa1b04bb93ee8d05c6ec1f154e83983c7f010bfca29819fd46",
+  "evaluation_outcomes_read": false,
+  "feature_columns": [
+    "action_id",
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "body_type",
+    "condition",
+    "transmission",
+    "fuel_type",
+    "color",
+    "interior_color",
+    "seats",
+    "city",
+    "feat_insurance",
+    "feat_carcustoms",
+    "feat_license",
+    "feat_paintcondition",
+    "feat_body_condition",
+    "feat_battery_capacity",
+    "feat_battery_range"
+  ],
+  "inputs": {
+    "calibration_actions_sha256": "7027cd0ac99f83722a9462bb8bb045035c8e7e67213b017ed3c9e527ce66b8f6",
+    "evaluation_features_sha256": "26916b8cde83a6311935c7ee7700d5eb4439e8ec9e916d6a45f53174afaa979a",
+    "train_actions_sha256": "9566a27df3f268123c7d05c98ffc393e11b22d628c0786e9c05e5d930f06e8ee"
+  },
+  "objectives": {
+    "absolute_price_error": {
+      "calibration_marginal_lower_coverage": 0.9008459571119418,
+      "calibrator": {
+        "action_corrections": {
+          "feat_body_condition": 149.9655384401803,
+          "fuel_type": 135.55332570846315,
+          "mileage_km": 83.23712198579707,
+          "transmission": 64.45274249400374
+        },
+        "action_counts": {
+          "feat_body_condition": 1341,
+          "fuel_type": 1343,
+          "mileage_km": 1056,
+          "transmission": 1343
+        },
+        "alpha": 0.1,
+        "minimum_group_size": 100,
+        "nonnegative_correction": true,
+        "pooled_correction": 104.22624174603742
+      },
+      "models": [
+        {
+          "model_path": "experiments/outputs/jucars_bvival_value_policy_v1/models/absolute_price_error/seed_13.cbm",
+          "seed": 13,
+          "sha256": "14150b6e1e92b9777b819e80edfa8b7c2efadb6ffba9b7d8fc489710f6c7ac73"
+        },
+        {
+          "model_path": "experiments/outputs/jucars_bvival_value_policy_v1/models/absolute_price_error/seed_42.cbm",
+          "seed": 42,
+          "sha256": "b7ad1b609c92ced3bced69cad66064784b8170fa3a629b95e871230f6ce7995b"
+        },
+        {
+          "model_path": "experiments/outputs/jucars_bvival_value_policy_v1/models/absolute_price_error/seed_2026.cbm",
+          "seed": 2026,
+          "sha256": "09fb980c4d1efc9faa9be746043309ac198bc9661d3dd393f9925c0e50471a30"
+        }
+      ],
+      "target_column": "value_absolute_price_error"
+    },
+    "squared_log_error": {
+      "calibration_marginal_lower_coverage": 0.9010426913240213,
+      "calibrator": {
+        "action_corrections": {
+          "feat_body_condition": 0.014708513369578603,
+          "fuel_type": 0.008716997486735276,
+          "mileage_km": 0.007403355695311649,
+          "transmission": 0.007049411302405646
+        },
+        "action_counts": {
+          "feat_body_condition": 1341,
+          "fuel_type": 1343,
+          "mileage_km": 1056,
+          "transmission": 1343
+        },
+        "alpha": 0.1,
+        "minimum_group_size": 100,
+        "nonnegative_correction": true,
+        "pooled_correction": 0.00946268393987816
+      },
+      "models": [
+        {
+          "model_path": "experiments/outputs/jucars_bvival_value_policy_v1/models/squared_log_error/seed_13.cbm",
+          "seed": 13,
+          "sha256": "22c568120ba871aad2bdb50073696d45445afbd5dc7985b9f1d62546267cd6d4"
+        },
+        {
+          "model_path": "experiments/outputs/jucars_bvival_value_policy_v1/models/squared_log_error/seed_42.cbm",
+          "seed": 42,
+          "sha256": "8e1a47f934e07585e348fad54e68a2717db13df76ec32ec613f7d6d59bacd971"
+        },
+        {
+          "model_path": "experiments/outputs/jucars_bvival_value_policy_v1/models/squared_log_error/seed_2026.cbm",
+          "seed": 2026,
+          "sha256": "df93e547928aff2161caf1cdc8cb22e9f8eb0072fc4a0dcc146bfaf4e487f8a0"
+        }
+      ],
+      "target_column": "value_squared_log_error"
+    }
+  },
+  "protocol": "v4-bvival-prospective",
+  "seeds": [
+    13,
+    42,
+    2026
+  ]
+}
