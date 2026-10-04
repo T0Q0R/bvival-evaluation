@@ -1,0 +1,241 @@
+{
+  "version": "historical-core-comparator-reconstruction-2026-10-04-v1",
+  "publicly_archived": false,
+  "project_license_selected": false,
+  "raw_or_row_level_data_included": false,
+  "new_independent_confirmation": false,
+  "full_empirical_pipeline_portable": false,
+  "public_archive_or_reviewer_link": null,
+  "historical_tests_already_opened": true,
+  "primary_package_manifest_sha256": "fa2cef5b9009a2984db59548265c8f62dcbd7e6bba65f6f64e4ad06eb438d551",
+  "neighbor_row_reference_hashes": {
+    "MUCars": {
+      "scores.csv": "9be935055e8207affd0ec004c64eeadd71894da2eeea89e251e6c871f8844166",
+      "allocations.json": "2616d4786c7eb330e49f462e08bf103ad24fdc61d44546b7ac2945a035268e16"
+    },
+    "JUCars": {
+      "scores.csv": "bc0b2b1769e24d432d387084ea0af57a21bc3f98b5703ac74750a8c45f47c8f4",
+      "allocations.json": "14c067c5378cbbce569a7d4c0b58d2c105664f7d8d830fb35e58a0f9783999a7"
+    },
+    "AutoScout24": {
+      "scores.csv": "0621911cda4702c2d978ef7328891135f666954f45e9b2c5e5d5b0bdf6bdeded",
+      "allocations.json": "abfc792320f72ee084c5cac25a47766d263954d6b2c38156eafd579ca96d9850"
+    }
+  },
+  "original_fixed_config_sha256": "77744a3bd46ccf7becb960af8f7c267d0e7da47b5301d7dd5a0e02534649cb87",
+  "fixed_template_only_runtime_pointer_changed": true,
+  "static_import_closure": {
+    "local_source_sha256": {
+      "experiments/bvi_val.py": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "experiments/bvival_neighbor_available.py": "389b90d5243cba355998a078992df5d64580c281f2ade4e1e2688240dff2b84b",
+      "experiments/bvival_neighbor_loss.py": "42d2131638b4b8bdaacf2ac3a0b6d6f5582fd7800e1455e913ddba4b03880959",
+      "experiments/check_historical_fixed_benefit_reconstruction.py": "af4732f562eba2bdc673a347fd78da0c564a2e553b5949de78fba62683d3c15b",
+      "experiments/evaluate_bvival_policies.py": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "experiments/generate_bvival_prediction_pairs.py": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "experiments/run_bvival_neighbor_historical.py": "289d056c4de20b61920f00b79e35a59f97803c7c1eaade41d49b0d195a113de9",
+      "experiments/run_historical_fixed_benefit_control.py": "d1a4cfbe41034bbb3b023a3be9d7dcca1cfe775820e3cbbda5ade4c95022c32d",
+      "experiments/tests/test_bvival_neighbor_historical.py": "5fe0e2fde003a8bb2d8ae09d81ea0ad50f24b0f8780a5aa6c4e942fca6c518fe",
+      "release-bvival/check_autoscout24_reconstruction.py": "65d86c6c7616347dcc773550b63887744d22053e394936b76230f11810e50ca3",
+      "release-bvival/check_historical_reconstruction_package.py": "935f3b159a7427b5f1df77c39974866e0b92feb715ffc7cab60a493f9d4ef713",
+      "release-bvival/check_jucars_reconstruction.py": "fe68ce380d26e82cdd894e71fee557fa1c441dd67f9c0c2a1d9b4129485c144d",
+      "release-bvival/check_mucars_reconstruction.py": "053b6aac8d35fbdc77e11ecf2d95ca4abc63296c0c18eca0ee249efc9203b660",
+      "release-bvival/check_remaining_source_metadata.py": "a86f166d5930f3c8def4c66d673c61bfe4d213249d391cbefb0f8144086f9598",
+      "release-bvival/check_rerun_entrypoints.py": "13e8f7fcbb2edceda5479dfcb8d5f2510f6d03b0add06a5211151bc460f0bc13",
+      "release-bvival/check_source_bundle.py": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2",
+      "release-bvival/historical_comparator_package.py": "6d31407e99d2873ade44f4408ad5b974d9e15f19449b061c608667cd458a0a16",
+      "release-bvival/historical_reconstruction_contract.py": "db5d46733a4ac24988ff904e2429ace302f54dd1614b06ffe05236c9ff58577a",
+      "release-bvival/plan_mucars_replay.py": "046b40fd7a510cd6e9e19e2b228492e5b6ffb155b3420de6ca22eec74fffab9d",
+      "release-bvival/run_historical_comparator_reconstruction.py": "5a4da667c198cf41a81076c6f6d3edc7b71f7d40be04b4ddb1ab475730d39413",
+      "release-bvival/run_historical_reconstruction_package.py": "83887a4b876de00aa972bdd288d3834eb2ed90ffee23de72d623f96d835f876c",
+      "release-bvival/run_mucars_outcome_replay.py": "b6b53f00de7701cbce5a87d122c5d6840211837d71b7819993dacecc010a9d51",
+      "release-bvival/run_mucars_scoring_replay.py": "e0971417f85422e26bfcab1e5e60699653ee2379ca9c528c821248c564d6069d"
+    },
+    "external_import_roots": [
+      "catboost",
+      "numpy",
+      "pandas",
+      "pytest",
+      "scipy",
+      "sklearn"
+    ],
+    "embedded_workers": [
+      {
+        "file": "release-bvival/run_mucars_outcome_replay.py",
+        "string_line": 41
+      },
+      {
+        "file": "release-bvival/run_mucars_scoring_replay.py",
+        "string_line": 31
+      }
+    ],
+    "unresolved_dynamic_imports": [],
+    "not_a_runtime_or_full_file_dependency_closure": true
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4658,
+      "sha256": "8e098bb3f56ebbd7a9d57dbaeb0d61860e838406d7fdd36927307e4ce080ab8e"
+    },
+    {
+      "file": "environment/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a"
+    },
+    {
+      "file": "experiments/bvi_val.py",
+      "bytes": 16505,
+      "sha256": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee"
+    },
+    {
+      "file": "experiments/bvival_neighbor_available.py",
+      "bytes": 3148,
+      "sha256": "389b90d5243cba355998a078992df5d64580c281f2ade4e1e2688240dff2b84b"
+    },
+    {
+      "file": "experiments/bvival_neighbor_loss.py",
+      "bytes": 5589,
+      "sha256": "42d2131638b4b8bdaacf2ac3a0b6d6f5582fd7800e1455e913ddba4b03880959"
+    },
+    {
+      "file": "experiments/check_historical_fixed_benefit_reconstruction.py",
+      "bytes": 5487,
+      "sha256": "af4732f562eba2bdc673a347fd78da0c564a2e553b5949de78fba62683d3c15b"
+    },
+    {
+      "file": "experiments/configs/bvival_neighbor_historical_v1_2026-10-01.json",
+      "bytes": 1652,
+      "sha256": "043a507ebdf9e0276b2787a64aa7f5ca729cb9c8b857180c052894f3289faa14"
+    },
+    {
+      "file": "experiments/evaluate_bvival_policies.py",
+      "bytes": 18036,
+      "sha256": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774"
+    },
+    {
+      "file": "experiments/generate_bvival_prediction_pairs.py",
+      "bytes": 19853,
+      "sha256": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba"
+    },
+    {
+      "file": "experiments/run_bvival_neighbor_historical.py",
+      "bytes": 18850,
+      "sha256": "289d056c4de20b61920f00b79e35a59f97803c7c1eaade41d49b0d195a113de9"
+    },
+    {
+      "file": "experiments/run_historical_fixed_benefit_control.py",
+      "bytes": 12136,
+      "sha256": "d1a4cfbe41034bbb3b023a3be9d7dcca1cfe775820e3cbbda5ade4c95022c32d"
+    },
+    {
+      "file": "experiments/tests/test_bvival_neighbor_historical.py",
+      "bytes": 7348,
+      "sha256": "5fe0e2fde003a8bb2d8ae09d81ea0ad50f24b0f8780a5aa6c4e942fca6c518fe"
+    },
+    {
+      "file": "recipes/fixed_benefit.template.json",
+      "bytes": 3018,
+      "sha256": "5a24c1868bd309d37c657f82a22252a713f8b4818756317d974cabc66cddc728"
+    },
+    {
+      "file": "references/fixed/autoscout24.json",
+      "bytes": 2965,
+      "sha256": "f53b91759d3a8e375b8cdc2e0a05785d29d357d973d6839025b17d617c7faa85"
+    },
+    {
+      "file": "references/fixed/jucars.json",
+      "bytes": 2826,
+      "sha256": "e8e622fd2752646f921d981ae268d246a9a1575c2f481a894e9d4ec4b19dcb54"
+    },
+    {
+      "file": "references/fixed/mucars.json",
+      "bytes": 2993,
+      "sha256": "41fee5d6762f57b31346214ea8c4e3b48af17c4c8f2d76cc735263b2a980f48d"
+    },
+    {
+      "file": "references/neighbor/AutoScout24.json",
+      "bytes": 5836,
+      "sha256": "bc1592120e2e0bda5727be80e9c6e3b9ab6f594d529a8de89915ebb383b1cdae"
+    },
+    {
+      "file": "references/neighbor/JUCars.json",
+      "bytes": 5968,
+      "sha256": "316faedcd123402fb509e722ffcbe37b2e11d000ce8dfe77f32bf5666a574b5c"
+    },
+    {
+      "file": "references/neighbor/MUCars.json",
+      "bytes": 5854,
+      "sha256": "8117b8eaa519f189689317429d559ae9d3f1c0d455a2fea5497db039a05fbd33"
+    },
+    {
+      "file": "release-bvival/check_autoscout24_reconstruction.py",
+      "bytes": 15703,
+      "sha256": "65d86c6c7616347dcc773550b63887744d22053e394936b76230f11810e50ca3"
+    },
+    {
+      "file": "release-bvival/check_historical_reconstruction_package.py",
+      "bytes": 3515,
+      "sha256": "935f3b159a7427b5f1df77c39974866e0b92feb715ffc7cab60a493f9d4ef713"
+    },
+    {
+      "file": "release-bvival/check_jucars_reconstruction.py",
+      "bytes": 19443,
+      "sha256": "fe68ce380d26e82cdd894e71fee557fa1c441dd67f9c0c2a1d9b4129485c144d"
+    },
+    {
+      "file": "release-bvival/check_mucars_reconstruction.py",
+      "bytes": 15355,
+      "sha256": "053b6aac8d35fbdc77e11ecf2d95ca4abc63296c0c18eca0ee249efc9203b660"
+    },
+    {
+      "file": "release-bvival/check_remaining_source_metadata.py",
+      "bytes": 11570,
+      "sha256": "a86f166d5930f3c8def4c66d673c61bfe4d213249d391cbefb0f8144086f9598"
+    },
+    {
+      "file": "release-bvival/check_rerun_entrypoints.py",
+      "bytes": 10144,
+      "sha256": "13e8f7fcbb2edceda5479dfcb8d5f2510f6d03b0add06a5211151bc460f0bc13"
+    },
+    {
+      "file": "release-bvival/check_source_bundle.py",
+      "bytes": 8535,
+      "sha256": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2"
+    },
+    {
+      "file": "release-bvival/historical_comparator_package.py",
+      "bytes": 10383,
+      "sha256": "6d31407e99d2873ade44f4408ad5b974d9e15f19449b061c608667cd458a0a16"
+    },
+    {
+      "file": "release-bvival/historical_reconstruction_contract.py",
+      "bytes": 5961,
+      "sha256": "db5d46733a4ac24988ff904e2429ace302f54dd1614b06ffe05236c9ff58577a"
+    },
+    {
+      "file": "release-bvival/plan_mucars_replay.py",
+      "bytes": 18836,
+      "sha256": "046b40fd7a510cd6e9e19e2b228492e5b6ffb155b3420de6ca22eec74fffab9d"
+    },
+    {
+      "file": "release-bvival/run_historical_comparator_reconstruction.py",
+      "bytes": 15925,
+      "sha256": "5a4da667c198cf41a81076c6f6d3edc7b71f7d40be04b4ddb1ab475730d39413"
+    },
+    {
+      "file": "release-bvival/run_historical_reconstruction_package.py",
+      "bytes": 10430,
+      "sha256": "83887a4b876de00aa972bdd288d3834eb2ed90ffee23de72d623f96d835f876c"
+    },
+    {
+      "file": "release-bvival/run_mucars_outcome_replay.py",
+      "bytes": 21145,
+      "sha256": "b6b53f00de7701cbce5a87d122c5d6840211837d71b7819993dacecc010a9d51"
+    },
+    {
+      "file": "release-bvival/run_mucars_scoring_replay.py",
+      "bytes": 17040,
+      "sha256": "e0971417f85422e26bfcab1e5e60699653ee2379ca9c528c821248c564d6069d"
+    }
+  ]
+}
