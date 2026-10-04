@@ -1,0 +1,59 @@
+{
+  "action_counts": {
+    "feat_body_condition": 48423,
+    "fuel_type": 49916,
+    "mileage_km": 49915,
+    "transmission": 49916
+  },
+  "all_predictions_oof": true,
+  "evidence_status": "development_only",
+  "feature_allowlist": [
+    "before_prediction_log",
+    "before_prediction_std",
+    "missing_action_field_count",
+    "make",
+    "model",
+    "year",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "feat_body_condition",
+    "fiscal_power",
+    "number_of_doors",
+    "origin",
+    "first_owner",
+    "location",
+    "sector",
+    "equipment_count"
+  ],
+  "fold_counts": {
+    "0": 66156,
+    "1": 66488,
+    "2": 65526
+  },
+  "forbidden_columns_excluded": [
+    "target_log",
+    "after_prediction_log"
+  ],
+  "freeze_id": null,
+  "inputs": {
+    "labels": {
+      "path": "experiments/outputs/mucars_bvival_v5_pairs/development_labels.csv",
+      "sha256": "1c103e4010a54f0022eb0f11a18d4a4fce432cb3b4b59bc481273f4f5cd51dbe"
+    },
+    "pre_action_features": {
+      "path": "experiments/outputs/mucars_bvival_v5_pairs/development_pre_action_features.csv",
+      "sha256": "95bc0d365edce7c9fabbf000b68a2440472a6518c1cbfc719dc7f38d970281d6"
+    },
+    "prediction_pairs": {
+      "path": "experiments/outputs/mucars_bvival_v5_pairs/development_prediction_pairs.csv",
+      "sha256": "d6a1b60f832cdd82784de6f42cf493f9beebb667617ab21369722e4d63a6a634"
+    }
+  },
+  "listing_action_count": 198170,
+  "listing_count": 49916,
+  "nonclaim": "Dataset construction alone does not establish policy superiority or selection-conditional coverage.",
+  "output_sha256": "f99efb36985ec9730da4238c250de7d4b3738e6ac0cd4a70be8fbce6b1fd31cf",
+  "positive_value_rate_absolute_price_error": 0.48295402936872384,
+  "positive_value_rate_squared_log_error": 0.48282787505676944
+}
