@@ -1,0 +1,45 @@
+{
+  "before_mae": 7164.57015807158,
+  "budget_fraction": 0.1,
+  "candidate_fields": [
+    {
+      "action_id": "mileage_km",
+      "available_listing_count": 14160,
+      "development_gain_per_listing": 299.01052709285864,
+      "development_post_mae": 6865.5596309787215,
+      "selected_action_count": 1416
+    },
+    {
+      "action_id": "fuel_type",
+      "available_listing_count": 14155,
+      "development_gain_per_listing": 144.9255996938556,
+      "development_post_mae": 7019.644558377725,
+      "selected_action_count": 1416
+    },
+    {
+      "action_id": "transmission",
+      "available_listing_count": 14047,
+      "development_gain_per_listing": 33.853694480049306,
+      "development_post_mae": 7130.7164635915315,
+      "selected_action_count": 1416
+    },
+    {
+      "action_id": "service_history",
+      "available_listing_count": 14160,
+      "development_gain_per_listing": -1.9801855243103472,
+      "development_post_mae": 7166.550343595891,
+      "selected_action_count": 1416
+    }
+  ],
+  "capacity": 1416,
+  "evaluation_labels_read": false,
+  "evidence_status": "development_selection_only",
+  "input_sha256": {
+    "development_actions": "85479e4878d966494664579d143f2f65f14152906c3b998f7edbfee9904625e3",
+    "development_risk_scores": "c1c3fa07c311529b0221740f1be6491fc0361587d26effa9ac5c33c28e923982"
+  },
+  "listing_count": 14160,
+  "risk_score_provenance": "development-fitted risk scores; field choice only, not performance inference",
+  "selected_action": "mileage_km",
+  "selection_rule": "minimum development post-MAE at the fixed global budget; lexical tie-break"
+}
