@@ -1,0 +1,556 @@
+{
+  "date": "2026-10-01",
+  "stage": "DRAFT_AUTOSCOUT24_TWO_BRANCH_PRIMARY_PLAN_NOT_EXECUTED",
+  "replay_name": "autoscout24-reconstructed-primary-v1",
+  "planned_output_root": "experiments/replays/autoscout24-reconstructed-primary-v1",
+  "recovery_receipt_sha256": "3956332b97d5be334e1f97f3e83e3f5b0f9b1bf7f8df106374e421557b7404fd",
+  "static_study_source_closure": {
+    "local_source_sha256": {
+      "experiments/assemble_bvival_policy_scores.py": "afca8e1e61b98f360e78ffc385447ead135c67ad4f1965e26800844e3fb98bd2",
+      "experiments/audit_autoscout24_candidate.py": "1b6f638893d96fd893823a9398764f882abcfa4dec75a38b70d74368bcd50647",
+      "experiments/build_autoscout24_bvival_manifest.py": "114cee7910d7ac9ff26ef03557973c4c574c40b0905d7ec8a742c3e5d6c796ec",
+      "experiments/build_bvival_action_dataset.py": "13dfd01f7fe0d39394167b987ad9f4bca64f92926c7393621ff6d67772703c96",
+      "experiments/build_jucars_bvival_manifest.py": "7cc08205b90d0a8494beec4281bc9bc2dfc27d160455482988d383830075ddd0",
+      "experiments/bvi_val.py": "7a4537efd145992280d6d7ce9349b06b81e64273dceda32488c5f1a173954fee",
+      "experiments/bvi_val_baselines.py": "fa8af0ad0e27e38e30806367a04f79ddd56dfc75814ac99530f9840070cb39e5",
+      "experiments/evaluate_bvival_policies.py": "38ad4f27b95462da7c91fbd7bc2f1909b489641a7b3ddeb9cf9090eabc622774",
+      "experiments/fit_bvival_risk_baseline.py": "75c27d46d80751eb3bf674586ac89277d7c05ef75e5fd112fe6bdc4691bb1448",
+      "experiments/fit_bvival_value_policy.py": "fad03fd1e901768ff9029be4ceefc5cb43821698fe91aed59b9a4187c967e947",
+      "experiments/generate_bvival_field_selection_pairs.py": "9636c74588f785c0a207cafc79df3c879d791cb3ebdc896965118e2fdabea568",
+      "experiments/generate_bvival_prediction_pairs.py": "b444efae05c1cab3133aadcd458e2ddf2257475a20124f0d7b9f1ac992bd3fba",
+      "experiments/join_bvival_evaluation_outcomes.py": "6ce6650ad893c248ca0359e0812e6be3c7271b29d1f191cfcb200be9dc80d0e1",
+      "experiments/select_bvival_fixed_field_development.py": "2c4aac1ac36bf2ff0bacf207738952cc1557959128a17b9369bc8c67238d59d4"
+    },
+    "external_import_roots": [
+      "catboost",
+      "numpy",
+      "pandas",
+      "scipy"
+    ],
+    "static_only_not_runtime_or_installation_validation": true
+  },
+  "stages": [
+    {
+      "id": "cohort",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/build_autoscout24_bvival_manifest.py",
+        "--source",
+        "experiments/data/external/autoscout24_2025_zenodo/autoscout24_dataset_20251108.csv",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort"
+      ],
+      "depends_on": [],
+      "phase": "reconstruction"
+    },
+    {
+      "id": "selection-pairs",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/generate_bvival_field_selection_pairs.py",
+        "--train",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort/splits/train.csv",
+        "--validation",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort/splits/validation.csv",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs",
+        "--action-fields",
+        "mileage_km,transmission,fuel_type,service_history",
+        "--seeds",
+        "13,42,2026",
+        "--folds",
+        "5",
+        "--iterations",
+        "400",
+        "--depth",
+        "8",
+        "--learning-rate",
+        "0.08",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "cohort"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "selection-train-targets",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs/train_oof_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs/train_oof_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs/train_oof_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,registration_year,vehicle_type,body_type,power_hp,nr_seats,nr_doors,country_code,seller_is_dealer,nr_prev_owners",
+        "--evidence-status",
+        "development_only",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-train-targets"
+      ],
+      "depends_on": [
+        "selection-pairs"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "selection-validation-targets",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs/validation_heldout_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs/validation_heldout_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs/validation_heldout_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,registration_year,vehicle_type,body_type,power_hp,nr_seats,nr_doors,country_code,seller_is_dealer,nr_prev_owners",
+        "--evidence-status",
+        "development_only",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-validation-targets"
+      ],
+      "depends_on": [
+        "selection-pairs"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "selection-risk",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/fit_bvival_risk_baseline.py",
+        "--train-actions",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-train-targets/bvival_action_dataset.csv",
+        "--evaluation-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-pairs/validation_heldout_pre_action_features.csv",
+        "--feature-columns",
+        "action_id,before_prediction_log,before_prediction_std,missing_action_field_count,make,model,registration_year,vehicle_type,body_type,power_hp,nr_seats,nr_doors,country_code,seller_is_dealer,nr_prev_owners",
+        "--categorical-columns",
+        "action_id,make,model,vehicle_type,body_type,country_code",
+        "--objective",
+        "absolute_price_error",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-risk",
+        "--seeds",
+        "13,42,2026",
+        "--iterations",
+        "400",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.05",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "selection-train-targets"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "fixed-field",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/select_bvival_fixed_field_development.py",
+        "--development-actions",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-validation-targets/bvival_action_dataset.csv",
+        "--development-risk-scores",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/selection-risk/evaluation_risk_scores.csv",
+        "--budget-fraction",
+        "0.1",
+        "--output",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/fixed-field/selection.json"
+      ],
+      "depends_on": [
+        "selection-validation-targets",
+        "selection-risk"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "final-pairs",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/generate_bvival_prediction_pairs.py",
+        "--train",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort/splits/train.csv",
+        "--validation",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort/splits/validation.csv",
+        "--calibration",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort/splits/calibration.csv",
+        "--evaluation-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort/splits/test_features.csv",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs",
+        "--action-fields",
+        "mileage_km,transmission,fuel_type,service_history",
+        "--seeds",
+        "13,42,2026",
+        "--folds",
+        "5",
+        "--iterations",
+        "400",
+        "--depth",
+        "8",
+        "--learning-rate",
+        "0.08",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "cohort",
+        "fixed-field"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "development-targets",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/development_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/development_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/development_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,registration_year,vehicle_type,body_type,power_hp,nr_seats,nr_doors,country_code,seller_is_dealer,nr_prev_owners",
+        "--evidence-status",
+        "development_only",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/development-targets"
+      ],
+      "depends_on": [
+        "final-pairs"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "calibration-targets",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/build_bvival_action_dataset.py",
+        "--prediction-pairs",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/calibration_prediction_pairs.csv",
+        "--labels",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/calibration_labels.csv",
+        "--pre-action-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/calibration_pre_action_features.csv",
+        "--feature-columns",
+        "before_prediction_log,before_prediction_std,missing_action_field_count,make,model,registration_year,vehicle_type,body_type,power_hp,nr_seats,nr_doors,country_code,seller_is_dealer,nr_prev_owners",
+        "--evidence-status",
+        "development_only",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/calibration-targets"
+      ],
+      "depends_on": [
+        "final-pairs"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "value",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/fit_bvival_value_policy.py",
+        "--train-actions",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/development-targets/bvival_action_dataset.csv",
+        "--calibration-actions",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/calibration-targets/bvival_action_dataset.csv",
+        "--evaluation-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/evaluation_pre_action_features.csv",
+        "--feature-columns",
+        "action_id,before_prediction_log,before_prediction_std,missing_action_field_count,make,model,registration_year,vehicle_type,body_type,power_hp,nr_seats,nr_doors,country_code,seller_is_dealer,nr_prev_owners",
+        "--categorical-columns",
+        "action_id,make,model,vehicle_type,body_type,country_code",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/value",
+        "--seeds",
+        "13,42,2026",
+        "--iterations",
+        "400",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.05",
+        "--l2-leaf-reg",
+        "10",
+        "--alpha",
+        "0.1",
+        "--minimum-action-group-size",
+        "100"
+      ],
+      "depends_on": [
+        "development-targets",
+        "calibration-targets"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "risk-mae",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/fit_bvival_risk_baseline.py",
+        "--train-actions",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/development-targets/bvival_action_dataset.csv",
+        "--evaluation-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/evaluation_pre_action_features.csv",
+        "--feature-columns",
+        "action_id,before_prediction_log,before_prediction_std,missing_action_field_count,make,model,registration_year,vehicle_type,body_type,power_hp,nr_seats,nr_doors,country_code,seller_is_dealer,nr_prev_owners",
+        "--categorical-columns",
+        "action_id,make,model,vehicle_type,body_type,country_code",
+        "--objective",
+        "absolute_price_error",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/risk-mae",
+        "--seeds",
+        "13,42,2026",
+        "--iterations",
+        "400",
+        "--depth",
+        "6",
+        "--learning-rate",
+        "0.05",
+        "--l2-leaf-reg",
+        "10"
+      ],
+      "depends_on": [
+        "development-targets"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "scores",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/assemble_bvival_policy_scores.py",
+        "--development-actions",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/development-targets/bvival_action_dataset.csv",
+        "--value-scores",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/value/evaluation_action_scores.csv",
+        "--risk-scores",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/risk-mae/evaluation_risk_scores.csv",
+        "--evaluation-features",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/evaluation_pre_action_features.csv",
+        "--fixed-action-file",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/fixed-field/selection.json",
+        "--objective",
+        "absolute_price_error",
+        "--random-seed",
+        "2026",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/scores"
+      ],
+      "depends_on": [
+        "fixed-field",
+        "value",
+        "risk-mae"
+      ],
+      "phase": "scoring"
+    },
+    {
+      "id": "join",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/join_bvival_evaluation_outcomes.py",
+        "--evaluation-prediction-pairs",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/final-pairs/evaluation_prediction_pairs.csv",
+        "--sealed-labels",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/cohort/sealed_labels/test_labels.csv",
+        "--frozen-policy-scores",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv",
+        "--expected-policy-scores-sha256",
+        {
+          "new_scoring_freeze_sha256_for": "experiments/replays/autoscout24-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv"
+        },
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/evaluation-inputs",
+        "--freeze-id",
+        "autoscout24-reconstructed-primary-v1"
+      ],
+      "depends_on": [
+        "scores",
+        "new_score_freeze_checkpoint"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "evaluate",
+      "argv_template": [
+        {
+          "runtime_binding": "validated_autoscout24_main_python"
+        },
+        "experiments/evaluate_bvival_policies.py",
+        "--evaluation-outcomes",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/evaluation-inputs/evaluation_outcomes.csv",
+        "--frozen-policy-scores",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/scores/frozen_policy_scores_absolute_price_error.csv",
+        "--objective",
+        "absolute_price_error",
+        "--score-columns",
+        "score_mean_value,score_uncertainty_only,score_fixed_field_risk,score_random,score_no_acquisition,score_global_field_prior,score_conservative_lower_value",
+        "--reference-policy",
+        "score_uncertainty_only",
+        "--budgets",
+        "0.1",
+        "--bootstrap-repetitions",
+        "10000",
+        "--bootstrap-seed",
+        "2026",
+        "--output-dir",
+        "experiments/replays/autoscout24-reconstructed-primary-v1/evaluation-mae",
+        "--freeze-id",
+        "autoscout24-reconstructed-primary-v1",
+        "--analysis-status",
+        "post_test_exploratory"
+      ],
+      "depends_on": [
+        "join"
+      ],
+      "phase": "evaluation"
+    }
+  ],
+  "source_binding": {
+    "path": "experiments/data/external/autoscout24_2025_zenodo/autoscout24_dataset_20251108.csv",
+    "sha256": "57029c539e42ad247ec485c9f60983b09b980f13a36e0884c71a23b37d31d0f3"
+  },
+  "structural_contract": {
+    "split_counts": {
+      "calibration": 14047,
+      "test": 14005,
+      "train": 51045,
+      "validation": 14160
+    },
+    "six_cohort_data_hashes": {
+      "autoscout24_bvival_manifest_features_only.csv": "1bc197137d6591cfc7faadee929dd562546ed1fe75b3ba5e8fc78827fd5d6ef3",
+      "sealed_labels/test_labels.csv": "e939162a1b0f960c2276fdb4b3b581d694ee8af135e9704d544aa4f6a64a1c9b",
+      "splits/calibration.csv": "d6127a4ae8f533f1d7893fa27441ceeab2fe10c11925a5aa337836c55fea4285",
+      "splits/test_features.csv": "4c481b3572ae4601e8dd97063dc57edb40cf521902e4e61055d935ca8795b4df",
+      "splits/train.csv": "52608e7f20e4bfaf9de1aa29fafc3fa52efbef7930b0c38cefdd2fbed06c829a",
+      "splits/validation.csv": "8b9043d93062151479b38e2b2125c45a727c397a72ea0bab1cb99ccad4dadf46"
+    },
+    "cohort_audit_metadata_byte_identity_required": false,
+    "allowed_cohort_metadata_differences": [
+      "source_rights",
+      "source_path"
+    ],
+    "target_header": [
+      "listing_id",
+      "action_id",
+      "fold_id",
+      "prediction_is_oof",
+      "before_prediction_log",
+      "before_prediction_std",
+      "missing_action_field_count",
+      "make",
+      "model",
+      "registration_year",
+      "vehicle_type",
+      "body_type",
+      "power_hp",
+      "nr_seats",
+      "nr_doors",
+      "country_code",
+      "seller_is_dealer",
+      "nr_prev_owners",
+      "value_squared_log_error",
+      "value_absolute_price_error",
+      "risk_target_squared_log_error_before",
+      "risk_target_absolute_log_error_before",
+      "risk_target_absolute_price_error_before"
+    ],
+    "four_generated_target_hashes": {
+      "development": "e5fab69a6aa0ace469af2bb25a68c377d3bf7c93fd9098f032415dbd12ed3d9c",
+      "calibration": "f02643c52a7dbaba4311a65e85706a7ab3b660b4261e316f3303dd6f9b11bf10",
+      "selection_train": "2b041e401f6094fe2a921b7247a1e52485b0d010f61d4b0c7f832f7e18cdd86e",
+      "selection_validation": "85479e4878d966494664579d143f2f65f14152906c3b998f7edbfee9904625e3"
+    },
+    "validation_fixed_field": "mileage_km",
+    "validation_listing_count": 14160,
+    "validation_capacity": 1416,
+    "fixed_field_decision_sha256": "8e7c514e1b8dc3b2e705f4347723caff2270d04d3d99c4aefb65263ee6fd65e9",
+    "test_listing_count": 14005,
+    "test_action_pair_count": 55892,
+    "historical_primary_score_sha256": "3a1f50bd9e83f9288fe67a14a0037f9e693520aae5a7c6efd9e9999889aed05f"
+  },
+  "required_checkpoints": {
+    "before_any_fit": [
+      "raw opaque source SHA256",
+      "separate validated main runtime",
+      "source closure and plan bindings",
+      "rebuilt six cohort hashes/counts"
+    ],
+    "before_selection_risk": [
+      "new train-only target header/hash/counts"
+    ],
+    "before_fixed_field": [
+      "new held-out validation targets/hash/counts",
+      "new train-fitted risk scores"
+    ],
+    "before_final_pairs": [
+      "new fixed decision matches historical field/capacity/bytes"
+    ],
+    "before_final_heads": [
+      "new development/calibration target headers/hashes/counts"
+    ],
+    "before_join": [
+      "new immutable generated-score/input/model/code/runtime hash manifest"
+    ],
+    "on_failure": "retain and stop; no cached historical target substitution, retuning or tolerance widening"
+  },
+  "outcome_concordance": {
+    "reference_directory": "experiments/outputs/autoscout24_bvival_v2_full_mae_test",
+    "reference_aggregate_hashes": {
+      "bvival_action_mix.csv": "19c64c3eb23240a0e7d8d2ababf78004796489afba5f2f0ae0b81cde0fb072ae",
+      "bvival_error_budget_curve.csv": "76253d56cd04a50e6bde1250244ffcff6f0cf6980e49b298c86b7ce93b6c5963",
+      "bvival_policy_summary.csv": "042202ace1008c296e3d127b66813d283f98044ae430da00106f0e9eae378826",
+      "bvival_reference_comparisons.csv": "67eed81e833d1ce0e1cc48951306092047af1dc00fff9e3acce21aabc733e1a8"
+    },
+    "rule": "exact aggregate keys and bytes; disclose any mismatch without replacing history"
+  },
+  "historical_evaluator_source_differs": true,
+  "exact_historical_source_identity_claimed": false,
+  "historical_tests_already_opened": true,
+  "new_confirmatory_evidence": false,
+  "new_output_created": false,
+  "execution_started": false,
+  "runtime_bound": false,
+  "orchestrator_implemented": false,
+  "rows_or_models_read_by_planner": false,
+  "rights_adjudicated": false,
+  "public_release_created": false,
+  "submission_ready": false
+}
