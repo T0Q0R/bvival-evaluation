@@ -1,0 +1,15 @@
+{
+  "freeze_id": "mucars-bvival-v5-2026-09-25",
+  "inputs": {
+    "additional_frozen_policy_scores_sha256": "39904a5682b8a320d112b34d7a7dee30ce802b8420721217e312ca94d2520202",
+    "frozen_policy_scores_sha256": "e80af927b8de18f7e305e16d220f59e96603736871be2d8cec27c5aebc47170e",
+    "prediction_pairs_sha256": "4d7588bd43e3097d4d83591452b3662a87e3c22fd419393d9d55dcdd9c316ff8",
+    "sealed_labels_sha256": "e6b1621df2d00ce0fc19fa068636884ade267cc034db545a14d151888d24574c"
+  },
+  "labels_opened": true,
+  "listing_action_count": 42477,
+  "listing_count": 10699,
+  "output_sha256": "fc22c2c808e699a2c0da2b6983c0f32bdc6dee58f14920b0898dde7f86c34a14",
+  "policy_score_hash_verified_before_label_read": true,
+  "protocol": "v4-bvival-prospective"
+}
