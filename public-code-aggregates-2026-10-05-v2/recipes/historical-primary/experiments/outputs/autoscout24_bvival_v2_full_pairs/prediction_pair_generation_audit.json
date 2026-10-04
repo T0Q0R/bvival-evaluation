@@ -1,0 +1,94 @@
+{
+  "action_fields": [
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "service_history"
+  ],
+  "calibration_action_pair_count": 56073,
+  "calibration_listing_count": 14047,
+  "categorical_columns": [
+    "make",
+    "model",
+    "vehicle_type",
+    "body_type",
+    "country_code",
+    "transmission",
+    "fuel_type"
+  ],
+  "development_action_pair_count": 260253,
+  "development_listing_count": 65205,
+  "evaluation_action_pair_count": 55892,
+  "evaluation_labels_read": false,
+  "evaluation_listing_count": 14005,
+  "feature_columns": [
+    "make",
+    "model",
+    "registration_year",
+    "vehicle_type",
+    "body_type",
+    "power_hp",
+    "nr_seats",
+    "nr_doors",
+    "country_code",
+    "seller_is_dealer",
+    "nr_prev_owners",
+    "mileage_km",
+    "transmission",
+    "fuel_type",
+    "service_history"
+  ],
+  "folds": 5,
+  "inputs": {
+    "calibration_sha256": "d6127a4ae8f533f1d7893fa27441ceeab2fe10c11925a5aa337836c55fea4285",
+    "evaluation_features_sha256": "4c481b3572ae4601e8dd97063dc57edb40cf521902e4e61055d935ca8795b4df",
+    "train_sha256": "52608e7f20e4bfaf9de1aa29fafc3fa52efbef7930b0c38cefdd2fbed06c829a",
+    "validation_sha256": "8b9043d93062151479b38e2b2125c45a727c397a72ea0bab1cb99ccad4dadf46"
+  },
+  "model_parameters": {
+    "depth": 8,
+    "iterations": 400,
+    "l2_leaf_reg": 10.0,
+    "learning_rate": 0.08
+  },
+  "models": [
+    {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/base_models/mask_aware_catboost_seed_13.cbm",
+      "seed": 13,
+      "sha256": "2335212011f2e452576ac30a1149f20cf179742ff491259672fd3cd5390eaa64"
+    },
+    {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/base_models/mask_aware_catboost_seed_42.cbm",
+      "seed": 42,
+      "sha256": "88004ba90b8416853f56274291c21a13b62198c69021c9f6e7679d593c3f1b36"
+    },
+    {
+      "path": "experiments/outputs/autoscout24_bvival_v2_full_pairs/base_models/mask_aware_catboost_seed_2026.cbm",
+      "seed": 2026,
+      "sha256": "d5db586ec111f98894cb23ad9f175a081cc3b5fce0019771b1d90ade9d5f43f1"
+    }
+  ],
+  "outputs": {
+    "calibration": {
+      "features": "726420dcd6a510ef76e29086fe98aebaf80d59a909dc97bfb823e4b2f7f1323e",
+      "labels": "de1966828ae27cabf20e6b1d135a4b41ebc337630b78790df975ffce610903c9",
+      "pairs": "ab57bc0abe37acc02faeaf97c24a49589c9b33719bd487960ccace1d75bf37e9"
+    },
+    "development": {
+      "features": "a0f162d35c6206185ef8f15ce5f5e96744d612a571885105c0877bafaee9d159",
+      "labels": "6ea9847aeed5c508dd4b4cb845c785981ecc197a795ca7040ab2b861e3200a11",
+      "pairs": "60975b815829c5c9fe122868039f1bbc6ab5e3cd0ae3cb365397451b29272765"
+    },
+    "evaluation": {
+      "features": "9f1442655ab77fe244cc14db7c46231bf5880558a721ae6c57b662aff499efbb",
+      "pairs": "ebb8ba9dd9af760961d281befc79f18b93c3cb64ef652ba8e4857a63a3736851"
+    }
+  },
+  "performance_metrics_computed": false,
+  "protocol": "v4-bvival-prospective-external-replication",
+  "seeds": [
+    13,
+    42,
+    2026
+  ]
+}
