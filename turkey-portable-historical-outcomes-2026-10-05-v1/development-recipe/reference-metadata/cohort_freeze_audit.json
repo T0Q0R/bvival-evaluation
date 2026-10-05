@@ -1,0 +1,105 @@
+{
+  "raw_feature_rows": 52051,
+  "eligible_before_profile_dedup": 51741,
+  "retained_feature_rows": 51407,
+  "removed_duplicate_profile_rows": 334,
+  "pre_joint_filter_flags": {
+    "missing_core_identity": 256,
+    "missing_or_unsupported_transmission": 99,
+    "invalid_mileage": 101,
+    "missing_or_unsupported_fuel": 61,
+    "invalid_year": 57
+  },
+  "exclusive_exclusion_counts": {
+    "missing_core_identity": 256,
+    "invalid_mileage": 39,
+    "duplicate_nonprice_profile": 334,
+    "missing_or_unsupported_transmission": 15
+  },
+  "optional_part_missing_or_invalid_before_dedup": {
+    "boyali_sayisi": 8685,
+    "degisen_sayisi": 8685
+  },
+  "series_alias_flags_before_dedup": {
+    "series_fuel_or_engine_family_flag": 0,
+    "series_transmission_flag": 0
+  },
+  "split_listing_counts": {
+    "train": 28024,
+    "validation": 7767,
+    "test": 7802,
+    "calibration": 7814
+  },
+  "split_group_counts": {
+    "train": 26734,
+    "validation": 7395,
+    "calibration": 7440,
+    "test": 7415
+  },
+  "train_oof_listing_counts": {
+    "0": 5502,
+    "4": 5723,
+    "1": 5636,
+    "3": 5674,
+    "2": 5489
+  },
+  "train_oof_group_counts": {
+    "0": 5252,
+    "1": 5353,
+    "2": 5247,
+    "3": 5415,
+    "4": 5467
+  },
+  "nonprice_groups_are_not_verified_vehicle_ids": true,
+  "prices_unparsed": true,
+  "final_scored_sample_count_unknown": true,
+  "confirmatory_test_allowed_now": false,
+  "stage": "PRICE_FREE_COHORT_FREEZE_ONLY",
+  "checked_at_utc": "2026-09-30T10:05:29.412429+00:00",
+  "source_verified": {
+    "bytes": 4155327,
+    "sha256": "99aa8018807a72082704047a72d93aca202c4e30126c62f1dec8e01d1ad8f77b",
+    "git_blob_sha1": "6d477e3c0f6b15abcb7efd2e3714f348f8909643"
+  },
+  "cell_access": {
+    "approved_data_cells_decoded": 760072,
+    "blocked_data_cells_skipped": 51994
+  },
+  "price_cell_values_decoded": 0,
+  "models_trained": false,
+  "test_scores_computed": false,
+  "labels_exported": false,
+  "initial_visible_fields": [
+    "marka",
+    "seri",
+    "yil",
+    "kasa_tipi",
+    "renk",
+    "kimden",
+    "boyali_sayisi",
+    "degisen_sayisi"
+  ],
+  "action_fields": [
+    "kilometre",
+    "vites_tipi",
+    "yakit_tipi"
+  ],
+  "excluded_predictor_fields": [
+    "id",
+    "model",
+    "motor_hacmi",
+    "motor_gucu"
+  ],
+  "output_sha256": {
+    "acquisition_fields.csv": "75583f244dbfa8774787723587797b8dec916615fc9c9ca16489e9acd64613c1",
+    "archive_helper_snapshot.py": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+    "cohort_builder_snapshot.py": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1",
+    "config_snapshot.json": "85bdafecab6fe35589ad410d8f7c2bab684542e062063b2283ef67ae418050c3",
+    "excluded_records.csv": "bbf8a198fdcb0d374d6dc0907d4011a6f7073ae23f9e2ca873221d5c33f0451e",
+    "initial_features.csv": "6d829ef3300d7a9cf520fc2b5f8c6c9996563c6b81123e8e3a246df973c110d2",
+    "prelabel_protocol_snapshot.md": "a8c67b9f0adae83f531dc775a6cbf1b49fb3d32dc699be1ed96233db83124822",
+    "reader_snapshot.py": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+    "source_locators.csv": "8c9e06fc96a59005f74f49a4d1220578421a22f7438ac8b393222564f74bcdf6",
+    "split_manifest.csv": "7e0dc3b98461073b06ca61be9e87d7261ff4cbd09314a5016b9e6b6bb0ce78b9"
+  }
+}
