@@ -1,0 +1,602 @@
+{
+  "version": "turkey-portable-historical-outcomes-2026-10-05-v1",
+  "scope": "source_rebuilt_historical_scoring_and_outcomes_not_confirmation",
+  "source_sha256": "99aa8018807a72082704047a72d93aca202c4e30126c62f1dec8e01d1ad8f77b",
+  "development_manifest_sha256": "997c01e2cbb5bb9c3f95bff84fbf1cbc409988f8a59203900ddf90d28c829972",
+  "historical_tests_already_opened": true,
+  "source_rows_or_models_included": false,
+  "original_release_ledger_included": false,
+  "original_once_release_authority_reissued": false,
+  "new_independent_confirmation": false,
+  "full_study_empirical_pipeline_verified_here": false,
+  "public_download_verified_here": false,
+  "closure_roots": [
+    "release-bvival/run_turkey_portable_outcomes.py",
+    "release-bvival/check_turkey_portable_outcomes.py",
+    "experiments/tests/test_freeze_turkey_heldout_scores.py",
+    "release-bvival/tests/test_turkey_portable_outcomes.py"
+  ],
+  "static_import_closure": {
+    "local_source_sha256": {
+      "experiments/archive_turkey_candidate.py": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+      "experiments/audit_turkey_feature_only.py": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+      "experiments/build_turkey_price_free_manifest.py": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1",
+      "experiments/evaluate_turkey_released_phase.py": "9dca9182508b57ba2d9799a21c1426cdeaa7cc015af3fb242ac8a71914f45d1c",
+      "experiments/freeze_turkey_heldout_scores.py": "81447047dcba9d3f33d7645bd475dac15f12e976ddc82243005455d4a690ef10",
+      "experiments/run_turkey_development.py": "6d34c0599c505d8e7d25ab625e593f0612528e0c0d87e7a94e9242202c9a2862",
+      "experiments/run_turkey_heldout_freeze_check.py": "87e272a3a73f04216f9e9a2f0c08eea5c5b8e88dc635b52eb7a661ef74946956",
+      "experiments/run_turkey_synthetic_integration.py": "d33591e0bf97e7d4a43e4d8e26b39572b5888fd6f5bfe8f6413cc3bbfd9a7ca5",
+      "experiments/tests/test_freeze_turkey_heldout_scores.py": "21bee1e04c3a5d518aaf90a5ff29692cbf85769a679db822033b66953a8eb113",
+      "experiments/train_turkey_nested_valuation.py": "cd47900a9b7a025a2efefe86f75bb7ec707668477504f9c7c2b7159875381f71",
+      "experiments/turkey_development_io.py": "09494f1bb9db30a011d46d48b016593b5fe3f939cb5e26421fd171766af58731",
+      "experiments/turkey_execution_contract.py": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7",
+      "experiments/turkey_frozen_outcome_evaluation.py": "274845ecf28b4a13df035a27cdd54a9f0858c20beb54386976adf1a5d4359153",
+      "experiments/turkey_information_boundary.py": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682",
+      "experiments/turkey_policy_components.py": "fd66673bb2455f144e5fe08cb6820b48a6090091ba557f709253529e7fb9df47",
+      "experiments/turkey_price_access_accounting_v2.py": "c0ff13976c49a1fb79cc46b0aa8dbb90ac20b12d142a9bae26cccda29a9fa6c4",
+      "experiments/turkey_price_cells.py": "722440cef119fa53084047bc412db442eb7aaffdca995be7f2145818887aa740",
+      "experiments/turkey_price_free_scoring.py": "30dfee0db38a8284e3940e1cc387c852d85b6ad4885afea1c0c7f0f022c7a56b",
+      "experiments/turkey_source_access_binding.py": "363ab1d942b4bbc99c65f77b5b0a4d2088cce672297d1a3b12e42058c69677e8",
+      "experiments/turkey_source_price_release.py": "a8dcaff0e7bdcdcb44cc4c1134f67cd1ef26b8cac389baf3a864f097a18edd8d",
+      "experiments/turkey_valuation_components.py": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a",
+      "experiments/verify_turkey_heldout_score_freeze.py": "bc6e707dea1ea8c9766f150d11b6b95d6b02221e9721cc7bf465abe273a834b9",
+      "experiments/verify_turkey_price_free_bundle.py": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad",
+      "release-bvival/check_source_bundle.py": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2",
+      "release-bvival/check_turkey_portable_development.py": "835be3502dd1496e42c37cef187330ddf09da4cdb23fa10269ec6591c68d9481",
+      "release-bvival/check_turkey_portable_outcomes.py": "4d3f8d58afd911fb1fc8f586c6dc0a803e5799e76c50ff39855d31a0017518c4",
+      "release-bvival/run_turkey_portable_development.py": "7c66c28d4adc1521b2c73ab8a5df35690a831b7bad54d0f900dd50fd6d22b14b",
+      "release-bvival/run_turkey_portable_outcomes.py": "f4669041e55254fefbe69d347b40e351b26b4d1a9d789c5fd6d7bc231dabbc9f",
+      "release-bvival/tests/test_turkey_portable_outcomes.py": "adf1eb37ff4744737a804fa7af9444a3f28dbb60e469f74b92edcf73b189b921",
+      "release-bvival/turkey_portable_development_contract.py": "1bb0969ddbc0e433ee03f1faf93ac102db0ee52ed0d1cb6877c5c8a04dabfa2c",
+      "release-bvival/turkey_portable_outcome_contract.py": "6d2edcc4567e064621490af41056fb052ef8428aebc8ab0f439e60030b1c27e9"
+    },
+    "external_import_roots": [
+      "catboost",
+      "joblib",
+      "numpy",
+      "pandas",
+      "pytest",
+      "sklearn"
+    ],
+    "embedded_workers": [],
+    "unresolved_dynamic_imports": [],
+    "not_a_runtime_or_full_file_dependency_closure": true
+  },
+  "files": [
+    {
+      "file": "LICENSE",
+      "bytes": 1077,
+      "sha256": "d974966c8bf836dda4fbb9908048cc3119cffa84c569cc181e68ecc324a78f30"
+    },
+    {
+      "file": "LICENSING_SCOPE.md",
+      "bytes": 1310,
+      "sha256": "e0bbeae897dabf1b388bff146633441a7d8563c5900f7c601686c2bfaf1a84ad"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5266,
+      "sha256": "f0be45e22457e47dfc561a45bf873dac4a9f83a1b92a913806c1706e3a581483"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 5899,
+      "sha256": "db1dbe780c946fb834766bf6bb4eeb8327c8f7e9d9b008166070093db4a99bed"
+    },
+    {
+      "file": "aggregates/calibration-fixed-evaluation.json",
+      "bytes": 54309,
+      "sha256": "80ba6dff70b49a51cf84049ab30f6d56ab911d7919de27ab6215cd9b579e096f"
+    },
+    {
+      "file": "aggregates/test-fixed-evaluation.json",
+      "bytes": 56890,
+      "sha256": "0ac1a05cdb4ace95e86d18115825527689def300d435c0e97fc9b75338385e5e"
+    },
+    {
+      "file": "development-recipe/LICENSE",
+      "bytes": 1077,
+      "sha256": "d974966c8bf836dda4fbb9908048cc3119cffa84c569cc181e68ecc324a78f30"
+    },
+    {
+      "file": "development-recipe/LICENSING_SCOPE.md",
+      "bytes": 1310,
+      "sha256": "e0bbeae897dabf1b388bff146633441a7d8563c5900f7c601686c2bfaf1a84ad"
+    },
+    {
+      "file": "development-recipe/README.md",
+      "bytes": 4907,
+      "sha256": "8d8854ce7e2167828bd4a08720d0dc00a288f91615e6dfeef7535fcaf2e89149"
+    },
+    {
+      "file": "development-recipe/THIRD_PARTY_NOTICES.md",
+      "bytes": 5899,
+      "sha256": "db1dbe780c946fb834766bf6bb4eeb8327c8f7e9d9b008166070093db4a99bed"
+    },
+    {
+      "file": "development-recipe/environment/resolved-main-macos-arm64.lock",
+      "bytes": 2948,
+      "sha256": "206739a71c7554641dabf2c41d1a8ec184af9a7cf0481b233f1cb343abfced0a"
+    },
+    {
+      "file": "development-recipe/environment/resolved-neural-macos-arm64.lock",
+      "bytes": 3680,
+      "sha256": "2cfec0d39492b6fe0723a23c09f05120adfbe6597f1a495c46fab8db3045cacc"
+    },
+    {
+      "file": "development-recipe/experiments/archive_turkey_candidate.py",
+      "bytes": 8195,
+      "sha256": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23"
+    },
+    {
+      "file": "development-recipe/experiments/audit_turkey_feature_only.py",
+      "bytes": 16875,
+      "sha256": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f"
+    },
+    {
+      "file": "development-recipe/experiments/build_turkey_price_free_manifest.py",
+      "bytes": 12597,
+      "sha256": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1"
+    },
+    {
+      "file": "development-recipe/experiments/configs/turkey_execution_plan_v1_2026-09-30.json",
+      "bytes": 10516,
+      "sha256": "13368636f4e86e2b7608c57f2d8b4e6afd8d9431684354b06d8bf80bf586588d"
+    },
+    {
+      "file": "development-recipe/experiments/configs/turkey_price_free_cohort_2026-09-30.json",
+      "bytes": 2255,
+      "sha256": "85bdafecab6fe35589ad410d8f7c2bab684542e062063b2283ef67ae418050c3"
+    },
+    {
+      "file": "development-recipe/experiments/freeze_turkey_development_readiness.py",
+      "bytes": 7780,
+      "sha256": "0718e4c0e33165f9369bdda24a8f6c6798e6ddbad645e8f96ec09e7251ee662b"
+    },
+    {
+      "file": "development-recipe/experiments/freeze_turkey_execution_plan.py",
+      "bytes": 6707,
+      "sha256": "64acaea04409fd22b43b8c591ff51227175b4bb4b5638a75ce3bd124baa89008"
+    },
+    {
+      "file": "development-recipe/experiments/freeze_turkey_heldout_scores.py",
+      "bytes": 15845,
+      "sha256": "81447047dcba9d3f33d7645bd475dac15f12e976ddc82243005455d4a690ef10"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/archive_turkey_candidate.py",
+      "bytes": 8195,
+      "sha256": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/audit_turkey_feature_only.py",
+      "bytes": 16875,
+      "sha256": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/build_turkey_price_free_manifest.py",
+      "bytes": 12597,
+      "sha256": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/execution_plan_freeze_audit.json",
+      "bytes": 5475,
+      "sha256": "4ce5e47b6cbdabecd911394409a6328d88a597b3d3090642ade554fc86d12ab4"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/freeze_turkey_execution_plan.py",
+      "bytes": 6707,
+      "sha256": "64acaea04409fd22b43b8c591ff51227175b4bb4b5638a75ce3bd124baa89008"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/plan_snapshot.json",
+      "bytes": 10516,
+      "sha256": "13368636f4e86e2b7608c57f2d8b4e6afd8d9431684354b06d8bf80bf586588d"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/protocol_snapshot.md",
+      "bytes": 12043,
+      "sha256": "31dbfb262e5ad1a8ce3b644c826e34e9ace76c2b58852d51a6febc415cf1f45e"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/test_freeze_turkey_execution_plan.py",
+      "bytes": 5833,
+      "sha256": "dd228780d0864fb688e9aa1c235c8c05aafa41d824746fd3c117f677c7892e01"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/test_turkey_execution_contract.py",
+      "bytes": 10320,
+      "sha256": "14f47d92c73e58807491793656cb570778ca708bbd6e4e2ffe644cce81918af5"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/test_turkey_information_boundary.py",
+      "bytes": 2959,
+      "sha256": "bfb82e5ca80a616d8a3c2234c2d07e023de0d17ad062fead8ec96b7d76be76f4"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/test_turkey_valuation_components.py",
+      "bytes": 5588,
+      "sha256": "7bf99ea2af5bb012beca4239a141cdeabd3102f8c4eb02c7a116c0aa563ff2ca"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/turkey_execution_contract.py",
+      "bytes": 18269,
+      "sha256": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/turkey_information_boundary.py",
+      "bytes": 2311,
+      "sha256": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/turkey_valuation_components.py",
+      "bytes": 7328,
+      "sha256": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a"
+    },
+    {
+      "file": "development-recipe/experiments/outputs/turkey_execution_plan_freeze_v1_2026-09-30/verify_turkey_price_free_bundle.py",
+      "bytes": 6420,
+      "sha256": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad"
+    },
+    {
+      "file": "development-recipe/experiments/run_turkey_development.py",
+      "bytes": 20403,
+      "sha256": "6d34c0599c505d8e7d25ab625e593f0612528e0c0d87e7a94e9242202c9a2862"
+    },
+    {
+      "file": "development-recipe/experiments/run_turkey_heldout_freeze_check.py",
+      "bytes": 2514,
+      "sha256": "87e272a3a73f04216f9e9a2f0c08eea5c5b8e88dc635b52eb7a661ef74946956"
+    },
+    {
+      "file": "development-recipe/experiments/run_turkey_policy_synthetic_integration.py",
+      "bytes": 9830,
+      "sha256": "cdff89a9ba85c84cb0abd716ad47e810595096b317d263e4a241545ea454139f"
+    },
+    {
+      "file": "development-recipe/experiments/run_turkey_synthetic_integration.py",
+      "bytes": 8511,
+      "sha256": "d33591e0bf97e7d4a43e4d8e26b39572b5888fd6f5bfe8f6413cc3bbfd9a7ca5"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_build_turkey_price_free_manifest.py",
+      "bytes": 7381,
+      "sha256": "d8fda652f6d9ec7312513bf2e91f6ee2d661a39432e58af745d2966be2a42f87"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_freeze_turkey_execution_plan.py",
+      "bytes": 5833,
+      "sha256": "dd228780d0864fb688e9aa1c235c8c05aafa41d824746fd3c117f677c7892e01"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_development_controller.py",
+      "bytes": 9480,
+      "sha256": "e6899c494ede0259a9f1ec396f2a243eeb81860a462d4585b16302768bacf2f5"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_development_io.py",
+      "bytes": 7532,
+      "sha256": "1b3aa5ac3c82e0609c06c5a737ea6b03fde1ec04531e8cfc5033ab3b7988ffaa"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_execution_contract.py",
+      "bytes": 10320,
+      "sha256": "14f47d92c73e58807491793656cb570778ca708bbd6e4e2ffe644cce81918af5"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_feature_only.py",
+      "bytes": 11416,
+      "sha256": "15dd0b5f6e083b9ed18d8ac18fcc199d348a797e7d607af4ef2cc58477b838ed"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_information_boundary.py",
+      "bytes": 2959,
+      "sha256": "bfb82e5ca80a616d8a3c2234c2d07e023de0d17ad062fead8ec96b7d76be76f4"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_nested_valuation.py",
+      "bytes": 6603,
+      "sha256": "fe86517ac4a4d6416263287eb7d924144dd45191c6d5549142975f3c4122964c"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_neural_policy.py",
+      "bytes": 5376,
+      "sha256": "2842d25e62f369516e940d040b6d6140107f24780e8a88cba056fa4621e0b31f"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_policy_components.py",
+      "bytes": 8598,
+      "sha256": "a5ce3379aa0bba702d090061067e65ac5bd18bc4f8caeab80e3088e67c1ce7ab"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_price_cells.py",
+      "bytes": 4212,
+      "sha256": "fbf78e5b259e476b223a5e95eedd0bbd2cb2e91224a581a582472635d1a32eb3"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_synthetic_integration.py",
+      "bytes": 1320,
+      "sha256": "b97da698060c3888a94cf67e5ae46e77bd35fffdbaa318aa49a027b117c41033"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_turkey_valuation_components.py",
+      "bytes": 5588,
+      "sha256": "7bf99ea2af5bb012beca4239a141cdeabd3102f8c4eb02c7a116c0aa563ff2ca"
+    },
+    {
+      "file": "development-recipe/experiments/tests/test_verify_turkey_price_free_bundle.py",
+      "bytes": 4698,
+      "sha256": "c6bc377bc0f0c512db84eb27f8a7904ddbad4c370ccbd9603a02c611f722dd3e"
+    },
+    {
+      "file": "development-recipe/experiments/train_turkey_nested_valuation.py",
+      "bytes": 16076,
+      "sha256": "cd47900a9b7a025a2efefe86f75bb7ec707668477504f9c7c2b7159875381f71"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_development_io.py",
+      "bytes": 11330,
+      "sha256": "09494f1bb9db30a011d46d48b016593b5fe3f939cb5e26421fd171766af58731"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_execution_contract.py",
+      "bytes": 18269,
+      "sha256": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_information_boundary.py",
+      "bytes": 2311,
+      "sha256": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_neural_policy.py",
+      "bytes": 11754,
+      "sha256": "fecc7882fae338a4ceb3a328518edaa2ae8be9aeeb563c56972f0a87ba6a1a47"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_neural_replay.py",
+      "bytes": 1956,
+      "sha256": "3389582e27700ac59cdaa4c12699d0152e8d1a6c4894adf137122c030ff56537"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_policy_components.py",
+      "bytes": 14453,
+      "sha256": "fd66673bb2455f144e5fe08cb6820b48a6090091ba557f709253529e7fb9df47"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_price_cells.py",
+      "bytes": 4801,
+      "sha256": "722440cef119fa53084047bc412db442eb7aaffdca995be7f2145818887aa740"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_price_free_neural_scoring.py",
+      "bytes": 2927,
+      "sha256": "605a3c6d7e3c8a9813552b057d1210dca0a0f73576ce47a659e443492387f4b9"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_price_free_scoring.py",
+      "bytes": 10189,
+      "sha256": "30dfee0db38a8284e3940e1cc387c852d85b6ad4885afea1c0c7f0f022c7a56b"
+    },
+    {
+      "file": "development-recipe/experiments/turkey_valuation_components.py",
+      "bytes": 7328,
+      "sha256": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a"
+    },
+    {
+      "file": "development-recipe/experiments/verify_turkey_heldout_score_freeze.py",
+      "bytes": 4340,
+      "sha256": "bc6e707dea1ea8c9766f150d11b6b95d6b02221e9721cc7bf465abe273a834b9"
+    },
+    {
+      "file": "development-recipe/experiments/verify_turkey_price_free_bundle.py",
+      "bytes": 6420,
+      "sha256": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad"
+    },
+    {
+      "file": "development-recipe/manifest.json",
+      "bytes": 20358,
+      "sha256": "997c01e2cbb5bb9c3f95bff84fbf1cbc409988f8a59203900ddf90d28c829972"
+    },
+    {
+      "file": "development-recipe/notes/design/bvival-turkey-execution-plan-v1-2026-09-30.md",
+      "bytes": 12043,
+      "sha256": "31dbfb262e5ad1a8ce3b644c826e34e9ace76c2b58852d51a6febc415cf1f45e"
+    },
+    {
+      "file": "development-recipe/pytest.ini",
+      "bytes": 79,
+      "sha256": "6a448807486de66d03a691d2431e920b7e782a814cfb717f074a8d1754329b0e"
+    },
+    {
+      "file": "development-recipe/reference-metadata/cohort_freeze_audit.json",
+      "bytes": 3259,
+      "sha256": "e7a3668bae0507aaa0511f1cb27c4d25056e16bc793ba5f1f0897526f6bb448d"
+    },
+    {
+      "file": "development-recipe/reference-metadata/prelabel_protocol_snapshot.md",
+      "bytes": 5787,
+      "sha256": "a8c67b9f0adae83f531dc775a6cbf1b49fb3d32dc699be1ed96233db83124822"
+    },
+    {
+      "file": "development-recipe/release-bvival/check_source_bundle.py",
+      "bytes": 8535,
+      "sha256": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2"
+    },
+    {
+      "file": "development-recipe/release-bvival/check_turkey_portable_development.py",
+      "bytes": 4681,
+      "sha256": "835be3502dd1496e42c37cef187330ddf09da4cdb23fa10269ec6591c68d9481"
+    },
+    {
+      "file": "development-recipe/release-bvival/run_turkey_portable_development.py",
+      "bytes": 18271,
+      "sha256": "7c66c28d4adc1521b2c73ab8a5df35690a831b7bad54d0f900dd50fd6d22b14b"
+    },
+    {
+      "file": "development-recipe/release-bvival/turkey_portable_development_contract.py",
+      "bytes": 3304,
+      "sha256": "1bb0969ddbc0e433ee03f1faf93ac102db0ee52ed0d1cb6877c5c8a04dabfa2c"
+    },
+    {
+      "file": "experiments/archive_turkey_candidate.py",
+      "bytes": 8195,
+      "sha256": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23"
+    },
+    {
+      "file": "experiments/audit_turkey_feature_only.py",
+      "bytes": 16875,
+      "sha256": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f"
+    },
+    {
+      "file": "experiments/build_turkey_price_free_manifest.py",
+      "bytes": 12597,
+      "sha256": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1"
+    },
+    {
+      "file": "experiments/evaluate_turkey_released_phase.py",
+      "bytes": 17509,
+      "sha256": "9dca9182508b57ba2d9799a21c1426cdeaa7cc015af3fb242ac8a71914f45d1c"
+    },
+    {
+      "file": "experiments/freeze_turkey_heldout_scores.py",
+      "bytes": 15845,
+      "sha256": "81447047dcba9d3f33d7645bd475dac15f12e976ddc82243005455d4a690ef10"
+    },
+    {
+      "file": "experiments/run_turkey_development.py",
+      "bytes": 20403,
+      "sha256": "6d34c0599c505d8e7d25ab625e593f0612528e0c0d87e7a94e9242202c9a2862"
+    },
+    {
+      "file": "experiments/run_turkey_heldout_freeze_check.py",
+      "bytes": 2514,
+      "sha256": "87e272a3a73f04216f9e9a2f0c08eea5c5b8e88dc635b52eb7a661ef74946956"
+    },
+    {
+      "file": "experiments/run_turkey_synthetic_integration.py",
+      "bytes": 8511,
+      "sha256": "d33591e0bf97e7d4a43e4d8e26b39572b5888fd6f5bfe8f6413cc3bbfd9a7ca5"
+    },
+    {
+      "file": "experiments/tests/test_freeze_turkey_heldout_scores.py",
+      "bytes": 9816,
+      "sha256": "21bee1e04c3a5d518aaf90a5ff29692cbf85769a679db822033b66953a8eb113"
+    },
+    {
+      "file": "experiments/train_turkey_nested_valuation.py",
+      "bytes": 16076,
+      "sha256": "cd47900a9b7a025a2efefe86f75bb7ec707668477504f9c7c2b7159875381f71"
+    },
+    {
+      "file": "experiments/turkey_development_io.py",
+      "bytes": 11330,
+      "sha256": "09494f1bb9db30a011d46d48b016593b5fe3f939cb5e26421fd171766af58731"
+    },
+    {
+      "file": "experiments/turkey_execution_contract.py",
+      "bytes": 18269,
+      "sha256": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7"
+    },
+    {
+      "file": "experiments/turkey_frozen_outcome_evaluation.py",
+      "bytes": 10617,
+      "sha256": "274845ecf28b4a13df035a27cdd54a9f0858c20beb54386976adf1a5d4359153"
+    },
+    {
+      "file": "experiments/turkey_information_boundary.py",
+      "bytes": 2311,
+      "sha256": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682"
+    },
+    {
+      "file": "experiments/turkey_policy_components.py",
+      "bytes": 14453,
+      "sha256": "fd66673bb2455f144e5fe08cb6820b48a6090091ba557f709253529e7fb9df47"
+    },
+    {
+      "file": "experiments/turkey_price_access_accounting_v2.py",
+      "bytes": 6583,
+      "sha256": "c0ff13976c49a1fb79cc46b0aa8dbb90ac20b12d142a9bae26cccda29a9fa6c4"
+    },
+    {
+      "file": "experiments/turkey_price_cells.py",
+      "bytes": 4801,
+      "sha256": "722440cef119fa53084047bc412db442eb7aaffdca995be7f2145818887aa740"
+    },
+    {
+      "file": "experiments/turkey_price_free_scoring.py",
+      "bytes": 10189,
+      "sha256": "30dfee0db38a8284e3940e1cc387c852d85b6ad4885afea1c0c7f0f022c7a56b"
+    },
+    {
+      "file": "experiments/turkey_source_access_binding.py",
+      "bytes": 10644,
+      "sha256": "363ab1d942b4bbc99c65f77b5b0a4d2088cce672297d1a3b12e42058c69677e8"
+    },
+    {
+      "file": "experiments/turkey_source_price_release.py",
+      "bytes": 20157,
+      "sha256": "a8dcaff0e7bdcdcb44cc4c1134f67cd1ef26b8cac389baf3a864f097a18edd8d"
+    },
+    {
+      "file": "experiments/turkey_valuation_components.py",
+      "bytes": 7328,
+      "sha256": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a"
+    },
+    {
+      "file": "experiments/verify_turkey_heldout_score_freeze.py",
+      "bytes": 4340,
+      "sha256": "bc6e707dea1ea8c9766f150d11b6b95d6b02221e9721cc7bf465abe273a834b9"
+    },
+    {
+      "file": "experiments/verify_turkey_price_free_bundle.py",
+      "bytes": 6420,
+      "sha256": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad"
+    },
+    {
+      "file": "reference-metadata/already-opened-history.json",
+      "bytes": 799,
+      "sha256": "c241900e8523fa0a686affa8932743d8dae45de9ac2af51adfafeea8d0132f58"
+    },
+    {
+      "file": "release-bvival/check_source_bundle.py",
+      "bytes": 8535,
+      "sha256": "3371bdfa0894e3b0d55074ce25f0cc9f7472c09af068939820a7f03049aa70e2"
+    },
+    {
+      "file": "release-bvival/check_turkey_portable_development.py",
+      "bytes": 4681,
+      "sha256": "835be3502dd1496e42c37cef187330ddf09da4cdb23fa10269ec6591c68d9481"
+    },
+    {
+      "file": "release-bvival/check_turkey_portable_outcomes.py",
+      "bytes": 5159,
+      "sha256": "4d3f8d58afd911fb1fc8f586c6dc0a803e5799e76c50ff39855d31a0017518c4"
+    },
+    {
+      "file": "release-bvival/run_turkey_portable_development.py",
+      "bytes": 18271,
+      "sha256": "7c66c28d4adc1521b2c73ab8a5df35690a831b7bad54d0f900dd50fd6d22b14b"
+    },
+    {
+      "file": "release-bvival/run_turkey_portable_outcomes.py",
+      "bytes": 21795,
+      "sha256": "f4669041e55254fefbe69d347b40e351b26b4d1a9d789c5fd6d7bc231dabbc9f"
+    },
+    {
+      "file": "release-bvival/tests/test_turkey_portable_outcomes.py",
+      "bytes": 6372,
+      "sha256": "adf1eb37ff4744737a804fa7af9444a3f28dbb60e469f74b92edcf73b189b921"
+    },
+    {
+      "file": "release-bvival/turkey_portable_development_contract.py",
+      "bytes": 3304,
+      "sha256": "1bb0969ddbc0e433ee03f1faf93ac102db0ee52ed0d1cb6877c5c8a04dabfa2c"
+    },
+    {
+      "file": "release-bvival/turkey_portable_outcome_contract.py",
+      "bytes": 2216,
+      "sha256": "6d2edcc4567e064621490af41056fb052ef8428aebc8ab0f439e60030b1c27e9"
+    }
+  ]
+}
