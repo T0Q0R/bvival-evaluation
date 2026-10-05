@@ -1,0 +1,18 @@
+{
+  "source_sha256": "99aa8018807a72082704047a72d93aca202c4e30126c62f1dec8e01d1ad8f77b",
+  "historical_tests_already_opened": true,
+  "scope": "source_rebuilt_historical_scoring_and_outcomes_not_confirmation",
+  "original_ledger_or_price_cache_not_required": true,
+  "phases": {
+    "calibration": {
+      "historical_release_audit_sha256": "26abd361406650b7388c5dfb173448da5e8a51d94b0115339db2e271af69fd97",
+      "feature_records": 7814,
+      "aggregate_sha256": "80ba6dff70b49a51cf84049ab30f6d56ab911d7919de27ab6215cd9b579e096f"
+    },
+    "test": {
+      "historical_release_audit_sha256": "d28f8216e6caed4d462e662ce70f891d6fbfe69c44b212aeba22e1a891f5e41e",
+      "feature_records": 7802,
+      "aggregate_sha256": "0ac1a05cdb4ace95e86d18115825527689def300d435c0e97fc9b75338385e5e"
+    }
+  }
+}
