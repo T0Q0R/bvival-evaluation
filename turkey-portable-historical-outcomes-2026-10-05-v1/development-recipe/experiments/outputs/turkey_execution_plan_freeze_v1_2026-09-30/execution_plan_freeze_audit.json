@@ -1,0 +1,179 @@
+{
+  "stage": "PLANNED_SETTINGS_AND_SYNTHETIC_COMPONENTS_FROZEN_NOT_TRAINING_READY",
+  "checked_at_utc": "2026-09-30T10:56:17.541671+00:00",
+  "plan_sha256": "13368636f4e86e2b7608c57f2d8b4e6afd8d9431684354b06d8bf80bf586588d",
+  "protocol_sha256": "31dbfb262e5ad1a8ce3b644c826e34e9ace76c2b58852d51a6febc415cf1f45e",
+  "cohort_audit_sha256": "e7a3668bae0507aaa0511f1cb27c4d25056e16bc793ba5f1f0897526f6bb448d",
+  "cohort_verification": {
+    "stage": "SAVED_PRICE_FREE_COHORT_VERIFIED",
+    "hashes_checked": 10,
+    "retained_feature_rows": 51407,
+    "retained_profile_groups": 48984,
+    "split_listing_counts": {
+      "train": 28024,
+      "validation": 7767,
+      "test": 7802,
+      "calibration": 7814
+    },
+    "cross_split_profile_groups": 0,
+    "cross_oof_train_groups": 0,
+    "initial_acquisition_columns_disjoint": true,
+    "record_universes_and_source_locators_match": true,
+    "labels_exported": false,
+    "verified_vehicle_entity_independence": false,
+    "complete_model_protocol_frozen": false
+  },
+  "nested_train_roles": [
+    {
+      "outer_fold": 0,
+      "heldout_listings": 5502,
+      "fit_listings": 22522,
+      "inner_listing_counts": {
+        "2": 7491,
+        "1": 7372,
+        "0": 7659
+      },
+      "inner_group_counts": {
+        "0": 7286,
+        "1": 7080,
+        "2": 7116
+      }
+    },
+    {
+      "outer_fold": 1,
+      "heldout_listings": 5636,
+      "fit_listings": 22388,
+      "inner_listing_counts": {
+        "2": 7578,
+        "0": 7407,
+        "1": 7403
+      },
+      "inner_group_counts": {
+        "0": 7088,
+        "1": 7059,
+        "2": 7234
+      }
+    },
+    {
+      "outer_fold": 2,
+      "heldout_listings": 5489,
+      "fit_listings": 22535,
+      "inner_listing_counts": {
+        "2": 7552,
+        "1": 7534,
+        "0": 7449
+      },
+      "inner_group_counts": {
+        "0": 7134,
+        "1": 7184,
+        "2": 7169
+      }
+    },
+    {
+      "outer_fold": 3,
+      "heldout_listings": 5674,
+      "fit_listings": 22350,
+      "inner_listing_counts": {
+        "0": 7502,
+        "2": 7504,
+        "1": 7344
+      },
+      "inner_group_counts": {
+        "0": 7201,
+        "1": 6942,
+        "2": 7176
+      }
+    },
+    {
+      "outer_fold": 4,
+      "heldout_listings": 5723,
+      "fit_listings": 22301,
+      "inner_listing_counts": {
+        "2": 7425,
+        "0": 7530,
+        "1": 7346
+      },
+      "inner_group_counts": {
+        "0": 7204,
+        "1": 7010,
+        "2": 7053
+      }
+    }
+  ],
+  "planned_action_counts_by_partition": {
+    "train": {
+      "0.05": 1402,
+      "0.1": 2803,
+      "0.2": 5605
+    },
+    "validation": {
+      "0.05": 389,
+      "0.1": 777,
+      "0.2": 1554
+    },
+    "test": {
+      "0.05": 391,
+      "0.1": 781,
+      "0.2": 1561
+    },
+    "calibration": {
+      "0.05": 391,
+      "0.1": 782,
+      "0.2": 1563
+    }
+  },
+  "runtime_environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.9.1",
+      "catboost": "1.2.10",
+      "pytest": "9.1.1"
+    }
+  },
+  "neural_runtime_environment": {
+    "python": "3.12.14",
+    "packages": {
+      "torch": "2.14.0",
+      "numpy": "2.5.3",
+      "scikit-learn": "1.9.1",
+      "catboost": "1.2.10"
+    }
+  },
+  "valuation_candidate_evaluations_per_family": 4,
+  "base_fit_count_plan": {
+    "nested_inner_selection": 180,
+    "outer_three_seed_oof": 15,
+    "final_train_cv_selection": 60,
+    "final_train_three_seed": 3
+  },
+  "base_fit_count_excludes_heads_neural_and_seed_diagnostics": true,
+  "price_values_parsed": 0,
+  "labels_exported": false,
+  "models_trained": false,
+  "test_scores_computed": false,
+  "training_execution_ready": false,
+  "development_label_release_allowed_now": false,
+  "external_registration": false,
+  "future_runner_integration_required": true,
+  "official_GDFS_reproduction_completed": false,
+  "frozen_snapshot_sha256": {
+    "archive_turkey_candidate.py": "a53f8d4aa5f745cde495fec87ce97b3d61c676da519d484f991125a2b4737d23",
+    "audit_turkey_feature_only.py": "3048c5391808185f62835b0da0fe8249d4e315e7413bcd6dbb754cb770b4067f",
+    "build_turkey_price_free_manifest.py": "b9d15500bc9f5b143aa7a687ebae85429087ddcb203822bfeae22779cbc361d1",
+    "freeze_turkey_execution_plan.py": "64acaea04409fd22b43b8c591ff51227175b4bb4b5638a75ce3bd124baa89008",
+    "plan_snapshot.json": "13368636f4e86e2b7608c57f2d8b4e6afd8d9431684354b06d8bf80bf586588d",
+    "protocol_snapshot.md": "31dbfb262e5ad1a8ce3b644c826e34e9ace76c2b58852d51a6febc415cf1f45e",
+    "test_freeze_turkey_execution_plan.py": "dd228780d0864fb688e9aa1c235c8c05aafa41d824746fd3c117f677c7892e01",
+    "test_turkey_execution_contract.py": "14f47d92c73e58807491793656cb570778ca708bbd6e4e2ffe644cce81918af5",
+    "test_turkey_information_boundary.py": "bfb82e5ca80a616d8a3c2234c2d07e023de0d17ad062fead8ec96b7d76be76f4",
+    "test_turkey_valuation_components.py": "7bf99ea2af5bb012beca4239a141cdeabd3102f8c4eb02c7a116c0aa563ff2ca",
+    "turkey_execution_contract.py": "a926c78512a42f6f4b1d1241fb806fbbef15d966aceee36e3ef9de76c9ac57e7",
+    "turkey_information_boundary.py": "c60a34aee5c7fd82fb530f3900cc6137423606c726e84bd6e41ad0d5b7ca3682",
+    "turkey_valuation_components.py": "8347db2393002945fe1627d6830d836b1daab11d3e8899e8d3bde8fc63ce4a8a",
+    "verify_turkey_price_free_bundle.py": "c9ac5f53847dd8ad8955b368a16b3c744b0a53457a9ef56001e11242a3e133ad"
+  }
+}
