@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'public-code-aggregates-2026-10-05-v2/**'
+      - 'turkey-portable-historical-outcomes-2026-10-05-v1/**'
+      - 'Makefile'
       - '.github/workflows/release-integrity.yml'
   workflow_dispatch:
 
@@ -30,5 +32,7 @@ jobs:
         run: python3 -I -B -S -c 'import sys; print(sys.version); assert sys.version_info >= (3, 12)'
       - name: Check 298 files and all four frozen recipe packages
         run: python3 -I -B -S public-code-aggregates-2026-10-05-v2/CHECK_RELEASE.py
+      - name: Check 108-file Turkey historical reconstruction companion
+        run: python3 -I -B -S turkey-portable-historical-outcomes-2026-10-05-v1/release-bvival/check_turkey_portable_outcomes.py --package-root turkey-portable-historical-outcomes-2026-10-05-v1
       # No dataset download, model fitting, outcome access or dependency install.
       # This is repository integrity checking, not empirical reproduction.
