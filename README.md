@@ -50,6 +50,31 @@ presence of the workflow file.
 
 ## What is inside
 
+### Turkey historical reconstruction companion
+
+The separate [108-file companion](https://github.com/T0Q0R/bvival-evaluation/tree/8764a4d618af834a278d6afd33831c2739fc8ee8/turkey-portable-historical-outcomes-2026-10-05-v1)
+and [ZIP](https://github.com/T0Q0R/bvival-evaluation/blob/08ff1f7ea4d40e95a7005cdccc88867ebcb45062/BVI-Val_Turkey_portable_recipe_2026-10-05_v1.zip)
+are public. Their unauthenticated download, exact inventory, file bytes and
+extracted integrity check passed on 5 October 2026, with zero missing,
+unexpected or changed files. ZIP SHA256:
+`acfc1e45cafa8296e16f7885b0cf76ad89b36e97e91cab9fc0a116b26b7aac20`.
+
+Follow its README: obtain the pinned workbook separately, run the embedded
+development recipe through preparation/readiness/fitting, then use the
+**companion** for scoring and historical outcomes (not the embedded legacy
+`--score`). Author-host execution completed the full original 258/21/6 fitting
+schedule and both complete calibration/test outcome structures: 2,011 scalar
+leaves matched with the original `1e-12` tolerances. This is reconstruction of
+already-opened historical results, not new confirmation, independent label
+custody, another-machine replication or coverage of every SI/GDFS diagnostic.
+No private rows, models, target caches, execution receipts or ledgers are included.
+
+At the outer repository root, `make check` includes this companion. For its
+synthetic tests, use `make test-turkey BVI_PYTHON=/absolute/path/to/python` with
+the specified main-role dependencies. Use `python -B -m pytest`, not the
+frozen README's example without `-B`, to avoid adding bytecode files to the
+strict package inventory. Keep empirical execution outputs outside the package.
+
 | Path inside the released directory or ZIP | Content |
 | --- | --- |
 | `AGGREGATE_INDEX.md` and `aggregates/` | Source-specific results, negative findings, diagnostic summaries and interpretation index |
@@ -82,8 +107,9 @@ negative results, failed pilot and distinct Turkey H2 comparison.
 All released evaluations have already been opened: replay is reconstruction,
 not new confirmation. AT shares the AutoScout platform family and includes
 new/used commercial vehicles. Turkey/GDFS aggregate diagnostics and
-implementation-inspection entry points are provided, but this version does not
-contain a standalone full Turkey/GDFS training recipe. Two additional AT
+implementation-inspection entry points remain in the earlier release; the
+separate companion now supplies Turkey historical training/scoring/outcomes,
+but not complete GDFS or all-SI reconstruction. Two additional AT
 diagnostics use frozen scores or non-price source information only; they are
 post-result characterization, not new confirmatory performance evidence.
 The study makes no transaction-price, real verification-cost, profit or universal
